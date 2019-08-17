@@ -7582,7 +7582,7 @@ h6, .h6 {
 .navbar > .container-fluid > .row {
   flex: 1; }
 
-#main-navbar {
+#navbar {
   height: 200px;
   justify-content: space-between;
   background: none;
@@ -7591,53 +7591,53 @@ h6, .h6 {
   padding: 0 50px;
   z-index: 100;
   transition: all 0.2s ease-in-out; }
-  #main-navbar .navbar-brand {
+  #navbar .navbar-brand {
     max-width: 30vw; }
-    #main-navbar .navbar-brand img {
+    #navbar .navbar-brand img {
       max-width: 100%;
       max-height: 100px;
       opacity: 1;
       transition: all 0.2s ease-in-out; }
-      #main-navbar .navbar-brand img:not(.regular-logo) {
+      #navbar .navbar-brand img:not(.regular-logo) {
         display: none;
         opacity: 0; }
-  #main-navbar .main-navigation .menu-item {
+  #navbar .main-navigation .menu-item {
     padding: 0 1.5em;
     margin-bottom: 0; }
-  #main-navbar .main-navigation .seperator {
+  #navbar .main-navigation .seperator {
     display: none; }
-  #main-navbar .mobile-nav {
+  #navbar .mobile-nav {
     display: none; }
-  #main-navbar .nav-toggle,
-  #main-navbar .main-navigation .menu-item > a {
+  #navbar .nav-toggle,
+  #navbar .main-navigation .menu-item > a {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 30px;
     text-decoration: none;
     color: #fff; }
-    #main-navbar .nav-toggle:active, #main-navbar .nav-toggle:hover,
-    #main-navbar .main-navigation .menu-item > a:active,
-    #main-navbar .main-navigation .menu-item > a:hover {
+    #navbar .nav-toggle:active, #navbar .nav-toggle:hover,
+    #navbar .main-navigation .menu-item > a:active,
+    #navbar .main-navigation .menu-item > a:hover {
       opacity: .9;
       color: #fff; }
-  #main-navbar.navbar-dark .nav-toggle,
-  #main-navbar.navbar-dark .navbar-nav .nav-link {
+  #navbar.navbar-dark .nav-toggle,
+  #navbar.navbar-dark .navbar-nav .nav-link {
     color: #fff; }
-  #main-navbar.js-is-stuck, #main-navbar.js-is-sticky {
+  #navbar.js-is-stuck, #navbar.js-is-sticky {
     background: #755c4e; }
-    #main-navbar.js-is-stuck .navbar-brand img, #main-navbar.js-is-sticky .navbar-brand img {
+    #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
       max-height: 60px; }
-      #main-navbar.js-is-stuck .navbar-brand img.sticky-logo, #main-navbar.js-is-sticky .navbar-brand img.sticky-logo {
+      #navbar.js-is-stuck .navbar-brand img.sticky-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo {
         display: block;
         opacity: 1; }
-      #main-navbar.js-is-stuck .navbar-brand img.sticky-logo ~ .regular-logo, #main-navbar.js-is-sticky .navbar-brand img.sticky-logo ~ .regular-logo {
+      #navbar.js-is-stuck .navbar-brand img.sticky-logo ~ .regular-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo ~ .regular-logo {
         display: none;
         opacity: 0; }
-  #main-navbar.js-is-stuck, #main-navbar.js-is-sticky--change {
+  #navbar.js-is-stuck, #navbar.js-is-sticky--change {
     height: 120px; }
 
 @media screen and (min-width: 1200px) and (max-width: 1599px) {
-  #main-navbar .main-navigation .menu-item > a {
+  #navbar .main-navigation .menu-item > a {
     font-size: 80%; } }
 
 @keyframes mobileMenuIn {
@@ -7653,7 +7653,7 @@ h6, .h6 {
     opacity: 0; } }
 
 @media screen and (max-width: 1200px) {
-  #main-navbar .mobile-nav {
+  #navbar .mobile-nav {
     animation-name: mobileMenuOut;
     animation-duration: .3s;
     animation-timing-function: ease-in-out;
@@ -7671,28 +7671,28 @@ h6, .h6 {
     left: 0;
     background: #20234c;
     display: flex; }
-  #main-navbar .mobile-nav.active {
+  #navbar .mobile-nav.active {
     opacity: 1;
     display: flex !important;
     visibility: visible !important;
     animation-name: mobileMenuIn;
     transition: visibility .1s ease-in-out 0s; }
-  #main-navbar .main-navigation .seperator {
+  #navbar .main-navigation .seperator {
     display: block;
     padding-top: 2em; }
-  #main-navbar .main-navigation .menu-item {
+  #navbar .main-navigation .menu-item {
     padding: 0.5em 0; }
-  #main-navbar .nav-toggle,
-  #main-navbar .main-navigation .menu-item > a {
+  #navbar .nav-toggle,
+  #navbar .main-navigation .menu-item > a {
     font-size: 30px; }
   body.navigation-overlay {
     overflow: hidden; } }
 
 @media screen and (max-width: 576px) {
-  #main-navbar:not(.js-is-stuck):not(.js-is-sticky) .mobile-logo {
+  #navbar:not(.js-is-stuck):not(.js-is-sticky) .mobile-logo {
     display: block;
     opacity: 1; }
-    #main-navbar:not(.js-is-stuck):not(.js-is-sticky) .mobile-logo + .regular-logo {
+    #navbar:not(.js-is-stuck):not(.js-is-sticky) .mobile-logo + .regular-logo {
       display: none;
       opacity: 0; } }
 

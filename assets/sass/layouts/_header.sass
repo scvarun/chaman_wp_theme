@@ -10,7 +10,7 @@
 .navbar > .container-fluid > .row
   flex: 1
 
-#main-navbar
+#navbar
   height: $navbar-height
   justify-content: space-between
   background: none
@@ -69,7 +69,7 @@
     height: $sticky-navbar-height
 
 @media screen and (min-width: map-get($grid-breakpoints, 'lg')) and (max-width: 1599px)
-  #main-navbar
+  #navbar
     .main-navigation .menu-item > a
       font-size: $small-font-size
 
@@ -86,7 +86,7 @@
     opacity: 0
 
 @media screen and (max-width: map-get($grid-breakpoints, 'lg'))
-  #main-navbar
+  #navbar
     .mobile-nav
       animation-name: mobileMenuOut
       animation-duration: .3s
@@ -120,7 +120,7 @@
     overflow: hidden
     
 @media screen and (max-width: map-get($grid-breakpoints, 'sm'))
-  #main-navbar
+  #navbar
     &:not(.js-is-stuck):not(.js-is-sticky)
       .mobile-logo
         display: block
