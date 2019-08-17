@@ -1,0 +1,50 @@
+/*
+ * --------------------
+ * Typography
+ * --------------------
+ */
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6
+  font-weight: bold
+
+h1, .h1
+  font-size: $h1-font-size
+  line-height: $h1-line-height
+  letter-spacing: $h1-letter-spacing
+
+h2, .h2
+  font-size: $h2-font-size
+  line-height: $h2-line-height
+  letter-spacing: $h2-letter-spacing
+
+h3, .h3
+  font-size: $h3-font-size
+  line-height: $h3-line-height
+  letter-spacing: $h3-letter-spacing
+
+h4, .h4
+  font-size: $h4-font-size
+  line-height: $h4-line-height
+  letter-spacing: $h4-letter-spacing
+
+h5, .h5
+  font-size: $h5-font-size
+  line-height: $h5-line-height
+  letter-spacing: $h5-letter-spacing
+
+h6, .h6
+  font-size: $h6-font-size
+  line-height: $h6-line-height
+  letter-spacing: $h6-letter-spacing
+
+.text-body-color
+  color: $body-color
+
+@media screen and (max-width: 1400px)
+  h1, .h1
+    font-size: #{rem(90)} !important
+  h2, .h2
+    font-size: #{rem(72)} !important
+  h3, .h3
+    font-size: #{rem(60)} !important

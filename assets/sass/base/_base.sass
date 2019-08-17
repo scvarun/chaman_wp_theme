@@ -1,0 +1,44 @@
+/*
+ * --------------------
+ * Base Styling
+ * --------------------
+ */
+$wrapper-bg: #e5e5e5
+
+.wrapper
+  position: relative
+  background: $wrapper-bg
+  min-height: 100vh
+
+figure
+  img
+    width: 100%
+    height: auto
+
+svg
+  max-width: 100%
+
+a
+  transition: $transition-base
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+p
+  a
+    color: inherit
+    text-decoration: underline
+
+ul, ol, dl
+  padding-left: 1.2em
+  li:not(:last-child)
+    margin-bottom: 1em
+
+.large-list
+  padding-left: 1.2em
+  li:not(:last-child)
+    margin-bottom: 1em
+
+@media screen and (max-width: map-get($grid-breakpoints, 'sm'))
+  *
+    word-wrap: break-word
+    

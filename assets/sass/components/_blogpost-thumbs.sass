@@ -1,0 +1,26 @@
+/*
+ * --------------------
+ * Blogpost Thumbs
+ * --------------------
+ */
+
+.blogpost-thumbs
+  .post
+    margin-bottom: 50px
+    figure
+      position: relative
+      margin-bottom: 55px
+      a
+        @include position(absolute, 0)
+        text-indent: -9999px
+        opacity: 0
+  .entry-title
+    margin-bottom: 25px
+    a
+      display: block
+      &, &:hover
+        text-decoration: none
+  &.text-white
+    .entry-title
+      a
+        color: $white

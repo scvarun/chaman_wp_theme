@@ -1,0 +1,76 @@
+/*
+ * --------------------
+ * Radius
+ * --------------------
+ */
+%radius-0, .radius-0
+  border-radius: 0
+%radius-full, .radius-full
+  border-radius: 100%
+
+@for $i from 2 through 20
+  %radius-#{$i}, .radius-#{$i}
+    border-radius: #{$i}px
+    overflow: hidden
+
+/*
+ * --------------------
+ * Position
+ * --------------------
+ */
+%pos-static, .pos-static
+  position: static
+
+%pos-fixed, .pos-fixed
+  position: fixed
+
+%pos-relative, .pos-relative
+  position: relative
+
+%pos-absolute, .pos-absolute
+  position: absolute 
+
+%pos-top, .pos-top
+  top: 0
+
+%pos-right, .pos-right
+  right: 0
+
+%pos-left, .pos-left
+  left: 0
+
+%pos-bottom, .pos-bottom
+  bottom: 0
+
+%pos-left, .pos-left
+  left: 0
+
+%pos-0, .pos-0
+  @extend .pos-absolute;
+  @extend .pos-left;
+  @extend .pos-right;
+  @extend .pos-bottom;
+  @extend .pos-top;
+
+%horizontal-center,
+.horizontal-center
+  @extend %pos-absolute;
+  left: 50%
+  transform: translateX(-50%)
+
+%vertical-center,
+.vertical-center
+  @extend %pos-absolute;
+  top: 50%
+  transform: translateY(-50%)
+
+%absolute-center,
+.absolute-center
+  @extend %vertical-center, %horizontal-center;
+  transform: translate(-50%, -50%)
+
+@each $grid, $value in $grid-breakpoints
+  visible-#{$grid}
+    visibility: visible
+  invisible-#{$grid}
+    visibility: invisible

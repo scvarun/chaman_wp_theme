@@ -1,0 +1,11 @@
+/*
+ * --------------------
+ * Mixins and Functions
+ * --------------------
+ */
+
+@function rem($font-size) 
+  @return ( $font-size ) / 16 * 1rem
+
+@function em($font-size-target, $font-size-base) 
+  @return ( $font-size-target / $font-size-base ) * 1em
