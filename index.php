@@ -24,7 +24,7 @@ get_header();
           <div class="container-fluid p-0">
             <div class="row no-gutters">
               <?php if( has_post_thumbnail() ) : ?>
-                <div class="col entry-thumbnail-side" style="background-image: url(<?php get_the_post_thumbnail_url(get_the_ID(),'unifato-archive'); ?>);">
+                <div class="col entry-thumbnail-side" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(),'unifato-archive'); ?>);">
                   <a href="<?php the_permalink() ?>" class="pos-0 opacity-0"></a>
                 </div><!-- /.col -->
               <?php endif; ?>
@@ -33,7 +33,7 @@ get_header();
                 <?php if( has_post_thumbnail() ) : ?>
                   <figure class="d-block d-lg-none entry-thumbnail">
                     <?php
-                      the_post_thumbnail( 'unifato-archive', array(
+                      the_post_thumbnail( 'full', array(
                         'alt' => the_title_attribute( array(
                           'echo' => false,
                         ) )

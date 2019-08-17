@@ -59,8 +59,13 @@ if ( ! function_exists( 'unifato_body_classes' ) ) {
 	 */
 	function unifato_body_classes( $classes ) {
 		// Adds a class of hfeed to non-singular pages.
-		if ( ! is_singular() ) {
-			$classes[] = 'hfeed';
+		if ( is_single() ) {
+
+			if( has_category( 'news' ) )
+				$classes[] = 'category-news';
+
+			if( has_category( 'job-listing' ) )
+				$classes[] = 'category-job-listing';
 		}
 
 		$classes[] = 'header-overlay';

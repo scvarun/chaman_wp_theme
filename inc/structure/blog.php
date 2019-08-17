@@ -219,6 +219,18 @@ if ( ! function_exists( 'unifato_read_more' ) ) {
 	}
 }
 
+if ( ! function_exists( 'unifato_excerpt_function' ) ) {
+  /**
+   * Read More button after blog posts
+   *
+   * @since 1.0.0
+   */
+  function unifato_excerpt_function() {
+    return 35;
+  }
+}
+add_filter( 'excerpt_length', 'unifato_excerpt_function', 999 );
+
 if ( ! function_exists( 'unifato_post_categories' ) ) {
   add_action( 'unifato_entry_footer', 'unifato_post_categories', 20 );
 
