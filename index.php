@@ -19,37 +19,56 @@ get_header();
     <div class="row">
       <main id="main" class="main-content">
 
-        <article class="post type-post has-post-thumbnail category-news" itemtype="https://schema.org/CreativeWork" itemscope>
+        <?php while ( have_posts() ) : the_post(); ?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php unifato_the_microdata( 'article' ); ?>>
           <div class="container-fluid p-0">
             <div class="row no-gutters">
-              <div class="col entry-thumbnail-side" style="background-image: url(assets/demo/home/posts/post-1.jpg);">
-                <a href="page-single-news.php" class="pos-0 opacity-0"></a>
-              </div><!-- /.col -->
+              <?php if( has_post_thumbnail() ) : ?>
+                <div class="col entry-thumbnail-side" style="background-image: url(<?php get_the_post_thumbnail_url(get_the_ID(),'unifato-archive'); ?>);">
+                  <a href="<?php the_permalink() ?>" class="pos-0 opacity-0"></a>
+                </div><!-- /.col -->
+              <?php endif; ?>
 
               <main class="col-lg-6">
-                <figure class="d-block d-lg-none entry-thumbnail">
-                  <img src="assets/demo/home/posts/post-1.jpg" alt="" />
-                  <a href="page-single-news.php">This is a new story</a>
-                </figure>
+                <?php if( has_post_thumbnail() ) : ?>
+                  <figure class="d-block d-lg-none entry-thumbnail">
+                    <?php
+                      the_post_thumbnail( 'unifato-archive', array(
+                        'alt' => the_title_attribute( array(
+                          'echo' => false,
+                        ) )
+                      ) );
+                    ?>
+                    <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+                  </figure>
+                <?php endif; ?>
 
                 <div class="post-content">
                   <h4 class="entry-title" itemprop="headline">
-                    <a href="page-single-news.php" rel="bookmark" itemprop="url">This is a new story</a>
+                    <a href="<?php the_permalink() ?>" rel="bookmark" itemprop="url"><?php the_title() ?></a>
                   </h4>
 
                   <div class="entry-content" itemprop="text">
-                    <p>For each student, we identify and nurture their potential to grow into someone who will make a difference in India and the world.</p>
-                    <p>Through engaging learning experiences their leadership — skills will be developed and they will emerge as confident individuals with high self-esteem. In our leadership academy, we will invite role models from different sections of society to inspire students to develop their leadership skills.</p>
+                    <?php 
+                      if ( has_excerpt() ) {
+                        the_excerpt();
+                      } else {
+                        the_content( "" );
+                      }
+                    ?>
                   </div><!-- /.entry-content -->
 
                   <footer class="entry-footer">
-                    <a href="page-single-news.php" class="btn btn-link read-more-link">Read more</a>
+                    <a href="<?php the_permalink() ?>" class="btn btn-link read-more-link">Read more</a>
                   </footer>
+
                 </div><!-- /.post-content -->
+
               </main><!-- /.col-md-6 -->
             </div><!-- /.row -->
           </div><!-- /.container-fluid -->
         </article><!-- /.post -->
+        <?php endwhile; ?>
 
       </main><!-- /.main-content -->
     </div><!-- /.row -->
