@@ -67,6 +67,8 @@
   &.js-is-stuck,
   &.js-is-sticky--change
     height: $sticky-navbar-height
+  .elementor-editor-active &
+    pointer-events: none
 
 @media screen and (min-width: map-get($grid-breakpoints, 'lg')) and (max-width: 1599px)
   #navbar

@@ -68,7 +68,9 @@ if ( ! function_exists( 'unifato_body_classes' ) ) {
 				$classes[] = 'category-job-listing';
 		}
 
-		$classes[] = 'header-overlay';
+		if(get_post_meta(get_the_id(), '__header__overlay_header', true) == 'yes') {
+			$classes[] = 'header-overlay';
+		}
 
 		// Adds a class of no-sidebar when there is no sidebar present.
 		// if ( ! is_active_sidebar( 'sidebar-1' ) ) {

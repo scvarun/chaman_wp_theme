@@ -24,8 +24,8 @@ if ( ! function_exists( 'unifato_construct_logo' ) ) {
 		$logo_images = array();
 
 		$logo_list = [
-			'mobile' 		=> 'unifato_options__title_tagline__mobilr_logo', 
-			'sticky' 		=> 'unifato_options__title_tagline__sticky_logo',
+			'mobile' 		=> 'chaman_options__title_tagline__mobile_logo', 
+			'sticky' 		=> 'chaman_options__title_tagline__sticky_logo',
 			'default' 	=> 'custom_logo',
 		];
 
