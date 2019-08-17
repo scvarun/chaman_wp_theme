@@ -1,0 +1,21 @@
+{
+  "name": "chaman_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass assets/sass/ -o assets/css/ --source-map true --recursive false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://varun9509@bitbucket.org/varun9509/chaman_html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/varun9509/chaman_html#readme"
+}
