@@ -26,7 +26,7 @@
       max-height: $navbar-logo-height
       opacity: 1
       transition: $transition-base
-      &:not(.regular-logo)
+      &:not(.default-logo)
         display: none
         opacity: 0
   .main-navigation
@@ -61,7 +61,7 @@
         &.sticky-logo
           display: block
           opacity: 1
-        &.sticky-logo ~ .regular-logo
+        &.sticky-logo ~ .default-logo
           display: none
           opacity: 0
   &.js-is-stuck,
@@ -125,6 +125,6 @@
       .mobile-logo
         display: block
         opacity: 1
-        + .regular-logo
+        + .default-logo
           display: none
           opacity: 0

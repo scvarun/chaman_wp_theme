@@ -7598,7 +7598,7 @@ h6, .h6 {
       max-height: 100px;
       opacity: 1;
       transition: all 0.2s ease-in-out; }
-      #navbar .navbar-brand img:not(.regular-logo) {
+      #navbar .navbar-brand img:not(.default-logo) {
         display: none;
         opacity: 0; }
   #navbar .main-navigation .menu-item {
@@ -7630,7 +7630,7 @@ h6, .h6 {
       #navbar.js-is-stuck .navbar-brand img.sticky-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo {
         display: block;
         opacity: 1; }
-      #navbar.js-is-stuck .navbar-brand img.sticky-logo ~ .regular-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo ~ .regular-logo {
+      #navbar.js-is-stuck .navbar-brand img.sticky-logo ~ .default-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo ~ .default-logo {
         display: none;
         opacity: 0; }
   #navbar.js-is-stuck, #navbar.js-is-sticky--change {
@@ -7692,7 +7692,7 @@ h6, .h6 {
   #navbar:not(.js-is-stuck):not(.js-is-sticky) .mobile-logo {
     display: block;
     opacity: 1; }
-    #navbar:not(.js-is-stuck):not(.js-is-sticky) .mobile-logo + .regular-logo {
+    #navbar:not(.js-is-stuck):not(.js-is-sticky) .mobile-logo + .default-logo {
       display: none;
       opacity: 0; } }
 
