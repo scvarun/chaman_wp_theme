@@ -43,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				'menu'				=> $menu,
 				'container'		=> false,
 				'menu_id'			=> 'navbar-menu-mobile',
-				'menu_class'	=> 'navbar-nav man-navigation',
+				'menu_class'	=> 'navbar-nav main-navigation',
 				'depth'				=> 1
 			)); ?>
 		</div><!-- /.nav-container -->
@@ -59,7 +59,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				'menu'				=> $menu,
 				'container'		=> false,
 				'menu_id'			=> 'navbar-menu-main',
-				'menu_class'	=> 'navbar-nav man-navigation',
+				'menu_class'	=> 'navbar-nav main-navigation',
 				'depth'				=> 1
 			)); ?>
 		</div><!-- /.nav-container -->
