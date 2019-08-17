@@ -27,7 +27,7 @@
     <div class="row justify-content-center" style="padding-top: 230px; padding-bottom: 105px;">
       <div class="col-lg-5 d-flex flex-column align-items-center">
         <figure style="margin-bottom: 60px;">
-          <img src="assets/img/footer-logo.png" alt="Footer logo">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/footer-logo.png" alt="" />
         </figure>
         <p style="font-size: .7em; text-transform: uppercase; color: #fff; text-align: center">Cookie Policy -- Legal Notices -- Copyright 2019 Chaman Bhartiya School of leadership. Maintained by Patch Silver.</p>
       </div><!-- /.col -->
