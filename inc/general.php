@@ -55,13 +55,14 @@ if ( ! function_exists( 'unifato_main_footer' ) ) {
 
   function unifato_main_footer() {
     try {
-      if(!class_exists('UnifatoAddons\\Unifato_Addons')) {
+      if(!class_exists('ChamanAddons\\Chaman_Addons')) {
         //Plugin Not exists or activated
-        throw new Exception('\"Unifato Addons\" not installed or activated');
+        throw new Exception('\"Chaman Addons\" not installed or activated');
       }
 
+
       /* Values from Theme Options */
-      $footer = get_theme_mod('unifato_options__footer__default_footer');
+      $footer = get_theme_mod('chaman_options__footer__default_footer');
 
       if($footer == 'default') {
         echo get_template_part( 'inc/structure/footer', 'none' );
