@@ -7346,6 +7346,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 p a {
   color: inherit;
   text-decoration: underline; }
+  .elementor h1 a, .elementor h2 a, .elementor h3 a, .elementor h4 a, .elementor h5 a, .elementor h6 a, .elementor
+  .h1 a, .elementor .h2 a, .elementor .h3 a, .elementor .h4 a, .elementor .h5 a, .elementor .h6 a, .elementor
+  p a {
+    text-decoration: underline; }
 
 ul, ol, dl {
   padding-left: 1.2em; }
