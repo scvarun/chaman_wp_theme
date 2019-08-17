@@ -7635,6 +7635,8 @@ h6, .h6 {
         opacity: 0; }
   #navbar.js-is-stuck, #navbar.js-is-sticky--change {
     height: 120px; }
+  .elementor-editor-active #navbar {
+    pointer-events: none; }
 
 @media screen and (min-width: 1200px) and (max-width: 1599px) {
   #navbar .main-navigation .menu-item > a {
