@@ -30,7 +30,7 @@
         display: none
         opacity: 0
   .main-navigation
-    .nav-item
+    .menu-item
       padding: 0 1.5em
       margin-bottom: 0
     .seperator
@@ -38,13 +38,16 @@
   .mobile-nav
     display: none
   .nav-toggle,
-  .main-navigation .nav-link
+  .main-navigation .menu-item > a
     text-transform: uppercase
     font-weight: 700
     font-size: 30px
     text-decoration: none
+    color: #fff
+    &:active,
     &:hover
       opacity: .9
+      color: #fff
   &.navbar-dark
     .nav-toggle,
     .navbar-nav .nav-link
@@ -67,7 +70,7 @@
 
 @media screen and (min-width: map-get($grid-breakpoints, 'lg')) and (max-width: 1599px)
   #main-navbar
-    .main-navigation .nav-link
+    .main-navigation .menu-item > a
       font-size: $small-font-size
 
 @keyframes mobileMenuIn
@@ -86,9 +89,9 @@
   #main-navbar
     .mobile-nav
       animation-name: mobileMenuOut
-      animation-duration: .6s
+      animation-duration: .3s
       animation-timing-function: ease-in-out
-      transition: visibility .1s ease-in-out .6s
+      transition: visibility .1s ease-in-out .3s
       flex-flow: column
       align-items: flex-start
       padding: 20px
@@ -108,10 +111,10 @@
       .seperator
         display: block
         padding-top: 2em
-      .nav-item
-        @include padding(null 0);
+      .menu-item
+        @include padding(.5em 0);
     .nav-toggle,
-    .main-navigation .nav-link
+    .main-navigation .menu-item > a
       font-size: 30px
   body.navigation-overlay
     overflow: hidden

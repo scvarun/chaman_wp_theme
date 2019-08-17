@@ -54,7 +54,7 @@
 #CHAMAN_LOGO_SVG rect:nth-child(10), #CHAMAN_LOGO_SVG path:nth-child(10) {
   animation-delay: 2s; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   #CHAMAN_LOGO_SVG {
     transform: rotate(90deg); } }
 
