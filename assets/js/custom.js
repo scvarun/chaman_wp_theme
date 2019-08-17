@@ -12,18 +12,18 @@
 
       var tabs = admissionForm.querySelectorAll('.form-tabs a');
 
-      _.each(tabs, function(tabLink){
+      lodash.each(tabs, function(tabLink){
         tabLink.addEventListener('click', function(e) {
           e.preventDefault();
           var hash = this.hash;
           var content = document.querySelector(hash);
           var divs = content.parentNode.children;
           var links = this.parentNode.children;
-          _.each(links, function(l) {
+          lodash.each(links, function(l) {
             if(l !== tabLink)
               l.dataset.open = "false";
           });
-          _.each(divs, function(div) {
+          lodash.each(divs, function(div) {
             div.dataset.open = "false";
           });
           this.dataset.open = "true";
