@@ -1,0 +1,99 @@
+/*
+ * --------------------
+ * Blog Styling
+ * --------------------
+ */
+
+.main-content
+  .post
+    main
+      margin: 0 5.2305%
+      .post-content
+        background: $orange
+        padding: 70px 7.35% 80px
+      .post-categories
+        list-style: none
+        padding: 0
+        li
+          display: inline-block
+          text-transform: uppercase
+          font-weight: bold
+          font-size: $h6-font-size
+        a
+          color: $white
+          &:hover
+            text-decoration: none
+    .entry-thumbnail-side
+      padding: 0
+      background-size: cover
+      background-repeat: no-repeat
+      background-size: cover
+      a, a:hover, a:active
+        outline: none
+      .entry-thumbnail
+        margin: 0
+        width: 100%
+    .entry-thumbnail
+      margin-bottom: 0
+      a
+        @include position(absolute, 0)
+        opacity: 0
+        &:hover, &:active
+          outline: none
+    .entry-title
+      margin-bottom: 20px
+      color: $white
+      a
+        color: $white
+        text-decoration: none
+        &:hover
+          text-decoration: none
+    .entry-content
+      color: $white
+    .entry-footer
+      .read-more-link
+        color: $white
+        font-weight: bold
+        text-decoration: underline
+    &:not(:last-child)
+      margin-bottom: 140px
+    &:nth-child(odd)
+      .entry-thumbnail-side
+        order: 1
+    &.category-news main .post-content
+      background: $brown
+    &.category-job-listing main .post-content
+      background: $blue
+  > footer
+    display: flex
+    flex-flow: row
+    justify-content: center
+    margin-bottom: 290px
+
+.single
+  .content-wrapper
+    background: $orange
+  .main-content
+    padding-top: 40px
+    .entry-thumbnail
+      margin-bottom: 40px
+    .post
+      main
+        background: none
+        padding: 0
+        font-size: rem(30)
+        line-height: rem(40)
+        font-weight: normal
+      .entry-title
+        margin-bottom: 105px
+    > footer
+      .back-to-posts-btn
+        font-weight: 500
+        border-radius: 0
+        border-width: 3px
+        padding: 20px 100px
+        font-size: 30px
+  &.category-news .content-wrapper
+    background: $brown
+  &.category-job-listing .content-wrapper
+    background: $blue

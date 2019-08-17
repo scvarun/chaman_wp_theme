@@ -1,0 +1,61 @@
+$grid-gutter-width:           100px;
+
+/* Colors */
+$brown: #755c4e;
+$orange: #ec633c;
+$blue: #20234c;
+
+$primary: $orange;
+$secondary: $blue;
+$tertiary: $brown;
+
+$body-color: #765c4f;
+
+$white: #e5e5e5;
+
+$theme-colors: ("white": $white);
+
+/* Fonts */
+$font-family-sans-serif: 'GTAmerica', Arial, sans-serif;
+
+$font-size-base:              1.375rem;
+$line-height-base:            32/22;
+$font-weight-base:            bold;
+$paragraph-margin-bottom:     40/22 * 1em;
+
+$h1-font-size:                #{rem(160)};
+$h1-line-height:              1em;
+$h1-letter-spacing:           -0.03em;
+
+$h2-font-size:                #{rem(110)};
+$h2-line-height:              #{em(120, 110)};
+$h2-letter-spacing:           -.03em;
+
+$h3-font-size:                #{rem(72)};
+$h3-line-height:              #{em(90, 72)};
+$h3-letter-spacing:           -0.015em;
+
+$h4-font-size:                #{rem(50)};
+$h4-line-height:              #{em(60, 50)};
+$h4-letter-spacing:           -0.015em;
+
+$h5-font-size:                #{rem(40)};
+$h5-line-height:              #{em(50, 40)};
+$h5-letter-spacing:           -0.015em;
+
+$h6-font-size:                #{rem(30)};
+$h6-line-height:              #{em(36, 30)};
+$h6-letter-spacing:           -0.015em;
+
+/* Header */
+$navbar-height:               200px;
+$navbar-logo-height:          100px;
+
+$sticky-navbar-height:        120px;
+$sticky-logo-height:          60px;
+
+/* Forms */
+$input-border-width:          0;
+$input-border-radius:         0;
+$input-border-radius-lg:      0;
+$input-border-radius-sm:      0;

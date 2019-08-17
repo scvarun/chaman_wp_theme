@@ -1,0 +1,25 @@
+/*
+ * --------------------
+ * Testimonial
+ * --------------------
+ */
+
+.testimonial
+  .testimonial-title
+    font-weight: 900
+    font-style: italic
+    margin-bottom: rem(65)
+  .testimonial-user-info
+    text-transform: uppercase
+    margin-bottom: rem(25)
+  p
+    font-size: $h6-font-size
+    line-height: $h6-line-height
+    font-weight: normal
+
+@media screen and (min-width: map-get($grid-breakpoints, "lg"))
+  .testimonial
+    p
+      margin-bottom: 2em
+    &.testimonial-right
+      flex-flow: row-reverse

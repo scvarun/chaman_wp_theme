@@ -1,0 +1,32 @@
+/*
+ * --------------------
+ * Progressbar
+ * --------------------
+ */
+
+.custom-progress-bar
+  display: flex
+  flex-flow: column
+  align-items: center
+  position: relative
+  .progress
+    width: 100%
+    max-width: 260px
+    height: 480px
+    background: none
+    align-items: flex-end
+    border-radius: 0
+  .progress-bar
+    width: 100%
+  .progress-content
+    display: flex
+    flex-flow: column
+    align-items: center
+    justify-content: flex-end
+    text-align: center
+    @include position(absolute, 0);
+  .progress-title
+    margin-bottom: .65em
+  .progress-subtitle
+    text-transform: uppercase
+    margin-bottom: 1.6em
