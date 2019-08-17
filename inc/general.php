@@ -39,10 +39,6 @@ if ( ! function_exists( 'unifato_theme_scripts' ) ) {
 		
     wp_enqueue_script( 'unifato-main', $dir_uri . '/js/template.js', array('jquery'), THEME_VERSION, true);
     wp_enqueue_script( 'unifato-custom', $dir_uri . '/js/custom.js', array('jquery'), THEME_VERSION, true);
-
-		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-  		wp_enqueue_script( 'comment-reply' );
-  	}
 	}
 }
 
