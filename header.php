@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <body <?php body_class(); ?> <?php unifato_the_microdata( 'body' ); ?>>
 <div id="wrapper" class="wrapper">
 
-	<nav id="navbar" <?php unifato_the_element_classes( 'header' ); ?> <?php unifato_the_microdata( 'header' ); ?> role="banner">
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-wrapper" <?php unifato_the_microdata( 'header' ); ?> role="banner">
 		<?php unifato_construct_logo() ?>
 
 		<?php
