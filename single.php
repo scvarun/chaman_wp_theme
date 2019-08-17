@@ -19,7 +19,9 @@ get_header();
     <div class="row">
       <main id="main" class="main-content">
 
-        <?php while ( have_posts() ) : the_post(); ?>
+      <?php 
+      if ( have_posts() ) :
+        while ( have_posts() ) : the_post(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php unifato_the_microdata( 'article' ); ?>>
           <div class="container-fluid">
             <div class="row">
@@ -58,7 +60,8 @@ get_header();
             </div><!-- /.row -->
           </div><!-- /.container-fluid -->
         </article><!-- /.post -->
-        <?php endwhile; ?>
+        <?php endwhile; 
+        endif;?>
 
         <footer>
           <a href=<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn btn-outline-white back-to-posts-btn">Back to stories</a>
