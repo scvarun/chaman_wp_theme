@@ -19,12 +19,14 @@ get_header();
     <div class="row">
       <main id="main" class="main-content">
 
-        <?php while ( have_posts() ) : the_post(); ?>
+      <?php 
+      if ( have_posts() ) :
+        while ( have_posts() ) : the_post(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php unifato_the_microdata( 'article' ); ?>>
           <div class="container-fluid p-0">
             <div class="row no-gutters">
               <?php if( has_post_thumbnail() ) : ?>
-                <div class="col entry-thumbnail-side" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(),'unifato-archive'); ?>);">
+                <div class="col entry-thumbnail-side" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'unifato-archive'); ?>);">
                   <a href="<?php the_permalink() ?>" class="pos-0 opacity-0"></a>
                 </div><!-- /.col -->
               <?php endif; ?>
@@ -33,11 +35,7 @@ get_header();
                 <?php if( has_post_thumbnail() ) : ?>
                   <figure class="d-block d-lg-none entry-thumbnail">
                     <?php
-                      the_post_thumbnail( 'full', array(
-                        'alt' => the_title_attribute( array(
-                          'echo' => false,
-                        ) )
-                      ) );
+                      the_post_thumbnail( 'full' );
                     ?>
                     <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
                   </figure>
@@ -68,7 +66,13 @@ get_header();
             </div><!-- /.row -->
           </div><!-- /.container-fluid -->
         </article><!-- /.post -->
-        <?php endwhile; ?>
+        <?php 
+        endwhile;
+        unifato_paging_nav();
+      else :
+        get_template_part( 'template-parts/content', 'none' );
+      endif;
+      ?>
 
       </main><!-- /.main-content -->
     </div><!-- /.row -->

@@ -294,8 +294,8 @@ if ( ! function_exists( 'unifato_paging_nav' ) ) {
 
   	if (!empty($links)):  ?>
 
-  		<nav class="site-pagination">
-  			<ul class="pager list-unstyled">
+  		<nav class="container-fluid site-pagination">
+  			<ul class="pager list-unstyled float-left">
   				<li class="prev-outer disabled">
   					<?php echo get_previous_posts_link('<i class="feather-chevron-left"></i>'); ?>
   				</li>
@@ -318,7 +318,7 @@ if ( ! function_exists( 'unifato_paging_nav' ) ) {
   				</li>
   			</ul><!-- /.pager -->
 
-        <span class="page-info">
+        <span class="page-info float-right">
           <?php
             echo esc_html__( 'Page ', 'unifato' ) . $args['current'] . esc_html__( ' of ', 'unifato' ) . $max_num_pages;
             // echo esc_html__( 'Page ', 'unifato' ) . ( get_query_var('paged') ? get_query_var('paged') : 1 ) . esc_html__( ' of ', 'unifato' ) . $wp_query->max_num_pages;
