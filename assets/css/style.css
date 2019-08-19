@@ -7490,7 +7490,9 @@ h6, .h6 {
 
 @media screen and (max-width: 768px) {
   .blogpost-thumbs {
-    margin-bottom: 0; }
+    margin: 0; }
+    .blogpost-thumbs > div {
+      padding: 0; }
     .blogpost-thumbs article figure {
       margin-bottom: 20px !important; }
     .blogpost-thumbs .entry-title {
