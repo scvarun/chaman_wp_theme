@@ -6,16 +6,20 @@
 
 .testimonial
   .testimonial-title
+    font-size: 72px
+    line-height: 90px
     font-weight: 900
     font-style: italic
     margin-bottom: rem(65)
+  .testimonial-user-info, p
+    font-size: 30px
+    line-height: 40px
   .testimonial-user-info
+    font-weight: bold
     text-transform: uppercase
     margin-bottom: rem(25)
   p
-    font-size: $h6-font-size
-    line-height: $h6-line-height
-    font-weight: normal
+    font-weight: 500
 
 @media screen and (min-width: map-get($grid-breakpoints, "lg"))
   .testimonial
@@ -23,3 +27,12 @@
       margin-bottom: 2em
     &.testimonial-right
       flex-flow: row-reverse
+
+@media screen and (max-width: map-get($grid-breakpoints, 'md'))
+  .testimonial
+    .testimonial-title
+      font-size: 40px
+      line-height: 44px
+    .testimonial-user-info, p
+      font-size: 18px
+      line-height: 21px
