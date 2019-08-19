@@ -7490,12 +7490,17 @@ h6, .h6 {
   color: #e5e5e5; }
 
 @media screen and (max-width: 768px) {
-  .blogpost-thumbs .entry-title {
-    font-size: 24px;
-    line-height: 30px; }
-  .blogpost-thumbs .entry-content {
-    font-size: 12px;
-    line-height: 14px; } }
+  .blogpost-thumbs {
+    margin-bottom: 0; }
+    .blogpost-thumbs article figure {
+      margin-bottom: 20px !important; }
+    .blogpost-thumbs .entry-title {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 10px; }
+    .blogpost-thumbs .entry-content {
+      font-size: 12px;
+      line-height: 14px; } }
 
 /*
  * --------------------
