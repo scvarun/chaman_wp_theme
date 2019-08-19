@@ -86,8 +86,12 @@
       display: block; }
     #admission-form .form-tabs-content [data-open="false"] {
       display: none; }
-    #admission-form .form-tabs-content .form-control {
+    #admission-form .form-tabs-content .form-control, #admission-form .form-tabs-content .wpcf7-form-control {
       line-height: 70px;
       height: 70px; }
+
+.wpcf7-form-control {
+  line-height: 70px;
+  height: 70px; }
 
 /*# sourceMappingURL=custom.css.map */

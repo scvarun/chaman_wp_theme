@@ -27,13 +27,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php
 		if (has_nav_menu( 'mobile' )): ?>
-		<a href="javascript:void(0);" class="nav-toggle d-block d-lg-none" data-target="#navigation-1">
+		<a href="javascript:void(0);" class="nav-toggle d-block d-lg-none" data-target="#mobile-navigation">
 	    Menu
 	  </a>
 
 	  <!-- Mobile Navigation -->
-		<div class="nav-container mobile-nav invisible" data-target="#navigation-1">
-			<a href="javascript:void(0);" class="nav-toggle d-block d-lg-none mb-1" data-target="#navigation-1">
+		<div class="nav-container mobile-nav invisible" id="mobile-navigation">
+			<a href="javascript:void(0);" class="nav-toggle d-block d-lg-none mb-1" data-target="#mobile-navigation">
 	      <img src="<?php echo get_template_directory_uri() ?>/assets/img/mobile-nav-arrow.png" alt="" />
 	    </a>
 
