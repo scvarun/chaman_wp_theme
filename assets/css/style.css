@@ -7741,7 +7741,8 @@ h6, .h6 {
       padding-top: 2em; }
     #navbar .main-navigation .menu-item {
       padding: 0.5em 0; }
-    #navbar .nav-toggle,
+    #navbar .nav-toggle {
+      font-size: 18px; }
     #navbar .main-navigation .menu-item > a {
       font-size: 30px; }
     #navbar.js-is-stuck, #navbar.js-is-sticky {
