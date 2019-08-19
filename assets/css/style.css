@@ -7472,14 +7472,30 @@ h6, .h6 {
       opacity: 0; }
 
 .blogpost-thumbs .entry-title {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  font-size: 50px;
+  line-height: 56px;
+  letter-spacing: 0;
+  font-weight: bold; }
   .blogpost-thumbs .entry-title a {
     display: block; }
     .blogpost-thumbs .entry-title a, .blogpost-thumbs .entry-title a:hover {
       text-decoration: none; }
 
+.blogpost-thumbs .entry-content {
+  font-size: 22px;
+  line-height: 32px; }
+
 .blogpost-thumbs.text-white .entry-title a {
   color: #e5e5e5; }
+
+@media screen and (max-width: 576px) {
+  .blogpost-thumbs .entry-title {
+    font-size: 24px;
+    line-height: 30px; }
+  .blogpost-thumbs .entry-content {
+    font-size: 12px;
+    line-height: 14px; } }
 
 /*
  * --------------------
