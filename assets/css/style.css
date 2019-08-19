@@ -7708,38 +7708,44 @@ h6, .h6 {
     opacity: 0; } }
 
 @media screen and (max-width: 1200px) {
-  #navbar .mobile-nav {
-    animation-name: mobileMenuOut;
-    animation-duration: .3s;
-    animation-timing-function: ease-in-out;
-    transition: visibility .1s ease-in-out .3s;
-    flex-flow: column;
-    align-items: flex-start;
-    padding: 20px;
-    z-index: 100;
-    overflow: auto;
-    opacity: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #20234c;
-    display: flex; }
-  #navbar .mobile-nav.active {
-    opacity: 1;
-    display: flex !important;
-    visibility: visible !important;
-    animation-name: mobileMenuIn;
-    transition: visibility .1s ease-in-out 0s; }
-  #navbar .main-navigation .seperator {
-    display: block;
-    padding-top: 2em; }
-  #navbar .main-navigation .menu-item {
-    padding: 0.5em 0; }
-  #navbar .nav-toggle,
-  #navbar .main-navigation .menu-item > a {
-    font-size: 30px; }
+  #navbar {
+    height: auto;
+    padding: 25px 30px;
+    align-items: flex-start; }
+    #navbar .mobile-nav {
+      animation-name: mobileMenuOut;
+      animation-duration: .3s;
+      animation-timing-function: ease-in-out;
+      transition: visibility .1s ease-in-out .3s;
+      flex-flow: column;
+      align-items: flex-start;
+      padding: 20px;
+      z-index: 100;
+      overflow: auto;
+      opacity: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #20234c;
+      display: flex; }
+    #navbar .mobile-nav.active {
+      opacity: 1;
+      display: flex !important;
+      visibility: visible !important;
+      animation-name: mobileMenuIn;
+      transition: visibility .1s ease-in-out 0s; }
+    #navbar .main-navigation .seperator {
+      display: block;
+      padding-top: 2em; }
+    #navbar .main-navigation .menu-item {
+      padding: 0.5em 0; }
+    #navbar .nav-toggle,
+    #navbar .main-navigation .menu-item > a {
+      font-size: 30px; }
+    #navbar.js-is-stuck, #navbar.js-is-sticky {
+      align-items: center; }
   body.navigation-overlay {
     overflow: hidden; } }
 

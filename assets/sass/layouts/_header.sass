@@ -88,6 +88,9 @@
 
 @media screen and (max-width: map-get($grid-breakpoints, 'lg'))
   #navbar
+    height: auto
+    padding: 25px 30px
+    align-items: flex-start
     .mobile-nav
       animation-name: mobileMenuOut
       animation-duration: .3s
@@ -117,6 +120,9 @@
     .nav-toggle,
     .main-navigation .menu-item > a
       font-size: 30px
+    &.js-is-stuck,
+    &.js-is-sticky
+      align-items: center
   body.navigation-overlay
     overflow: hidden
     
