@@ -58,30 +58,36 @@
   #CHAMAN_LOGO_SVG {
     transform: rotate(90deg); } }
 
-#admission-form .form-tabs {
-  display: block;
-  background: #ec633c; }
-  #admission-form .form-tabs a {
-    display: inline-block;
-    color: #fff;
-    text-transform: uppercase; }
-    #admission-form .form-tabs a:not(:first-child) {
-      margin-right: 50px;
-      margin-left: 50px; }
-    #admission-form .form-tabs a:hover {
-      text-decoration: none; }
-    #admission-form .form-tabs a[data-open="false"] {
-      opacity: .7; }
-
-#admission-form .form-tabs-content {
-  background: #fff;
-  padding: 50px; }
-  #admission-form .form-tabs-content [data-open="true"] {
-    display: block; }
-  #admission-form .form-tabs-content [data-open="false"] {
-    display: none; }
-  #admission-form .form-tabs-content .form-control {
-    line-height: 70px;
-    height: 70px; }
+#admission-form {
+  margin-bottom: 190px; }
+  #admission-form h5 {
+    margin-bottom: 60px; }
+  #admission-form .form-group {
+    margin-bottom: 60px; }
+  #admission-form .form-tabs {
+    display: block;
+    background: #ec633c; }
+    #admission-form .form-tabs a {
+      display: inline-block;
+      color: #fff;
+      text-transform: uppercase; }
+      #admission-form .form-tabs a:not(:first-child) {
+        margin-right: 50px;
+        margin-left: 50px; }
+      #admission-form .form-tabs a:hover {
+        text-decoration: none; }
+      #admission-form .form-tabs a[data-open="false"] {
+        opacity: .7; }
+  #admission-form .form-tabs-content {
+    background: #fff;
+    margin-top: 50px;
+    padding: 50px; }
+    #admission-form .form-tabs-content [data-open="true"] {
+      display: block; }
+    #admission-form .form-tabs-content [data-open="false"] {
+      display: none; }
+    #admission-form .form-tabs-content .form-control {
+      line-height: 70px;
+      height: 70px; }
 
 /*# sourceMappingURL=custom.css.map */

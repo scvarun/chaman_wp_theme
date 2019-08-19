@@ -27,7 +27,7 @@ if ( ! function_exists( 'unifato_theme_scripts' ) ) {
     wp_enqueue_style( 'font-awesome', "//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css", false, THEME_VERSION, 'all' );
     wp_enqueue_style( 'wpos-slick-style', $dir_uri . '/vendors/slick-slider/slick.css', false, THEME_VERSION, 'all' );
 		wp_enqueue_style( 'unifato-main', $dir_uri . "/css/style.css", false, THEME_VERSION, 'all' );
-    // wp_enqueue_style( 'unifato-custom', $dir_uri . "/css/custom.css", false, THEME_VERSION, 'all' );
+    wp_enqueue_style( 'unifato-custom', $dir_uri . "/css/custom.css", false, THEME_VERSION, 'all' );
 
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bootstrap', $dir_uri . '/vendors/bootstrap/js/bootstrap.min.js', array('jquery'), THEME_VERSION, true);
