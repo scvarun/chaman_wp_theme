@@ -1,6 +1,9 @@
 (function($) {
   'use strict';
 
+  if( window.lodash === undefined )
+    window.lodash = _.noConflict();
+
   var Unifato = {
     init: function() {
       this.header();

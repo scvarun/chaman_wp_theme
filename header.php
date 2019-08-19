@@ -68,5 +68,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</nav><!-- #navbar -->
 
 	<div id="top"></div>
-	<div class="content-wrapper">
+	<div class="content-wrapper"<?php echo unifato_content_wrapper_attr(); ?>>
 		

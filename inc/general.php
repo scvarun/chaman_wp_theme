@@ -25,7 +25,7 @@ if ( ! function_exists( 'unifato_theme_scripts' ) ) {
 
 		wp_enqueue_style( 'unifato-fonts', $dir_uri . "/fonts/fonts.css", false, THEME_VERSION, 'all' );
     wp_enqueue_style( 'font-awesome', "//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css", false, THEME_VERSION, 'all' );
-    wp_register_style( 'wpos-slick-style', $dir_uri . '/vendors/slick-slider/slick.css', false, THEME_VERSION, 'all' );
+    wp_enqueue_style( 'wpos-slick-style', $dir_uri . '/vendors/slick-slider/slick.css', false, THEME_VERSION, 'all' );
 		wp_enqueue_style( 'unifato-main', $dir_uri . "/css/style.css", false, THEME_VERSION, 'all' );
     // wp_enqueue_style( 'unifato-custom', $dir_uri . "/css/custom.css", false, THEME_VERSION, 'all' );
 
@@ -35,7 +35,7 @@ if ( ! function_exists( 'unifato_theme_scripts' ) ) {
     wp_enqueue_script( 'lodash', $dir_uri . '/vendors/lodash/lodash.min.js', array('jquery'), THEME_VERSION, true);
     wp_enqueue_script( 'stickybits', $dir_uri . '/vendors/stickybits/stickybits.min.js', array('jquery'), THEME_VERSION, true);
 
-    wp_register_script( 'wpos-slick-jquery', $dir_uri . '/vendors/slick-slider/slick.min.js', array('jquery'), THEME_VERSION, true);
+    wp_enqueue_script( 'wpos-slick-jquery', $dir_uri . '/vendors/slick-slider/slick.min.js', array('jquery'), THEME_VERSION, true);
 		
     wp_enqueue_script( 'unifato-main', $dir_uri . '/js/template.js', array('jquery'), THEME_VERSION, true);
     wp_enqueue_script( 'unifato-custom', $dir_uri . '/js/custom.js', array('jquery'), THEME_VERSION, true);

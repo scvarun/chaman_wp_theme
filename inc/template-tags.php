@@ -68,7 +68,7 @@ if ( ! function_exists( 'unifato_body_classes' ) ) {
 				$classes[] = 'category-job-listing';
 		}
 
-		if(get_post_meta(get_the_id(), '__header__overlay_header', true) == 'yes') {
+		if(get_post_meta(get_the_id(), '__header__overlay_header', true) != 'no') {
 			$classes[] = 'header-overlay';
 		}
 
@@ -166,5 +166,31 @@ if ( ! function_exists( 'unifato_the_microdata' ) ) {
 	 */
 	function unifato_the_microdata( $context ) {
 		echo unifato_get_microdata( $context ); // WPCS: XSS ok, sanitization ok.
+	}
+}
+
+
+if ( ! function_exists( 'unifato_content_wrapper_attr' ) ) {
+	/**
+	 * Get any necessary microdata.
+	 *
+	 * @since 1.0
+	 *
+	 * @param string $context The element to target.
+	 * @return string Our final attribute to add to the element.
+	 */
+	function unifato_content_wrapper_attr() {
+		$ret = '';
+		$style = '';
+
+		$background = get_post_meta(get_the_id(), '__content__background', true);
+
+		if($background != '')
+			$style .= 'background: ' . $background . ';';
+
+		if( strlen($style) )
+			$ret .= ' style="' . $style . '"';
+
+		return $ret;
 	}
 }

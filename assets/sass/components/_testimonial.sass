@@ -19,7 +19,7 @@
 
 @media screen and (min-width: map-get($grid-breakpoints, "lg"))
   .testimonial
-    p
+    p:not(:last-child)
       margin-bottom: 2em
     &.testimonial-right
       flex-flow: row-reverse
