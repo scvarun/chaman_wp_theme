@@ -7457,37 +7457,36 @@ h6, .h6 {
  * Blogpost Thumbs
  * --------------------
  */
-.blogpost-thumbs article {
-  margin-bottom: 50px; }
-  .blogpost-thumbs article figure {
-    position: relative;
-    margin-bottom: 55px !important; }
-    .blogpost-thumbs article figure a {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      text-indent: -9999px;
-      opacity: 0; }
-
-.blogpost-thumbs .entry-title {
-  margin-bottom: 25px;
-  font-size: 50px;
-  line-height: 56px;
-  letter-spacing: 0;
-  font-weight: bold; }
-  .blogpost-thumbs .entry-title a {
-    display: block; }
-    .blogpost-thumbs .entry-title a, .blogpost-thumbs .entry-title a:hover {
-      text-decoration: none; }
-
-.blogpost-thumbs .entry-content {
-  font-size: 22px;
-  line-height: 32px; }
-
-.blogpost-thumbs.text-white .entry-title a {
-  color: #e5e5e5; }
+.blogpost-thumbs {
+  width: 100%; }
+  .blogpost-thumbs article {
+    margin-bottom: 50px; }
+    .blogpost-thumbs article figure {
+      position: relative;
+      margin-bottom: 55px !important; }
+      .blogpost-thumbs article figure a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-indent: -9999px;
+        opacity: 0; }
+  .blogpost-thumbs .entry-title {
+    margin-bottom: 25px;
+    font-size: 50px;
+    line-height: 56px;
+    letter-spacing: 0;
+    font-weight: bold; }
+    .blogpost-thumbs .entry-title a {
+      display: block; }
+      .blogpost-thumbs .entry-title a, .blogpost-thumbs .entry-title a:hover {
+        text-decoration: none; }
+  .blogpost-thumbs .entry-content {
+    font-size: 22px;
+    line-height: 32px; }
+  .blogpost-thumbs.text-white .entry-title a {
+    color: #e5e5e5; }
 
 @media screen and (max-width: 768px) {
   .blogpost-thumbs {
