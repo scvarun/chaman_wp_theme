@@ -7353,7 +7353,7 @@ h6, .h6 {
  */
 .main-content .post main .post-content {
   background: #ec633c;
-  padding: 70px 7.35% 80px; }
+  padding: 70px 50px 80px; }
 
 .main-content .post main .post-categories {
   list-style: none;
@@ -7425,6 +7425,10 @@ h6, .h6 {
   flex-flow: row;
   justify-content: center;
   margin-bottom: 290px; }
+
+@media (max-width: 1365.98px) {
+  .main-content .post main .post-content {
+    padding: 25px 30px 25px; } }
 
 /*
  * --------------------
