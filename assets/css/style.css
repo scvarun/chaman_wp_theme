@@ -6864,8 +6864,8 @@ ul, ol, dl {
     margin-right: -30px;
     margin-left: -30px; }
   [class*="col-"] {
-    margin-right: 30px;
-    margin-left: 30px; } }
+    padding-right: 30px;
+    padding-left: 30px; } }
 
 /*
  * --------------------
