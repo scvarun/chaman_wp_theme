@@ -7321,6 +7321,8 @@ h6, .h6 {
       padding: 0.5em 0; }
     #navbar .main-navigation > a {
       font-size: 30px; }
+    #navbar .navbar-brand img {
+      height: 60px; }
     #navbar.js-is-stuck, #navbar.js-is-sticky {
       align-items: center; }
     #navbar:not(.js-is-stuck):not(.js-is-sticky) .mobile-logo {
