@@ -2907,8 +2907,8 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.39062rem;
-  padding-bottom: 0.39062rem;
+  padding-top: 0.39063rem;
+  padding-bottom: 0.39063rem;
   margin-right: 1rem;
   font-size: 0.9375rem;
   line-height: inherit;
@@ -7294,6 +7294,14 @@ h6, .h6 {
         opacity: 0; }
   body.navigation-overlay {
     overflow: hidden; } }
+
+@media (max-width: 1365.98px) {
+  #navbar {
+    padding: 0 50px; } }
+
+@media (max-width: 1365.98px) {
+  #navbar {
+    padding: 0 30px; } }
 
 /*
  * --------------------
