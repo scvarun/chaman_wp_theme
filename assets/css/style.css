@@ -7298,7 +7298,9 @@ h6, .h6 {
 @media (max-width: 1365.98px) {
   #navbar {
     padding-right: 50px;
-    padding-left: 50px; } }
+    padding-left: 50px; }
+    #navbar .main-navigation .menu-item > a {
+      font-size: 18px; } }
 
 @media (max-width: 819.98px) {
   #navbar {
