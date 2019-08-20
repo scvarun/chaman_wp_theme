@@ -7004,7 +7004,8 @@ h6, .h6 {
   margin: 0;
   width: 100%;
   margin-right: -50px;
-  margin-left: -50px; }
+  margin-left: -50px;
+  display: flex; }
   .blogpost-thumbs .blogpost-thumbs-single {
     width: 33.33333%;
     margin-right: 50px;
