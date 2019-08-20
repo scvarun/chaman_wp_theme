@@ -7003,10 +7003,13 @@ h6, .h6 {
 .blogpost-thumbs {
   margin: 0;
   width: 100%; }
+  .blogpost-thumbs .slick-list {
+    margin-right: -100px;
+    margin-left: -100px; }
   .blogpost-thumbs .blogpost-thumbs-single {
     width: 33.33333%;
-    margin-right: 50px;
-    margin-left: 50px; }
+    margin-right: 100px;
+    margin-left: 100px; }
   .blogpost-thumbs article {
     margin-bottom: 50px; }
     .blogpost-thumbs article figure {
@@ -7036,10 +7039,22 @@ h6, .h6 {
   .blogpost-thumbs.text-white .entry-title a {
     color: #e5e5e5; }
 
+@media (max-width: 1599.98px) {
+  .blogpost-thumbs .slick-list {
+    margin-right: -50px;
+    margin-left: -50px; }
+  .blogpost-thumbs .blogpost-thumbs-single {
+    margin-right: 50px;
+    margin-left: 50px; } }
+
 @media (max-width: 819.98px) {
-  .blogpost-thumbs > [class*="col-"],
-  .blogpost-thumbs .slick-slide {
-    padding: 0; }
+  .blogpost-thumbs .slick-list {
+    margin-right: -30px;
+    margin-left: -30px; }
+  .blogpost-thumbs .blogpost-thumbs-single {
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 30px; }
   .blogpost-thumbs article figure {
     margin-bottom: 20px !important; }
   .blogpost-thumbs .entry-title {
