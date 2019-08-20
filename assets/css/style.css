@@ -7085,11 +7085,11 @@ h6, .h6 {
   .testimonial p:last-child {
     margin-bottom: 0; }
 
-.testimonial p:not(:last-child) {
-  margin-bottom: 2em; }
-
-.testimonial.testimonial-right {
-  flex-flow: row-reverse; }
+@media (min-width: 1366px) {
+  .testimonial p:not(:last-child) {
+    margin-bottom: 2em; }
+  .testimonial.testimonial-right {
+    flex-flow: row-reverse; } }
 
 @media (max-width: 1365.98px) {
   .testimonial .testimonial-title {
