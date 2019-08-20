@@ -7297,11 +7297,13 @@ h6, .h6 {
 
 @media (max-width: 1365.98px) {
   #navbar {
-    padding: 0 50px; } }
+    padding-right: 50px;
+    padding-left: 50px; } }
 
 @media (max-width: 819.98px) {
   #navbar {
-    padding: 0 30px; } }
+    padding-right: 30px;
+    padding-left: 30px; } }
 
 /*
  * --------------------
