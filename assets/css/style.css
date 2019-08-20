@@ -6867,6 +6867,18 @@ ul, ol, dl {
     padding-right: 30px;
     padding-left: 30px; } }
 
+@media (max-width: 819.98px) {
+  .container-fluid,
+  .container {
+    padding-right: 50px;
+    padding-left: 50px; }
+  .row {
+    margin-right: -50px;
+    margin-left: -50px; }
+  [class*="col-"] {
+    padding-right: 50px;
+    padding-left: 50px; } }
+
 /*
  * --------------------
  * Typography
