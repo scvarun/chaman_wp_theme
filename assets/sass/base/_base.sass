@@ -58,17 +58,6 @@ ul, ol, dl
   *
     word-wrap: break-word
 
-@include media-breakpoint-down('xs')
-  .container-fluid,
-  .container
-    @include padding(null 30px);
-
-  .row
-    @include margin(null -30px)
-
-  [class^="col-"]
-    @include padding(null 30px)
-
 @include media-breakpoint-down('md')
   .container-fluid,
   .container
@@ -79,3 +68,14 @@ ul, ol, dl
 
     > [class^="col-"]
       @include padding(null 50px)
+
+@include media-breakpoint-down('xs')
+  .container-fluid,
+  .container
+    @include padding(null 30px);
+
+  .row
+    @include margin(null -30px)
+
+    > [class^="col-"]
+      @include padding(null 30px)

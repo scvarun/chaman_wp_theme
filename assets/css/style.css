@@ -6855,18 +6855,6 @@ ul, ol, dl {
   * {
     word-wrap: break-word; } }
 
-@media (max-width: 819.98px) {
-  .container-fluid,
-  .container {
-    padding-right: 30px;
-    padding-left: 30px; }
-  .row {
-    margin-right: -30px;
-    margin-left: -30px; }
-  [class^="col-"] {
-    padding-right: 30px;
-    padding-left: 30px; } }
-
 @media (max-width: 1599.98px) {
   .container-fluid,
   .container {
@@ -6878,6 +6866,18 @@ ul, ol, dl {
     .row > [class^="col-"] {
       padding-right: 50px;
       padding-left: 50px; } }
+
+@media (max-width: 819.98px) {
+  .container-fluid,
+  .container {
+    padding-right: 30px;
+    padding-left: 30px; }
+  .row {
+    margin-right: -30px;
+    margin-left: -30px; }
+    .row > [class^="col-"] {
+      padding-right: 30px;
+      padding-left: 30px; } }
 
 /*
  * --------------------
