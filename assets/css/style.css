@@ -7008,7 +7008,7 @@ h6, .h6 {
   .blogpost-thumbs.text-white .entry-title a {
     color: #e5e5e5; }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 768px) {
   .blogpost-thumbs > [class*="col-"],
   .blogpost-thumbs .slick-slide {
     padding: 0; }
@@ -7048,13 +7048,13 @@ h6, .h6 {
   .testimonial p:last-child {
     margin-bottom: 0; }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 768px) {
   .testimonial p:not(:last-child) {
     margin-bottom: 2em; }
   .testimonial.testimonial-right {
     flex-flow: row-reverse; } }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 768px) {
   .testimonial .testimonial-title {
     font-size: 40px !important;
     line-height: 44px;
@@ -7246,7 +7246,7 @@ h6, .h6 {
   100% {
     opacity: 0; } }
 
-@media screen and (max-width: 1366px) {
+@media (max-width: 1599.98px) {
   #navbar {
     height: auto;
     padding: 25px 30px;
