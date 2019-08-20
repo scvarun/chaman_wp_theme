@@ -484,7 +484,7 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
-.row {
+.row, .blogpost-thumbs .slick-track {
   display: flex;
   flex-wrap: wrap;
   margin-right: -50px;
@@ -6860,10 +6860,10 @@ ul, ol, dl {
   .container {
     padding-right: 50px;
     padding-left: 50px; }
-  .row {
+  .row, .blogpost-thumbs .slick-track {
     margin-right: -50px;
     margin-left: -50px; }
-    .row > [class^="col-"] {
+    .row > [class^="col-"], .blogpost-thumbs .slick-track > [class^="col-"] {
       padding-right: 50px;
       padding-left: 50px; } }
 
@@ -6872,10 +6872,10 @@ ul, ol, dl {
   .container {
     padding-right: 30px;
     padding-left: 30px; }
-  .row {
+  .row, .blogpost-thumbs .slick-track {
     margin-right: -30px;
     margin-left: -30px; }
-    .row > [class^="col-"] {
+    .row > [class^="col-"], .blogpost-thumbs .slick-track > [class^="col-"] {
       padding-right: 30px;
       padding-left: 30px; } }
 
@@ -7196,8 +7196,9 @@ h6, .h6 {
 .header-overlay .content-wrapper {
   padding-top: calc(200px + 40px); }
 
-.navbar > .container > .row,
-.navbar > .container-fluid > .row {
+.navbar > .container > .row, .blogpost-thumbs .navbar > .container > .slick-track,
+.navbar > .container-fluid > .row,
+.blogpost-thumbs .navbar > .container-fluid > .slick-track {
   flex: 1; }
 
 #navbar {
