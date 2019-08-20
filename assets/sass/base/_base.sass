@@ -40,9 +40,10 @@ ul, ol, dl
   li:not(:last-child)
     margin-bottom: 1em
 
-@media screen and (max-width: map-get($grid-breakpoints, 'sm'))
-  *
-    word-wrap: break-word
+.wpcf7-form-control
+  @extend .form-control
+  line-height: 70px
+  height: 70px
 
 .elementor-text-editor
   p:last-child
@@ -53,10 +54,17 @@ ul, ol, dl
     .elementor-section-height-full > .elementor-container   
         height:100vh !important
 
+@media screen and (max-width: map-get($grid-breakpoints, 'sm'))
+  *
+    word-wrap: break-word
 
-.wpcf7-form-control
-  @extend .form-control
-  line-height: 70px
-  height: 70px
+@include media-breakpoint-down('xs')
+  .container-fluid,
+  .container
+    @include padding(null 30px);
 
+  .row
+    @include margin(null -30px)
 
+  [class*="col-"]
+    @include margin(null 30px)
