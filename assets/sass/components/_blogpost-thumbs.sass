@@ -8,6 +8,7 @@
   margin: 0
   width: 100%
   .blogpost-thumbs-single
+    width: 1/3*100%
     @include margin(null 50px)
   article
     margin-bottom: 50px
@@ -36,7 +37,7 @@
       a
         color: $white
 
-@media screen and (max-width: map-get($grid-breakpoints, 'sm'))
+@include media-breakpoint-down('xs')
   .blogpost-thumbs
     > [class*="col-"],
     .slick-slide
