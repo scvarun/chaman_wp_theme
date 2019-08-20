@@ -42,9 +42,9 @@ get_header();
                 <?php endif; ?>
 
                 <div class="post-content">
-                  <h4 class="entry-title" itemprop="headline">
+                  <h5 class="entry-title" itemprop="headline">
                     <a href="<?php the_permalink() ?>" rel="bookmark" itemprop="url"><?php the_title() ?></a>
-                  </h4>
+                  </h5>
 
                   <div class="entry-content" itemprop="text">
                     <?php 

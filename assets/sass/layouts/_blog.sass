@@ -7,7 +7,7 @@
 .main-content
   .post
     main
-      margin: 0 5.2305%
+      margin: 0 100px
       .post-content
         background: $orange
         padding: 70px 7.35% 80px
@@ -70,6 +70,22 @@
     justify-content: center
     margin-bottom: 290px
 
+@include media-breakpoint-down('md')
+  .main-content
+    .post
+      main
+        margin: 0 50px
+@include media-breakpoint-down('sm')
+  .main-content
+    .post
+      main
+        margin: 0 30px
+
+/*
+ * --------------------
+ * Single Post Styling
+ * --------------------
+ */
 .single
   .content-wrapper
     background: $orange

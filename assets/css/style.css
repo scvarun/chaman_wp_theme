@@ -7352,7 +7352,7 @@ h6, .h6 {
  * --------------------
  */
 .main-content .post main {
-  margin: 0 5.2305%; }
+  margin: 0 100px; }
   .main-content .post main .post-content {
     background: #ec633c;
     padding: 70px 7.35% 80px; }
@@ -7427,6 +7427,19 @@ h6, .h6 {
   justify-content: center;
   margin-bottom: 290px; }
 
+@media (max-width: 1599.98px) {
+  .main-content .post main {
+    margin: 0 50px; } }
+
+@media (max-width: 1365.98px) {
+  .main-content .post main {
+    margin: 0 30px; } }
+
+/*
+ * --------------------
+ * Single Post Styling
+ * --------------------
+ */
 .single .content-wrapper {
   background: #ec633c; }
 
