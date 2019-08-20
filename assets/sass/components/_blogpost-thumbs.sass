@@ -8,10 +8,10 @@
   margin: 0
   width: 100%
   .slick-list
-    @include margin(null -100px)
+    @include margin(null -50px)
   .blogpost-thumbs-single
     width: 1/3*100%
-    @include margin(null 100px)
+    @include margin(null 50px)
   article
     margin-bottom: 50px
     figure
@@ -38,13 +38,6 @@
     .entry-title
       a
         color: $white
-
-@include media-breakpoint-down('md')
-  .blogpost-thumbs
-    .slick-list
-      @include margin(null -50px)
-    .blogpost-thumbs-single
-      @include margin(null 50px)
 
 @include media-breakpoint-down('xs')
   .blogpost-thumbs
