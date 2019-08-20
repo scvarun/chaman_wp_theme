@@ -16,7 +16,7 @@
   background: none
   position: relative
   margin-bottom: #{-1 * $navbar-height}
-  padding: 0 #{$grid-gutter-width / 2}
+  padding: 0 100px
   z-index: 100
   transition: $transition-base
   .navbar-brand
@@ -86,7 +86,7 @@
   100%
     opacity: 0
 
-@include media-breakpoint-down('md')
+@include media-breakpoint-down('xs')
   #navbar
     height: auto
     padding: 25px 30px
@@ -111,24 +111,19 @@
       visibility: visible !important
       animation-name: mobileMenuIn
       transition: visibility .1s ease-in-out 0s
-    .main-navigation 
+    .nav-toggle
+      font-size: 18px
+    .main-navigation
       .seperator
         display: block
         padding-top: 2em
       .menu-item
         @include padding(.5em 0);
-    .main-navigation .menu-item > a
-      font-size: 30px
-    .nav-toggle
-      font-size: 18px
+      > a
+        font-size: 30px
     &.js-is-stuck,
     &.js-is-sticky
       align-items: center
-  body.navigation-overlay
-    overflow: hidden
-    
-@media screen and (max-width: map-get($grid-breakpoints, 'sm'))
-  #navbar
     &:not(.js-is-stuck):not(.js-is-sticky)
       .mobile-logo
         display: block
@@ -136,3 +131,5 @@
         ~ .default-logo
           display: none
           opacity: 0
+  body.navigation-overlay
+    overflow: hidden

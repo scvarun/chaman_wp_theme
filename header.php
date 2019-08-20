@@ -22,18 +22,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 <body <?php body_class(); ?> <?php unifato_the_microdata( 'body' ); ?>>
 <div id="wrapper" class="wrapper">
 
-	<nav id="navbar" class="navbar navbar-expand-md navbar-dark sticky-wrapper" <?php unifato_the_microdata( 'header' ); ?> role="banner">
+	<nav id="navbar" class="navbar navbar-expand-sm navbar-dark sticky-wrapper" <?php unifato_the_microdata( 'header' ); ?> role="banner">
 		<?php unifato_construct_logo() ?>
 
 		<?php
 		if (has_nav_menu( 'mobile' )): ?>
-		<a href="javascript:void(0);" class="nav-toggle d-block d-md-none" data-target="#mobile-navigation">
+		<a href="javascript:void(0);" class="nav-toggle d-block d-sm-none" data-target="#mobile-navigation">
 	    Menu
 	  </a>
 
 	  <!-- Mobile Navigation -->
 		<div class="nav-container mobile-nav invisible" id="mobile-navigation">
-			<a href="javascript:void(0);" class="nav-toggle d-block d-md-none mb-1" data-target="#mobile-navigation">
+			<a href="javascript:void(0);" class="nav-toggle d-block d-sm-none mb-1" data-target="#mobile-navigation">
 	      <img src="<?php echo get_template_directory_uri() ?>/assets/img/mobile-nav-arrow.png" alt="" />
 	    </a>
 
@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		if (has_nav_menu('primary')): ?>
 		<!-- Main Navigation -->
-		<div class="nav-container d-none d-md-block" <?php unifato_the_microdata( 'navigation' ); ?>>
+		<div class="nav-container d-none d-sm-block" <?php unifato_the_microdata( 'navigation' ); ?>>
 			<?php
 			wp_nav_menu(array(
 				'theme_location'	=> 'primary',
