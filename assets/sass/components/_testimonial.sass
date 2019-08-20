@@ -10,18 +10,20 @@
     line-height: 90px
     font-weight: 900
     font-style: italic
-    margin-bottom: rem(65)
+    margin-bottom: 65px
   .testimonial-user-info, p
     font-size: 30px
     line-height: 40px
   .testimonial-user-info
     font-weight: bold
     text-transform: uppercase
-    margin-bottom: rem(25)
+    margin-bottom: 25px
   p
     font-weight: 500
+    &:last-child
+      margin-bottom: 0
 
-@media screen and (min-width: map-get($grid-breakpoints, "lg"))
+@media screen and (min-width: map-get($grid-breakpoints, "md"))
   .testimonial
     p:not(:last-child)
       margin-bottom: 2em
@@ -33,6 +35,10 @@
     .testimonial-title
       font-size: 40px !important
       line-height: 44px
+      margin-bottom: 35px
     .testimonial-user-info, p
       font-size: 18px
       line-height: 21px
+      margin-bottom: 10px
+    figure
+      margin-top: 40px !important

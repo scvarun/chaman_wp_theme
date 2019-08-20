@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       <?php
       wp_nav_menu(array(
         'theme_location'  => 'mobile',
-        'menu'        => $menu,
+        'menu'        => '',
         'container'   => false,
         'menu_id'     => 'navbar-menu-mobile',
         'menu_class'  => 'navbar-nav main-navigation',
@@ -56,7 +56,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       <?php
       wp_nav_menu(array(
         'theme_location'  => 'primary',
-        'menu'        => $menu,
+        'menu'        => '',
         'container'   => false,
         'menu_id'     => 'navbar-menu-main',
         'menu_class'  => 'navbar-nav main-navigation',
