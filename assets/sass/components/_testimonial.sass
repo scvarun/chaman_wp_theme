@@ -23,14 +23,14 @@
     &:last-child
       margin-bottom: 0
 
-@media screen and (min-width: map-get($grid-breakpoints, "sm"))
+@include media-breakpoint-up('md')
   .testimonial
     p:not(:last-child)
       margin-bottom: 2em
     &.testimonial-right
       flex-flow: row-reverse
 
-@media screen and (max-width: map-get($grid-breakpoints, 'sm'))
+@include media-breakpoint-down('md')
   .testimonial
     .testimonial-title
       font-size: 40px !important
