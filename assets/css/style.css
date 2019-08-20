@@ -7003,6 +7003,9 @@ h6, .h6 {
 .blogpost-thumbs {
   margin: 0;
   width: 100%; }
+  .blogpost-thumbs .blogpost-thumbs-single {
+    margin-right: 50px;
+    margin-left: 50px; }
   .blogpost-thumbs article {
     margin-bottom: 50px; }
     .blogpost-thumbs article figure {
