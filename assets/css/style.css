@@ -7351,23 +7351,22 @@ h6, .h6 {
  * Blog Styling
  * --------------------
  */
-.main-content .post main {
-  margin: 0 100px; }
-  .main-content .post main .post-content {
-    background: #ec633c;
-    padding: 70px 7.35% 80px; }
-  .main-content .post main .post-categories {
-    list-style: none;
-    padding: 0; }
-    .main-content .post main .post-categories li {
-      display: inline-block;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 1.125rem; }
-    .main-content .post main .post-categories a {
-      color: #e5e5e5; }
-      .main-content .post main .post-categories a:hover {
-        text-decoration: none; }
+.main-content .post main .post-content {
+  background: #ec633c;
+  padding: 70px 7.35% 80px; }
+
+.main-content .post main .post-categories {
+  list-style: none;
+  padding: 0; }
+  .main-content .post main .post-categories li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.125rem; }
+  .main-content .post main .post-categories a {
+    color: #e5e5e5; }
+    .main-content .post main .post-categories a:hover {
+      text-decoration: none; }
 
 .main-content .post .entry-thumbnail-side {
   padding: 0;
@@ -7426,14 +7425,6 @@ h6, .h6 {
   flex-flow: row;
   justify-content: center;
   margin-bottom: 290px; }
-
-@media (max-width: 1599.98px) {
-  .main-content .post main {
-    margin: 0 50px; } }
-
-@media (max-width: 1365.98px) {
-  .main-content .post main {
-    margin: 0 30px; } }
 
 /*
  * --------------------
