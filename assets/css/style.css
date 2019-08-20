@@ -7002,14 +7002,13 @@ h6, .h6 {
  */
 .blogpost-thumbs {
   margin: 0;
-  width: 100%;
   margin-right: -50px;
   margin-left: -50px;
   display: flex; }
   .blogpost-thumbs .blogpost-thumbs-single {
     width: 33.33333%;
-    margin-right: 50px;
-    margin-left: 50px; }
+    padding-right: 50px;
+    padding-left: 50px; }
   .blogpost-thumbs article {
     margin-bottom: 50px; }
     .blogpost-thumbs article figure {
@@ -7045,8 +7044,8 @@ h6, .h6 {
     margin-left: -30px; }
     .blogpost-thumbs .blogpost-thumbs-single {
       width: 100%;
-      margin-right: 30px;
-      margin-left: 30px; }
+      padding-right: 30px;
+      padding-left: 30px; }
     .blogpost-thumbs article figure {
       margin-bottom: 20px !important; }
     .blogpost-thumbs .entry-title {
