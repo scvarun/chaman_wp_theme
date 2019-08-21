@@ -67,7 +67,7 @@
     },
 
     enableSliders: function() {
-      var $blogposts = $('.blogpost-thumbs, .team-members');
+      var $blogposts = $('.blogpost-thumbs, .team-members, .partners');
       if(!$blogposts.length) return;
       var defaults = {
         infinite: true,

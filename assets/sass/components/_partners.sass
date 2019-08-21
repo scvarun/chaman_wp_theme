@@ -5,6 +5,12 @@
  */
 
 .partners
+  display: flex
+  flex-wrap: wrap
+  @include margin(null -50px)
+  .partner-single
+    flex-basis: 1/2*100%
+    width: 1/2*100%
   figure
     margin-bottom: 30px !important
   .partners-single-title
@@ -12,3 +18,10 @@
   .partners-single-subtitle
     text-transform: uppercase
     margin-bottom: 0
+
+@include media-breakpoint-down('sm')
+  .partners
+    @include margin(null -30px)
+    .partner-single
+      flex-basis: 100%
+      width: 100%
