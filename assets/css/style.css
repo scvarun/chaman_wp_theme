@@ -7091,7 +7091,7 @@ h6, .h6 {
   .testimonial p:last-child {
     margin-bottom: 0; }
 
-@media (min-width: 1366px) {
+@media (min-width: 820px) {
   .testimonial p:not(:last-child) {
     margin-bottom: 2em; }
   .testimonial.testimonial-right .row {
