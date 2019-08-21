@@ -7508,12 +7508,12 @@ h6, .h6 {
   background: #ec633c; }
 
 .single .main-content {
-  padding-top: 40px;
-  padding-right: 0;
-  padding-left: 0; }
+  padding-top: 40px; }
   .single .main-content .entry-thumbnail {
     margin-bottom: 40px; }
   .single .main-content .post main {
+    padding-right: 0;
+    padding-left: 0;
     background: none;
     font-size: 1.875rem;
     line-height: 2.5rem;

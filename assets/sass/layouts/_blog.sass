@@ -110,11 +110,12 @@
   .content-wrapper
     background: $orange
   .main-content
-    @include padding(40px 0 null)
+    padding-top: 40px
     .entry-thumbnail
       margin-bottom: 40px
     .post
       main
+        @include padding(null 0)
         background: none
         font-size: rem(30)
         line-height: rem(40)
