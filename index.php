@@ -23,7 +23,7 @@ get_header();
       if ( have_posts() ) :
         while ( have_posts() ) : the_post(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php unifato_the_microdata( 'article' ); ?>>
-          <div class="container-fluid">
+          <div class="container-fluid p-0">
             <div class="row no-gutters">
               <?php if( has_post_thumbnail() ) : ?>
                 <div class="col entry-thumbnail-side" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'unifato-archive'); ?>);">
@@ -31,7 +31,7 @@ get_header();
                 </div><!-- /.col -->
               <?php endif; ?>
 
-              <main class="col-md-7">
+              <main class="col-md-6">
                 <?php if( has_post_thumbnail() ) : ?>
                   <figure class="d-block d-md-none entry-thumbnail">
                     <?php
