@@ -3,8 +3,8 @@
  * Header Styling
  * --------------------
  */
-// .header-overlay .content-wrapper
-//   padding-top: calc(#{$navbar-height} + 40px)
+.header-overlay .content-wrapper
+  margin-bottom: -$navbar-height
 
 .navbar > .container > .row,
 .navbar > .container-fluid > .row
@@ -140,6 +140,8 @@
     overflow: hidden
 
 @include media-breakpoint-down('md')
+  .header-overlay .content-wrapper
+    margin-bottom: -$navbar-md-height
   #navbar
     height: $navbar-md-height
     @include padding( $navbar-md-padding-y $navbar-md-padding-x )
@@ -159,6 +161,8 @@
           max-height: $sticky-md-navbar-height
 
 @include media-breakpoint-down('xs')
+  .header-overlay .content-wrapper
+    margin-bottom: -$navbar-sm-height
   #navbar
     height: $navbar-sm-height
     @include padding( $navbar-sm-padding-y $navbar-sm-padding-x )
