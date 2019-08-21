@@ -4,7 +4,7 @@
  * --------------------
  */
 .content-wrapper
-  padding-top: calc(#{$navbar-height} + 40px)
+  padding-top: #{$navbar-height}
 
 .header-overlay .content-wrapper
   padding-top: 0
@@ -25,6 +25,7 @@
   transition: $transition-base
   .navbar-brand
     max-width: 30vw
+    padding: 0
     img
       max-width: 100%
       max-height: $navbar-logo-height
@@ -149,7 +150,7 @@
 
 @include media-breakpoint-down('md')
   .content-wrapper
-    padding-top: calc(#{$navbar-md-height} + 40px)
+    padding-top: #{$navbar-md-height}
   #navbar
     margin-bottom: -$navbar-md-height
     height: $navbar-md-height
@@ -171,7 +172,7 @@
 
 @include media-breakpoint-down('xs')
   .content-wrapper
-    padding-top: calc(#{$navbar-sm-height} + 40px)
+    padding-top: #{$navbar-sm-height}
   #navbar
     height: $navbar-sm-height
     @include padding( $navbar-sm-padding-y $navbar-sm-padding-x )

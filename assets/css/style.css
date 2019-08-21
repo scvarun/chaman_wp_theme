@@ -7215,7 +7215,7 @@ h6, .h6 {
  * --------------------
  */
 .content-wrapper {
-  padding-top: calc(270px + 40px); }
+  padding-top: 270px; }
 
 .header-overlay .content-wrapper {
   padding-top: 0; }
@@ -7235,7 +7235,8 @@ h6, .h6 {
   z-index: 100;
   transition: all 0.2s ease-in-out; }
   #navbar .navbar-brand {
-    max-width: 30vw; }
+    max-width: 30vw;
+    padding: 0; }
     #navbar .navbar-brand img {
       max-width: 100%;
       max-height: 110px;
@@ -7355,7 +7356,7 @@ h6, .h6 {
 
 @media (max-width: 1599.98px) {
   .content-wrapper {
-    padding-top: calc(180px + 40px); }
+    padding-top: 180px; }
   #navbar {
     margin-bottom: -180px;
     height: 180px;
@@ -7373,7 +7374,7 @@ h6, .h6 {
 
 @media (max-width: 819.98px) {
   .content-wrapper {
-    padding-top: calc(110px + 40px); }
+    padding-top: 110px; }
   #navbar {
     height: 110px;
     padding: 30px; }
