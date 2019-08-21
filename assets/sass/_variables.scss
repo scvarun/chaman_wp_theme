@@ -75,11 +75,11 @@ $navbar-sm-logo-height:       50px;
 
 $sticky-navbar-height:        120px;
 $sticky-md-navbar-height:     120px;
-$sticky-sm-navbar-height:     120px;
+$sticky-sm-navbar-height:     110px;
 
 $sticky-logo-height:          60px;
-$sticky-md-logo-height:       60px;
-$sticky-sm-logo-height:       60px;
+$sticky-md-logo-height:       60px
+;$sticky-sm-logo-height:       50px;
 
 $navbar-height:               #{$navbar-padding-y * 2 + $navbar-logo-height};
 $navbar-md-height:            #{$navbar-md-padding-y * 2 + $navbar-md-logo-height};

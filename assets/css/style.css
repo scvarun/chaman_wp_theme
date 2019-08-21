@@ -7371,15 +7371,18 @@ h6, .h6 {
     #navbar.js-is-stuck, #navbar.js-is-sticky--change {
       padding-top: 0;
       padding-bottom: 0;
-      height: 120px; }
+      height: 110px; }
     #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
-      max-height: 60px; } }
+      max-height: 50px; } }
 
 /*
  * --------------------
  * Blog Styling
  * --------------------
  */
+.main-content .post p:last-child {
+  margin-bottom: 0; }
+
 .main-content .post main {
   margin-right: 100px;
   margin-left: 100px; }
@@ -7433,6 +7436,9 @@ h6, .h6 {
 
 .main-content .post .entry-content {
   color: #e5e5e5; }
+
+.main-content .post .entry-footer p {
+  margin-bottom: 0; }
 
 .main-content .post .entry-footer .read-more-link {
   color: #e5e5e5;
