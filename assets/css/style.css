@@ -7407,7 +7407,8 @@ h6, .h6 {
       display: inline-block;
       text-transform: uppercase; }
     .main-content .post main .post-categories a {
-      color: #e5e5e5; }
+      color: #e5e5e5;
+      text-decoration: none; }
       .main-content .post main .post-categories a:hover {
         text-decoration: none; }
 
