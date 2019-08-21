@@ -7388,7 +7388,7 @@ h6, .h6 {
   margin-left: 100px; }
   .main-content .post main .post-content {
     background: #ec633c;
-    padding: 70px 50px 80px; }
+    padding: 70px 80px 80px; }
   .main-content .post main .post-categories {
     list-style: none;
     padding: 0; }
@@ -7465,14 +7465,20 @@ h6, .h6 {
 @media (max-width: 1599.98px) {
   .main-content .post main {
     margin-right: 50px;
-    margin-left: 50px; } }
+    margin-left: 50px; }
+    .main-content .post main .post-content {
+      padding: 50px 50px 60px; }
+    .main-content .post main .entry-footer {
+      margin-top: 50px; } }
 
 @media (max-width: 1365.98px) {
   .main-content .post main {
     margin-right: 30px;
     margin-left: 30px; }
     .main-content .post main .post-content {
-      padding: 25px 30px 25px; } }
+      padding: 25px 30px 25px; }
+    .main-content .post main .entry-footer {
+      margin-top: 25px; } }
 
 /*
  * --------------------

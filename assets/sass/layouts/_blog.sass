@@ -12,7 +12,7 @@
       @include margin(null 100px);
       .post-content
         background: $orange
-        padding: 70px 50px 80px
+        padding: 70px 80px 80px
       .post-categories
         list-style: none
         padding: 0
@@ -78,6 +78,10 @@
     .post
       main
         @include margin(null 50px)
+        .post-content
+          padding: 50px 50px 60px
+        .entry-footer
+          margin-top: 50px
 
 @include media-breakpoint-down('sm')
   .main-content
@@ -86,6 +90,8 @@
         @include margin(null 30px)
         .post-content
           padding: 25px 30px 25px
+        .entry-footer
+          margin-top: 25px
 
 /*
  * --------------------
