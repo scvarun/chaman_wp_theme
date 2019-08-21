@@ -43,7 +43,7 @@
         &:hover, &:active
           outline: none
     .entry-title
-      margin-bottom: 20px
+      margin-bottom: 40px
       color: $white
       a
         color: $white
@@ -53,7 +53,7 @@
     .entry-content
       color: $white
     .entry-footer
-      margin-top: 70px
+      margin-top: 65px
       .read-more-link
         color: $white
         font-weight: bold
@@ -80,8 +80,10 @@
         @include margin(null 50px)
         .post-content
           padding: 50px 50px 60px
+        .entry-title
+          margin-bottom: 40px
         .entry-footer
-          margin-top: 50px
+          margin-top: 45px
 
 @include media-breakpoint-down('sm')
   .main-content
@@ -90,8 +92,10 @@
         @include margin(null 30px)
         .post-content
           padding: 25px 30px 25px
+        .entry-title
+          margin-bottom: 20px
         .entry-footer
-          margin-top: 25px
+          margin-top: 20px
 
 /*
  * --------------------

@@ -7426,7 +7426,7 @@ h6, .h6 {
       outline: none; }
 
 .main-content .post .entry-title {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #e5e5e5; }
   .main-content .post .entry-title a {
     color: #e5e5e5;
@@ -7438,7 +7438,7 @@ h6, .h6 {
   color: #e5e5e5; }
 
 .main-content .post .entry-footer {
-  margin-top: 70px; }
+  margin-top: 65px; }
   .main-content .post .entry-footer .read-more-link {
     color: #e5e5e5;
     font-weight: bold;
@@ -7468,8 +7468,10 @@ h6, .h6 {
     margin-left: 50px; }
     .main-content .post main .post-content {
       padding: 50px 50px 60px; }
+    .main-content .post main .entry-title {
+      margin-bottom: 40px; }
     .main-content .post main .entry-footer {
-      margin-top: 50px; } }
+      margin-top: 45px; } }
 
 @media (max-width: 1365.98px) {
   .main-content .post main {
@@ -7477,8 +7479,10 @@ h6, .h6 {
     margin-left: 30px; }
     .main-content .post main .post-content {
       padding: 25px 30px 25px; }
+    .main-content .post main .entry-title {
+      margin-bottom: 20px; }
     .main-content .post main .entry-footer {
-      margin-top: 25px; } }
+      margin-top: 20px; } }
 
 /*
  * --------------------
