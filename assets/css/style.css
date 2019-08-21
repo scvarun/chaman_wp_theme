@@ -7214,8 +7214,8 @@ h6, .h6 {
  * Header Styling
  * --------------------
  */
-.header-overlay #navbar {
-  margin-bottom: -270px; }
+.header-overlay .content-wrapper {
+  padding-top: calc(270px + 40px); }
 
 .navbar > .container > .row,
 .navbar > .container-fluid > .row {
@@ -7223,6 +7223,7 @@ h6, .h6 {
 
 #navbar {
   height: 270px;
+  margin-bottom: -270px;
   padding: 80px 100px;
   justify-content: space-between;
   align-items: flex-start;
@@ -7346,9 +7347,10 @@ h6, .h6 {
     overflow: hidden; } }
 
 @media (max-width: 1599.98px) {
-  .header-overlay #navbar {
-    margin-bottom: -180px; }
+  .header-overlay .content-wrapper {
+    padding-top: calc(180px + 40px); }
   #navbar {
+    margin-bottom: -180px;
     height: 180px;
     padding: 50px; }
     #navbar .navbar-brand img {
@@ -7363,8 +7365,8 @@ h6, .h6 {
       max-height: 60px; } }
 
 @media (max-width: 819.98px) {
-  .header-overlay #navbar {
-    margin-bottom: -110px; }
+  .header-overlay .content-wrapper {
+    padding-top: calc(110px + 40px); }
   #navbar {
     height: 110px;
     padding: 30px; }
