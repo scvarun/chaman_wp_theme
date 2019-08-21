@@ -68,7 +68,7 @@ if ( ! function_exists( 'unifato_body_classes' ) ) {
 				$classes[] = 'category-job-listing';
 		}
 
-		if(get_post_meta(get_the_id(), '__header__overlay_header', true) != 'no') {
+		if(get_post_meta(get_the_id(), '__header__overlay_header', true) == 'yes') {
 			$classes[] = 'header-overlay';
 		}
 
