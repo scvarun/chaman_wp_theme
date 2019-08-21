@@ -7513,10 +7513,7 @@ h6, .h6 {
   .single .main-content .post main {
     padding-right: 0;
     padding-left: 0;
-    background: none;
-    font-size: 1.875rem;
-    line-height: 2.5rem;
-    font-weight: normal; }
+    background: none; }
   .single .main-content .post .entry-title {
     margin-bottom: 105px; }
   .single .main-content > footer .back-to-posts-btn {
@@ -7531,6 +7528,12 @@ h6, .h6 {
 
 .single.category-job-listing .content-wrapper {
   background: #20234c; }
+
+@media (min-width: 1600px) {
+  .main-content .post main {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    font-weight: normal; } }
 
 @media (max-width: 1599.98px) {
   .single .main-content .post main .entry-title {

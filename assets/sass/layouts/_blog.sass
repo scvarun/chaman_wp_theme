@@ -116,9 +116,6 @@
       main
         @include padding(null 0)
         background: none
-        font-size: rem(30)
-        line-height: rem(40)
-        font-weight: normal
       .entry-title
         margin-bottom: 105px
     > footer
@@ -132,6 +129,13 @@
     background: $brown
   &.category-job-listing .content-wrapper
     background: $blue
+
+@include media-breakpoint-up('lg')
+  .main-content
+    .post main
+      font-size: rem(30)
+      line-height: rem(40)
+      font-weight: normal
 
 @include media-breakpoint-down('md')
   .single
