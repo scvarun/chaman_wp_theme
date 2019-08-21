@@ -6948,7 +6948,7 @@ h6, .h6 {
     font-size: 1.5rem; }
     h6, .elementor-widget-heading h6.elementor-heading-title {
       line-height: 1.875rem; }
-  body {
+  body, .btn {
     font-size: 1.125rem;
     line-height: 1.3125rem;
     letter-spacing: 0; } }
@@ -6974,7 +6974,7 @@ h6, .h6 {
     font-size: 1.875rem; }
     h6, .elementor-widget-heading h6.elementor-heading-title {
       line-height: 2.5rem; }
-  body {
+  body, .btn {
     font-size: 1.375rem;
     letter-spacing: 0;
     line-height: 2rem; } }

@@ -57,7 +57,9 @@ get_header();
                   </div><!-- /.entry-content -->
 
                   <footer class="entry-footer">
-                    <a href="<?php the_permalink() ?>" class="btn btn-link read-more-link">Read more</a>
+                    <p>
+                      <a href="<?php the_permalink() ?>" class="read-more-link">Read more</a>
+                    </p>
                   </footer>
 
                 </div><!-- /.post-content -->
