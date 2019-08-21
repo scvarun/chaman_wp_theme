@@ -44,7 +44,7 @@ get_header();
                 if( !in_category( 'Uncategorized' ) ) {
                   $categories_list = get_the_category_list();
                   if ( $categories_list ) {
-                    echo '<ul class="post-categories">' . $categories_list . '</ul>';
+                    echo '<ul class="post-categories h6">' . $categories_list . '</ul>';
                   }
                 } ?>
 
@@ -64,7 +64,7 @@ get_header();
         endif;?>
 
         <footer>
-          <a href=<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn btn-outline-white back-to-posts-btn">Back to stories</a>
+          <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn btn-outline-white back-to-posts-btn">Back to stories</a>
         </footer><!-- /.d-flex -->
 
       </main><!-- /.main-content -->

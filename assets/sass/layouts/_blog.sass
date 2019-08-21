@@ -19,8 +19,6 @@
         li
           display: inline-block
           text-transform: uppercase
-          font-weight: bold
-          font-size: $h6-font-size
         a
           color: $white
           &:hover
@@ -133,3 +131,19 @@
     background: $brown
   &.category-job-listing .content-wrapper
     background: $blue
+
+@include media-breakpoint-down('md')
+  .single
+    .main-content
+      .post
+        main
+          .entry-title
+            margin-bottom: 80px
+
+@include media-breakpoint-down('sm')
+  .single
+    .main-content
+      .post
+        main
+          .entry-title
+            margin-bottom: 50px

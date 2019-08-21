@@ -7405,9 +7405,7 @@ h6, .h6 {
     padding: 0; }
     .main-content .post main .post-categories li {
       display: inline-block;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 1.125rem; }
+      text-transform: uppercase; }
     .main-content .post main .post-categories a {
       color: #e5e5e5; }
       .main-content .post main .post-categories a:hover {
@@ -7532,5 +7530,13 @@ h6, .h6 {
 
 .single.category-job-listing .content-wrapper {
   background: #20234c; }
+
+@media (max-width: 1599.98px) {
+  .single .main-content .post main .entry-title {
+    margin-bottom: 80px; } }
+
+@media (max-width: 1365.98px) {
+  .single .main-content .post main .entry-title {
+    margin-bottom: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
