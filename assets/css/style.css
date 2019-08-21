@@ -7098,14 +7098,16 @@ h6, .h6 {
     flex-flow: row-reverse; } }
 
 @media (max-width: 1599.98px) {
+  .testimonial figure {
+    margin-top: 40px !important; } }
+
+@media (max-width: 1599.98px) {
   .testimonial .testimonial-title {
     margin-bottom: 35px; }
   .testimonial .testimonial-user-info, .testimonial p {
     font-size: 18px;
     line-height: 21px;
-    margin-bottom: 10px; }
-  .testimonial figure {
-    margin-top: 40px !important; } }
+    margin-bottom: 10px; } }
 
 /*
  * --------------------
