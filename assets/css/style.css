@@ -7356,7 +7356,7 @@ h6, .h6 {
       padding-bottom: 0;
       height: 120px; }
     #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
-      max-height: 120px; } }
+      max-height: 60px; } }
 
 @media (max-width: 819.98px) {
   .header-overlay #navbar {
@@ -7371,7 +7371,7 @@ h6, .h6 {
       padding-bottom: 0;
       height: 120px; }
     #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
-      max-height: 120px; } }
+      max-height: 60px; } }
 
 /*
  * --------------------
