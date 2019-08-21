@@ -31,7 +31,7 @@ get_header();
                 </div><!-- /.col -->
               <?php endif; ?>
 
-              <main class="col-md-6">
+              <main class="col-md-7">
                 <?php if( has_post_thumbnail() ) : ?>
                   <figure class="d-block d-md-none entry-thumbnail">
                     <?php
