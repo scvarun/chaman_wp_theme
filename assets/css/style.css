@@ -6936,25 +6936,25 @@ h6, .h6 {
   color: #765c4f; }
 
 @media (min-width: 1366px) {
-  h2 {
+  h2, .h2 {
     font-size: 7.5rem; }
-    h2, .elementor-widget-heading h2.elementor-heading-title {
+    h2, .elementor-widget-heading h2.elementor-heading-title, .h2, .elementor-widget-heading .h2.elementor-heading-title {
       line-height: 6.875rem; }
-  h3 {
+  h3, .h3 {
     font-size: 4.5rem; }
-    h3, .elementor-widget-heading h3.elementor-heading-title {
+    h3, .elementor-widget-heading h3.elementor-heading-title, .h3, .elementor-widget-heading .h3.elementor-heading-title {
       line-height: 5rem; }
-  h4 {
+  h4, .h4 {
     font-size: 3.5rem; }
-    h4, .elementor-widget-heading h4.elementor-heading-title {
+    h4, .elementor-widget-heading h4.elementor-heading-title, .h4, .elementor-widget-heading .h4.elementor-heading-title {
       line-height: 3.75rem; }
-  h5 {
+  h5, .h5 {
     font-size: 2.5rem; }
-    h5, .elementor-widget-heading h5.elementor-heading-title {
+    h5, .elementor-widget-heading h5.elementor-heading-title, .h5, .elementor-widget-heading .h5.elementor-heading-title {
       line-height: 2.25rem; }
-  h6 {
+  h6, .h6 {
     font-size: 1.5rem; }
-    h6, .elementor-widget-heading h6.elementor-heading-title {
+    h6, .elementor-widget-heading h6.elementor-heading-title, .h6, .elementor-widget-heading .h6.elementor-heading-title {
       line-height: 1.875rem; }
   body, .btn {
     font-size: 1.125rem;
@@ -6962,25 +6962,25 @@ h6, .h6 {
     letter-spacing: 0; } }
 
 @media (min-width: 1600px) {
-  h2 {
+  h2, .h2 {
     font-size: 10rem; }
-    h2, .elementor-widget-heading h2.elementor-heading-title {
+    h2, .elementor-widget-heading h2.elementor-heading-title, .h2, .elementor-widget-heading .h2.elementor-heading-title {
       line-height: 9.375rem; }
-  h3 {
+  h3, .h3 {
     font-size: 6.875rem; }
-    h3, .elementor-widget-heading h3.elementor-heading-title {
+    h3, .elementor-widget-heading h3.elementor-heading-title, .h3, .elementor-widget-heading .h3.elementor-heading-title {
       line-height: 7.5rem; }
-  h4 {
+  h4, .h4 {
     font-size: 4.5rem; }
-    h4, .elementor-widget-heading h4.elementor-heading-title {
+    h4, .elementor-widget-heading h4.elementor-heading-title, .h4, .elementor-widget-heading .h4.elementor-heading-title {
       line-height: 5.625rem; }
-  h5 {
+  h5, .h5 {
     font-size: 3.125rem; }
-    h5, .elementor-widget-heading h5.elementor-heading-title {
+    h5, .elementor-widget-heading h5.elementor-heading-title, .h5, .elementor-widget-heading .h5.elementor-heading-title {
       line-height: 2.5rem; }
-  h6 {
+  h6, .h6 {
     font-size: 1.875rem; }
-    h6, .elementor-widget-heading h6.elementor-heading-title {
+    h6, .elementor-widget-heading h6.elementor-heading-title, .h6, .elementor-widget-heading .h6.elementor-heading-title {
       line-height: 2.5rem; }
   body, .btn {
     font-size: 1.375rem;
@@ -7508,7 +7508,7 @@ h6, .h6 {
   background: #ec633c; }
 
 .single .main-content {
-  padding-top: 40px; }
+  padding: 0; }
   .single .main-content .entry-thumbnail {
     margin-bottom: 40px; }
   .single .main-content .post main {
