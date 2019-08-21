@@ -7210,9 +7210,6 @@ h6, .h6 {
  * Header Styling
  * --------------------
  */
-.header-overlay .content-wrapper {
-  padding-top: calc(270px + 40px); }
-
 .navbar > .container > .row,
 .navbar > .container-fluid > .row {
   flex: 1; }
