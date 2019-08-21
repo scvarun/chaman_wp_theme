@@ -7209,8 +7209,8 @@ h6, .h6, .tabbed-form .form-tabs a {
   .team-members .team-members-single {
     width: 33.33333%;
     flex-basis: 33.33333%;
-    margin-right: 50px;
-    margin-left: 50px; }
+    padding-right: 50px;
+    padding-left: 50px; }
   .team-members figure {
     margin-bottom: 50px !important; }
   .team-members .team-member-name {
@@ -7226,8 +7226,8 @@ h6, .h6, .tabbed-form .form-tabs a {
     .team-members .team-members-single {
       width: 100%;
       flex-basis: 100%;
-      margin-right: 30px;
-      margin-left: 30px; } }
+      padding-right: 30px;
+      padding-left: 30px; } }
 
 .facilitator {
   margin-bottom: 2em; }

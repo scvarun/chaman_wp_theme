@@ -11,7 +11,7 @@
   .team-members-single
     width: 1/3*100%
     flex-basis: 1/3*100%
-    @include margin(null 50px)
+    @include padding(null 50px)
   figure
     margin-bottom: 50px !important
   .team-member-name
@@ -19,10 +19,11 @@
   .team-member-title
     text-transform: uppercase
     margin-bottom: 0
+
 @include media-breakpoint-down('sm')
   .team-members
     @include margin(null -30px)
     .team-members-single
       width: 100%
       flex-basis: 100%
-      @include margin(null 30px)
+      @include padding(null 30px)
