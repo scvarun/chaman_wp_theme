@@ -48,7 +48,7 @@ get_header();
                   }
                 } ?>
 
-                <h1 class="entry-title h2" itemprop="headline">
+                <h1 class="entry-title h3" itemprop="headline">
                   <?php the_title() ?>
                 </h1>
 
