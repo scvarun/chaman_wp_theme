@@ -6810,7 +6810,7 @@ invisible-lg {
   min-height: 100vh; }
 
 figure {
-  position: absolute; }
+  position: relative; }
   figure img {
     width: 100%;
     height: auto; }
