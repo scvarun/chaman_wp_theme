@@ -7342,6 +7342,8 @@ h6, .h6 {
   #navbar {
     height: 180px;
     padding: 50px; }
+    #navbar .navbar-brand img {
+      max-height: 80px; }
     #navbar .main-navigation .menu-item > a {
       font-size: 18px; }
     #navbar.js-is-stuck, #navbar.js-is-sticky--change {
@@ -7355,6 +7357,8 @@ h6, .h6 {
   #navbar {
     height: 110px;
     padding: 30px; }
+    #navbar .navbar-brand img {
+      max-height: 50px; }
     #navbar.js-is-stuck, #navbar.js-is-sticky--change {
       padding-top: 0;
       padding-bottom: 0;

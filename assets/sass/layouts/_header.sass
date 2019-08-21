@@ -143,6 +143,8 @@
   #navbar
     height: $navbar-md-height
     @include padding( $navbar-md-padding-y $navbar-md-padding-x )
+    .navbar-brand img
+      max-height: $navbar-md-logo-height
     .main-navigation
       .menu-item > a
         font-size: 18px
@@ -160,6 +162,8 @@
   #navbar
     height: $navbar-sm-height
     @include padding( $navbar-sm-padding-y $navbar-sm-padding-x )
+    .navbar-brand img
+      max-height: $navbar-sm-logo-height
     &.js-is-stuck,
     &.js-is-sticky--change
       @include padding(0 null)
