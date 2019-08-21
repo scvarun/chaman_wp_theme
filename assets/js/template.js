@@ -50,6 +50,7 @@
       this.enableSmoothScroll();
       this.enableSliderArrow();
       this.enableSliders();
+      this.enableTabbedForm();
     },
 
     enableSmoothScroll: function() {
@@ -57,6 +58,8 @@
         if( this.hash !== '' ) {
           e.preventDefault();
           var hash = this.hash;
+          var $hash = $(hash);
+          if(!$hash.length) return;
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 800, function() {
@@ -108,6 +111,60 @@
               $slider.slick('slickPrev');
           }
         });
+      });
+    },
+
+    enableTabbedForm: function() {
+      var $tabbedForms = $('.tabbed-form');
+      if( !$tabbedForms.length ) return;
+
+      $tabbedForms.each(function() {
+        var $tabbedForm = $(this);
+        var $links = $tabbedForm.find('.form-tabs a');
+        var $contents = $tabbedForm.find('.form-tabs-content').children('.form-content');
+
+        function changeTab($id) {
+
+        }
+
+        $links.on('click', function(e) {
+          e.preventDefault();
+          var $currentLink = $(this);
+          var $target = $(this.hash);
+
+          if(!$target.length) {
+            console.error('Target ' + this.hash + ' not found')
+          }
+
+          $contents.each(function() {
+            var $content = $(this);
+            if($content[0] === $target[0])
+              $content[0].dataset.open = 'true';
+            else
+              $content[0].dataset.open = 'false';
+          });
+
+          $links.each(function() {
+            var $link = $(this);
+            if($currentLink[0] == $link[0])
+              $link[0].dataset.open = 'true';
+            else
+              $link[0].dataset.open = 'false';
+          });
+        });
+
+        var $nextLinks = $tabbedForm.find('.next');
+        $nextLinks.on('click', function(e) {
+          e.preventDefault();
+          var $link = $(this);
+          var $target = $tabbedForm.find('.form-tabs a[data-open="open"]');
+        });
+
+        var $prevLinks = $tabbedForm.find('.prev');
+        $prevLinks.on('click', function(e) {
+          e.preventDefault();
+        });
+
       });
     },
     

@@ -316,7 +316,7 @@ template {
   display: none !important; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, .h5, .h6, .tabbed-form .form-tabs a {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2; }
@@ -336,7 +336,7 @@ h4, .h4 {
 h5, .h5 {
   font-size: 1.5rem; }
 
-h6, .h6 {
+h6, .h6, .tabbed-form .form-tabs a {
   font-size: 1.125rem; }
 
 .lead {
@@ -6822,12 +6822,12 @@ a {
   transition: all 0.2s ease-in-out; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
-.h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a,
+.h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a, .tabbed-form .form-tabs a a,
 p a {
   color: inherit;
   text-decoration: underline; }
   .elementor h1 a, .elementor h2 a, .elementor h3 a, .elementor h4 a, .elementor h5 a, .elementor h6 a, .elementor
-  .h1 a, .elementor .h2 a, .elementor .h3 a, .elementor .h4 a, .elementor .h5 a, .elementor .h6 a, .elementor
+  .h1 a, .elementor .h2 a, .elementor .h3 a, .elementor .h4 a, .elementor .h5 a, .elementor .h6 a, .elementor .tabbed-form .form-tabs a a, .tabbed-form .form-tabs .elementor a a, .elementor
   p a {
     text-decoration: underline; }
 
@@ -6892,7 +6892,7 @@ ul, ol, dl {
  * Typography
  * --------------------
  */
-.h1, .h2, .h3, .h4, .h5, .h6,
+.h1, .h2, .h3, .h4, .h5, .h6, .tabbed-form .form-tabs a,
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
@@ -6926,10 +6926,10 @@ h5, .h5 {
   h5, .elementor-widget-heading h5.elementor-heading-title, .h5, .elementor-widget-heading .h5.elementor-heading-title {
     line-height: 0.83333em; }
 
-h6, .h6 {
+h6, .h6, .tabbed-form .form-tabs a {
   font-size: 1.125rem;
   letter-spacing: -0.015em; }
-  h6, .elementor-widget-heading h6.elementor-heading-title, .h6, .elementor-widget-heading .h6.elementor-heading-title {
+  h6, .elementor-widget-heading h6.elementor-heading-title, .h6, .tabbed-form .form-tabs a, .elementor-widget-heading .h6.elementor-heading-title, .elementor-widget-heading .tabbed-form .form-tabs a.elementor-heading-title, .tabbed-form .form-tabs .elementor-widget-heading a.elementor-heading-title {
     line-height: 1.16667em; }
 
 .text-body-color {
@@ -6952,9 +6952,9 @@ h6, .h6 {
     font-size: 2.5rem; }
     h5, .elementor-widget-heading h5.elementor-heading-title, .h5, .elementor-widget-heading .h5.elementor-heading-title {
       line-height: 2.25rem; }
-  h6, .h6 {
+  h6, .h6, .tabbed-form .form-tabs a {
     font-size: 1.5rem; }
-    h6, .elementor-widget-heading h6.elementor-heading-title, .h6, .elementor-widget-heading .h6.elementor-heading-title {
+    h6, .elementor-widget-heading h6.elementor-heading-title, .h6, .tabbed-form .form-tabs a, .elementor-widget-heading .h6.elementor-heading-title, .elementor-widget-heading .tabbed-form .form-tabs a.elementor-heading-title, .tabbed-form .form-tabs .elementor-widget-heading a.elementor-heading-title {
       line-height: 1.875rem; }
   body, .btn {
     font-size: 1.125rem;
@@ -6978,9 +6978,9 @@ h6, .h6 {
     font-size: 3.125rem; }
     h5, .elementor-widget-heading h5.elementor-heading-title, .h5, .elementor-widget-heading .h5.elementor-heading-title {
       line-height: 2.5rem; }
-  h6, .h6 {
+  h6, .h6, .tabbed-form .form-tabs a {
     font-size: 1.875rem; }
-    h6, .elementor-widget-heading h6.elementor-heading-title, .h6, .elementor-widget-heading .h6.elementor-heading-title {
+    h6, .elementor-widget-heading h6.elementor-heading-title, .h6, .tabbed-form .form-tabs a, .elementor-widget-heading .h6.elementor-heading-title, .elementor-widget-heading .tabbed-form .form-tabs a.elementor-heading-title, .tabbed-form .form-tabs .elementor-widget-heading a.elementor-heading-title {
       line-height: 2.5rem; }
   body, .btn {
     font-size: 1.375rem;
@@ -7200,15 +7200,34 @@ h6, .h6 {
  * Team Member
  * --------------------
  */
-.team-members figure {
-  margin-bottom: 50px !important; }
+.team-members {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin-right: -50px;
+  margin-left: -50px; }
+  .team-members .team-members-single {
+    width: 33.33333%;
+    flex-basis: 33.33333%;
+    margin-right: 50px;
+    margin-left: 50px; }
+  .team-members figure {
+    margin-bottom: 50px !important; }
+  .team-members .team-member-name {
+    margin-bottom: 30px; }
+  .team-members .team-member-title {
+    text-transform: uppercase;
+    margin-bottom: 0; }
 
-.team-members .team-member-name {
-  margin-bottom: 30px; }
-
-.team-members .team-member-title {
-  text-transform: uppercase;
-  margin-bottom: 0; }
+@media (max-width: 1365.98px) {
+  .team-members {
+    margin-right: -30px;
+    margin-left: -30px; }
+    .team-members .team-members-single {
+      width: 100%;
+      flex-basis: 100%;
+      margin-right: 30px;
+      margin-left: 30px; } }
 
 .facilitator {
   margin-bottom: 2em; }
@@ -7219,6 +7238,21 @@ h6, .h6 {
   .facilitator span, .facilitator p {
     display: block;
     margin-bottom: 0; }
+
+.tabbed-form .form-content[data-open='true'] {
+  display: block; }
+
+.tabbed-form .form-content[data-open='false'] {
+  display: none; }
+
+.tabbed-form .form-tabs {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row;
+  flex-wrap: wrap; }
+
+.text-white .tabbed-form .form-tabs a, .tabbed-form.text-white .form-tabs a {
+  color: #e5e5e5; }
 
 /*
  * ================================
