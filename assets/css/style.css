@@ -7473,7 +7473,9 @@ h6, .h6 {
     .main-content .post main .entry-title {
       margin-bottom: 40px; }
     .main-content .post main .entry-footer {
-      margin-top: 45px; } }
+      margin-top: 45px; }
+  .main-content .post:not(:last-child) {
+    margin-bottom: 100px; } }
 
 @media (max-width: 1365.98px) {
   .main-content .post main {
@@ -7484,7 +7486,9 @@ h6, .h6 {
     .main-content .post main .entry-title {
       margin-bottom: 20px; }
     .main-content .post main .entry-footer {
-      margin-top: 20px; } }
+      margin-top: 20px; }
+  .main-content .post:not(:last-child) {
+    margin-bottom: 50px; } }
 
 /*
  * --------------------
