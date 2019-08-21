@@ -7437,13 +7437,12 @@ h6, .h6 {
 .main-content .post .entry-content {
   color: #e5e5e5; }
 
-.main-content .post .entry-footer p {
-  margin-bottom: 0; }
-
-.main-content .post .entry-footer .read-more-link {
-  color: #e5e5e5;
-  font-weight: bold;
-  text-decoration: underline; }
+.main-content .post .entry-footer {
+  margin-top: 70px; }
+  .main-content .post .entry-footer .read-more-link {
+    color: #e5e5e5;
+    font-weight: bold;
+    text-decoration: underline; }
 
 .main-content .post:not(:last-child) {
   margin-bottom: 140px; }
