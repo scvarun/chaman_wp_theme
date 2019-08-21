@@ -81,9 +81,9 @@ $sticky-logo-height:          60px;
 $sticky-md-logo-height:       60px;
 $sticky-sm-logo-height:       60px;
 
-$navbar-height:               190px;
-$navbar-md-height:            130px;
-$navbar-sm-height:            80px;
+$navbar-height:               #{$navbar-padding-y * 2 + $navbar-logo-height};
+$navbar-md-height:            #{$navbar-md-padding-y * 2 + $navbar-md-logo-height};
+$navbar-sm-height:            #{$navbar-sm-padding-y * 2 + $navbar-sm-logo-height};
 
 /* Forms */
 $input-border-width:          0;
