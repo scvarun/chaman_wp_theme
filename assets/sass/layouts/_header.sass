@@ -3,7 +3,7 @@
  * Header Styling
  * --------------------
  */
-.header-overlay .content-wrapper
+.header-overlay #navbar
   margin-bottom: -$navbar-height
 
 .navbar > .container > .row,
@@ -140,7 +140,7 @@
     overflow: hidden
 
 @include media-breakpoint-down('md')
-  .header-overlay .content-wrapper
+  .header-overlay #navbar
     margin-bottom: -$navbar-md-height
   #navbar
     height: $navbar-md-height
@@ -161,7 +161,7 @@
           max-height: $sticky-md-navbar-height
 
 @include media-breakpoint-down('xs')
-  .header-overlay .content-wrapper
+  .header-overlay #navbar
     margin-bottom: -$navbar-sm-height
   #navbar
     height: $navbar-sm-height
