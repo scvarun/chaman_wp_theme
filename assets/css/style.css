@@ -7508,7 +7508,9 @@ h6, .h6 {
   background: #ec633c; }
 
 .single .main-content {
-  padding: 0; }
+  padding-top: 40px;
+  padding-right: 0;
+  padding-left: 0; }
   .single .main-content .entry-thumbnail {
     margin-bottom: 40px; }
   .single .main-content .post main {
