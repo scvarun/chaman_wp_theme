@@ -2897,7 +2897,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem; }
+  padding: 80px 100px; }
   .navbar > .container,
   .navbar > .container-fluid {
     display: flex;
@@ -2909,7 +2909,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.39063rem;
   padding-bottom: 0.39063rem;
-  margin-right: 1rem;
+  margin-right: 100px;
   font-size: 0.9375rem;
   line-height: inherit;
   white-space: nowrap; }
@@ -7211,26 +7211,26 @@ h6, .h6 {
  * --------------------
  */
 .header-overlay .content-wrapper {
-  padding-top: calc(200px + 40px); }
+  padding-top: calc(190px + 40px); }
 
 .navbar > .container > .row,
 .navbar > .container-fluid > .row {
   flex: 1; }
 
 #navbar {
-  height: 200px;
+  height: 190px;
+  padding: 80px 100px;
   justify-content: space-between;
+  align-items: flex-start;
   background: none;
   position: relative;
-  margin-bottom: -200px;
-  padding: 0 100px;
   z-index: 100;
   transition: all 0.2s ease-in-out; }
   #navbar .navbar-brand {
     max-width: 30vw; }
     #navbar .navbar-brand img {
       max-width: 100%;
-      max-height: 100px;
+      max-height: 110px;
       opacity: 1;
       transition: all 0.2s ease-in-out; }
       #navbar .navbar-brand img:not(.default-logo) {
@@ -7258,6 +7258,11 @@ h6, .h6 {
   #navbar.navbar-dark .nav-toggle,
   #navbar.navbar-dark .navbar-nav .nav-link {
     color: #fff; }
+  #navbar.js-is-stuck, #navbar.js-is-sticky--change {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 120px;
+    align-items: center; }
   #navbar.js-is-stuck, #navbar.js-is-sticky {
     background: #755c4e; }
     #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
@@ -7268,8 +7273,6 @@ h6, .h6 {
       #navbar.js-is-stuck .navbar-brand img.sticky-logo ~ .default-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo ~ .default-logo {
         display: none;
         opacity: 0; }
-  #navbar.js-is-stuck, #navbar.js-is-sticky--change {
-    height: 120px; }
   .elementor-editor-active #navbar {
     pointer-events: none; }
   .admin-bar #navbar.js-is-stuck, .admin-bar #navbar.js-is-sticky {
@@ -7340,15 +7343,27 @@ h6, .h6 {
 
 @media (max-width: 1599.98px) {
   #navbar {
-    padding-right: 50px;
-    padding-left: 50px; }
+    height: 130px;
+    padding: 50px; }
     #navbar .main-navigation .menu-item > a {
-      font-size: 18px; } }
+      font-size: 18px; }
+    #navbar.js-is-stuck, #navbar.js-is-sticky--change {
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 120px; }
+    #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
+      max-height: 120px; } }
 
 @media (max-width: 819.98px) {
   #navbar {
-    padding-right: 30px;
-    padding-left: 30px; } }
+    height: 80px;
+    padding: 30px; }
+    #navbar.js-is-stuck, #navbar.js-is-sticky--change {
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 120px; }
+    #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
+      max-height: 120px; } }
 
 /*
  * --------------------

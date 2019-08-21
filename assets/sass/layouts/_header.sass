@@ -12,11 +12,11 @@
 
 #navbar
   height: $navbar-height
+  padding: $navbar-padding-y $navbar-padding-x
   justify-content: space-between
+  align-items: flex-start
   background: none
   position: relative
-  margin-bottom: #{-1 * $navbar-height}
-  padding: 0 100px
   z-index: 100
   transition: $transition-base
   .navbar-brand
@@ -53,6 +53,11 @@
     .navbar-nav .nav-link
       color: #fff
   &.js-is-stuck,
+  &.js-is-sticky--change
+    @include padding(0 null)
+    height: $sticky-navbar-height
+    align-items: center
+  &.js-is-stuck,
   &.js-is-sticky
     background: $tertiary
     .navbar-brand
@@ -64,9 +69,6 @@
         &.sticky-logo ~ .default-logo
           display: none
           opacity: 0
-  &.js-is-stuck,
-  &.js-is-sticky--change
-    height: $sticky-navbar-height
   .elementor-editor-active &
     pointer-events: none
   .admin-bar &
@@ -139,11 +141,31 @@
 
 @include media-breakpoint-down('md')
   #navbar
-    @include padding( null 50px )
+    height: $navbar-md-height
+    @include padding( $navbar-md-padding-y $navbar-md-padding-x )
     .main-navigation
       .menu-item > a
         font-size: 18px
+    &.js-is-stuck,
+    &.js-is-sticky--change
+      @include padding(0 null)
+      height: $sticky-md-navbar-height
+    &.js-is-stuck,
+    &.js-is-sticky
+      .navbar-brand
+        img
+          max-height: $sticky-md-navbar-height
 
 @include media-breakpoint-down('xs')
   #navbar
-    @include padding( null 30px )
+    height: $navbar-sm-height
+    @include padding( $navbar-sm-padding-y $navbar-sm-padding-x )
+    &.js-is-stuck,
+    &.js-is-sticky--change
+      @include padding(0 null)
+      height: $sticky-sm-navbar-height
+    &.js-is-stuck,
+    &.js-is-sticky
+      .navbar-brand
+        img
+          max-height: $sticky-sm-navbar-height

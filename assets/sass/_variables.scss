@@ -61,11 +61,29 @@ $h6-line-height:              #{em(21, 18)};
 $h6-letter-spacing:           -0.015em;
 
 /* Header */
-$navbar-height:               200px;
-$navbar-logo-height:          100px;
+$navbar-padding-y:            80px;
+$navbar-md-padding-y:         50px;
+$navbar-sm-padding-y:         30px;
+
+$navbar-padding-x:            100px;
+$navbar-md-padding-x:         50px;
+$navbar-sm-padding-x:         30px;
+
+$navbar-logo-height:          110px;
+$navbar-md-logo-height:       80px;
+$navbar-sm-logo-height:       50px;
 
 $sticky-navbar-height:        120px;
+$sticky-md-navbar-height:     120px;
+$sticky-sm-navbar-height:     120px;
+
 $sticky-logo-height:          60px;
+$sticky-md-logo-height:       60px;
+$sticky-sm-logo-height:       60px;
+
+$navbar-height:               190px;
+$navbar-md-height:            130px;
+$navbar-sm-height:            80px;
 
 /* Forms */
 $input-border-width:          0;
