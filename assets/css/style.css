@@ -7206,7 +7206,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   flex-wrap: wrap;
   margin-right: -50px;
   margin-left: -50px; }
-  .team-members .team-members-single {
+  .team-members .team-member-single {
     width: 33.33333%;
     flex-basis: 33.33333%;
     padding-right: 50px;
@@ -7223,7 +7223,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   .team-members {
     margin-right: -30px;
     margin-left: -30px; }
-    .team-members .team-members-single {
+    .team-members .team-member-single {
       width: 100%;
       flex-basis: 100%;
       padding-right: 30px;
