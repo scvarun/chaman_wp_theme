@@ -21,6 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <body <?php body_class(); ?> <?php unifato_the_microdata( 'body' ); ?>>
 <div id="wrapper" class="wrapper">
+	<div id="top"></div>
 
 	<nav id="navbar" class="navbar navbar-expand-sm navbar-dark sticky-wrapper" <?php unifato_the_microdata( 'header' ); ?> role="banner">
 		<?php unifato_construct_logo() ?>
@@ -67,6 +68,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 		?>
 	</nav><!-- #navbar -->
 
-	<div id="top"></div>
 	<div class="content-wrapper"<?php echo unifato_content_wrapper_attr(); ?>>
 		
