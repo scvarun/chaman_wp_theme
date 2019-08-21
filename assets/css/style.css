@@ -7073,8 +7073,6 @@ h6, .h6 {
  * --------------------
  */
 .testimonial .testimonial-title {
-  font-size: 72px !important;
-  line-height: 90px;
   font-weight: 900;
   font-style: italic;
   margin-bottom: 65px; }
@@ -7093,16 +7091,14 @@ h6, .h6 {
   .testimonial p:last-child {
     margin-bottom: 0; }
 
-@media (min-width: 820px) {
+@media (min-width: 1366px) {
   .testimonial p:not(:last-child) {
     margin-bottom: 2em; }
   .testimonial.testimonial-right .row {
     flex-flow: row-reverse; } }
 
-@media (max-width: 1365.98px) {
+@media (max-width: 1599.98px) {
   .testimonial .testimonial-title {
-    font-size: 40px !important;
-    line-height: 44px;
     margin-bottom: 35px; }
   .testimonial .testimonial-user-info, .testimonial p {
     font-size: 18px;

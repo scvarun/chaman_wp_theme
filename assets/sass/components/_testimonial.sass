@@ -6,8 +6,6 @@
 
 .testimonial
   .testimonial-title
-    font-size: 72px !important
-    line-height: 90px
     font-weight: 900
     font-style: italic
     margin-bottom: 65px
@@ -23,7 +21,7 @@
     &:last-child
       margin-bottom: 0
 
-@include media-breakpoint-up('sm')
+@include media-breakpoint-up('md')
   .testimonial
     p:not(:last-child)
       margin-bottom: 2em
@@ -31,11 +29,9 @@
       .row
         flex-flow: row-reverse
 
-@include media-breakpoint-down('sm')
+@include media-breakpoint-down('md')
   .testimonial
     .testimonial-title
-      font-size: 40px !important
-      line-height: 44px
       margin-bottom: 35px
     .testimonial-user-info, p
       font-size: 18px
