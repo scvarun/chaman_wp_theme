@@ -15,9 +15,7 @@
     opacity: 1
 
 #CHAMAN_LOGO_SVG
-  height: 600px
   max-height: 80%
-  max-width: 80vw
   rect, path
     animation-name: LOGO_GROUP_1
     animation-duration: 3s
@@ -27,8 +25,7 @@
       animation-delay: #{.2*$i}s
 
 @media screen and (max-width: map-get($grid-breakpoints, "sm"))
-  #CHAMAN_LOGO_SVG
-    height: 90vw
+  #CHAMAN_LOGO_SVG svg
     transform: rotate(90deg)
   
 #admission-form

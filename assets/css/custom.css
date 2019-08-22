@@ -20,9 +20,7 @@
     opacity: 1; } }
 
 #CHAMAN_LOGO_SVG {
-  height: 600px;
-  max-height: 80%;
-  max-width: 80vw; }
+  max-height: 80%; }
   #CHAMAN_LOGO_SVG rect, #CHAMAN_LOGO_SVG path {
     animation-name: LOGO_GROUP_1;
     animation-duration: 3s;
@@ -49,8 +47,7 @@
     animation-delay: 2s; }
 
 @media screen and (max-width: 820px) {
-  #CHAMAN_LOGO_SVG {
-    height: 90vw;
+  #CHAMAN_LOGO_SVG svg {
     transform: rotate(90deg); } }
 
 #admission-form {
