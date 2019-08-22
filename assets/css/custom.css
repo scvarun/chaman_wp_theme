@@ -48,8 +48,9 @@
 
 @media screen and (max-width: 820px) {
   #CHAMAN_LOGO_SVG {
-    max-width: 80vh;
-    transform: rotate(90deg); } }
+    transform: rotate(90deg);
+    max-height: auto;
+    width: 800px; } }
 
 #admission-form {
   margin-bottom: 190px; }
