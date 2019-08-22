@@ -7234,7 +7234,10 @@ h6, .h6, .tabbed-form .form-tabs a {
       margin-bottom: 20px; } }
 
 .facilitator {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
   .facilitator figure {
     overflow: hidden;
     border-radius: 100%;
@@ -7242,6 +7245,8 @@ h6, .h6, .tabbed-form .form-tabs a {
   .facilitator span, .facilitator p {
     display: block;
     margin-bottom: 0; }
+  .facilitator figure, .facilitator div {
+    max-width: 260px; }
 
 .tabbed-form .form-content[data-open='true'] {
   display: block; }
