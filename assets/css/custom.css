@@ -21,6 +21,10 @@
 
 #CHAMAN_LOGO_SVG {
   max-height: 80%; }
+  #CHAMAN_LOGO_SVG svg {
+    height: 100%;
+    width: auto;
+    display: inline-block; }
   #CHAMAN_LOGO_SVG rect, #CHAMAN_LOGO_SVG path {
     animation-name: LOGO_GROUP_1;
     animation-duration: 3s;

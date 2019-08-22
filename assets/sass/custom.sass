@@ -16,6 +16,10 @@
 
 #CHAMAN_LOGO_SVG
   max-height: 80%
+  svg
+    height: 100%
+    width: auto
+    display: inline-block
   rect, path
     animation-name: LOGO_GROUP_1
     animation-duration: 3s
@@ -23,6 +27,9 @@
   @for $i from 1 through 10
     rect:nth-child(#{$i}), path:nth-child(#{$i})
       animation-delay: #{.2*$i}s
+
+@media screen and (max-)
+
 
 @media screen and (max-width: 480px)
   #CHAMAN_LOGO_SVG
