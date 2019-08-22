@@ -7602,4 +7602,23 @@ h6, .h6, .tabbed-form .form-tabs a {
   .single .main-content .post main .entry-title {
     margin-bottom: 30px; } }
 
+/*
+ * --------------------
+ * Load More button
+ * --------------------
+ */
+.load_more_btn {
+  color: #fff;
+  border-color: #fff;
+  border-radius: 0;
+  font-size: 30px;
+  padding: 20px 100px;
+  border-width: 3px;
+  transition: all 0.2s ease-in-out; }
+
+@media (max-width: 1599.98px) {
+  .load_more_btn {
+    font-size: 18px;
+    padding: 10px 30px; } }
+
 /*# sourceMappingURL=style.css.map */

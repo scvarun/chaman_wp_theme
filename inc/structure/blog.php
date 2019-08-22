@@ -269,62 +269,61 @@ if ( ! function_exists( 'unifato_paging_nav' ) ) {
    * @return void
    */
   function unifato_paging_nav($max_num_pages = false) {
+    global $wp_query;
 
-  	if ($max_num_pages === false) {
-  		global $wp_query;
-  		$max_num_pages = $wp_query -> max_num_pages;
-  	}
+    if( $wp_query->max_num_pages > 1 ) {
+      ?>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <button class="btn btn-outline-primary load_more_btn">See More Stories...</button>
+              <h6 class="load_more_message d-none">No more posts to display</h6>
+            </div>
+          </div>
+        </div>
+      <?php
+    }
 
-  	$big = 999999999; // need an unlikely integer
+    unifato_paging_nav_scripts();
+  }
 
-  	$args = array(
-  		'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-  		'format' => '?paged=%#%',
-  		'current' => max( 1, get_query_var('paged') ),
-  		'total' => $max_num_pages,
-  		'prev_next'		=> false,
-  		'prev_text' 	=> '',
-  		'next_text' 	=> '',
-  		'end_size'		=> 1,
-  		'mid_size'		=> 2,
-  		'type' 			=> 'array',
-  	);
+  function unifato_paging_nav_scripts() {
+    global $wp_query;
 
-  	$links = paginate_links( $args );
+    wp_enqueue_script('jquery');
 
-  	if (!empty($links)):  ?>
+    wp_register_script('unifato_load_more', get_stylesheet_directory_uri() . '/assets/js/load_more.js', array('jquery'));
 
-  		<nav class="container-fluid site-pagination">
-  			<ul class="pager list-unstyled float-left">
-  				<li class="prev-outer disabled">
-  					<?php echo get_previous_posts_link('<i class="feather-chevron-left"></i>'); ?>
-  				</li>
+    wp_localize_script( 'unifato_load_more', 'unifato_load_more_params', array(
+      'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php',
+      'posts' => json_encode( $wp_query->query_vars ),
+      'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1,
+      'max_page' => $wp_query->max_num_pages
+    ) );
 
-          <?php  if (is_array($links)): ?>
-            <?php foreach ($links as $link): ?>
-              <?php
-              if (strstr($link,'href')):
-                echo '<li>'.$link.'</li>';
-              else: ?>
-                <li class="current">
-                  <?php echo strip_tags($link); ?>
-                </li>
-              <?php endif; ?>
-            <?php endforeach; ?>
-          <?php endif; ?>
-
-  				<li class="next-outer">
-  					<?php echo get_next_posts_link('<i class="feather-chevron-right"></i>'); ?>
-  				</li>
-  			</ul><!-- /.pager -->
-
-        <span class="page-info float-right">
-          <?php
-            echo esc_html__( 'Page ', 'unifato' ) . $args['current'] . esc_html__( ' of ', 'unifato' ) . $max_num_pages;
-            // echo esc_html__( 'Page ', 'unifato' ) . ( get_query_var('paged') ? get_query_var('paged') : 1 ) . esc_html__( ' of ', 'unifato' ) . $wp_query->max_num_pages;
-          ?>
-        </span>
-  		</nav><!-- /.site-navigation -->
-  	<?php endif;
+    wp_enqueue_script('unifato_load_more');
   }
 }
+
+if( !function_exists('unifato_load_more_ajax_handler') ) {
+  function unifato_load_more_ajax_handler(){
+    $args = json_decode( stripslashes( $_POST['query'] ), true );
+    $args['paged'] = $_POST['page'] + 1;
+    $args['post_status'] = 'publish';
+
+    query_posts( $args );
+   
+    if( have_posts() ) :
+      while( have_posts() ): the_post();
+  
+        get_template_part( 'template-parts/content', get_post_format() );
+      endwhile;
+   
+    endif;
+    die;
+  }
+
+  add_action('wp_ajax_loadmore', 'unifato_load_more_ajax_handler');
+  add_action('wp_ajax_nopriv_loadmore', 'unifato_load_more_ajax_handler');
+}
+
