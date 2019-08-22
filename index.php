@@ -70,7 +70,7 @@ get_header();
         </article><!-- /.post -->
         <?php 
         endwhile;
-        unifato_paging_nav();
+        // unifato_paging_nav();
       else :
         get_template_part( 'template-parts/content', 'none' );
       endif;
