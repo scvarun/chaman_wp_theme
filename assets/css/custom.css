@@ -48,8 +48,8 @@
     animation-delay: 2s; }
 
 @media screen and (max-width: 480px) {
-  #CHAMAN_LOGO_SVG {
-    height: 90vw;
+  #CHAMAN_LOGO_SVG svg {
+    height: 100%;
     transform: rotate(90deg); } }
 
 #admission-form {
