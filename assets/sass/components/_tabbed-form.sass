@@ -1,4 +1,14 @@
 .tabbed-form
+  .form-tabs
+    a
+      color: $white
+      text-transform: uppercase
+      &:not(:last-child)
+        padding-right: 1em
+      &:not(:first-child)
+        padding-left: 1em
+    [data-open="false"]
+      opacity: .7
   .form-content[data-open='true']
     display: block
   .form-content[data-open='false']
@@ -10,8 +20,11 @@
     flex-wrap: wrap
     a
       @extend .h6
-  .text-white &,
-  &.text-white
-    .form-tabs
-      a
-        color: $white
+  .tabbed-form-container
+    background: #fff
+    padding: 50px
+
+@include media-breakpoint-down('sm')
+  .tabbed-form
+    .tabbed-form-container
+      padding: 30px

@@ -123,8 +123,22 @@
         var $links = $tabbedForm.find('.form-tabs a');
         var $contents = $tabbedForm.find('.form-tabs-content').children('.form-content');
 
-        function changeTab($id) {
+        function changeTab($target) {
+          $contents.each(function() {
+            var $content = $(this);
+            if($content[0] === $target[0])
+              $content[0].dataset.open = 'true';
+            else
+              $content[0].dataset.open = 'false';
+          });
 
+          $links.each(function() {
+            var $link = $(this);
+            if('#' + $target[0].id == $link[0].hash)
+              $link[0].dataset.open = 'true';
+            else
+              $link[0].dataset.open = 'false';
+          });
         }
 
         $links.on('click', function(e) {
@@ -136,33 +150,38 @@
             console.error('Target ' + this.hash + ' not found')
           }
 
-          $contents.each(function() {
-            var $content = $(this);
-            if($content[0] === $target[0])
-              $content[0].dataset.open = 'true';
-            else
-              $content[0].dataset.open = 'false';
-          });
-
-          $links.each(function() {
-            var $link = $(this);
-            if($currentLink[0] == $link[0])
-              $link[0].dataset.open = 'true';
-            else
-              $link[0].dataset.open = 'false';
-          });
+          changeTab($target);
         });
 
         var $nextLinks = $tabbedForm.find('.next');
-        $nextLinks.on('click', function(e) {
-          e.preventDefault();
-          var $link = $(this);
-          var $target = $tabbedForm.find('.form-tabs a[data-open="open"]');
+        $nextLinks.each(function() {
+          var $nextLink = $(this);
+          $nextLink.on('click', function(e) {
+            e.preventDefault();
+            var $link = $(this);
+            var $currentLink = $tabbedForm.find('.form-tabs a[data-open="true"]');
+            $currentLink[0].dataset.open = 'false';
+            var $next = $($currentLink.nextAll('a')[0]);
+            var $target = $($next[0].hash);
+            if(!$target.length) {
+              console.error('Target ' + this.hash + ' not found')
+            }
+            changeTab($target);
+          });
         });
-
-        var $prevLinks = $tabbedForm.find('.prev');
+        
+        var $prevLinks = $tabbedForm.find('.previous');
         $prevLinks.on('click', function(e) {
           e.preventDefault();
+          var $link = $(this);
+          var $currentLink = $tabbedForm.find('.form-tabs a[data-open="true"]');
+          $currentLink[0].dataset.open = 'false';
+          var $next = $($currentLink.prevAll('a')[0]);
+          var $target = $($next[0].hash);
+          if(!$target.length) {
+            console.error('Target ' + this.hash + ' not found')
+          }
+          changeTab($target);
         });
 
       });
