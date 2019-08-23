@@ -7356,6 +7356,8 @@ h6, .h6, .tabbed-form .form-tabs a {
   #navbar.navbar-dark .nav-toggle,
   #navbar.navbar-dark .navbar-nav .nav-link {
     color: #fff; }
+  #navbar:hover {
+    background: #ec633c; }
   #navbar.js-is-stuck, #navbar.js-is-sticky--change {
     padding-top: 0;
     padding-bottom: 0;
