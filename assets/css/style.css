@@ -7561,7 +7561,7 @@ h6, .h6, .tabbed-form .form-tabs a {
 .main-content .post.category-news main .post-content {
   background: #755c4e; }
 
-.main-content .post.category-job-listing main .post-content {
+.main-content .post.category-career main .post-content {
   background: #20234c; }
 
 .main-content > footer {
@@ -7625,7 +7625,7 @@ h6, .h6, .tabbed-form .form-tabs a {
 .single.category-news .content-wrapper {
   background: #755c4e; }
 
-.single.category-job-listing .content-wrapper {
+.single.category-career .content-wrapper {
   background: #20234c; }
 
 @media (min-width: 1600px) {
