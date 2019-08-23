@@ -7243,13 +7243,6 @@ h6, .h6, .tabbed-form .form-tabs a {
     display: block;
     margin-bottom: 0; }
 
-.tabbed-form .wpcf7-form-control:not(.wpcf7-radio):not(.wpcf7-checkbox):not(.wpcf7-file) {
-  line-height: 100px;
-  height: 100px;
-  font-size: 30px;
-  color: #755c4e;
-  font-weight: 500; }
-
 .tabbed-form .form-tabs {
   margin-bottom: 40px;
   display: flex;
@@ -7281,6 +7274,31 @@ h6, .h6, .tabbed-form .form-tabs a {
 
 .tabbed-form .row {
   max-width: 1300px; }
+
+.tabbed-form .wpcf7-form-control:not(.wpcf7-radio):not(.wpcf7-checkbox):not(.wpcf7-file) {
+  line-height: 100px;
+  height: 100px;
+  font-size: 30px;
+  color: #755c4e;
+  font-weight: 500; }
+
+.tabbed-form .wpcf7-radio .wpcf7-list-item-label {
+  display: inline-flex;
+  align-items: center;
+  flex-flow: row; }
+  .tabbed-form .wpcf7-radio .wpcf7-list-item-label:before {
+    content: '';
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background: #e5e5e5;
+    border: 0; }
+
+.tabbed-form .wpcf7-radio input[type="radio"] {
+  display: none; }
+  .tabbed-form .wpcf7-radio input[type="radio"]:checked ~ .wpcf7-list-item-label:before {
+    background: #ec633c;
+    box-shadow: 3px 0 0 #e5e5e5; }
 
 @media (max-width: 1599.98px) {
   .tabbed-form .form-group {
