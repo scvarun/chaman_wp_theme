@@ -51,7 +51,6 @@
       this.enableSliderArrow();
       this.enableSliders();
       this.enableTabbedForm();
-      this.enableRadioCheckboxClasses();
     },
 
     enableSmoothScroll: function() {
@@ -185,33 +184,6 @@
           changeTab($target);
         });
 
-      });
-    },
-
-    enableRadioCheckboxClasses: function() {
-      var $inputs = $('input[type="radio"], input[type="checkbox"');
-      if(!$inputs.length) return;
-      $inputs.each(function() {
-        var $input = $(this);
-
-        var changeClasses = function($input) {
-          var $formGroup = $input.closest('.form-group');
-          var $parent = $input.parent();
-          console.log($input[0].checked);
-          if($input[0].checked) {
-            $formGroup.addClass('input-checked');
-            $parent.addClass('input-checked');
-          } else {
-            $formGroup.removeClass('input-checked');
-            $parent.removeClass('input-checked');
-          }
-        }
-
-        $input[0].addEventListener('change', function() {
-          changeClasses($input);
-        });
-
-        changeClasses($input);
       });
     },
     
