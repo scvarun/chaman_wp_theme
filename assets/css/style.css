@@ -7285,7 +7285,8 @@ h6, .h6, .tabbed-form .form-tabs a {
 .tabbed-form .wpcf7-radio .wpcf7-list-item-label {
   display: inline-flex;
   align-items: center;
-  flex-flow: row; }
+  flex-flow: row;
+  transition: all 0.2s ease-in-out; }
   .tabbed-form .wpcf7-radio .wpcf7-list-item-label:before {
     content: '';
     height: 50px;
@@ -7298,7 +7299,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   display: none; }
   .tabbed-form .wpcf7-radio input[type="radio"]:checked ~ .wpcf7-list-item-label:before {
     background: #ec633c;
-    box-shadow: 3px 0 0 #e5e5e5; }
+    box-shadow: inset 0 0 0 10px #e5e5e5; }
 
 @media (max-width: 1599.98px) {
   .tabbed-form .form-group {
@@ -7388,8 +7389,6 @@ h6, .h6, .tabbed-form .form-tabs a {
   #navbar.navbar-dark .nav-toggle,
   #navbar.navbar-dark .navbar-nav .nav-link {
     color: #fff; }
-  #navbar:hover {
-    background: #755c4e; }
   #navbar.js-is-stuck, #navbar.js-is-sticky--change {
     padding-top: 0;
     padding-bottom: 0;
@@ -7403,7 +7402,7 @@ h6, .h6, .tabbed-form .form-tabs a {
     #navbar.js-is-stuck .navbar-brand img.sticky-logo ~ .default-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo ~ .default-logo {
       display: none;
       opacity: 0; }
-  #navbar.js-is-stuck:hover {
+  #navbar.js-is-sticky--change:hover, #navbar.js-is-stuck:hover {
     background: #755c4e; }
   .elementor-editor-active #navbar {
     pointer-events: none; }

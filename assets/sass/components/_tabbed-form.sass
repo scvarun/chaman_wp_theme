@@ -38,6 +38,7 @@
       display: inline-flex
       align-items: center
       flex-flow: row
+      transition: $transition-base
       &:before
         content: ''
         @include size(50px)
@@ -48,7 +49,7 @@
       display: none
       &:checked ~ .wpcf7-list-item-label:before
         background: $primary
-        box-shadow: 3px 0 0 $white
+        box-shadow: inset 0 0 0 10px $white
 
 @include media-breakpoint-down('md')
   .tabbed-form
