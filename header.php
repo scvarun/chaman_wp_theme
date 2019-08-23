@@ -51,9 +51,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="social-links text-white">
 				<h6 class="text-uppercase">Follow Us</h6>
 				<ul class="list-unstyled">
-					<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-					<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<?php if(get_theme_mod('chaman_options__social__facebook_url') != ''): ?>
+					<li><a href="<?php echo get_theme_mod('chaman_options__social__facebook_url'); ?>"><i class="fa fa-facebook-f"></i></a></li>
+					<?php endif; ?>
+					<?php if(get_theme_mod('chaman_options__social__linkedin_url') != ''): ?>
+					<li><a href="<?php echo get_theme_mod('chaman_options__social__linkedin_url'); ?>"><i class="fa fa-linkedin-square"></i></a></li>
+					<?php endif; ?>
+					<?php if(get_theme_mod('chaman_options__social__instagram_url') != ''): ?>
+					<li><a href="<?php echo get_theme_mod('chaman_options__social__instagram_url'); ?>"><i class="fa fa-instagram"></i></a></li>
+					<?php endif; ?>	
 				</ul>
 			</div><!-- /.social-links -->
 		</div><!-- /.nav-container -->
