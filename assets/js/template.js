@@ -193,17 +193,24 @@
       if(!$inputs.length) return;
       $inputs.each(function() {
         var $input = $(this);
-        $input.on('change', function() {
+
+        var changeClasses = function($input) {
           var $formGroup = $input.closest('.form-group');
           var $parent = $input.parent();
-          if(this.checked) {
+          if($input[0].checked) {
             $formGroup.addClass('input-checked');
             $parent.addClass('input-checked');
           } else {
             $formGroup.removeClass('input-checked');
             $parent.removeClass('input-checked');
           }
+        }
+
+        $input.on('change', function() {
+          changeClasses($input);
         });
+
+        changeClasses($input);
       });
     },
     
