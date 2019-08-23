@@ -7330,6 +7330,8 @@ h6, .h6, .tabbed-form .form-tabs a {
     display: none; }
     #navbar .mobile-nav .social-links {
       margin-top: 110px; }
+      #navbar .mobile-nav .social-links h6 {
+        margin-bottom: 20px; }
       #navbar .mobile-nav .social-links li {
         display: inline-block;
         font-size: 30px; }
