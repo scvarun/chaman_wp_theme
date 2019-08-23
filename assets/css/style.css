@@ -7247,7 +7247,8 @@ h6, .h6, .tabbed-form .form-tabs a {
   line-height: 100px;
   height: 100px;
   font-size: 30px;
-  color: #755c4e; }
+  color: #755c4e;
+  font-weight: 500; }
 
 .tabbed-form .form-tabs {
   margin-bottom: 40px;
@@ -7266,7 +7267,6 @@ h6, .h6, .tabbed-form .form-tabs a {
     opacity: .7; }
 
 .tabbed-form .form-group {
-  width: 80%;
   margin-bottom: 55px; }
 
 .tabbed-form .form-content[data-open='true'] {
