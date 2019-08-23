@@ -7261,6 +7261,10 @@ h6, .h6, .tabbed-form .form-tabs a {
   .tabbed-form .form-tabs [data-open="false"] {
     opacity: .7; }
 
+.tabbed-form .form-group {
+  width: 80%;
+  margin-bottom: 55px; }
+
 .tabbed-form .form-content[data-open='true'] {
   display: block; }
 
@@ -7270,6 +7274,10 @@ h6, .h6, .tabbed-form .form-tabs a {
 .tabbed-form .tabbed-form-container {
   background: #fff;
   padding: 50px; }
+
+@media (max-width: 1599.98px) {
+  .tabbed-form .form-group {
+    width: 100%; } }
 
 @media (max-width: 1365.98px) {
   .tabbed-form .tabbed-form-container {

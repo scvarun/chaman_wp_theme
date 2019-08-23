@@ -15,6 +15,9 @@
         padding-left: 120px
     [data-open="false"]
       opacity: .7
+  .form-group
+    width: 80%
+    margin-bottom: 55px
   .form-content[data-open='true']
     display: block
   .form-content[data-open='false']
@@ -22,6 +25,11 @@
   .tabbed-form-container
     background: #fff
     padding: 50px
+
+@include media-breakpoint-down('md')
+  .tabbed-form
+    .form-group
+      width: 100%
 
 @include media-breakpoint-down('sm')
   .tabbed-form
