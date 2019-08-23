@@ -7245,28 +7245,27 @@ h6, .h6, .tabbed-form .form-tabs a {
     display: block;
     margin-bottom: 0; }
 
-.tabbed-form .form-tabs a {
-  color: #e5e5e5;
-  text-transform: uppercase; }
-  .tabbed-form .form-tabs a:not(:last-child) {
-    padding-right: 1em; }
-  .tabbed-form .form-tabs a:not(:first-child) {
-    padding-left: 1em; }
-
-.tabbed-form .form-tabs [data-open="false"] {
-  opacity: .7; }
+.tabbed-form .form-tabs {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row;
+  flex-wrap: wrap; }
+  .tabbed-form .form-tabs a {
+    color: #e5e5e5;
+    text-transform: uppercase; }
+    .tabbed-form .form-tabs a:not(:last-child) {
+      padding-right: 120px; }
+    .tabbed-form .form-tabs a:not(:first-child) {
+      padding-left: 120px; }
+  .tabbed-form .form-tabs [data-open="false"] {
+    opacity: .7; }
 
 .tabbed-form .form-content[data-open='true'] {
   display: block; }
 
 .tabbed-form .form-content[data-open='false'] {
   display: none; }
-
-.tabbed-form .form-tabs {
-  display: flex;
-  align-items: flex-start;
-  flex-flow: row;
-  flex-wrap: wrap; }
 
 .tabbed-form .tabbed-form-container {
   background: #fff;

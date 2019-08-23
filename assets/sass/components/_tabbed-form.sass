@@ -1,25 +1,24 @@
 .tabbed-form
   .form-tabs
+    margin-bottom: 40px
+    display: flex
+    align-items: flex-start
+    flex-flow: row
+    flex-wrap: wrap
     a
       color: $white
+      @extend .h6
       text-transform: uppercase
       &:not(:last-child)
-        padding-right: 1em
+        padding-right: 120px
       &:not(:first-child)
-        padding-left: 1em
+        padding-left: 120px
     [data-open="false"]
       opacity: .7
   .form-content[data-open='true']
     display: block
   .form-content[data-open='false']
     display: none
-  .form-tabs
-    display: flex
-    align-items: flex-start
-    flex-flow: row
-    flex-wrap: wrap
-    a
-      @extend .h6
   .tabbed-form-container
     background: #fff
     padding: 50px
