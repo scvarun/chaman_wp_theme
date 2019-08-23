@@ -207,7 +207,7 @@
           }
         }
 
-        $input.on('change', function() {
+        $input[0].addEventListener('change', function() {
           changeClasses($input);
         });
 
