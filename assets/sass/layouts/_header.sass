@@ -74,6 +74,8 @@
     .nav-toggle,
     .navbar-nav .nav-link
       color: #fff
+  &:hover
+    background: $tertiary
   &.js-is-stuck,
   &.js-is-sticky--change
     @include padding(0 null)
@@ -81,7 +83,6 @@
     align-items: center
   &.js-is-stuck,
   &.js-is-sticky
-    background: $tertiary
     .navbar-brand
       img
         max-height: $sticky-logo-height
