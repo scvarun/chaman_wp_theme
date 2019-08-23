@@ -197,6 +197,7 @@
         var changeClasses = function($input) {
           var $formGroup = $input.closest('.form-group');
           var $parent = $input.parent();
+          console.log($input[0]);
           if($input[0].checked) {
             $formGroup.addClass('input-checked');
             $parent.addClass('input-checked');
