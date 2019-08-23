@@ -1209,7 +1209,7 @@ pre {
   .table-responsive > .table-bordered {
     border: 0; }
 
-.form-control, .wpcf7-form-control:not(.wpcf7-radio) {
+.form-control, .wpcf7-form-control:not(.wpcf7-radio), .wpcf7-form-control:not(.wpcf7-checkbox), .wpcf7-form-control:not(.wpcf7-file) {
   display: block;
   width: 100%;
   height: calc(1.16667em + 0.75rem + 0);
@@ -1224,25 +1224,25 @@ pre {
   border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .form-control, .wpcf7-form-control:not(.wpcf7-radio) {
+    .form-control, .wpcf7-form-control:not(.wpcf7-radio), .wpcf7-form-control:not(.wpcf7-checkbox), .wpcf7-form-control:not(.wpcf7-file) {
       transition: none; } }
-  .form-control::-ms-expand, .wpcf7-form-control:not(.wpcf7-radio)::-ms-expand {
+  .form-control::-ms-expand, .wpcf7-form-control:not(.wpcf7-radio)::-ms-expand, .wpcf7-form-control:not(.wpcf7-checkbox)::-ms-expand, .wpcf7-form-control:not(.wpcf7-file)::-ms-expand {
     background-color: transparent;
     border: 0; }
-  .form-control:focus, .wpcf7-form-control:focus:not(.wpcf7-radio) {
+  .form-control:focus, .wpcf7-form-control:focus:not(.wpcf7-radio), .wpcf7-form-control:focus:not(.wpcf7-checkbox), .wpcf7-form-control:focus:not(.wpcf7-file) {
     color: #495057;
     background-color: #e5e5e5;
     border-color: #f7c0b0;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(236, 99, 60, 0.25); }
-  .form-control::placeholder, .wpcf7-form-control:not(.wpcf7-radio)::placeholder {
+  .form-control::placeholder, .wpcf7-form-control:not(.wpcf7-radio)::placeholder, .wpcf7-form-control:not(.wpcf7-checkbox)::placeholder, .wpcf7-form-control:not(.wpcf7-file)::placeholder {
     color: #6c757d;
     opacity: 1; }
-  .form-control:disabled, .wpcf7-form-control:disabled:not(.wpcf7-radio), .form-control[readonly], .wpcf7-form-control[readonly]:not(.wpcf7-radio) {
+  .form-control:disabled, .wpcf7-form-control:disabled:not(.wpcf7-radio), .wpcf7-form-control:disabled:not(.wpcf7-checkbox), .wpcf7-form-control:disabled:not(.wpcf7-file), .form-control[readonly], .wpcf7-form-control[readonly]:not(.wpcf7-radio), .wpcf7-form-control[readonly]:not(.wpcf7-checkbox), .wpcf7-form-control[readonly]:not(.wpcf7-file) {
     background-color: #e9ecef;
     opacity: 1; }
 
-select.form-control:focus::-ms-value, select.wpcf7-form-control:not(.wpcf7-radio):focus::-ms-value {
+select.form-control:focus::-ms-value, select.wpcf7-form-control:not(.wpcf7-radio):focus::-ms-value, select.wpcf7-form-control:not(.wpcf7-checkbox):focus::-ms-value, select.wpcf7-form-control:not(.wpcf7-file):focus::-ms-value {
   color: #495057;
   background-color: #e5e5e5; }
 
@@ -1299,10 +1299,10 @@ select.form-control:focus::-ms-value, select.wpcf7-form-control:not(.wpcf7-radio
   line-height: 1.5;
   border-radius: 0; }
 
-select.form-control[size], select.wpcf7-form-control[size]:not(.wpcf7-radio), select.form-control[multiple], select.wpcf7-form-control[multiple]:not(.wpcf7-radio) {
+select.form-control[size], select.wpcf7-form-control[size]:not(.wpcf7-radio), select.wpcf7-form-control[size]:not(.wpcf7-checkbox), select.wpcf7-form-control[size]:not(.wpcf7-file), select.form-control[multiple], select.wpcf7-form-control[multiple]:not(.wpcf7-radio), select.wpcf7-form-control[multiple]:not(.wpcf7-checkbox), select.wpcf7-form-control[multiple]:not(.wpcf7-file) {
   height: auto; }
 
-textarea.form-control, textarea.wpcf7-form-control:not(.wpcf7-radio) {
+textarea.form-control, textarea.wpcf7-form-control:not(.wpcf7-radio), textarea.wpcf7-form-control:not(.wpcf7-checkbox), textarea.wpcf7-form-control:not(.wpcf7-file) {
   height: auto; }
 
 .form-group {
@@ -1369,24 +1369,28 @@ textarea.form-control, textarea.wpcf7-form-control:not(.wpcf7-radio) {
   background-color: rgba(40, 167, 69, 0.9);
   border-radius: 0.25rem; }
 
-.was-validated .form-control:valid, .was-validated .wpcf7-form-control:valid:not(.wpcf7-radio), .form-control.is-valid, .is-valid.wpcf7-form-control:not(.wpcf7-radio) {
+.was-validated .form-control:valid, .was-validated .wpcf7-form-control:valid:not(.wpcf7-radio), .was-validated .wpcf7-form-control:valid:not(.wpcf7-checkbox), .was-validated .wpcf7-form-control:valid:not(.wpcf7-file), .form-control.is-valid, .is-valid.wpcf7-form-control:not(.wpcf7-radio), .is-valid.wpcf7-form-control:not(.wpcf7-checkbox), .is-valid.wpcf7-form-control:not(.wpcf7-file) {
   border-color: #28a745;
   padding-right: calc(1.16667em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: center right calc(0.29167em + 0.1875rem);
   background-size: calc(0.58333em + 0.375rem) calc(0.58333em + 0.375rem); }
-  .was-validated .form-control:valid:focus, .was-validated .wpcf7-form-control:valid:focus:not(.wpcf7-radio), .form-control.is-valid:focus, .is-valid.wpcf7-form-control:focus:not(.wpcf7-radio) {
+  .was-validated .form-control:valid:focus, .was-validated .wpcf7-form-control:valid:focus:not(.wpcf7-radio), .was-validated .wpcf7-form-control:valid:focus:not(.wpcf7-checkbox), .was-validated .wpcf7-form-control:valid:focus:not(.wpcf7-file), .form-control.is-valid:focus, .is-valid.wpcf7-form-control:focus:not(.wpcf7-radio), .is-valid.wpcf7-form-control:focus:not(.wpcf7-checkbox), .is-valid.wpcf7-form-control:focus:not(.wpcf7-file) {
     border-color: #28a745;
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
-  .was-validated .form-control:valid ~ .valid-feedback, .was-validated .wpcf7-form-control:valid:not(.wpcf7-radio) ~ .valid-feedback,
+  .was-validated .form-control:valid ~ .valid-feedback, .was-validated .wpcf7-form-control:valid:not(.wpcf7-radio) ~ .valid-feedback, .was-validated .wpcf7-form-control:valid:not(.wpcf7-checkbox) ~ .valid-feedback, .was-validated .wpcf7-form-control:valid:not(.wpcf7-file) ~ .valid-feedback,
   .was-validated .form-control:valid ~ .valid-tooltip,
-  .was-validated .wpcf7-form-control:valid:not(.wpcf7-radio) ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback, .is-valid.wpcf7-form-control:not(.wpcf7-radio) ~ .valid-feedback,
+  .was-validated .wpcf7-form-control:valid:not(.wpcf7-radio) ~ .valid-tooltip,
+  .was-validated .wpcf7-form-control:valid:not(.wpcf7-checkbox) ~ .valid-tooltip,
+  .was-validated .wpcf7-form-control:valid:not(.wpcf7-file) ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback, .is-valid.wpcf7-form-control:not(.wpcf7-radio) ~ .valid-feedback, .is-valid.wpcf7-form-control:not(.wpcf7-checkbox) ~ .valid-feedback, .is-valid.wpcf7-form-control:not(.wpcf7-file) ~ .valid-feedback,
   .form-control.is-valid ~ .valid-tooltip,
-  .is-valid.wpcf7-form-control:not(.wpcf7-radio) ~ .valid-tooltip {
+  .is-valid.wpcf7-form-control:not(.wpcf7-radio) ~ .valid-tooltip,
+  .is-valid.wpcf7-form-control:not(.wpcf7-checkbox) ~ .valid-tooltip,
+  .is-valid.wpcf7-form-control:not(.wpcf7-file) ~ .valid-tooltip {
     display: block; }
 
-.was-validated textarea.form-control:valid, .was-validated textarea.wpcf7-form-control:valid:not(.wpcf7-radio), textarea.form-control.is-valid, textarea.is-valid.wpcf7-form-control:not(.wpcf7-radio) {
+.was-validated textarea.form-control:valid, .was-validated textarea.wpcf7-form-control:valid:not(.wpcf7-radio), .was-validated textarea.wpcf7-form-control:valid:not(.wpcf7-checkbox), .was-validated textarea.wpcf7-form-control:valid:not(.wpcf7-file), textarea.form-control.is-valid, textarea.is-valid.wpcf7-form-control:not(.wpcf7-radio), textarea.is-valid.wpcf7-form-control:not(.wpcf7-checkbox), textarea.is-valid.wpcf7-form-control:not(.wpcf7-file) {
   padding-right: calc(1.16667em + 0.75rem);
   background-position: top calc(0.29167em + 0.1875rem) right calc(0.29167em + 0.1875rem); }
 
@@ -1468,24 +1472,28 @@ textarea.form-control, textarea.wpcf7-form-control:not(.wpcf7-radio) {
   background-color: rgba(220, 53, 69, 0.9);
   border-radius: 0.25rem; }
 
-.was-validated .form-control:invalid, .was-validated .wpcf7-form-control:invalid:not(.wpcf7-radio), .form-control.is-invalid, .is-invalid.wpcf7-form-control:not(.wpcf7-radio) {
+.was-validated .form-control:invalid, .was-validated .wpcf7-form-control:invalid:not(.wpcf7-radio), .was-validated .wpcf7-form-control:invalid:not(.wpcf7-checkbox), .was-validated .wpcf7-form-control:invalid:not(.wpcf7-file), .form-control.is-invalid, .is-invalid.wpcf7-form-control:not(.wpcf7-radio), .is-invalid.wpcf7-form-control:not(.wpcf7-checkbox), .is-invalid.wpcf7-form-control:not(.wpcf7-file) {
   border-color: #dc3545;
   padding-right: calc(1.16667em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
   background-repeat: no-repeat;
   background-position: center right calc(0.29167em + 0.1875rem);
   background-size: calc(0.58333em + 0.375rem) calc(0.58333em + 0.375rem); }
-  .was-validated .form-control:invalid:focus, .was-validated .wpcf7-form-control:invalid:focus:not(.wpcf7-radio), .form-control.is-invalid:focus, .is-invalid.wpcf7-form-control:focus:not(.wpcf7-radio) {
+  .was-validated .form-control:invalid:focus, .was-validated .wpcf7-form-control:invalid:focus:not(.wpcf7-radio), .was-validated .wpcf7-form-control:invalid:focus:not(.wpcf7-checkbox), .was-validated .wpcf7-form-control:invalid:focus:not(.wpcf7-file), .form-control.is-invalid:focus, .is-invalid.wpcf7-form-control:focus:not(.wpcf7-radio), .is-invalid.wpcf7-form-control:focus:not(.wpcf7-checkbox), .is-invalid.wpcf7-form-control:focus:not(.wpcf7-file) {
     border-color: #dc3545;
     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
-  .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .wpcf7-form-control:invalid:not(.wpcf7-radio) ~ .invalid-feedback,
+  .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .wpcf7-form-control:invalid:not(.wpcf7-radio) ~ .invalid-feedback, .was-validated .wpcf7-form-control:invalid:not(.wpcf7-checkbox) ~ .invalid-feedback, .was-validated .wpcf7-form-control:invalid:not(.wpcf7-file) ~ .invalid-feedback,
   .was-validated .form-control:invalid ~ .invalid-tooltip,
-  .was-validated .wpcf7-form-control:invalid:not(.wpcf7-radio) ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, .is-invalid.wpcf7-form-control:not(.wpcf7-radio) ~ .invalid-feedback,
+  .was-validated .wpcf7-form-control:invalid:not(.wpcf7-radio) ~ .invalid-tooltip,
+  .was-validated .wpcf7-form-control:invalid:not(.wpcf7-checkbox) ~ .invalid-tooltip,
+  .was-validated .wpcf7-form-control:invalid:not(.wpcf7-file) ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, .is-invalid.wpcf7-form-control:not(.wpcf7-radio) ~ .invalid-feedback, .is-invalid.wpcf7-form-control:not(.wpcf7-checkbox) ~ .invalid-feedback, .is-invalid.wpcf7-form-control:not(.wpcf7-file) ~ .invalid-feedback,
   .form-control.is-invalid ~ .invalid-tooltip,
-  .is-invalid.wpcf7-form-control:not(.wpcf7-radio) ~ .invalid-tooltip {
+  .is-invalid.wpcf7-form-control:not(.wpcf7-radio) ~ .invalid-tooltip,
+  .is-invalid.wpcf7-form-control:not(.wpcf7-checkbox) ~ .invalid-tooltip,
+  .is-invalid.wpcf7-form-control:not(.wpcf7-file) ~ .invalid-tooltip {
     display: block; }
 
-.was-validated textarea.form-control:invalid, .was-validated textarea.wpcf7-form-control:invalid:not(.wpcf7-radio), textarea.form-control.is-invalid, textarea.is-invalid.wpcf7-form-control:not(.wpcf7-radio) {
+.was-validated textarea.form-control:invalid, .was-validated textarea.wpcf7-form-control:invalid:not(.wpcf7-radio), .was-validated textarea.wpcf7-form-control:invalid:not(.wpcf7-checkbox), .was-validated textarea.wpcf7-form-control:invalid:not(.wpcf7-file), textarea.form-control.is-invalid, textarea.is-invalid.wpcf7-form-control:not(.wpcf7-radio), textarea.is-invalid.wpcf7-form-control:not(.wpcf7-checkbox), textarea.is-invalid.wpcf7-form-control:not(.wpcf7-file) {
   padding-right: calc(1.16667em + 0.75rem);
   background-position: top calc(0.29167em + 0.1875rem) right calc(0.29167em + 0.1875rem); }
 
@@ -1564,7 +1572,7 @@ textarea.form-control, textarea.wpcf7-form-control:not(.wpcf7-radio) {
       flex-flow: row wrap;
       align-items: center;
       margin-bottom: 0; }
-    .form-inline .form-control, .form-inline .wpcf7-form-control:not(.wpcf7-radio) {
+    .form-inline .form-control, .form-inline .wpcf7-form-control:not(.wpcf7-radio), .form-inline .wpcf7-form-control:not(.wpcf7-checkbox), .form-inline .wpcf7-form-control:not(.wpcf7-file) {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
@@ -2361,7 +2369,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%; }
-  .input-group > .form-control, .input-group > .wpcf7-form-control:not(.wpcf7-radio),
+  .input-group > .form-control, .input-group > .wpcf7-form-control:not(.wpcf7-radio), .input-group > .wpcf7-form-control:not(.wpcf7-checkbox), .input-group > .wpcf7-form-control:not(.wpcf7-file),
   .input-group > .form-control-plaintext,
   .input-group > .custom-select,
   .input-group > .custom-file {
@@ -2369,35 +2377,45 @@ input[type="button"].btn-block {
     flex: 1 1 auto;
     width: 1%;
     margin-bottom: 0; }
-    .input-group > .form-control + .form-control, .input-group > .wpcf7-form-control:not(.wpcf7-radio) + .form-control, .input-group > .form-control + .wpcf7-form-control:not(.wpcf7-radio), .input-group > .wpcf7-form-control:not(.wpcf7-radio) + .wpcf7-form-control:not(.wpcf7-radio),
+    .input-group > .form-control + .form-control, .input-group > .wpcf7-form-control:not(.wpcf7-radio) + .form-control, .input-group > .wpcf7-form-control:not(.wpcf7-checkbox) + .form-control, .input-group > .wpcf7-form-control:not(.wpcf7-file) + .form-control, .input-group > .form-control + .wpcf7-form-control:not(.wpcf7-radio), .input-group > .wpcf7-form-control:not(.wpcf7-radio) + .wpcf7-form-control:not(.wpcf7-radio), .input-group > .wpcf7-form-control:not(.wpcf7-checkbox) + .wpcf7-form-control:not(.wpcf7-radio), .input-group > .wpcf7-form-control:not(.wpcf7-file) + .wpcf7-form-control:not(.wpcf7-radio), .input-group > .form-control + .wpcf7-form-control:not(.wpcf7-checkbox), .input-group > .wpcf7-form-control:not(.wpcf7-radio) + .wpcf7-form-control:not(.wpcf7-checkbox), .input-group > .wpcf7-form-control:not(.wpcf7-checkbox) + .wpcf7-form-control:not(.wpcf7-checkbox), .input-group > .wpcf7-form-control:not(.wpcf7-file) + .wpcf7-form-control:not(.wpcf7-checkbox), .input-group > .form-control + .wpcf7-form-control:not(.wpcf7-file), .input-group > .wpcf7-form-control:not(.wpcf7-radio) + .wpcf7-form-control:not(.wpcf7-file), .input-group > .wpcf7-form-control:not(.wpcf7-checkbox) + .wpcf7-form-control:not(.wpcf7-file), .input-group > .wpcf7-form-control:not(.wpcf7-file) + .wpcf7-form-control:not(.wpcf7-file),
     .input-group > .form-control + .custom-select,
     .input-group > .wpcf7-form-control:not(.wpcf7-radio) + .custom-select,
+    .input-group > .wpcf7-form-control:not(.wpcf7-checkbox) + .custom-select,
+    .input-group > .wpcf7-form-control:not(.wpcf7-file) + .custom-select,
     .input-group > .form-control + .custom-file,
     .input-group > .wpcf7-form-control:not(.wpcf7-radio) + .custom-file,
+    .input-group > .wpcf7-form-control:not(.wpcf7-checkbox) + .custom-file,
+    .input-group > .wpcf7-form-control:not(.wpcf7-file) + .custom-file,
     .input-group > .form-control-plaintext + .form-control,
     .input-group > .form-control-plaintext + .wpcf7-form-control:not(.wpcf7-radio),
+    .input-group > .form-control-plaintext + .wpcf7-form-control:not(.wpcf7-checkbox),
+    .input-group > .form-control-plaintext + .wpcf7-form-control:not(.wpcf7-file),
     .input-group > .form-control-plaintext + .custom-select,
     .input-group > .form-control-plaintext + .custom-file,
     .input-group > .custom-select + .form-control,
     .input-group > .custom-select + .wpcf7-form-control:not(.wpcf7-radio),
+    .input-group > .custom-select + .wpcf7-form-control:not(.wpcf7-checkbox),
+    .input-group > .custom-select + .wpcf7-form-control:not(.wpcf7-file),
     .input-group > .custom-select + .custom-select,
     .input-group > .custom-select + .custom-file,
     .input-group > .custom-file + .form-control,
     .input-group > .custom-file + .wpcf7-form-control:not(.wpcf7-radio),
+    .input-group > .custom-file + .wpcf7-form-control:not(.wpcf7-checkbox),
+    .input-group > .custom-file + .wpcf7-form-control:not(.wpcf7-file),
     .input-group > .custom-file + .custom-select,
     .input-group > .custom-file + .custom-file {
       margin-left: 0; }
-  .input-group > .form-control:focus, .input-group > .wpcf7-form-control:focus:not(.wpcf7-radio),
+  .input-group > .form-control:focus, .input-group > .wpcf7-form-control:focus:not(.wpcf7-radio), .input-group > .wpcf7-form-control:focus:not(.wpcf7-checkbox), .input-group > .wpcf7-form-control:focus:not(.wpcf7-file),
   .input-group > .custom-select:focus,
   .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
     z-index: 3; }
   .input-group > .custom-file .custom-file-input:focus {
     z-index: 4; }
-  .input-group > .form-control:not(:last-child), .input-group > .wpcf7-form-control:not(:last-child):not(.wpcf7-radio),
+  .input-group > .form-control:not(:last-child), .input-group > .wpcf7-form-control:not(:last-child):not(.wpcf7-radio), .input-group > .wpcf7-form-control:not(:last-child):not(.wpcf7-checkbox), .input-group > .wpcf7-form-control:not(:last-child):not(.wpcf7-file),
   .input-group > .custom-select:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
-  .input-group > .form-control:not(:first-child), .input-group > .wpcf7-form-control:not(:first-child):not(.wpcf7-radio),
+  .input-group > .form-control:not(:first-child), .input-group > .wpcf7-form-control:not(:first-child):not(.wpcf7-radio), .input-group > .wpcf7-form-control:not(:first-child):not(.wpcf7-checkbox), .input-group > .wpcf7-form-control:not(:first-child):not(.wpcf7-file),
   .input-group > .custom-select:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
@@ -2456,11 +2474,11 @@ input[type="button"].btn-block {
   .input-group-text input[type="checkbox"] {
     margin-top: 0; }
 
-.input-group-lg > .form-control:not(textarea), .input-group-lg > .wpcf7-form-control:not(textarea):not(.wpcf7-radio),
+.input-group-lg > .form-control:not(textarea), .input-group-lg > .wpcf7-form-control:not(textarea):not(.wpcf7-radio), .input-group-lg > .wpcf7-form-control:not(textarea):not(.wpcf7-checkbox), .input-group-lg > .wpcf7-form-control:not(textarea):not(.wpcf7-file),
 .input-group-lg > .custom-select {
   height: calc(1.5em + 1rem + 0); }
 
-.input-group-lg > .form-control, .input-group-lg > .wpcf7-form-control:not(.wpcf7-radio),
+.input-group-lg > .form-control, .input-group-lg > .wpcf7-form-control:not(.wpcf7-radio), .input-group-lg > .wpcf7-form-control:not(.wpcf7-checkbox), .input-group-lg > .wpcf7-form-control:not(.wpcf7-file),
 .input-group-lg > .custom-select,
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
@@ -2471,11 +2489,11 @@ input[type="button"].btn-block {
   line-height: 1.5;
   border-radius: 0; }
 
-.input-group-sm > .form-control:not(textarea), .input-group-sm > .wpcf7-form-control:not(textarea):not(.wpcf7-radio),
+.input-group-sm > .form-control:not(textarea), .input-group-sm > .wpcf7-form-control:not(textarea):not(.wpcf7-radio), .input-group-sm > .wpcf7-form-control:not(textarea):not(.wpcf7-checkbox), .input-group-sm > .wpcf7-form-control:not(textarea):not(.wpcf7-file),
 .input-group-sm > .custom-select {
   height: calc(1.5em + 0.5rem + 0); }
 
-.input-group-sm > .form-control, .input-group-sm > .wpcf7-form-control:not(.wpcf7-radio),
+.input-group-sm > .form-control, .input-group-sm > .wpcf7-form-control:not(.wpcf7-radio), .input-group-sm > .wpcf7-form-control:not(.wpcf7-checkbox), .input-group-sm > .wpcf7-form-control:not(.wpcf7-file),
 .input-group-sm > .custom-select,
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
@@ -6841,7 +6859,7 @@ ul, ol, dl {
   .large-list li:not(:last-child) {
     margin-bottom: 1em; }
 
-.wpcf7-form-control:not(.wpcf7-radio) {
+.wpcf7-form-control:not(.wpcf7-radio), .wpcf7-form-control:not(.wpcf7-checkbox), .wpcf7-form-control:not(.wpcf7-file) {
   line-height: 70px;
   height: 70px; }
 
