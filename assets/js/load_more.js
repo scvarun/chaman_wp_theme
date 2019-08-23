@@ -13,7 +13,7 @@ jQuery(function($){
       data: data,
       type: 'POST',
       beforeSend: function(xhr) {
-        button.text('Loadding..');
+        button.text('Loading..');
         button.attr('disabled', 'disabled');
       },
       success: function(data) {
