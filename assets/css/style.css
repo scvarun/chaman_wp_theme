@@ -7503,7 +7503,8 @@ h6, .h6, .tabbed-form .form-tabs a {
         display: none;
         opacity: 0; }
     #navbar.js-is-stuck, #navbar.js-is-sticky {
-      align-items: center; }
+      align-items: center;
+      background: #755c4e; }
       #navbar.js-is-stuck .navbar-brand .sticky-mobile-logo, #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo {
         display: block;
         opacity: 1; }
