@@ -39,12 +39,12 @@
       align-items: center
       flex-flow: row
       &:before
-        transition: $transition-base
         content: ''
         @include size(50px)
         display: inline-block
         background: $white
         border-radius: 100%
+        box-shadow: inset 0 0 0 10px $white
     input[type="radio"]
       display: none
       &:checked ~ .wpcf7-list-item-label:before
