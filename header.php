@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				$facebook = get_theme_mod('chaman_options__social__facebook_url');
 				$linkedin = get_theme_mod('chaman_options__social__linkedin_url');
 				$instagram = get_theme_mod('chaman_options__social__instagram_url');
-				if($facebook != '' || $linkedin != '' || $instagram != ''): ?>
+				if($facebook != '' || $linkedin != '' || $instagram != ''):
 			?>
 			<div class="social-links text-white">
 				<h6 class="text-uppercase">Follow Us</h6>
