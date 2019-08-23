@@ -51,6 +51,7 @@
       this.enableSliderArrow();
       this.enableSliders();
       this.enableTabbedForm();
+      this.enableRadioCheckboxClasses();
     },
 
     enableSmoothScroll: function() {
@@ -184,6 +185,25 @@
           changeTab($target);
         });
 
+      });
+    },
+
+    enableRadioCheckboxClasses: function() {
+      var $inputs = $('input[type="radio"], input[type="checkbox"');
+      if(!$inputs.length) return;
+      $inputs.each(function() {
+        var $input = $(this);
+        $input.on('change', function() {
+          var $formGroup = $input.closest('.form-group');
+          var $parent = $input.parent();
+          if(this.checked) {
+            $formGroup.classList.add('input-checked');
+            $parent.classList.add('input-checked');
+          } else {
+            $formGroup.classList.remove('input-checked');
+            $parent.classList.remove('input-checked');
+          }
+        });
       });
     },
     
