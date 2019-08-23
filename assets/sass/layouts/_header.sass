@@ -46,6 +46,15 @@
       display: none
   .mobile-nav
     display: none
+    .social-links
+      li
+        display: inline-block
+        &:not(:first-child)
+          margin-left: 10px
+        &:not(:last-child)
+          margin-right: 10px
+        a
+          color: inherit
   .nav-toggle,
   .main-navigation .menu-item > a
     text-transform: uppercase
@@ -157,12 +166,12 @@
       @include position(fixed, 0)
       background: $secondary
       display: flex
-    .mobile-nav.active
-      opacity: 1
-      display: flex !important
-      visibility: visible !important
-      animation-name: mobileMenuIn
-      transition: visibility .1s ease-in-out 0s
+      &.active
+        opacity: 1
+        display: flex !important
+        visibility: visible !important
+        animation-name: mobileMenuIn
+        transition: visibility .1s ease-in-out 0s
     .nav-toggle
       font-size: 18px
     .main-navigation

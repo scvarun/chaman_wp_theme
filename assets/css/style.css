@@ -7328,6 +7328,14 @@ h6, .h6, .tabbed-form .form-tabs a {
     display: none; }
   #navbar .mobile-nav {
     display: none; }
+    #navbar .mobile-nav .social-links li {
+      display: inline-block; }
+      #navbar .mobile-nav .social-links li:not(:first-child) {
+        margin-left: 10px; }
+      #navbar .mobile-nav .social-links li:not(:last-child) {
+        margin-right: 10px; }
+      #navbar .mobile-nav .social-links li a {
+        color: inherit; }
   #navbar .nav-toggle,
   #navbar .main-navigation .menu-item > a {
     text-transform: uppercase;
@@ -7430,12 +7438,12 @@ h6, .h6, .tabbed-form .form-tabs a {
       left: 0;
       background: #20234c;
       display: flex; }
-    #navbar .mobile-nav.active {
-      opacity: 1;
-      display: flex !important;
-      visibility: visible !important;
-      animation-name: mobileMenuIn;
-      transition: visibility .1s ease-in-out 0s; }
+      #navbar .mobile-nav.active {
+        opacity: 1;
+        display: flex !important;
+        visibility: visible !important;
+        animation-name: mobileMenuIn;
+        transition: visibility .1s ease-in-out 0s; }
     #navbar .nav-toggle {
       font-size: 18px; }
     #navbar .main-navigation .seperator {
