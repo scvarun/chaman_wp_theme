@@ -97,7 +97,48 @@
   100%
     opacity: 0
 
+@include media-breakpoint-down('md')
+  .content-wrapper
+    padding-top: $navbar-md-height
+  #navbar
+    margin-bottom: -$navbar-md-height
+    height: $navbar-md-height
+    @include padding( $navbar-md-padding-y $navbar-md-padding-x )
+    .navbar-brand img
+      max-height: $navbar-md-logo-height
+    .main-navigation
+      .menu-item > a
+        font-size: 18px
+    &.js-is-stuck,
+    &.js-is-sticky--change
+      @include padding(0 null)
+      height: $sticky-md-navbar-height
+    &.js-is-stuck,
+    &.js-is-sticky
+      .navbar-brand
+        img
+          max-height: $sticky-md-logo-height
+
 @include media-breakpoint-down('xs')
+  .content-wrapper
+    padding-top: $navbar-sm-height
+
+  #navbar
+    margin-bottom: -$navbar-sm-height
+    height: $navbar-sm-height
+    @include padding( $navbar-sm-padding-y $navbar-sm-padding-x )
+    .navbar-brand img
+      max-height: $navbar-sm-logo-height
+    &.js-is-stuck,
+    &.js-is-sticky--change
+      @include padding(0 null)
+      height: $sticky-sm-navbar-height
+    &.js-is-stuck,
+    &.js-is-sticky
+      .navbar-brand
+        img
+          max-height: $sticky-sm-logo-height
+
   #navbar
     height: auto
     padding: 25px 30px
@@ -149,43 +190,5 @@
   body.navigation-overlay
     overflow: hidden
 
-@include media-breakpoint-down('md')
-  .content-wrapper
-    padding-top: $navbar-md-height
-  #navbar
-    margin-bottom: -$navbar-md-height
-    height: $navbar-md-height
-    @include padding( $navbar-md-padding-y $navbar-md-padding-x )
-    .navbar-brand img
-      max-height: $navbar-md-logo-height
-    .main-navigation
-      .menu-item > a
-        font-size: 18px
-    &.js-is-stuck,
-    &.js-is-sticky--change
-      @include padding(0 null)
-      height: $sticky-md-navbar-height
-    &.js-is-stuck,
-    &.js-is-sticky
-      .navbar-brand
-        img
-          max-height: $sticky-md-logo-height
 
-@include media-breakpoint-down('xs')
-  .content-wrapper
-    padding-top: $navbar-sm-height
-  #navbar
-    margin-bottom: -$navbar-sm-height
-    height: $navbar-sm-height
-    @include padding( $navbar-sm-padding-y $navbar-sm-padding-x )
-    .navbar-brand img
-      max-height: $navbar-sm-logo-height
-    &.js-is-stuck,
-    &.js-is-sticky--change
-      @include padding(0 null)
-      height: $sticky-sm-navbar-height
-    &.js-is-stuck,
-    &.js-is-sticky
-      .navbar-brand
-        img
-          max-height: $sticky-sm-logo-height
+  
