@@ -7446,6 +7446,8 @@ h6, .h6, .tabbed-form .form-tabs a {
       #navbar .main-navigation .menu-item > a {
         font-size: 30px;
         line-height: 1.5; }
+      #navbar .main-navigation .menu-item:nth-child(3n):not(:last-child) {
+        margin-bottom: 45px; }
     #navbar .navbar-brand img {
       height: 60px; }
     #navbar.js-is-stuck, #navbar.js-is-sticky {
