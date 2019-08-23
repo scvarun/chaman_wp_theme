@@ -24,9 +24,10 @@ if ( ! function_exists( 'unifato_construct_logo' ) ) {
 		$logo_images = array();
 
 		$logo_list = [
-			'mobile' 		=> 'chaman_options__title_tagline__mobile_logo', 
-			'sticky' 		=> 'chaman_options__title_tagline__sticky_logo',
-			'default' 	=> 'custom_logo',
+			'sticky-mobile' 		=> 'chaman_options__title_tagline__sticky_mobile_logo',
+			'mobile' 						=> 'chaman_options__title_tagline__mobile_logo', 
+			'sticky' 						=> 'chaman_options__title_tagline__sticky_logo',
+			'default' 					=> 'custom_logo',
 		];
 
 		if( function_exists('the_custom_logo') ) {
