@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<?php
 				$facebook = get_theme_mod('chaman_options__social__facebook_url');
-				$linkedin = get_theme_mod('chaman_options__social__linked_url');
+				$linkedin = get_theme_mod('chaman_options__social__linkedin_url');
 				$instagram = get_theme_mod('chaman_options__social__instagram_url');
 				if($facebook != '' || $linkedin != '' || $instagram != ''): ?>
 			?>
