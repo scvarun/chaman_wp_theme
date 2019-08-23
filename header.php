@@ -51,9 +51,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="social-links text-white">
 				<h6 class="text-uppercase">Follow Us</h6>
 				<ul class="list-unstyled list-inline">
-					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 				</ul>
 			</div><!-- /.social-links -->
 		</div><!-- /.nav-container -->
