@@ -7285,15 +7285,15 @@ h6, .h6, .tabbed-form .form-tabs a {
 .tabbed-form .wpcf7-radio .wpcf7-list-item-label {
   display: inline-flex;
   align-items: center;
-  flex-flow: row;
-  transition: all 0.2s ease-in-out; }
+  flex-flow: row; }
   .tabbed-form .wpcf7-radio .wpcf7-list-item-label:before {
+    transition: all 0.2s ease-in-out;
     content: '';
     height: 50px;
     width: 50px;
     display: inline-block;
     background: #e5e5e5;
-    border: 0; }
+    border-radius: 100%; }
 
 .tabbed-form .wpcf7-radio input[type="radio"] {
   display: none; }

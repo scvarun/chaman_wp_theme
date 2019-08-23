@@ -38,13 +38,13 @@
       display: inline-flex
       align-items: center
       flex-flow: row
-      transition: $transition-base
       &:before
+        transition: $transition-base
         content: ''
         @include size(50px)
         display: inline-block
         background: $white
-        border: 0
+        border-radius: 100%
     input[type="radio"]
       display: none
       &:checked ~ .wpcf7-list-item-label:before
