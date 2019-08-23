@@ -195,24 +195,26 @@
     .navbar-brand
       img
         height: 60px
+    &:not(.js-is-stuck):not(.js-is-sticky)
+      .navbar-brand
+        .mobile-logo
+          display: block
+          opacity: 1
+          ~ .default-logo
+            display: none
+            opacity: 0
     &.js-is-stuck,
     &.js-is-sticky
       align-items: center
-      .sticky-mobile-logo
-        display: block
-        opacity: 1
-        ~ .sticky-logo,
-        ~ .mobile-logo,
-        ~ .default-logo
-          display: none
-          opacity: 0
-    &:not(.js-is-stuck):not(.js-is-sticky)
-      .mobile-logo
-        display: block
-        opacity: 1
-        ~ .default-logo
-          display: none
-          opacity: 0
+      .navbar-brand
+        .sticky-mobile-logo
+          display: block
+          opacity: 1
+          ~ .sticky-logo,
+          ~ .mobile-logo,
+          ~ .default-logo
+            display: none
+            opacity: 0
   body.navigation-overlay
     overflow: hidden
 

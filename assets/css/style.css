@@ -7463,24 +7463,24 @@ h6, .h6, .tabbed-form .form-tabs a {
         margin-bottom: 45px; }
     #navbar .navbar-brand img {
       height: 60px; }
-    #navbar.js-is-stuck, #navbar.js-is-sticky {
-      align-items: center; }
-      #navbar.js-is-stuck .sticky-mobile-logo, #navbar.js-is-sticky .sticky-mobile-logo {
-        display: block;
-        opacity: 1; }
-        #navbar.js-is-stuck .sticky-mobile-logo ~ .sticky-logo,
-        #navbar.js-is-stuck .sticky-mobile-logo ~ .mobile-logo,
-        #navbar.js-is-stuck .sticky-mobile-logo ~ .default-logo, #navbar.js-is-sticky .sticky-mobile-logo ~ .sticky-logo,
-        #navbar.js-is-sticky .sticky-mobile-logo ~ .mobile-logo,
-        #navbar.js-is-sticky .sticky-mobile-logo ~ .default-logo {
-          display: none;
-          opacity: 0; }
-    #navbar:not(.js-is-stuck):not(.js-is-sticky) .mobile-logo {
+    #navbar:not(.js-is-stuck):not(.js-is-sticky) .navbar-brand .mobile-logo {
       display: block;
       opacity: 1; }
-      #navbar:not(.js-is-stuck):not(.js-is-sticky) .mobile-logo ~ .default-logo {
+      #navbar:not(.js-is-stuck):not(.js-is-sticky) .navbar-brand .mobile-logo ~ .default-logo {
         display: none;
         opacity: 0; }
+    #navbar.js-is-stuck, #navbar.js-is-sticky {
+      align-items: center; }
+      #navbar.js-is-stuck .navbar-brand .sticky-mobile-logo, #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo {
+        display: block;
+        opacity: 1; }
+        #navbar.js-is-stuck .navbar-brand .sticky-mobile-logo ~ .sticky-logo,
+        #navbar.js-is-stuck .navbar-brand .sticky-mobile-logo ~ .mobile-logo,
+        #navbar.js-is-stuck .navbar-brand .sticky-mobile-logo ~ .default-logo, #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo ~ .sticky-logo,
+        #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo ~ .mobile-logo,
+        #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo ~ .default-logo {
+          display: none;
+          opacity: 0; }
   body.navigation-overlay {
     overflow: hidden; } }
 
