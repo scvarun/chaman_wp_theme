@@ -7356,8 +7356,6 @@ h6, .h6, .tabbed-form .form-tabs a {
   #navbar.navbar-dark .nav-toggle,
   #navbar.navbar-dark .navbar-nav .nav-link {
     color: #fff; }
-  #navbar:hover {
-    background: #755c4e; }
   #navbar.js-is-stuck, #navbar.js-is-sticky--change {
     padding-top: 0;
     padding-bottom: 0;
@@ -7371,6 +7369,8 @@ h6, .h6, .tabbed-form .form-tabs a {
     #navbar.js-is-stuck .navbar-brand img.sticky-logo ~ .default-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo ~ .default-logo {
       display: none;
       opacity: 0; }
+  #navbar.js-is-stuck:hover {
+    background: #755c4e; }
   .elementor-editor-active #navbar {
     pointer-events: none; }
   .admin-bar #navbar.js-is-stuck, .admin-bar #navbar.js-is-sticky {

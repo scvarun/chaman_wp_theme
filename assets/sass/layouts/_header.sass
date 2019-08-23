@@ -79,8 +79,6 @@
     @include padding(0 null)
     height: $sticky-navbar-height
     align-items: center
-    &:hover
-      background: $tertiary
   &.js-is-stuck,
   &.js-is-sticky
     .navbar-brand
@@ -92,6 +90,10 @@
         &.sticky-logo ~ .default-logo
           display: none
           opacity: 0
+  &.js-is-sticky--change
+  &.js-is-stuck
+    &:hover
+      background: $tertiary
   .elementor-editor-active &
     pointer-events: none
   .admin-bar &
