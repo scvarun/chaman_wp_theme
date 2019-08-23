@@ -24,4 +24,4 @@ if ( ! function_exists( 'unifato_pingback_header' ) ) {
  * To disable Auto-P tag in Contact form 7
  * ==========================
  */
-define( 'WPCF7_AUTOP', false );
+add_filter('wpcf7_autop_or_not', '__return_false');
