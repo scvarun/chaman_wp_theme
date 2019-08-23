@@ -197,11 +197,11 @@
           var $formGroup = $input.closest('.form-group');
           var $parent = $input.parent();
           if(this.checked) {
-            $formGroup.classList.add('input-checked');
-            $parent.classList.add('input-checked');
+            $formGroup.addClass('input-checked');
+            $parent.addClass('input-checked');
           } else {
-            $formGroup.classList.remove('input-checked');
-            $parent.classList.remove('input-checked');
+            $formGroup.removeClass('input-checked');
+            $parent.removeClass('input-checked');
           }
         });
       });
