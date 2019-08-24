@@ -7561,6 +7561,9 @@ h6, .h6, .tabbed-form .form-tabs a {
   .tabbed-form .wpcf7-checkbox {
     line-height: normal;
     height: auto; }
+    .tabbed-form .wpcf7-radio .wpcf7-list-item,
+    .tabbed-form .wpcf7-checkbox .wpcf7-list-item {
+      margin-left: 0; }
     .tabbed-form .wpcf7-radio .wpcf7-list-item-label,
     .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label {
       font-size: 1.125rem; }
