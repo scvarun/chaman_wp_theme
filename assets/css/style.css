@@ -7552,19 +7552,19 @@ h6, .h6, .tabbed-form .form-tabs a {
   .tabbed-form .form-group {
     width: 100%;
     margin-bottom: 30px; }
-  .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label,
-  .tabbed-form .wpcf7-radio .wpcf7-list-item-label {
-    font-size: 1.125rem; }
   .tabbed-form .previous,
   .tabbed-form .next,
   .tabbed-form input[type="submit"] {
     font-size: 1.125rem;
     padding: 10px 30px; }
-  .tabbed-form .wpcf7-radio .wpcf7-list-item-label:before,
-  .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label:before {
-    box-shadow: inset 0 0 0 5px #e5e5e5;
-    height: 30px;
-    width: 30px; }
+  .tabbed-form .wpcf7-radio .wpcf7-list-item-label,
+  .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label {
+    font-size: 1.125rem; }
+    .tabbed-form .wpcf7-radio .wpcf7-list-item-label:before,
+    .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label:before {
+      box-shadow: inset 0 0 0 5px #e5e5e5;
+      height: 30px;
+      width: 30px; }
   .tabbed-form .file-upload-label {
     font-size: 18px; }
   .tabbed-form .form-group-upload {
