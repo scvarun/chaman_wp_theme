@@ -7543,7 +7543,12 @@ h6, .h6, .tabbed-form .form-tabs a {
     width: 100%; }
   .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label,
   .tabbed-form .wpcf7-radio .wpcf7-list-item-label {
-    font-size: 1.125rem; } }
+    font-size: 1.125rem; }
+  .tabbed-form .previous,
+  .tabbed-form .next,
+  .tabbed-form input[type="submit"] {
+    font-size: 1.125rem;
+    padding: 10px 30px; } }
 
 @media (max-width: 1365.98px) {
   .tabbed-form .tabbed-form-container {
