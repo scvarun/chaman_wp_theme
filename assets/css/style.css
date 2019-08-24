@@ -7558,7 +7558,10 @@ h6, .h6, .tabbed-form .form-tabs a {
   .tabbed-form .next,
   .tabbed-form input[type="submit"] {
     font-size: 1.125rem;
-    padding: 10px 30px; } }
+    padding: 10px 30px; }
+  .tabbed-form .wpcf7-radio .wpcf7-list-item-label::before {
+    height: 30px;
+    width: 30px; } }
 
 @media (max-width: 1365.98px) {
   .tabbed-form h5 {
