@@ -7500,10 +7500,14 @@ h6, .h6, .tabbed-form .form-tabs a {
   display: none; }
 
 .tabbed-form .file-upload-label {
-  padding: 10px 10px;
+  padding: 15px 40px 15px 10px;
   background: #e5e5e5;
   text-transform: uppercase;
-  font-size: 30px; }
+  font-size: 30px;
+  font-weight: 500; }
+
+.tabbed-form .form-group-upload label:not(.file-upload-label) {
+  min-width: 215px; }
 
 @media (max-width: 1599.98px) {
   .tabbed-form .form-group {
