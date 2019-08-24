@@ -7423,6 +7423,9 @@ h6, .h6, .tabbed-form .form-tabs a {
     display: block;
     margin-bottom: 0; }
 
+.tabbed-form h5 {
+  margin: 20px 0 80px; }
+
 .tabbed-form .form-tabs {
   margin-bottom: 40px;
   display: flex;
@@ -7539,6 +7542,8 @@ h6, .h6, .tabbed-form .form-tabs a {
     color: #755c4e; }
 
 @media (max-width: 1599.98px) {
+  .tabbed-form h5 {
+    margin: 20px 0 40px; }
   .tabbed-form .form-group {
     width: 100%; }
   .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label,
@@ -7551,6 +7556,8 @@ h6, .h6, .tabbed-form .form-tabs a {
     padding: 10px 30px; } }
 
 @media (max-width: 1365.98px) {
+  .tabbed-form h5 {
+    margin: 0 0 20px; }
   .tabbed-form .tabbed-form-container {
     padding: 30px; } }
 
