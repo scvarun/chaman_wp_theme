@@ -7544,6 +7544,10 @@ h6, .h6, .tabbed-form .form-tabs a {
 @media (max-width: 1599.98px) {
   .tabbed-form h5 {
     margin: 20px 0 40px; }
+  .tabbed-form .wpcf7-form-control:not(.wpcf7-radio):not(.wpcf7-checkbox):not(.wpcf7-file):not(.wpcf7-submit) {
+    line-height: 60px;
+    height: 60px;
+    font-size: 18px; }
   .tabbed-form .form-group {
     width: 100%; }
   .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label,
