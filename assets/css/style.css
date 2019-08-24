@@ -7569,6 +7569,12 @@ h6, .h6, .tabbed-form .form-tabs a {
     margin-bottom: 20px !important; } }
 
 @media (max-width: 1365.98px) {
+  .tabbed-form .form-tabs a {
+    display: block; }
+    .tabbed-form .form-tabs a:not(:last-child) {
+      padding-right: 0; }
+    .tabbed-form .form-tabs a:not(:first-child) {
+      padding-left: 0; }
   .tabbed-form h5 {
     margin: 0 0 20px; }
   .tabbed-form .tabbed-form-container {

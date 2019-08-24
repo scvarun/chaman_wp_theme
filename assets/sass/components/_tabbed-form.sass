@@ -129,6 +129,13 @@
 
 @include media-breakpoint-down('sm')
   .tabbed-form
+    .form-tabs
+      a
+        display: block
+        &:not(:last-child)
+          padding-right: 0
+        &:not(:first-child)
+          padding-left: 0
     h5
       margin: 0 0 20px
     .tabbed-form-container
