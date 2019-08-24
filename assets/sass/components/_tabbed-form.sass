@@ -42,6 +42,7 @@
       display: inline-flex
       align-items: center
       flex-flow: row
+      font-size: rem(22)
       &:before
         content: ''
         @include size(50px)
@@ -82,6 +83,10 @@
   .tabbed-form
     .form-group
       width: 100%
+    .wpcf7-checkbox,
+    .wpcf7-radio
+      .wpcf7-list-item-label
+        font-size: rem(18)
 
 @include media-breakpoint-down('sm')
   .tabbed-form

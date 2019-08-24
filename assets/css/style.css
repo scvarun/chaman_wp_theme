@@ -7472,7 +7472,8 @@ h6, .h6, .tabbed-form .form-tabs a {
   .tabbed-form .wpcf7-radio .wpcf7-list-item-label {
     display: inline-flex;
     align-items: center;
-    flex-flow: row; }
+    flex-flow: row;
+    font-size: 1.375rem; }
     .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label:before,
     .tabbed-form .wpcf7-radio .wpcf7-list-item-label:before {
       content: '';
@@ -7522,7 +7523,10 @@ h6, .h6, .tabbed-form .form-tabs a {
 
 @media (max-width: 1599.98px) {
   .tabbed-form .form-group {
-    width: 100%; } }
+    width: 100%; }
+  .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label,
+  .tabbed-form .wpcf7-radio .wpcf7-list-item-label {
+    font-size: 1.125rem; } }
 
 @media (max-width: 1365.98px) {
   .tabbed-form .tabbed-form-container {
