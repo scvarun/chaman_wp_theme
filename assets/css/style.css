@@ -7476,10 +7476,12 @@ h6, .h6, .tabbed-form .form-tabs a {
     display: inline-flex;
     align-items: center;
     flex-flow: row;
-    font-size: 1.875rem; }
+    font-size: 1.875rem;
+    line-height: 1; }
     .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label:before,
     .tabbed-form .wpcf7-radio .wpcf7-list-item-label:before {
       content: '';
+      flex-shrink: 0;
       height: 50px;
       width: 50px;
       display: inline-block;
