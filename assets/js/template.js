@@ -142,7 +142,7 @@
 
           $('html, body').animate({
             scrollTop: $target.offset().top
-          }, 2000);
+          }, 300);
         }
 
         $links.on('click', function(e) {
