@@ -7496,8 +7496,7 @@ h6, .h6, .tabbed-form .form-tabs a {
     .tabbed-form .wpcf7-checkbox input[type="checkbox"]:checked ~ .wpcf7-list-item-label:before,
     .tabbed-form .wpcf7-radio input[type="radio"]:checked ~ .wpcf7-list-item-label:before,
     .tabbed-form .wpcf7-radio input[type="checkbox"]:checked ~ .wpcf7-list-item-label:before {
-      background: #ec633c;
-      box-shadow: inset 0 0 0 10px #e5e5e5; }
+      background: #ec633c; }
 
 .tabbed-form .wpcf7-list-item {
   margin-left: 5rem; }
@@ -7559,9 +7558,13 @@ h6, .h6, .tabbed-form .form-tabs a {
   .tabbed-form input[type="submit"] {
     font-size: 1.125rem;
     padding: 10px 30px; }
-  .tabbed-form .wpcf7-radio .wpcf7-list-item-label::before {
-    height: 30px;
-    width: 30px; } }
+  .tabbed-form .wpcf7-radio .wpcf7-list-item-label,
+  .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label {
+    box-shadow: inset 0 0 0 5px #e5e5e5; }
+    .tabbed-form .wpcf7-radio .wpcf7-list-item-label:before,
+    .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label:before {
+      height: 30px;
+      width: 30px; } }
 
 @media (max-width: 1365.98px) {
   .tabbed-form h5 {
