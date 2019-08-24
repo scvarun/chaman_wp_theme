@@ -7500,11 +7500,12 @@ h6, .h6, .tabbed-form .form-tabs a {
   display: none; }
 
 .tabbed-form .file-upload-label {
-  padding: 15px 40px 15px 10px;
+  padding: 15px 65px 15px 20px;
   background: #e5e5e5;
   text-transform: uppercase;
   font-size: 30px;
-  font-weight: 500; }
+  font-weight: 500;
+  cursor: pointer; }
 
 .tabbed-form .form-group-upload label:not(.file-upload-label) {
   min-width: 215px; }
