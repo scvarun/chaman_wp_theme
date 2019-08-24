@@ -139,6 +139,10 @@
             else
               $link[0].dataset.open = 'false';
           });
+
+          $('html, body').animate({
+            scrollTop: $target.offset().top
+          }, 2000);
         }
 
         $links.on('click', function(e) {
