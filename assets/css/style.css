@@ -7556,14 +7556,14 @@ h6, .h6, .tabbed-form .form-tabs a {
   .tabbed-form .next,
   .tabbed-form input[type="submit"] {
     font-size: 1.125rem;
-    padding: 10px 30px; }
+    padding: 15px 40px; }
   .tabbed-form .wpcf7-radio,
   .tabbed-form .wpcf7-checkbox {
     line-height: normal;
     height: auto; }
     .tabbed-form .wpcf7-radio .wpcf7-list-item,
     .tabbed-form .wpcf7-checkbox .wpcf7-list-item {
-      margin-left: 0; }
+      margin-left: 1em; }
     .tabbed-form .wpcf7-radio .wpcf7-list-item-label,
     .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label {
       font-size: 1.125rem; }
