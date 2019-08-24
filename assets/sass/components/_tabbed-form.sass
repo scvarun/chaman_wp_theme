@@ -62,7 +62,8 @@
     &.first
       margin-left: 0
   .previous,
-  .next
+  .next,
+  input[type="submit"]
     font-size: 30px
     border-width: 3px
     padding: 20px 50px
@@ -78,6 +79,12 @@
   .form-group-upload
     label:not(.file-upload-label)
       min-width: 215px
+  input[type="submit"]
+    background: none
+    border: 3px solid $white
+    &:hover
+      background: $white
+      color: $tertiary
 
 @include media-breakpoint-down('md')
   .tabbed-form

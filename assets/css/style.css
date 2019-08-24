@@ -7502,7 +7502,8 @@ h6, .h6, .tabbed-form .form-tabs a {
     margin-left: 0; }
 
 .tabbed-form .previous,
-.tabbed-form .next {
+.tabbed-form .next,
+.tabbed-form input[type="submit"] {
   font-size: 30px;
   border-width: 3px;
   padding: 20px 50px; }
@@ -7520,6 +7521,13 @@ h6, .h6, .tabbed-form .form-tabs a {
 
 .tabbed-form .form-group-upload label:not(.file-upload-label) {
   min-width: 215px; }
+
+.tabbed-form input[type="submit"] {
+  background: none;
+  border: 3px solid #e5e5e5; }
+  .tabbed-form input[type="submit"]:hover {
+    background: #e5e5e5;
+    color: #755c4e; }
 
 @media (max-width: 1599.98px) {
   .tabbed-form .form-group {
