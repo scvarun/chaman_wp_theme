@@ -7532,7 +7532,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   height: auto;
   font-size: 30px;
   border-width: 3px;
-  padding: 20px 70px;
+  padding: 30px 100px;
   border-radius: 0; }
   .tabbed-form input[type="submit"]:hover {
     background: #e5e5e5;
