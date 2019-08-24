@@ -7490,6 +7490,12 @@ h6, .h6, .tabbed-form .form-tabs a {
   .tabbed-form .wpcf7-list-item.first {
     margin-left: 0; }
 
+.tabbed-form .previous,
+.tabbed-form .next {
+  font-size: 30px;
+  border-width: 3px;
+  padding: 20px 50px; }
+
 @media (max-width: 1599.98px) {
   .tabbed-form .form-group {
     width: 100%; } }
