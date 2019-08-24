@@ -7562,7 +7562,11 @@ h6, .h6, .tabbed-form .form-tabs a {
   .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label:before {
     box-shadow: inset 0 0 0 5px #e5e5e5;
     height: 30px;
-    width: 30px; } }
+    width: 30px; }
+  .tabbed-form .file-upload-label {
+    font-size: 18px; }
+  .tabbed-form .form-group-upload {
+    margin-bottom: 20px !important; } }
 
 @media (max-width: 1365.98px) {
   .tabbed-form h5 {
