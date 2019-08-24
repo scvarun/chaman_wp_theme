@@ -7549,7 +7549,8 @@ h6, .h6, .tabbed-form .form-tabs a {
     height: 60px;
     font-size: 18px; }
   .tabbed-form .form-group {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 30px; }
   .tabbed-form .wpcf7-checkbox .wpcf7-list-item-label,
   .tabbed-form .wpcf7-radio .wpcf7-list-item-label {
     font-size: 1.125rem; }
@@ -7563,7 +7564,9 @@ h6, .h6, .tabbed-form .form-tabs a {
   .tabbed-form h5 {
     margin: 0 0 20px; }
   .tabbed-form .tabbed-form-container {
-    padding: 30px; } }
+    padding: 30px; }
+  .tabbed-form .form-group {
+    margin-bottom: 20px; } }
 
 /*
  * ================================
