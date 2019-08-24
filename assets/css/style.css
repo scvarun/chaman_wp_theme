@@ -7496,6 +7496,15 @@ h6, .h6, .tabbed-form .form-tabs a {
   border-width: 3px;
   padding: 20px 50px; }
 
+.tabbed-form input[type="file"] {
+  display: none; }
+
+.tabbed-form .file-upload-label {
+  padding: 10px 10px;
+  background: #e5e5e5;
+  text-transform: uppercase;
+  font-size: 30px; }
+
 @media (max-width: 1599.98px) {
   .tabbed-form .form-group {
     width: 100%; } }
