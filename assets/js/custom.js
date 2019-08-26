@@ -54,8 +54,6 @@
           {opacity: 0, duration: 400},
           {opacity: 1, duration: 400},
           {opacity: 0, duration: 400},
-          {opacity: 1, duration: 400},
-          {opacity: 0, duration: 400},
         ],
         easing: 'easeInOutQuad',
         delay: anime.stagger(300)
