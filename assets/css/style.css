@@ -7120,8 +7120,9 @@ h6, .h6, .tabbed-form .form-tabs a {
     h4, .elementor-widget-heading h4.elementor-heading-title, .h4, .elementor-widget-heading .h4.elementor-heading-title {
       line-height: 3.75rem; }
   body {
-    font-weight: 400;
-    line-height: 1.875rem; } }
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem; } }
 
 @media (min-width: 1366px) {
   h2, .h2 {
