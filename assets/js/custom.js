@@ -42,16 +42,16 @@
       anime({
         targets: elements,
         keyframes: [
-          {opacity: 0},
           {opacity: 1},
           {opacity: 0},
           {opacity: 1},
           {opacity: 0},
+          {opacity: 1},
         ],
         easing: 'easeInOutQuad',
         duration: 3000,
         delay: function(el, i, l) {
-          return 0 + 200 * i
+          return 1000 + 200 * i
         }
       });
       
@@ -59,7 +59,7 @@
         targets: heading,
         opacity: 1,
         duration: 3000,
-        delay: 6000,
+        delay: 8000,
         easing: 'easeInOutQuad',
       });
       
@@ -75,7 +75,7 @@
         easing: 'easeInOutQuad',
         duration: 3000,
         delay: function(el, i, l) {
-          return 8000 + 200 * i
+          return 10000 + 200 * i
         }
       });
     },
