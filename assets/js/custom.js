@@ -48,6 +48,7 @@
           {opacity: 0},
           {opacity: 1},
         ],
+        easing: 'easeInOut',
         duration: 3000,
         delay: function(el, i, l) {
           return i * 200;
@@ -59,6 +60,7 @@
         opacit: 1,
         delay: 6000,
         duration: 3000,
+        easing: 'easeInOut',
       });
 
       anime({
@@ -70,6 +72,7 @@
           {opacity: 1},
           {opacity: 0},
         ],
+        easing: 'easeInOut',
         duration: 3000,
         delay: function(el, i, l) {
           return 6000 + i * 200;
