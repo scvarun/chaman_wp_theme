@@ -42,41 +42,27 @@
       anime({
         targets: elements,
         keyframes: [
-          {opacity: 1},
-          {opacity: 0},
-          {opacity: 1},
-          {opacity: 0},
-          {opacity: 1},
+          {opacity: 1, duration: 400},
+          {opacity: 0, duration: 400},
+          {opacity: 1, duration: 400},
+          {opacity: 0, duration: 400},
+          {opacity: 1, duration: 400},
+          {opacity: 0, duration: 400, delay: 3000},
+          {opacity: 1, duration: 400},
+          {opacity: 0, duration: 400},
+          {opacity: 1, duration: 400},
+          {opacity: 0, duration: 400},
         ],
         easing: 'easeInOutQuad',
-        duration: 3000,
-        delay: function(el, i, l) {
-          return 1000 + 200 * i
-        }
+        delay: anime.stagger(100)
       });
-      
+
       anime({
         targets: heading,
         opacity: 1,
         duration: 3000,
-        delay: 8000,
+        delay: 4000,
         easing: 'easeInOutQuad',
-      });
-      
-      anime({
-        targets: elements,
-        keyframes: [
-          {opacity: 0},
-          {opacity: 1},
-          {opacity: 0},
-          {opacity: 1},
-          {opacity: 0},
-        ],
-        easing: 'easeInOutQuad',
-        duration: 3000,
-        delay: function(el, i, l) {
-          return 10000 + 200 * i
-        }
       });
     },
   };
