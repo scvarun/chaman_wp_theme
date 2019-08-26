@@ -7113,9 +7113,10 @@ h6, .h6, .tabbed-form .form-tabs a {
 .text-body-color {
   color: #765c4f; }
 
-@media (max-width: 1599.98px) {
+@media screen and (min-width: 820px) and (max-width: 1366px) {
   body {
-    font-weight: 500; } }
+    font-weight: 400;
+    line-height: 1.875rem; } }
 
 @media (min-width: 1366px) {
   h2, .h2 {

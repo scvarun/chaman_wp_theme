@@ -47,9 +47,11 @@ h6, .h6
 .text-body-color
   color: $body-color
 
-@include media-breakpoint-down('md')
+
+@media screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) and (max-width: #{map-get($grid-breakpoints, 'md')})
   body
-    font-weight: 500
+    font-weight: 400
+    line-height: rem(30)
 
 @include media-breakpoint-up('md')
   h2, .h2
