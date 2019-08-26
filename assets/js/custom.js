@@ -47,7 +47,11 @@
           {opacity: 1, duration: 400},
           {opacity: 0, duration: 400},
           {opacity: 1, duration: 400},
+          {opacity: 0, duration: 400},
+          {opacity: 1, duration: 400},
           {opacity: 0, duration: 400, delay: 3000},
+          {opacity: 1, duration: 400},
+          {opacity: 0, duration: 400},
           {opacity: 1, duration: 400},
           {opacity: 0, duration: 400},
           {opacity: 1, duration: 400},
@@ -60,8 +64,8 @@
       anime({
         targets: heading,
         opacity: 1,
-        duration: 3000,
-        delay: 4000,
+        duration: 300,
+        delay: 5000,
         easing: 'easeInOutQuad',
       });
     },
