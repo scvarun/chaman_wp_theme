@@ -7,7 +7,7 @@
 /* Fonts */
 /* Header */
 /* Forms */
-@keyframes LOGO_GROUP_1 {
+@keyframes LOGO_GROUP_1_IN {
   0% {
     opacity: 1; }
   25% {
@@ -18,6 +18,18 @@
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@keyframes LOGO_GROUP_1_OUT {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 #CHAMAN_LOGO_SVG {
   max-height: 80%;
@@ -32,9 +44,7 @@
   #CHAMAN_LOGO_SVG.animated {
     opacity: 1; }
     #CHAMAN_LOGO_SVG.animated rect, #CHAMAN_LOGO_SVG.animated path {
-      animation-name: LOGO_GROUP_1;
-      animation-duration: 3s;
-      animation-timing-function: ease-in-out; }
+      animation: LOGO_GROUP_1_IN 3s ease-in-out, LOGO_GROUP_1_OUT 3s ease-in-out 10s; }
     #CHAMAN_LOGO_SVG.animated rect:nth-child(1), #CHAMAN_LOGO_SVG.animated path:nth-child(1) {
       animation-delay: 0.2s; }
     #CHAMAN_LOGO_SVG.animated rect:nth-child(2), #CHAMAN_LOGO_SVG.animated path:nth-child(2) {

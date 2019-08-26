@@ -2,7 +2,7 @@
 @import "vendors/bourbon/bourbon"
 @import 'variables'
 
-@keyframes LOGO_GROUP_1
+@keyframes LOGO_GROUP_1_IN
   0%
     opacity: 1
   25%
@@ -13,6 +13,18 @@
     opacity: 0
   100%
     opacity: 1
+
+@keyframes LOGO_GROUP_1_OUT
+  0%
+    opacity: 0
+  25%
+    opacity: 1
+  50%
+    opacity: 0
+  75%
+    opacity: 1
+  100%
+    opacity: 0
 
 #CHAMAN_LOGO_SVG
   max-height: 80%
@@ -25,9 +37,7 @@
   &.animated
     opacity: 1
     rect, path
-      animation-name: LOGO_GROUP_1
-      animation-duration: 3s
-      animation-timing-function: ease-in-out
+      animation: LOGO_GROUP_1_IN 3s ease-in-out, LOGO_GROUP_1_OUT 3s ease-in-out 10s
     @for $i from 1 through 10
       rect:nth-child(#{$i}), path:nth-child(#{$i})
         animation-delay: #{.2*$i}s
