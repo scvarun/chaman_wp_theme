@@ -7428,6 +7428,15 @@ h6, .h6, .tabbed-form .form-tabs a {
     width: 33.33333%;
     flex-basis: 33.33333%; } }
 
+@media screen and (min-width: 821px) and (max-width: 1600px) {
+  .team-members .team-member-name {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    font-weight: 500; }
+  .team-members p, .team-members .team-member-title {
+    font-size: 1rem;
+    line-height: 1.5rem; } }
+
 @media screen and (min-width: 1601px) {
   .team-members {
     margin-right: -50px;
