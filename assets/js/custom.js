@@ -41,13 +41,12 @@
       console.log(elements);
       var heading = svg.getElementsByClassName('logo-heading');
 
-
-      anime({
-        targets: elements,
-        opacity: 1,
-        easing: 'easeInOut',
-        duration: 3000,
-      });
+      // anime({
+      //   targets: elements,
+      //   opacity: 1,
+      //   easing: 'easeInOut',
+      //   duration: 3000,
+      // });
 
       // anime({
       //   targets: heading,
