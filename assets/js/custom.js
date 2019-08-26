@@ -38,11 +38,12 @@
       if( svg === null ) return;
       svg.classList.add('animated');
       var elements = svg.querySelectorAll('rect, path');
+      console.log(elements);
       var heading = svg.getElementsByClassName('logo-heading');
 
 
       anime({
-        targets: elements,
+        targets: svg.querySelectorAll('rect, path'),
         keyframes: [
           {opacity: 1},
           {opacity: 0},
