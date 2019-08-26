@@ -7113,6 +7113,10 @@ h6, .h6, .tabbed-form .form-tabs a {
 .text-body-color {
   color: #765c4f; }
 
+@media (max-width: 1599.98px) {
+  body {
+    font-weight: 500; } }
+
 @media (min-width: 1366px) {
   h2, .h2 {
     font-size: 7.5rem; }
@@ -7212,8 +7216,8 @@ h6, .h6, .tabbed-form .form-tabs a {
         opacity: 0; }
   .blogpost-thumbs .entry-title {
     margin-bottom: 25px;
-    font-size: 50px;
-    line-height: 56px;
+    font-size: 3.125rem;
+    line-height: 3.5rem;
     letter-spacing: 0;
     font-weight: bold; }
     .blogpost-thumbs .entry-title a {
@@ -7221,10 +7225,19 @@ h6, .h6, .tabbed-form .form-tabs a {
       .blogpost-thumbs .entry-title a, .blogpost-thumbs .entry-title a:hover {
         text-decoration: none; }
   .blogpost-thumbs .entry-content {
-    font-size: 22px;
-    line-height: 32px; }
+    font-size: 1.375rem;
+    line-height: 2rem; }
   .blogpost-thumbs.text-white .entry-title a {
     color: #e5e5e5; }
+
+@media (max-width: 1599.98px) {
+  .blogpost-thumbs .entry-title {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    font-weight: 500; }
+  .blogpost-thumbs .entry-content {
+    font-size: 1.125rem;
+    line-height: 1.875rem; } }
 
 @media (max-width: 1365.98px) {
   .blogpost-thumbs {
@@ -7238,12 +7251,12 @@ h6, .h6, .tabbed-form .form-tabs a {
     .blogpost-thumbs article figure {
       margin-bottom: 20px !important; }
     .blogpost-thumbs .entry-title {
-      font-size: 24px;
-      line-height: 30px;
+      font-size: 1.5rem;
+      line-height: 1.875rem;
       margin-bottom: 10px; }
     .blogpost-thumbs .entry-content {
-      font-size: 12px;
-      line-height: 14px; } }
+      font-size: 0.75rem;
+      line-height: 0.875rem; } }
 
 /*
  * --------------------

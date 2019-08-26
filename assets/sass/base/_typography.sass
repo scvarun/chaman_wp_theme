@@ -47,6 +47,10 @@ h6, .h6
 .text-body-color
   color: $body-color
 
+@include media-breakpoint-down('md')
+  body
+    font-weight: 500
+
 @include media-breakpoint-up('md')
   h2, .h2
     font-size: rem(120)
