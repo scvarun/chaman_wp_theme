@@ -37,6 +37,21 @@
       var svg = document.getElementById('CHAMAN_LOGO_SVG');
       if( svg === null ) return;
       svg.classList.add('animated');
+      var elements = svg.querySelectorAll('rect, path');
+      anime({
+        targets: elements,
+        keyframes: [
+          {opacity: 1},
+          {opacity: 0},
+          {opacity: 1},
+          {opacity: 0},
+          {opacity: 1},
+        ],
+        duration: 3000,
+        delay: function(el, i, l) {
+          return i * 200;
+        },
+      });
     },
   };
 
