@@ -34,7 +34,7 @@ if ( ! function_exists( 'unifato_theme_scripts' ) ) {
 		wp_register_script( 'bootstrap-popper', $dir_uri . '/vendors/bootstrap/popper.min.js', array('jquery'), THEME_VERSION, true);
     wp_enqueue_script( 'lodash', $dir_uri . '/vendors/lodash/lodash.min.js', array('jquery'), THEME_VERSION, true);
     wp_enqueue_script( 'stickybits', $dir_uri . '/vendors/stickybits/stickybits.min.js', array('jquery'), THEME_VERSION, true);
-    wp_enqueue_script( 'animejs', $dir_uri . '/vendors/animejs/anime.js', array('jquery'), THEME_VERSION, true);
+    wp_enqueue_script( 'animejs', $dir_uri . '/vendors/animejs/anime.min.js', array('jquery'), THEME_VERSION, true);
 
     wp_enqueue_script( 'wpos-slick-jquery', $dir_uri . '/vendors/slick-slider/slick.min.js', array('jquery'), THEME_VERSION, true);
 		
