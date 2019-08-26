@@ -43,7 +43,7 @@
 
 
       anime({
-        targets: svg.querySelectorAll('rect, path'),
+        targets: elements,
         keyframes: [
           {opacity: 1},
           {opacity: 0},
@@ -53,9 +53,6 @@
         ],
         easing: 'easeInOut',
         duration: 3000,
-        delay: function(el, i, l) {
-          return i * 200;
-        },
       });
 
       // anime({
