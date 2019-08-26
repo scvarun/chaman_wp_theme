@@ -7306,6 +7306,10 @@ h6, .h6, .tabbed-form .form-tabs a {
     line-height: 21px;
     margin-bottom: 10px; } }
 
+@media screen and (min-width: 820px) and (max-width: 1366px) {
+  .testimonial .testimonial-title {
+    font-weight: 700; } }
+
 /*
  * --------------------
  * Job listings Widget
