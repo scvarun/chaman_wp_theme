@@ -7114,6 +7114,11 @@ h6, .h6, .tabbed-form .form-tabs a {
   color: #765c4f; }
 
 @media screen and (min-width: 820px) and (max-width: 1366px) {
+  h4, .h4 {
+    font-size: 3rem;
+    font-weight: 700; }
+    h4, .elementor-widget-heading h4.elementor-heading-title, .h4, .elementor-widget-heading .h4.elementor-heading-title {
+      line-height: 3.75rem; }
   body {
     font-weight: 400;
     line-height: 1.875rem; } }
