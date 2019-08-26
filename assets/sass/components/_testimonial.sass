@@ -5,13 +5,16 @@
  */
 
 .testimonial
+  figure
+      margin-top: 40px !important
   .testimonial-title
     font-weight: 900
     font-style: italic
     margin-bottom: 65px
   .testimonial-user-info, p
-    font-size: 30px
-    line-height: 40px
+    font-size: 18px
+    line-height: 21px
+    margin-bottom: 10px
   .testimonial-user-info
     font-weight: bold
     text-transform: uppercase
@@ -29,21 +32,14 @@
       .row
         flex-flow: row-reverse
 
-@include media-breakpoint-down('sm')
-  .testimonial
-    figure
-      margin-top: 40px !important
-
-@include media-breakpoint-down('md')
-  .testimonial
-    .testimonial-title
-      margin-bottom: 35px
-    .testimonial-user-info, p
-      font-size: 18px
-      line-height: 21px
-      margin-bottom: 10px
-
-@media screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) and (max-width: #{map-get($grid-breakpoints, 'md')})
+@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
   .testimonial
     .testimonial-title
       font-weight: 700
+      margin-bottom: 35px
+
+@media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
+  .testimonial
+    .testimonial-user-info, p
+      font-size: 30px
+      line-height: 40px

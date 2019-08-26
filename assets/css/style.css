@@ -7260,14 +7260,18 @@ h6, .h6, .tabbed-form .form-tabs a {
  * Testimonial
  * --------------------
  */
+.testimonial figure {
+  margin-top: 40px !important; }
+
 .testimonial .testimonial-title {
   font-weight: 900;
   font-style: italic;
   margin-bottom: 65px; }
 
 .testimonial .testimonial-user-info, .testimonial p {
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 10px; }
 
 .testimonial .testimonial-user-info {
   font-weight: bold;
@@ -7285,21 +7289,15 @@ h6, .h6, .tabbed-form .form-tabs a {
   .testimonial.testimonial-right .row {
     flex-flow: row-reverse; } }
 
-@media (max-width: 1365.98px) {
-  .testimonial figure {
-    margin-top: 40px !important; } }
-
-@media (max-width: 1599.98px) {
+@media screen and (min-width: 821px) and (max-width: 1600px) {
   .testimonial .testimonial-title {
-    margin-bottom: 35px; }
+    font-weight: 700;
+    margin-bottom: 35px; } }
+
+@media screen and (min-width: 1601px) {
   .testimonial .testimonial-user-info, .testimonial p {
-    font-size: 18px;
-    line-height: 21px;
-    margin-bottom: 10px; } }
-
-@media screen and (min-width: 820px) and (max-width: 1366px) {
-  .testimonial .testimonial-title {
-    font-weight: 700; } }
+    font-size: 30px;
+    line-height: 40px; } }
 
 /*
  * --------------------
