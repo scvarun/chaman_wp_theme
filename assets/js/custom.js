@@ -62,7 +62,7 @@
         targets: heading,
         opacity: 1,
         duration: 3000,
-        delay: 4000,
+        delay: 6000,
         easing: 'easeInOutQuad',
       });
       
@@ -78,7 +78,7 @@
         easing: 'easeInOutQuad',
         duration: 3000,
         delay: function(el, i, l) {
-          return 5000 + 200 * i
+          return 6000 + 200 * i
         }
       });
     },
