@@ -14,18 +14,6 @@
   100%
     opacity: 1
 
-@keyframes LOGO_GROUP_1_OUT
-  0%
-    opacity: 0
-  25%
-    opacity: 1
-  50%
-    opacity: 0
-  75%
-    opacity: 1
-  100%
-    opacity: 0
-
 #CHAMAN_LOGO_SVG
   max-height: 80%
   max-width: 75vw
@@ -33,11 +21,11 @@
   position: relative
   .logo-heading
     @include position(absolute, 50% 50% null null);
-    transform: translate(50%, 50%)
+    transform: translateY(-50%) translateX(50%)
   &.animated
     opacity: 1
     rect, path
-      animation: LOGO_GROUP_1_IN 3s ease-in-out, LOGO_GROUP_1_OUT 3s ease-in-out 10s
+      animation: LOGO_GROUP_1_IN 3s ease-in-out alternate
     @for $i from 1 through 10
       rect:nth-child(#{$i}), path:nth-child(#{$i})
         animation-delay: #{.2*$i}s
