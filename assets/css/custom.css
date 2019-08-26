@@ -28,7 +28,9 @@
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translateY(-50%) translateX(50%); }
+    transform: translateY(-50%) translateX(50%);
+    width: 100%;
+    text-align: center; }
   #CHAMAN_LOGO_SVG.animated {
     opacity: 1; }
     #CHAMAN_LOGO_SVG.animated rect, #CHAMAN_LOGO_SVG.animated path {
