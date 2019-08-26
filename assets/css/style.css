@@ -7123,7 +7123,8 @@ h6, .h6, .tabbed-form .form-tabs a {
     h3, .elementor-widget-heading h3.elementor-heading-title, .h3, .elementor-widget-heading .h3.elementor-heading-title {
       line-height: 5rem; }
   h4, .h4 {
-    font-size: 3.5rem; }
+    font-size: 3.5rem;
+    font-weight: 700; }
     h4, .elementor-widget-heading h4.elementor-heading-title, .h4, .elementor-widget-heading .h4.elementor-heading-title {
       line-height: 3.75rem; }
   h5, .h5 {
@@ -7135,9 +7136,9 @@ h6, .h6, .tabbed-form .form-tabs a {
     h6, .elementor-widget-heading h6.elementor-heading-title, .h6, .tabbed-form .form-tabs a, .elementor-widget-heading .h6.elementor-heading-title, .elementor-widget-heading .tabbed-form .form-tabs a.elementor-heading-title, .tabbed-form .form-tabs .elementor-widget-heading a.elementor-heading-title {
       line-height: 1.875rem; }
   body, .btn {
-    font-size: 1.125rem;
-    line-height: 1.3125rem;
-    letter-spacing: 0; } }
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500; } }
 
 @media screen and (min-width: 1601px) {
   h2, .h2 {
