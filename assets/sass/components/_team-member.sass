@@ -25,10 +25,6 @@
     .team-member-single
       width: 1/3*100%
       flex-basis: 1/3*100%
-    figure
-      margin-bottom: 50px !important
-    .team-member-name
-      margin-bottom: 40px
 
 @media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
   .team-members
@@ -37,5 +33,9 @@
 @media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
   .team-members
     @include margin(null -50px)
+    figure
+      margin-bottom: 50px !important
+    .team-member-name
+      margin-bottom: 40px
     .team-member-single
       @include padding(null 50px)

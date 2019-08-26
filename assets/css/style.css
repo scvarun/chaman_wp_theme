@@ -7426,16 +7426,16 @@ h6, .h6, .tabbed-form .form-tabs a {
 @media screen and (min-width: 821px) {
   .team-members .team-member-single {
     width: 33.33333%;
-    flex-basis: 33.33333%; }
-  .team-members figure {
-    margin-bottom: 50px !important; }
-  .team-members .team-member-name {
-    margin-bottom: 40px; } }
+    flex-basis: 33.33333%; } }
 
 @media screen and (min-width: 1601px) {
   .team-members {
     margin-right: -50px;
     margin-left: -50px; }
+    .team-members figure {
+      margin-bottom: 50px !important; }
+    .team-members .team-member-name {
+      margin-bottom: 40px; }
     .team-members .team-member-single {
       padding-right: 50px;
       padding-left: 50px; } }
