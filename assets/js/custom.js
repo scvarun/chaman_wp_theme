@@ -38,6 +38,7 @@
       if( svg === null ) return;
       svg.classList.add('animated');
       var elements = svg.querySelectorAll('rect, path');
+      var heading = svg.querySelectorAll('.logo-heading');
       anime({
         targets: elements,
         keyframes: [
@@ -50,6 +51,28 @@
         duration: 3000,
         delay: function(el, i, l) {
           return i * 200;
+        },
+      });
+
+      anime({
+        targets: heading,
+        opacit: 1,
+        delay: 6000,
+        duration: 3000,
+      });
+
+      anime({
+        targets: elements,
+        keyframes: [
+          {opacity: 0},
+          {opacity: 1},
+          {opacity: 0},
+          {opacity: 1},
+          {opacity: 0},
+        ],
+        duration: 3000,
+        delay: function(el, i, l) {
+          return 6000 + i * 200;
         },
       });
     },
