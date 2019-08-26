@@ -48,18 +48,18 @@ h6, .h6
   color: $body-color
 
 
-@media screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) and (max-width: #{map-get($grid-breakpoints, 'md')})
-  h4, .h4
-    font-size: rem(48)
-    font-weight: 700
-    &, .elementor-widget-heading &.elementor-heading-title
-      line-height: rem(60)
-  body
-    font-size: rem(16)
-    font-weight: 500
-    line-height: rem(24)
+// @media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg') - 1})
+//   h4, .h4
+//     font-size: rem(48)
+//     font-weight: 700
+//     &, .elementor-widget-heading &.elementor-heading-title
+//       line-height: rem(60)
+//   body
+//     font-size: rem(16)
+//     font-weight: 500
+//     line-height: rem(24)
 
-@include media-breakpoint-up('md')
+@include media-breakpoint-up('sm')
   h2, .h2
     font-size: rem(120)
     &, .elementor-widget-heading &.elementor-heading-title
