@@ -40,7 +40,7 @@
       var elements = svg.querySelectorAll('rect, path');
       var heading = svg.getElementsByClassName('logo-heading');
 
-      
+
       anime({
         targets: elements,
         keyframes: [
@@ -83,8 +83,11 @@
     },
   };
 
-  document.addEventListener('DOMContentLoaded', function() {
+  $(document).ready(function() {
     Custom.init();
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
   });
 
 })(jQuery);
