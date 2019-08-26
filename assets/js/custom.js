@@ -42,16 +42,16 @@
       anime({
         targets: elements,
         keyframes: [
-          {opacity: 1},
           {opacity: 0},
           {opacity: 1},
           {opacity: 0},
           {opacity: 1},
+          {opacity: 0},
         ],
         easing: 'easeInOutQuad',
         duration: 3000,
         delay: function(el, i, l) {
-          return 200 * i
+          return 0 + 200 * i
         }
       });
       
