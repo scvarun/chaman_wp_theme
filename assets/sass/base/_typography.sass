@@ -59,7 +59,7 @@ h6, .h6
 //     font-weight: 500
 //     line-height: rem(24)
 
-@include media-breakpoint-up('sm')
+@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
   h2, .h2
     font-size: rem(120)
     &, .elementor-widget-heading &.elementor-heading-title
@@ -86,7 +86,7 @@ h6, .h6
     line-height: rem(21)
     letter-spacing: 0
 
-@include media-breakpoint-up('lg')
+@media screen and (max-width: #{map-get($grid-breakpoints, 'lg') + 1px})
   h2, .h2
     font-size: rem(160)
     &, .elementor-widget-heading &.elementor-heading-title

@@ -7113,7 +7113,7 @@ h6, .h6, .tabbed-form .form-tabs a {
 .text-body-color {
   color: #765c4f; }
 
-@media (min-width: 820px) {
+@media screen and (min-width: 821px) and (max-width: 1600px) {
   h2, .h2 {
     font-size: 7.5rem; }
     h2, .elementor-widget-heading h2.elementor-heading-title, .h2, .elementor-widget-heading .h2.elementor-heading-title {
@@ -7139,7 +7139,7 @@ h6, .h6, .tabbed-form .form-tabs a {
     line-height: 1.3125rem;
     letter-spacing: 0; } }
 
-@media (min-width: 1600px) {
+@media screen and (max-width: 1601px) {
   h2, .h2 {
     font-size: 10rem; }
     h2, .elementor-widget-heading h2.elementor-heading-title, .h2, .elementor-widget-heading .h2.elementor-heading-title {
