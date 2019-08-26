@@ -50,7 +50,7 @@
 
       anime({
         targets: heading,
-        opacit: 1,
+        opacity: 1,
         delay: 6000,
         duration: 3000,
         easing: 'easeInOut',

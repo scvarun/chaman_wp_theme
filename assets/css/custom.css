@@ -33,10 +33,6 @@
     text-align: center;
     color: #fff;
     opacity: 0; }
-  #CHAMAN_LOGO_SVG.animated {
-    opacity: 1; }
-    #CHAMAN_LOGO_SVG.animated .logo-heading {
-      opacity: 1; }
 
 @media screen and (max-width: 480px) {
   #CHAMAN_LOGO_SVG svg {
