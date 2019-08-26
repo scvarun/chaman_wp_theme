@@ -4,6 +4,7 @@
   var Custom = {
     init: function() {
       this.enableAdmissionForm();
+      this.enableLogoSvgAnimation();
     },
 
     enableAdmissionForm: function() {
@@ -30,6 +31,12 @@
           content.dataset.open = "true";
         });
       });
+    },
+
+    enableLogoSvgAnimation: function() {
+      var svg = document.getElementById('CHAMAN_LOGO_SVG');
+      if( svg === null ) return;
+      svg.classList.add('animated');
     },
   };
 

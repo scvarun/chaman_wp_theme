@@ -17,13 +17,16 @@
 #CHAMAN_LOGO_SVG
   max-height: 80%
   max-width: 75vw
-  rect, path
-    animation-name: LOGO_GROUP_1
-    animation-duration: 3s
-    animation-timing-function: ease-in-out
-  @for $i from 1 through 10
-    rect:nth-child(#{$i}), path:nth-child(#{$i})
-      animation-delay: #{.2*$i}s
+  opacity: 0
+  &.animated
+    opacity: 1
+    rect, path
+      animation-name: LOGO_GROUP_1
+      animation-duration: 3s
+      animation-timing-function: ease-in-out
+    @for $i from 1 through 10
+      rect:nth-child(#{$i}), path:nth-child(#{$i})
+        animation-delay: #{.2*$i}s
 
 @media screen and (max-width: 480px)
   #CHAMAN_LOGO_SVG svg
