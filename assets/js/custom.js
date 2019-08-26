@@ -39,7 +39,7 @@
       svg.classList.add('animated');
       var elements = svg.querySelectorAll('rect, path');
       var heading = svg.getElementsByClassName('logo-heading');
-      setTimeout(null, 1000);
+      setTimeout(null, 2000);
       anime({
         targets: elements,
         keyframes: [
