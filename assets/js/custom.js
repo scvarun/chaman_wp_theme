@@ -44,13 +44,7 @@
 
       anime({
         targets: elements,
-        keyframes: [
-          {opacity: 1},
-          {opacity: 0},
-          {opacity: 1},
-          {opacity: 0},
-          {opacity: 1},
-        ],
+        opacity: 1,
         easing: 'easeInOut',
         duration: 3000,
       });
