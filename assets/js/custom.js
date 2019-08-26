@@ -55,7 +55,7 @@
           {opacity: 1, duration: 500},
           {opacity: 0, duration: 500},
         ],
-        easing: 'easeInOutQuad',
+        easing: 'easeInOutExpo',
         delay: anime.stagger(300)
       });
 
@@ -63,8 +63,8 @@
         targets: heading,
         opacity: 1,
         duration: 300,
-        delay: 5500,
-        easing: 'easeInOutQuad',
+        delay: 4500,
+        easing: 'easeInOutExpo',
       });
     },
   };
