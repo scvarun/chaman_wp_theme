@@ -40,8 +40,6 @@
       var elements = svg.querySelectorAll('rect, path');
       console.log(elements);
       var heading = svg.getElementsByClassName('logo-heading');
-
-      svg.style.opacity = 1;
       anime({
         targets: elements,
         keyframes: [
@@ -78,7 +76,7 @@
         easing: 'easeInOutQuad',
         duration: 3000,
         delay: function(el, i, l) {
-          return 6000 + 200 * i
+          return 8000 + 200 * i
         }
       });
     },
