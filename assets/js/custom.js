@@ -58,7 +58,7 @@
           {opacity: 0, duration: 400},
         ],
         easing: 'easeInOutQuad',
-        delay: anime.stagger(100)
+        delay: anime.stagger(300)
       });
 
       anime({
