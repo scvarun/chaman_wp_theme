@@ -7,11 +7,11 @@
 .partners
   display: flex
   flex-wrap: wrap
-  @include margin(null -50px)
+  @include margin(null -30px)
   .partners-single
-    @include margin(null 50px)
-    flex-basis: 1/2*100%
-    width: 1/2*100%
+    @include margin(null 30px)
+    flex-basis: 100%
+    width: 100%
   figure
     margin-bottom: 30px !important
   .partners-single-title
@@ -20,10 +20,24 @@
     text-transform: uppercase
     margin-bottom: 0
 
-@include media-breakpoint-down('sm')
+@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px})
   .partners
-    @include margin(null -30px)
     .partners-single
-      @include margin(null 30px)
-      flex-basis: 100%
-      width: 100%
+      flex-basis: 1/2*100%
+      width: 1/2*100%
+
+@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
+  .partners
+    .partners-single-title
+      font-size: rem(36)
+      line-height: rem(42)
+      font-weight: 500
+    p, .partners-single-subtitle
+      font-size: rem(16)
+      line-height: rem(24)
+    
+@media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
+  .partners
+    @include margin(null -50px)
+    .partners-single
+      @include margin(null 50px)
