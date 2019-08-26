@@ -42,7 +42,7 @@
       anime({
         targets: elements,
         keyframes: [
-          {opacity: 1, duration: 400},
+          {opacity: 1, duration: 400, delay: 500},
           {opacity: 0, duration: 400},
           {opacity: 1, duration: 400},
           {opacity: 0, duration: 400},
@@ -63,7 +63,7 @@
         targets: heading,
         opacity: 1,
         duration: 300,
-        delay: 5000,
+        delay: 5500,
         easing: 'easeInOutQuad',
       });
     },
