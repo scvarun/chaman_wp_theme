@@ -62,9 +62,9 @@
       anime({
         targets: heading,
         opacity: 1,
-        duration: 300,
+        duration: 500,
         delay: 4500,
-        easing: 'easeInOutExpo',
+        easing: 'easeInOutQuad',
       });
     },
   };
