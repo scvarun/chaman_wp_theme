@@ -7408,34 +7408,37 @@ h6, .h6, .tabbed-form .form-tabs a {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  margin-right: -50px;
-  margin-left: -50px; }
+  margin-right: -30px;
+  margin-left: -30px; }
   .team-members .team-member-single {
-    width: 33.33333%;
-    flex-basis: 33.33333%;
-    padding-right: 50px;
-    padding-left: 50px; }
+    width: 100%;
+    flex-basis: 100%;
+    padding-right: 30px;
+    padding-left: 30px; }
   .team-members figure {
-    margin-bottom: 50px !important; }
+    margin-bottom: 25px !important; }
   .team-members .team-member-name {
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
   .team-members .team-member-title {
     text-transform: uppercase;
     margin-bottom: 0; }
 
-@media (max-width: 1365.98px) {
+@media screen and (min-width: 821px) {
+  .team-members .team-member-single {
+    width: 33.33333%;
+    flex-basis: 33.33333%; }
+  .team-members figure {
+    margin-bottom: 50px !important; }
+  .team-members .team-member-name {
+    margin-bottom: 40px; } }
+
+@media screen and (min-width: 1601px) {
   .team-members {
-    margin-right: -30px;
-    margin-left: -30px; }
+    margin-right: -50px;
+    margin-left: -50px; }
     .team-members .team-member-single {
-      width: 100%;
-      flex-basis: 100%;
-      padding-right: 30px;
-      padding-left: 30px; }
-    .team-members figure {
-      margin-bottom: 25px !important; }
-    .team-members .team-member-name {
-      margin-bottom: 20px; } }
+      padding-right: 50px;
+      padding-left: 50px; } }
 
 .facilitator {
   margin-bottom: 2em;
