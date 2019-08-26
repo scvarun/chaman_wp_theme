@@ -49,6 +49,10 @@ h6, .h6
 
 
 @media screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) and (max-width: #{map-get($grid-breakpoints, 'md')})
+  h4, .h4
+    font-size: rem(48)
+    &, .elementor-widget-heading &.elementor-heading-title
+      line-height: rem(60)
   body
     font-weight: 400
     line-height: rem(30)
