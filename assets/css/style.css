@@ -7227,7 +7227,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   .blogpost-thumbs.text-white .entry-title a {
     color: #e5e5e5; }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 821px) {
   .blogpost-thumbs {
     margin-right: -50px;
     margin-left: -50px; }
@@ -7274,8 +7274,8 @@ h6, .h6, .tabbed-form .form-tabs a {
   margin-bottom: 65px; }
 
 .testimonial .testimonial-user-info, .testimonial p {
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   margin-bottom: 10px; }
 
 .testimonial .testimonial-user-info {
@@ -7288,7 +7288,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   .testimonial p:last-child {
     margin-bottom: 0; }
 
-@media (min-width: 820px) {
+@media screen and (min-width: 821px) {
   .testimonial p:not(:last-child) {
     margin-bottom: 2em; }
   .testimonial.testimonial-right .row {

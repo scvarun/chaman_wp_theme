@@ -12,8 +12,8 @@
     font-style: italic
     margin-bottom: 65px
   .testimonial-user-info, p
-    font-size: 18px
-    line-height: 21px
+    font-size: rem(16)
+    line-height: rem(24)
     margin-bottom: 10px
   .testimonial-user-info
     font-weight: bold
@@ -24,7 +24,7 @@
     &:last-child
       margin-bottom: 0
 
-@include media-breakpoint-up('sm')
+@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px})
   .testimonial
     p:not(:last-child)
       margin-bottom: 2em

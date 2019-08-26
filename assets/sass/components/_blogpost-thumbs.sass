@@ -41,7 +41,7 @@
       a
         color: $white
 
-@media screen and (min-width: #{map-get($grid-breakpoints, 'sm')})
+@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px})
   .blogpost-thumbs
     @include margin(null -50px)
     .blogpost-thumbs-single
