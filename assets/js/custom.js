@@ -42,7 +42,7 @@
       anime({
         targets: elements,
         keyframes: [
-          {opacity: 1, duration: 400, delay: 500},
+          {opacity: 1, duration: 400},
           {opacity: 0, duration: 400},
           {opacity: 1, duration: 400},
           {opacity: 0, duration: 400},
