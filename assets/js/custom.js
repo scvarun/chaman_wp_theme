@@ -48,13 +48,13 @@
       //   duration: 3000,
       // });
 
-      // anime({
-      //   targets: heading,
-      //   opacit: 1,
-      //   delay: 6000,
-      //   duration: 3000,
-      //   easing: 'easeInOut',
-      // });
+      anime({
+        targets: heading,
+        opacit: 1,
+        delay: 6000,
+        duration: 3000,
+        easing: 'easeInOut',
+      });
 
       // anime({
       //   targets: elements,
