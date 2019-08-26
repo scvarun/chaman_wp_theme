@@ -22,7 +22,13 @@
 #CHAMAN_LOGO_SVG {
   max-height: 80%;
   max-width: 75vw;
-  opacity: 0; }
+  opacity: 0;
+  position: relative; }
+  #CHAMAN_LOGO_SVG .logo-heading {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 50%); }
   #CHAMAN_LOGO_SVG.animated {
     opacity: 1; }
     #CHAMAN_LOGO_SVG.animated rect, #CHAMAN_LOGO_SVG.animated path {
