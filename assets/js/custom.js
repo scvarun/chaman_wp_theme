@@ -41,36 +41,46 @@
       console.log(elements);
       var heading = svg.getElementsByClassName('logo-heading');
 
-      // anime({
-      //   targets: elements,
-      //   opacity: 1,
-      //   easing: 'easeInOut',
-      //   duration: 3000,
-      // });
-
+      svg.style.opacity = 1;
+      anime({
+        targets: elements,
+        keyframes: [
+          {opacity: 1},
+          {opacity: 0},
+          {opacity: 1},
+          {opacity: 0},
+          {opacity: 1},
+        ],
+        easing: 'easeInOutQuad',
+        duration: 3000,
+        delay: function(el, i, l) {
+          return 200 * i
+        }
+      });
+      
       anime({
         targets: heading,
         opacity: 1,
-        delay: 6000,
         duration: 3000,
-        easing: 'easeInOut',
+        delay: 4000,
+        easing: 'easeInOutQuad',
       });
-
-      // anime({
-      //   targets: elements,
-      //   keyframes: [
-      //     {opacity: 0},
-      //     {opacity: 1},
-      //     {opacity: 0},
-      //     {opacity: 1},
-      //     {opacity: 0},
-      //   ],
-      //   easing: 'easeInOut',
-      //   duration: 3000,
-      //   delay: function(el, i, l) {
-      //     return 6000 + i * 200;
-      //   },
-      // });
+      
+      anime({
+        targets: elements,
+        keyframes: [
+          {opacity: 0},
+          {opacity: 1},
+          {opacity: 0},
+          {opacity: 1},
+          {opacity: 0},
+        ],
+        easing: 'easeInOutQuad',
+        duration: 3000,
+        delay: function(el, i, l) {
+          return 5000 + 200 * i
+        }
+      });
     },
   };
 
