@@ -30,7 +30,8 @@
     transform: translateY(-50%) translateX(50%);
     width: 100%;
     text-align: center;
-    color: #fff; }
+    color: #fff;
+    opacity: 0; }
   #CHAMAN_LOGO_SVG rect, #CHAMAN_LOGO_SVG path {
     opacity: 0; }
 
