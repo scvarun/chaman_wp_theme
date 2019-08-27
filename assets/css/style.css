@@ -7326,7 +7326,8 @@ h6, .h6, .tabbed-form .form-tabs a {
 
 .job-listings p {
   font-size: 1.4em;
-  margin-top: .5em; }
+  margin-top: .5em;
+  font-weight: normal; }
 
 /*
  * --------------------
