@@ -7319,11 +7319,14 @@ h6, .h6, .tabbed-form .form-tabs a {
  * --------------------
  */
 .job-listings .post {
-  font-size: 1.125rem;
   font-weight: normal; }
 
 .job-listings .entry-title {
   line-height: 1; }
+
+.job-listings p {
+  font-size: 1.4em;
+  margin-top: .5em; }
 
 /*
  * --------------------
