@@ -52,7 +52,7 @@
         margin-bottom: 20px
       li
         display: inline-block
-        font-size: 30px
+        font-size: rem(30)
         &:not(:first-child)
           margin-left: 10px
         &:not(:last-child)
@@ -63,7 +63,7 @@
   .main-navigation .menu-item > a
     text-transform: uppercase
     font-weight: 700
-    font-size: 30px
+    font-size: rem(30)
     text-decoration: none
     color: #fff
     &:active,
@@ -124,7 +124,7 @@
       max-height: $navbar-md-logo-height
     .main-navigation
       .menu-item > a
-        font-size: 18px
+        font-size: rem(18)
     &.js-is-stuck,
     &.js-is-sticky--change
       @include padding(0 null)
@@ -180,7 +180,7 @@
         animation-name: mobileMenuIn
         transition: visibility .1s ease-in-out 0s
     .nav-toggle
-      font-size: 18px
+      font-size: rem(18)
     .main-navigation
       .seperator
         display: block
@@ -188,7 +188,7 @@
       .menu-item
         @include padding(.5em 0);
         > a
-          font-size: 30px
+          font-size: rem(30)
           line-height: 1.5
         &:nth-child(3n):not(:last-child)
           margin-bottom: 45px

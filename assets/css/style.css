@@ -7706,7 +7706,7 @@ h6, .h6, .tabbed-form .form-tabs a {
         margin-bottom: 20px; }
       #navbar .mobile-nav .social-links li {
         display: inline-block;
-        font-size: 30px; }
+        font-size: 1.875rem; }
         #navbar .mobile-nav .social-links li:not(:first-child) {
           margin-left: 10px; }
         #navbar .mobile-nav .social-links li:not(:last-child) {
@@ -7717,7 +7717,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   #navbar .main-navigation .menu-item > a {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-decoration: none;
     color: #fff; }
     #navbar .nav-toggle:active, #navbar .nav-toggle:hover,
@@ -7770,7 +7770,7 @@ h6, .h6, .tabbed-form .form-tabs a {
     #navbar .navbar-brand img {
       max-height: 80px; }
     #navbar .main-navigation .menu-item > a {
-      font-size: 18px; }
+      font-size: 1.125rem; }
     #navbar.js-is-stuck, #navbar.js-is-sticky--change {
       padding-top: 0;
       padding-bottom: 0;
@@ -7822,14 +7822,14 @@ h6, .h6, .tabbed-form .form-tabs a {
         animation-name: mobileMenuIn;
         transition: visibility .1s ease-in-out 0s; }
     #navbar .nav-toggle {
-      font-size: 18px; }
+      font-size: 1.125rem; }
     #navbar .main-navigation .seperator {
       display: block;
       padding-top: 2em; }
     #navbar .main-navigation .menu-item {
       padding: 0.5em 0; }
       #navbar .main-navigation .menu-item > a {
-        font-size: 30px;
+        font-size: 1.875rem;
         line-height: 1.5; }
       #navbar .main-navigation .menu-item:nth-child(3n):not(:last-child) {
         margin-bottom: 45px; }
