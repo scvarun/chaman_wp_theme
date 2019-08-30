@@ -7495,6 +7495,8 @@ h6, .h6, .tabbed-form .form-tabs a {
       padding-left: 60px; }
   .tabbed-form .form-tabs [data-open="false"] {
     opacity: .7; }
+  .tabbed-form .form-tabs [data-final] {
+    display: none; }
 
 .tabbed-form .form-group {
   margin-bottom: 55px; }
