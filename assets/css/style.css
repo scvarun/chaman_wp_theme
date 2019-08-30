@@ -7600,7 +7600,7 @@ h6, .h6, .tabbed-form .form-tabs a {
     color: #755c4e; }
 
 .tabbed-form .wpcf7-response-output {
-  margin: 0;
+  margin: 40px 0 0;
   padding: 0;
   border: 0;
   color: #e5e5e5; }
