@@ -12,6 +12,8 @@
     font-style: italic
     margin-bottom: 65px
   .testimonial-user-info, p
+    font-size: rem(18)
+    line-height: rem(21)
     margin-bottom: 10px
   .testimonial-user-info
     font-weight: bold
@@ -37,3 +39,12 @@
     .testimonial-title
       font-weight: 700
       margin-bottom: 35px
+    .testimonial-user-info, p
+      font-size: rem(18)
+      line-height: rem(21)
+
+@media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
+  .testimonial
+    .testimonial-user-info, p
+      font-size: rem(30)
+      line-height: rem(40)
