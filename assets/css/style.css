@@ -7213,8 +7213,6 @@ h6, .h6, .tabbed-form .form-tabs a {
         text-indent: -9999px;
         opacity: 0; }
   .blogpost-thumbs .entry-title {
-    font-size: 1.5rem;
-    line-height: 1.875rem;
     margin-bottom: 10px;
     letter-spacing: 0;
     font-weight: bold; }
@@ -7222,9 +7220,6 @@ h6, .h6, .tabbed-form .form-tabs a {
       display: block; }
       .blogpost-thumbs .entry-title a, .blogpost-thumbs .entry-title a:hover {
         text-decoration: none; }
-  .blogpost-thumbs .entry-content {
-    font-size: 0.75rem;
-      font-size-line-height: 0.875rem; }
   .blogpost-thumbs.text-white .entry-title a {
     color: #e5e5e5; }
 
@@ -7239,14 +7234,7 @@ h6, .h6, .tabbed-form .form-tabs a {
 
 @media screen and (min-width: 821px) and (max-width: 1600px) {
   .blogpost-thumbs article figure {
-    margin-bottom: 35px !important; }
-  .blogpost-thumbs .entry-title {
-    font-size: 2.25rem;
-    line-height: 2.625rem;
-    font-weight: 500; }
-  .blogpost-thumbs .entry-content {
-    font-size: 1rem;
-    line-height: 1.5rem; } }
+    margin-bottom: 35px !important; } }
 
 @media screen and (min-width: 1601px) {
   .blogpost-thumbs {
@@ -7258,12 +7246,7 @@ h6, .h6, .tabbed-form .form-tabs a {
     .blogpost-thumbs article figure {
       margin-bottom: 55px !important; }
     .blogpost-thumbs .entry-title {
-      margin-bottom: 25px;
-      font-size: 3.125rem;
-      line-height: 3.5rem; }
-    .blogpost-thumbs .entry-content {
-      font-size: 1.375rem;
-      line-height: 2rem; } }
+      margin-bottom: 25px; } }
 
 /*
  * --------------------
