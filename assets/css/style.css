@@ -7496,7 +7496,8 @@ h6, .h6, .tabbed-form .form-tabs a {
   .tabbed-form .form-tabs [data-open="false"] {
     opacity: .7; }
   .tabbed-form .form-tabs [data-final] {
-    display: none; }
+    display: none;
+    padding-left: 0; }
 
 .tabbed-form .form-group {
   margin-bottom: 55px; }
@@ -7597,6 +7598,16 @@ h6, .h6, .tabbed-form .form-tabs a {
   .tabbed-form input[type="submit"]:hover {
     background: #e5e5e5;
     color: #755c4e; }
+
+.tabbed-form .wpcf7-response-output {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #e5e5e5; }
+  .tabbed-form .wpcf7-response-output.div.wpcf7-validation-errors, .tabbed-form .wpcf7-response-output.wpcf7-acceptance-missing {
+    border-left: 2px solid #ffc107; }
+  .tabbed-form .wpcf7-response-output.wp-cf7-mail-sent-ok {
+    border-left: 2px solid #28a745; }
 
 @media (max-width: 1599.98px) {
   .tabbed-form h5 {

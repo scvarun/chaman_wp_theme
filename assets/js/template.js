@@ -192,7 +192,7 @@
           });
         })
 
-        tabbedForm.addEventListener('wpcf7submit', function() {
+        tabbedForm.addEventListener('wpcf7mailsent', function() {
           var $final = $tabbedForm.find('.form-tabs [data-final]');
           if(!$final.length) return;
           var $links = $tabbedForm.find('.form-tabs a');
