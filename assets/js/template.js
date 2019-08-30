@@ -215,6 +215,7 @@
      */
     enablePlugins: function() {
       this.enableSticky();
+      this.enableFilterPolyfill();
     },
 
     enableSticky: function() {
@@ -235,6 +236,10 @@
         window.scrollTo(posY, window.pageYOffset - 1);
         window.scrollTo(posY, window.pageYOffset);
       });
+    },
+
+    enableFilterPolyfill: function() {
+      var polyfilter_scriptpath = '/assets/vendors/filter-polyfill/';
     },
   };
 

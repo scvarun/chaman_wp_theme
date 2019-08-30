@@ -7742,10 +7742,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   #navbar.navbar-dark .navbar-nav .nav-link {
     color: #fff; }
   #navbar.js-is-stuck, #navbar.js-is-sticky--change {
-    padding-top: 0;
-    padding-bottom: 0;
-    height: 270px;
-    align-items: center; }
+    height: 270px; }
   #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
     max-height: 110px; }
     #navbar.js-is-stuck .navbar-brand img.sticky-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo {
@@ -7754,8 +7751,12 @@ h6, .h6, .tabbed-form .form-tabs a {
     #navbar.js-is-stuck .navbar-brand img.sticky-logo ~ .default-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo ~ .default-logo {
       display: none;
       opacity: 0; }
-  #navbar.js-is-sticky--change:hover, #navbar.js-is-stuck:hover {
-    background: #755c4e; }
+  #navbar.js-is-sticky:hover, #navbar.js-is-stuck:hover {
+    background: white; }
+    #navbar.js-is-sticky:hover .navbar-brand img, #navbar.js-is-stuck:hover .navbar-brand img {
+      filter: invert(1); }
+    #navbar.js-is-sticky:hover .main-navigation .menu-item > a, #navbar.js-is-stuck:hover .main-navigation .menu-item > a {
+      color: black; }
   .elementor-editor-active #navbar {
     pointer-events: none; }
   .admin-bar #navbar.js-is-stuck, .admin-bar #navbar.js-is-sticky {

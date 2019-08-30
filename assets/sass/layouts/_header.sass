@@ -76,9 +76,9 @@
       color: #fff
   &.js-is-stuck,
   &.js-is-sticky--change
-    @include padding(0 null)
+    // @include padding(0 null)
     height: $sticky-navbar-height
-    align-items: center
+    // align-items: center
   &.js-is-stuck,
   &.js-is-sticky
     .navbar-brand
@@ -90,10 +90,14 @@
         &.sticky-logo ~ .default-logo
           display: none
           opacity: 0
-  &.js-is-sticky--change,
+  &.js-is-sticky,
   &.js-is-stuck
     &:hover
-      background: $tertiary
+      background: white
+      .navbar-brand img
+        filter: invert(1)
+      .main-navigation .menu-item > a
+        color: black
   .elementor-editor-active &
     pointer-events: none
   .admin-bar &
