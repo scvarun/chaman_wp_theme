@@ -7744,7 +7744,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   #navbar.js-is-stuck, #navbar.js-is-sticky--change {
     padding-top: 0;
     padding-bottom: 0;
-    height: 180px;
+    height: 270px;
     align-items: center; }
   #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
     max-height: 110px; }
