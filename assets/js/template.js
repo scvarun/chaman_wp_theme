@@ -119,6 +119,7 @@
       if( !$tabbedForms.length ) return;
 
       $tabbedForms.each(function() {
+        var tabbedForm = this;
         var $tabbedForm = $(this);
         var $links = $tabbedForm.find('.form-tabs a');
         var $contents = $tabbedForm.find('.form-tabs-content').children('.form-content');
@@ -175,17 +176,33 @@
         });
         
         var $prevLinks = $tabbedForm.find('.previous');
-        $prevLinks.on('click', function(e) {
-          e.preventDefault();
-          var $link = $(this);
-          var $currentLink = $tabbedForm.find('.form-tabs a[data-open="true"]');
-          $currentLink[0].dataset.open = 'false';
-          var $next = $($currentLink.prevAll('a')[0]);
-          var $target = $($next[0].hash);
-          if(!$target.length) {
-            console.error('Target ' + this.hash + ' not found')
-          }
-          changeTab($target);
+        $prevLinks.each(function() {
+          var $prevLink = $(this);
+          $prevLink.on('click', function(e) {
+            e.preventDefault();
+            var $link = $(this);
+            var $currentLink = $tabbedForm.find('.form-tabs a[data-open="true"]');
+            $currentLink[0].dataset.open = 'false';
+            var $next = $($currentLink.prevAll('a')[0]);
+            var $target = $($next[0].hash);
+            if(!$target.length) {
+              console.error('Target ' + this.hash + ' not found')
+            }
+            changeTab($target);
+          });
+        })
+
+        tabbedForm.addEventListener('wpcf7submit', function() {
+          var $final = $tabbedForm.find('.form-tabs [data-final]');
+          if(!$final.length) return;
+          var $links = $tabbedForm.find('.form-tabs a');
+          $final[0].style.display = 'block';
+          $links.each(function() {
+            var $link = $(this);
+            if( this !== $final[0] )
+              this.style.display = 'none';
+          });
+          $final.trigger('click');
         });
 
       });
