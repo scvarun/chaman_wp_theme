@@ -7747,7 +7747,7 @@ h6, .h6, .tabbed-form .form-tabs a {
     height: 120px;
     align-items: center; }
   #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
-    max-height: 60px; }
+    max-height: 120px; }
     #navbar.js-is-stuck .navbar-brand img.sticky-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo {
       display: block;
       opacity: 1; }
