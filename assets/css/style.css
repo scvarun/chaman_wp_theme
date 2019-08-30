@@ -7789,7 +7789,7 @@ h6, .h6, .tabbed-form .form-tabs a {
       padding-bottom: 0;
       height: 180px; }
     #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
-      max-height: 60px; } }
+      max-height: 80px; } }
 
 @media (max-width: 819.98px) {
   .content-wrapper {
