@@ -7786,8 +7786,6 @@ h6, .h6, .tabbed-form .form-tabs a {
     #navbar .main-navigation .menu-item > a {
       font-size: 1.125rem; }
     #navbar.js-is-stuck, #navbar.js-is-sticky--change {
-      padding-top: 0;
-      padding-bottom: 0;
       height: 180px; }
     #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
       max-height: 80px; } }
@@ -7802,8 +7800,6 @@ h6, .h6, .tabbed-form .form-tabs a {
     #navbar .navbar-brand img {
       max-height: 50px; }
     #navbar.js-is-stuck, #navbar.js-is-sticky--change {
-      padding-top: 0;
-      padding-bottom: 0;
       height: 110px; }
     #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
       max-height: 50px; }
