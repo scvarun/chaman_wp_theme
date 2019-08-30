@@ -7604,7 +7604,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   padding: 0;
   border: 0;
   color: #e5e5e5; }
-  .tabbed-form .wpcf7-response-output.div.wpcf7-validation-errors, .tabbed-form .wpcf7-response-output.wpcf7-acceptance-missing {
+  .tabbed-form .wpcf7-response-output.wpcf7-validation-errors, .tabbed-form .wpcf7-response-output.wpcf7-acceptance-missing {
     border-left: 2px solid #ffc107; }
   .tabbed-form .wpcf7-response-output.wp-cf7-mail-sent-ok {
     border-left: 2px solid #28a745; }
