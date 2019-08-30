@@ -7262,8 +7262,6 @@ h6, .h6, .tabbed-form .form-tabs a {
   margin-bottom: 65px; }
 
 .testimonial .testimonial-user-info, .testimonial p {
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
   margin-bottom: 10px; }
 
 .testimonial .testimonial-user-info {
@@ -7287,15 +7285,7 @@ h6, .h6, .tabbed-form .form-tabs a {
 @media screen and (min-width: 821px) and (max-width: 1600px) {
   .testimonial .testimonial-title {
     font-weight: 700;
-    margin-bottom: 35px; }
-  .testimonial .testimonial-user-info, .testimonial p {
-    font-size: 1rem;
-    line-height: 1.5rem; } }
-
-@media screen and (min-width: 1601px) {
-  .testimonial .testimonial-user-info, .testimonial p {
-    font-size: 1.875rem;
-    line-height: 2.5rem; } }
+    margin-bottom: 35px; } }
 
 /*
  * --------------------
