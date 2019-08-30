@@ -207,9 +207,12 @@
             opacity: 0
     &.js-is-stuck,
     &.js-is-sticky
-      align-items: center
-      background: $tertiary
+      background: white
+      .nav-toggle
+        color: black
       .navbar-brand
+        img
+          filter: invert(1)
         .sticky-mobile-logo
           display: block
           opacity: 1
