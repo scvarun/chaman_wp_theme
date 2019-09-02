@@ -8002,8 +8002,8 @@ h6, .h6, .tabbed-form .form-tabs a {
   .single .main-content .post main .entry-title {
     margin-bottom: 50px; }
   .single .main-content > footer .back-to-posts-btn {
-    font-size: 1.875rem;
-    padding: 20px 100px; } }
+    padding: 10px 30px;
+    font-size: 1.125rem; } }
 
 @media screen and (min-width: 1601px) {
   .single .main-content .post main {
