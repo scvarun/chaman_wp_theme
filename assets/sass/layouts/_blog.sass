@@ -85,6 +85,8 @@
           margin-top: 45px
       &:not(:last-child)
         margin-bottom: 100px
+    > footer
+      
 
 @media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
   .main-content
@@ -99,6 +101,7 @@
           margin-top: 65px
       &:not(:last-child)
         margin-bottom: 140px
+    > footer
 
 /*
  * --------------------
@@ -137,10 +140,6 @@
       main
         .entry-title
           margin-bottom: 50px
-    > footer
-      .back-to-posts-btn
-        padding: 10px 30px
-        font-size: rem(18)
 
 @media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
   .single .main-content
@@ -150,10 +149,10 @@
         line-height: rem(40)
         .entry-title
           margin-bottom: 50px
-      > footer
-        .back-to-posts-btn
-          font-size: rem(30)
-          padding: 20px 100px
+    > footer
+      .back-to-posts-btn
+        font-size: rem(30)
+        padding: 20px 100px
 
 /*
  * --------------------
