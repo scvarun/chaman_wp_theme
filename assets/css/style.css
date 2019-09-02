@@ -8308,6 +8308,10 @@ h6, .h6, .tabbed-form .form-tabs a {
  * Single Post Styling
  * --------------------
  */
+.single > .container-fluid {
+  padding-left: 50px;
+  padding-right: 50px; }
+
 .single .content-wrapper {
   background: #ec633c; }
 
