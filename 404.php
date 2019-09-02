@@ -17,18 +17,20 @@ get_header();
 
   <div class="container-fluid">
     <div class="row">
-      <main id="main" class="main-content">
+      <div class="col">
+        <main id="main" class="main-content">
 
-        <div class="text-center">
-          <h3>404, Content not found</h3>
-          <h6>It seems the content you're looking for doesn't exist.</h6>
+          <div class="text-center">
+            <h3>404, Content not found</h3>
+            <h6>It seems the content you're looking for doesn't exist.</h6>
 
-          <footer>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn-outline-white back-to-posts-btn">Back to home</a>
-          </footer><!-- /.d-flex -->
-        </div>
+            <footer>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn-outline-white back-to-posts-btn">Back to home</a>
+            </footer><!-- /.d-flex -->
+          </div>
 
-      </main><!-- /.main-content -->
+        </main><!-- /.main-content -->
+      </div><!-- /.col -->
     </div><!-- /.row -->
   </div><!-- /.container-fluid -->
 
