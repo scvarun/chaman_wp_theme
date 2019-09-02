@@ -467,8 +467,8 @@ pre {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 820px) {
@@ -483,16 +483,16 @@ pre {
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
   margin-right: auto;
   margin-left: auto; }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin-right: -30px;
+  margin-left: -30px; }
 
 .no-gutters {
   margin-right: 0;
@@ -509,8 +509,8 @@ pre {
 .col-lg-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 30px;
+  padding-left: 30px; }
 
 .col {
   flex-basis: 0;
@@ -3405,25 +3405,25 @@ input[type="button"].btn-block {
   display: flex;
   flex-direction: column; }
   .card-deck .card {
-    margin-bottom: 15px; }
+    margin-bottom: 30px; }
   @media (min-width: 820px) {
     .card-deck {
       flex-flow: row wrap;
-      margin-right: -15px;
-      margin-left: -15px; }
+      margin-right: -30px;
+      margin-left: -30px; }
       .card-deck .card {
         display: flex;
         flex: 1 0 0%;
         flex-direction: column;
-        margin-right: 15px;
+        margin-right: 30px;
         margin-bottom: 0;
-        margin-left: 15px; } }
+        margin-left: 30px; } }
 
 .card-group {
   display: flex;
   flex-direction: column; }
   .card-group > .card {
-    margin-bottom: 15px; }
+    margin-bottom: 30px; }
   @media (min-width: 820px) {
     .card-group {
       flex-flow: row wrap; }
