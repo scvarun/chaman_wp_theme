@@ -60,12 +60,10 @@ if ( ! function_exists( 'unifato_body_classes' ) ) {
 	function unifato_body_classes( $classes ) {
 		// Adds a class of hfeed to non-singular pages.
 		if ( is_single() ) {
-
-			if( has_category( 'news' ) )
-				$classes[] = 'category-news';
-
-			if( has_category( 'job-listing' ) )
-				$classes[] = 'category-job-listing';
+			$categories = get_the_category();
+			foreach( $categories as $category ) {
+				$classes[] = 'category-' . $category->taxonomy;
+			}
 		}
 
 		if(get_post_meta(get_the_id(), '__header__overlay_header', true) == 'yes') {
