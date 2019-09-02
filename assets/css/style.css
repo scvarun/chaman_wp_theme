@@ -7863,11 +7863,11 @@ h6, .h6, .tabbed-form .form-tabs a {
   margin-bottom: 0; }
 
 .main-content .post main {
-  margin-right: 100px;
-  margin-left: 100px; }
+  margin-right: 30px;
+  margin-left: 30px; }
   .main-content .post main .post-content {
     background: #ec633c;
-    padding: 70px 80px 80px; }
+    padding: 25px 30px 25px; }
   .main-content .post main .post-categories {
     list-style: none;
     padding: 0; }
@@ -7904,7 +7904,7 @@ h6, .h6, .tabbed-form .form-tabs a {
       outline: none; }
 
 .main-content .post .entry-title {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #e5e5e5; }
   .main-content .post .entry-title a {
     color: #e5e5e5;
@@ -7916,14 +7916,14 @@ h6, .h6, .tabbed-form .form-tabs a {
   color: #e5e5e5; }
 
 .main-content .post .entry-footer {
-  margin-top: 65px; }
+  margin-top: 20px; }
   .main-content .post .entry-footer .read-more-link {
     color: #e5e5e5;
     font-weight: bold;
     text-decoration: underline; }
 
 .main-content .post:not(:last-child) {
-  margin-bottom: 140px; }
+  margin-bottom: 50px; }
 
 .main-content .post:nth-child(odd) .entry-thumbnail-side {
   order: 1; }
@@ -7940,7 +7940,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   justify-content: center;
   margin-bottom: 290px; }
 
-@media (max-width: 1599.98px) {
+@media screen and (min-width: 821px) and (max-width: 1600px) {
   .main-content .post main {
     margin-right: 50px;
     margin-left: 50px; }
@@ -7953,18 +7953,18 @@ h6, .h6, .tabbed-form .form-tabs a {
   .main-content .post:not(:last-child) {
     margin-bottom: 100px; } }
 
-@media (max-width: 1365.98px) {
+@media screen and (min-width: 1601px) {
   .main-content .post main {
-    margin-right: 30px;
-    margin-left: 30px; }
+    margin-right: 100px;
+    margin-left: 100px; }
     .main-content .post main .post-content {
-      padding: 25px 30px 25px; }
+      padding: 70px 80px 80px; }
     .main-content .post main .entry-title {
-      margin-bottom: 20px; }
+      margin-bottom: 40px; }
     .main-content .post main .entry-footer {
-      margin-top: 20px; }
+      margin-top: 65px; }
   .main-content .post:not(:last-child) {
-    margin-bottom: 50px; } }
+    margin-bottom: 140px; } }
 
 /*
  * --------------------
@@ -7984,13 +7984,13 @@ h6, .h6, .tabbed-form .form-tabs a {
     background: none;
     font-weight: normal; }
   .single .main-content .post .entry-title {
-    margin-bottom: 105px; }
+    margin-bottom: 30px; }
   .single .main-content > footer .back-to-posts-btn {
     font-weight: 500;
     border-radius: 0;
     border-width: 3px;
-    padding: 20px 100px;
-    font-size: 30px; }
+    padding: 10px 30px;
+    font-size: 1.125rem; }
 
 .single.category-news .content-wrapper {
   background: #755c4e; }
@@ -7998,18 +7998,22 @@ h6, .h6, .tabbed-form .form-tabs a {
 .single.category-career .content-wrapper {
   background: #20234c; }
 
-@media (min-width: 1600px) {
-  .main-content .post main {
+@media screen and (min-width: 821px) and (max-width: 1600px) {
+  .single .main-content .post main .entry-title {
+    margin-bottom: 50px; }
+  .single .main-content > footer .back-to-posts-btn {
     font-size: 1.875rem;
-    line-height: 2.5rem; } }
+    padding: 20px 100px; } }
 
-@media (max-width: 1599.98px) {
-  .single .main-content .post main .entry-title {
-    margin-bottom: 50px; } }
-
-@media (max-width: 1365.98px) {
-  .single .main-content .post main .entry-title {
-    margin-bottom: 30px; } }
+@media screen and (min-width: 1601px) {
+  .single .main-content .post main {
+    font-size: 1.875rem;
+    line-height: 2.5rem; }
+    .single .main-content .post main .entry-title {
+      margin-bottom: 50px; }
+  .single .main-content .post > footer .back-to-posts-btn {
+    font-size: 1.875rem;
+    padding: 20px 100px; } }
 
 /*
  * --------------------
@@ -8017,17 +8021,27 @@ h6, .h6, .tabbed-form .form-tabs a {
  * --------------------
  */
 .load_more_btn {
+  font-size: 1.875rem;
+  padding: 20px 100px;
   color: #fff;
   border-color: #fff;
   border-radius: 0;
-  font-size: 30px;
-  padding: 20px 100px;
   border-width: 3px;
   transition: all 0.2s ease-in-out; }
 
+@media screen and (min-width: 821px) and (max-width: 1600px) {
+  .load_more_btn {
+    font-size: 1.875rem;
+    padding: 20px 100px; } }
+
+@media screen and (min-width: 1601px) {
+  .load_more_btn {
+    font-size: 1.875rem;
+    padding: 20px 100px; } }
+
 @media (max-width: 1599.98px) {
   .load_more_btn {
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 10px 30px; } }
 
 /*# sourceMappingURL=style.css.map */

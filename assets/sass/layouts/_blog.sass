@@ -9,10 +9,10 @@
     p:last-child
       margin-bottom: 0
     main
-      @include margin(null 100px);
+      @include margin(null 30px)
       .post-content
         background: $orange
-        padding: 70px 80px 80px
+        padding: 25px 30px 25px
       .post-categories
         list-style: none
         padding: 0
@@ -42,7 +42,7 @@
         &:hover, &:active
           outline: none
     .entry-title
-      margin-bottom: 40px
+      margin-bottom: 20px
       color: $white
       a
         color: $white
@@ -52,13 +52,13 @@
     .entry-content
       color: $white
     .entry-footer
-      margin-top: 65px
+      margin-top: 20px
       .read-more-link
         color: $white
         font-weight: bold
         text-decoration: underline
     &:not(:last-child)
-      margin-bottom: 140px
+      margin-bottom: 50px
     &:nth-child(odd)
       .entry-thumbnail-side
         order: 1
@@ -72,7 +72,7 @@
     justify-content: center
     margin-bottom: 290px
 
-@include media-breakpoint-down('md')
+@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
   .main-content
     .post
       main
@@ -86,19 +86,19 @@
       &:not(:last-child)
         margin-bottom: 100px
 
-@include media-breakpoint-down('sm')
+@media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
   .main-content
     .post
       main
-        @include margin(null 30px)
+        @include margin(null 100px)
         .post-content
-          padding: 25px 30px 25px
+          padding: 70px 80px 80px
         .entry-title
-          margin-bottom: 20px
+          margin-bottom: 40px
         .entry-footer
-          margin-top: 20px
+          margin-top: 65px
       &:not(:last-child)
-        margin-bottom: 50px
+        margin-bottom: 140px
 
 /*
  * --------------------
@@ -118,41 +118,42 @@
         background: none
         font-weight: normal
       .entry-title
-        margin-bottom: 105px
+        margin-bottom: 30px
     > footer
       .back-to-posts-btn
         font-weight: 500
         border-radius: 0
         border-width: 3px
-        padding: 20px 100px
-        font-size: 30px
+        padding: 10px 30px
+        font-size: rem(18)
   &.category-news .content-wrapper
     background: $brown
   &.category-career .content-wrapper
     background: $blue
 
-@include media-breakpoint-up('lg')
-  .main-content
-    .post main
-      font-size: rem(30)
-      line-height: rem(40)
+@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
+  .single .main-content
+    .post
+      main
+        .entry-title
+          margin-bottom: 50px
+    > footer
+      .back-to-posts-btn
+        font-size: rem(30)
+        padding: 20px 100px
 
-@include media-breakpoint-down('md')
-  .single
-    .main-content
-      .post
-        main
-          .entry-title
-            margin-bottom: 50px
-
-@include media-breakpoint-down('sm')
-  .single
-    .main-content
-      .post
-        main
-          .entry-title
-            margin-bottom: 30px
-
+@media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
+  .single .main-content
+    .post
+      main
+        font-size: rem(30)
+        line-height: rem(40)
+        .entry-title
+          margin-bottom: 50px
+      > footer
+        .back-to-posts-btn
+          font-size: rem(30)
+          padding: 20px 100px
 
 /*
  * --------------------
@@ -160,15 +161,25 @@
  * --------------------
  */
 .load_more_btn
+  font-size: rem(30)
+  padding: 20px 100px
   color: #fff
   border-color: #fff
   border-radius: 0
-  font-size: 30px
-  padding: 20px 100px
   border-width: 3px
   transition: $transition-base
 
+@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
+  .load_more_btn
+    font-size: rem(30)
+    padding: 20px 100px
+
+@media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
+  .load_more_btn
+    font-size: rem(30)
+    padding: 20px 100px
+
 @include media-breakpoint-down('md')
   .load_more_btn
-    font-size: 18px
+    font-size: rem(18)
     padding: 10px 30px
