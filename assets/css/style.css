@@ -7382,11 +7382,11 @@ ul, ol, dl {
     padding-right: 100px;
     padding-left: 100px; }
   .row {
-    margin-right: -100px;
-    margin-left: -100px; }
+    margin-right: -50px;
+    margin-left: -50px; }
     .row > [class^="col"] {
-      padding-right: 100px;
-      padding-left: 100px; } }
+      padding-right: 50px;
+      padding-left: 50px; } }
 
 .row.no-gutters {
   margin-left: 0 !important;
