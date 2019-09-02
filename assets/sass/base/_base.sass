@@ -54,7 +54,8 @@ ul, ol, dl
   *
     word-wrap: break-word
 
-@include media-breakpoint-down('md')
+
+@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
   .container-fluid,
   .container
     @include padding(null 50px);
@@ -64,17 +65,16 @@ ul, ol, dl
 
     > [class^="col-"]
       @include padding(null 50px)
-
-@include media-breakpoint-down('xs')
+@media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
   .container-fluid,
   .container
-    @include padding(null 30px);
+    @include padding(null 100px);
 
   .row
-    @include margin(null -30px)
+    @include margin(null -100px)
 
     > [class^="col-"]
-      @include padding(null 30px)
+      @include padding(null 100px)
 
 .row.no-gutters
   margin-left: 0 !important

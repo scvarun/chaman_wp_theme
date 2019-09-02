@@ -467,8 +467,8 @@ pre {
 
 .container {
   width: 100%;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 820px) {
@@ -483,16 +483,16 @@ pre {
 
 .container-fluid {
   width: 100%;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -50px;
-  margin-left: -50px; }
+  margin-right: -15px;
+  margin-left: -15px; }
 
 .no-gutters {
   margin-right: 0;
@@ -509,8 +509,8 @@ pre {
 .col-lg-auto {
   position: relative;
   width: 100%;
-  padding-right: 50px;
-  padding-left: 50px; }
+  padding-right: 15px;
+  padding-left: 15px; }
 
 .col {
   flex-basis: 0;
@@ -3405,25 +3405,25 @@ input[type="button"].btn-block {
   display: flex;
   flex-direction: column; }
   .card-deck .card {
-    margin-bottom: 50px; }
+    margin-bottom: 15px; }
   @media (min-width: 820px) {
     .card-deck {
       flex-flow: row wrap;
-      margin-right: -50px;
-      margin-left: -50px; }
+      margin-right: -15px;
+      margin-left: -15px; }
       .card-deck .card {
         display: flex;
         flex: 1 0 0%;
         flex-direction: column;
-        margin-right: 50px;
+        margin-right: 15px;
         margin-bottom: 0;
-        margin-left: 50px; } }
+        margin-left: 15px; } }
 
 .card-group {
   display: flex;
   flex-direction: column; }
   .card-group > .card {
-    margin-bottom: 50px; }
+    margin-bottom: 15px; }
   @media (min-width: 820px) {
     .card-group {
       flex-flow: row wrap; }
@@ -7363,7 +7363,7 @@ ul, ol, dl {
   * {
     word-wrap: break-word; } }
 
-@media (max-width: 1599.98px) {
+@media screen and (min-width: 821px) and (max-width: 1600px) {
   .container-fluid,
   .container {
     padding-right: 50px;
@@ -7375,17 +7375,17 @@ ul, ol, dl {
       padding-right: 50px;
       padding-left: 50px; } }
 
-@media (max-width: 819.98px) {
+@media screen and (min-width: 1601px) {
   .container-fluid,
   .container {
-    padding-right: 30px;
-    padding-left: 30px; }
+    padding-right: 100px;
+    padding-left: 100px; }
   .row {
-    margin-right: -30px;
-    margin-left: -30px; }
+    margin-right: -100px;
+    margin-left: -100px; }
     .row > [class^="col-"] {
-      padding-right: 30px;
-      padding-left: 30px; } }
+      padding-right: 100px;
+      padding-left: 100px; } }
 
 .row.no-gutters {
   margin-left: 0 !important;
