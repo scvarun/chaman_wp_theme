@@ -25,7 +25,7 @@ get_header();
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php unifato_the_microdata( 'article' ); ?>>
           <div class="container-fluid">
             <div class="row">
-              <div class="col entry-thumbnail-side d-none d-md-flex">
+              <div class="col entry-thumbnail-side d-none d-sm-flex">
                 <figure class="entry-thumbnail">
                   <?php
                     the_post_thumbnail( 'unifato-archive' );
@@ -33,8 +33,8 @@ get_header();
                 </figure>
               </div><!-- /.col -->
 
-              <main class="col-md-6">
-                <figure class="entry-thumbnail d-block d-md-none">
+              <main class="col-sm-6">
+                <figure class="entry-thumbnail d-block d-sm-none">
                   <?php
                     the_post_thumbnail( 'unifato-archive' );
                   ?>
@@ -56,7 +56,7 @@ get_header();
                   <?php the_content() ?>      
                 </div><!-- /.entry-content -->
 
-              </main><!-- /.col-md-6 -->
+              </main><!-- /.col-sm-6 -->
             </div><!-- /.row -->
           </div><!-- /.container-fluid -->
         </article><!-- /.post -->

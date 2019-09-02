@@ -7,9 +7,9 @@
         </div><!-- /.col -->
       <?php endif; ?>
 
-      <main class="col-md-6">
+      <main class="col-sm-6">
         <?php if( has_post_thumbnail() ) : ?>
-          <figure class="d-block d-md-none entry-thumbnail">
+          <figure class="d-block d-sm-none entry-thumbnail">
             <?php
               the_post_thumbnail( 'full' );
             ?>
@@ -40,7 +40,7 @@
 
         </div><!-- /.post-content -->
 
-      </main><!-- /.col-md-6 -->
+      </main><!-- /.col-sm-6 -->
     </div><!-- /.row -->
   </div><!-- /.container-fluid -->
 </article><!-- /.post -->
