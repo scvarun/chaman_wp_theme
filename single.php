@@ -42,7 +42,7 @@ get_header();
                   </figure>
 
                   <?php
-                  $alternate_title = get_post_meta( get_the_ID(), '__content_posts__alternate_title' ); 
+                  $alternate_title = get_post_meta( get_the_ID(), '__content_posts__alternate_title', true ); 
                   if( $alternate_title !== '' ) {
                     echo '<h6>' . $alternate_title . '</h6>';
                   } else if( !in_category( 'Uncategorized' ) ) {
