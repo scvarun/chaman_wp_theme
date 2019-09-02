@@ -21,7 +21,7 @@ get_header();
     ?>
       
       <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <?php if (\Elementor\Plugin::$instance->db->is_built_with_elementor($post->ID)): ?>
+        <?php if (\Elementor\Plugin::$instance->db->is_built_with_elementor(get_the_ID())): ?>
           <?php the_content( "" ); ?>
         <?php else: ?>
           <div class="container-fluid">
