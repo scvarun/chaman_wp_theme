@@ -7391,7 +7391,7 @@ ul, ol, dl {
 .row.no-gutters {
   margin-left: 0 !important;
   margin-right: 0 !important; }
-  .row.no-gutters [class^="col-"] {
+  .row.no-gutters [class^="col"] {
     padding: 0 !important; }
 
 /*
@@ -8379,6 +8379,17 @@ h6, .h6, .tabbed-form .form-tabs a {
   .load_more_btn {
     font-size: 1.125rem;
     padding: 10px 30px; } }
+
+.page:not(.elementor-page) .entry-title {
+  margin-bottom: 20px; }
+
+@media screen and (min-width: 821px) and (max-width: 1600px) {
+  .page:not(.elementor-page) .entry-title {
+    margin-bottom: 40px; } }
+
+@media screen and (min-width: 1601px) {
+  .page:not(.elementor-page) .entry-title {
+    margin-bottom: 40px; } }
 
 .error404 #main footer {
   padding: 50px 0; }
