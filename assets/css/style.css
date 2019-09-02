@@ -8316,8 +8316,8 @@ h6, .h6, .tabbed-form .form-tabs a {
   .single .main-content .entry-thumbnail {
     margin-bottom: 40px; }
   .single .main-content .post > .container-fluid {
-    padding-left: 50px;
-    padding-right: 50px; }
+    padding-left: 30px;
+    padding-right: 30px; }
   .single .main-content .post main {
     font-size: 1.125rem;
     line-height: 1.16667em;
@@ -8341,10 +8341,16 @@ h6, .h6, .tabbed-form .form-tabs a {
   background: #20234c; }
 
 @media screen and (min-width: 821px) and (max-width: 1600px) {
+  .single .main-content .post > .container-fluid {
+    padding-left: 50px;
+    padding-right: 50px; }
   .single .main-content .post main .entry-title {
     margin-bottom: 50px; } }
 
 @media screen and (min-width: 1601px) {
+  .single .main-content .post > .container-fluid {
+    padding-left: 50px;
+    padding-right: 50px; }
   .single .main-content .post main {
     font-size: 1.875rem;
     line-height: 2.5rem; }

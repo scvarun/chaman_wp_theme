@@ -119,8 +119,8 @@
       margin-bottom: 40px
     .post
       > .container-fluid
-        padding-left: 50px
-        padding-right: 50px
+        padding-left: 30px
+        padding-right: 30px
       main
         font-size: rem(18)
         line-height: em(21, 18)
@@ -144,6 +144,9 @@
 @media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
   .single .main-content
     .post
+      > .container-fluid
+        padding-left: 50px
+        padding-right: 50px
       main
         .entry-title
           margin-bottom: 50px
@@ -151,6 +154,9 @@
 @media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
   .single .main-content
     .post
+      > .container-fluid
+        padding-left: 50px
+        padding-right: 50px
       main
         font-size: rem(30)
         line-height: rem(40)
