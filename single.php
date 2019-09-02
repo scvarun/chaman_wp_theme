@@ -15,87 +15,89 @@
 get_header();
 ?>
 
-  <div class="container-fluid">
-    <div class="row">
-      <main id="main" class="main-content">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <div class="col">
+        <main id="main" class="main-content">
 
-      <?php 
-      if ( have_posts() ) :
-        while ( have_posts() ) : the_post(); ?>
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php unifato_the_microdata( 'article' ); ?>>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col entry-thumbnail-side d-none d-sm-flex">
-                <figure class="entry-thumbnail">
-                  <?php
-                    the_post_thumbnail( 'unifato-archive' );
-                  ?>
-                </figure>
-              </div><!-- /.col -->
+        <?php 
+        if ( have_posts() ) :
+          while ( have_posts() ) : the_post(); ?>
+          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php unifato_the_microdata( 'article' ); ?>>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col entry-thumbnail-side d-none d-sm-flex">
+                  <figure class="entry-thumbnail">
+                    <?php
+                      the_post_thumbnail( 'unifato-archive' );
+                    ?>
+                  </figure>
+                </div><!-- /.col -->
 
-              <main class="col-sm-6">
-                <figure class="entry-thumbnail d-block d-sm-none">
-                  <?php
-                    the_post_thumbnail( 'unifato-archive' );
-                  ?>
-                </figure>
+                <main class="col-sm-6">
+                  <figure class="entry-thumbnail d-block d-sm-none">
+                    <?php
+                      the_post_thumbnail( 'unifato-archive' );
+                    ?>
+                  </figure>
 
-                <?php 
-                if( !in_category( 'Uncategorized' ) ) {
-                  $categories_list = get_the_category_list();
-                  if ( $categories_list ) {
-                    echo '<ul class="post-categories h6">' . $categories_list . '</ul>';
-                  }
-                } ?>
+                  <?php 
+                  if( !in_category( 'Uncategorized' ) ) {
+                    $categories_list = get_the_category_list();
+                    if ( $categories_list ) {
+                      echo '<ul class="post-categories h6">' . $categories_list . '</ul>';
+                    }
+                  } ?>
 
-                <h1 class="entry-title h3" itemprop="headline">
-                  <?php the_title() ?>
-                </h1>
+                  <h1 class="entry-title h3" itemprop="headline">
+                    <?php the_title() ?>
+                  </h1>
 
-                <div class="entry-content" itemprop="text">
-                  <?php the_content() ?>      
-                </div><!-- /.entry-content -->
+                  <div class="entry-content" itemprop="text">
+                    <?php the_content() ?>      
+                  </div><!-- /.entry-content -->
 
-              </main><!-- /.col-sm-6 -->
-            </div><!-- /.row -->
-          </div><!-- /.container-fluid -->
-        </article><!-- /.post -->
-        <?php endwhile; 
-        endif;?>
+                </main><!-- /.col-sm-6 -->
+              </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+          </article><!-- /.post -->
+          <?php endwhile; 
+          endif;?>
 
-        <footer>
-          <?php 
-          if( !in_category( 'Uncategorized' ) ) {
-            $categories = get_the_category();
-            foreach($categories as $category) {
-              switch($category->slug) {
-                case 'news':
-                case 'career':
-                  ?>
-                  <a href="<?php echo get_category_link( $category->cat_ID ); ?>" class="btn btn-outline-white back-to-posts-btn">
-                    Back to <?php echo strtolower($category->slug); ?>
-                  </a>
-                  <?php
-                  break;
-                case 'stories':
-                  ?>
-                  <a href="<?php echo get_category_link( $category->cat_ID ); ?>" class="btn btn-outline-white back-to-posts-btn">
-                    Take me back
-                  </a>
-                  <?php
-                  break;
-                default:
-                  ?>
-                  <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn btn-outline-white back-to-posts-btn">
-                    Take me back
-                  </a>
-                  <?php
+          <footer>
+            <?php 
+            if( !in_category( 'Uncategorized' ) ) {
+              $categories = get_the_category();
+              foreach($categories as $category) {
+                switch($category->slug) {
+                  case 'news':
+                  case 'career':
+                    ?>
+                    <a href="<?php echo get_category_link( $category->cat_ID ); ?>" class="btn btn-outline-white back-to-posts-btn">
+                      Back to <?php echo strtolower($category->slug); ?>
+                    </a>
+                    <?php
+                    break;
+                  case 'stories':
+                    ?>
+                    <a href="<?php echo get_category_link( $category->cat_ID ); ?>" class="btn btn-outline-white back-to-posts-btn">
+                      Take me back
+                    </a>
+                    <?php
+                    break;
+                  default:
+                    ?>
+                    <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn btn-outline-white back-to-posts-btn">
+                      Take me back
+                    </a>
+                    <?php
+                }
               }
-            }
-          } ?>
-        </footer><!-- /.d-flex -->
+            } ?>
+          </footer><!-- /.d-flex -->
 
-      </main><!-- /.main-content -->
+        </main><!-- /.main-content -->
+      </div><!-- /.col -->
     </div><!-- /.row -->
   </div><!-- /.container-fluid -->
 
