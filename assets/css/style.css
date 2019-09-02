@@ -7320,7 +7320,8 @@ invisible-lg {
   min-height: 100vh; }
 
 figure {
-  position: relative; }
+  position: relative;
+  width: 100%; }
   figure img {
     width: 100%;
     height: auto; }
