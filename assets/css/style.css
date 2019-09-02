@@ -7938,7 +7938,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  margin-bottom: 290px; }
+  margin-bottom: 100px; }
 
 @media screen and (min-width: 821px) and (max-width: 1600px) {
   .main-content .post main {
@@ -7951,7 +7951,9 @@ h6, .h6, .tabbed-form .form-tabs a {
     .main-content .post main .entry-footer {
       margin-top: 45px; }
   .main-content .post:not(:last-child) {
-    margin-bottom: 100px; } }
+    margin-bottom: 100px; }
+  .main-content > footer {
+    margin-bottom: 200px; } }
 
 @media screen and (min-width: 1601px) {
   .main-content .post main {
@@ -7964,7 +7966,9 @@ h6, .h6, .tabbed-form .form-tabs a {
     .main-content .post main .entry-footer {
       margin-top: 65px; }
   .main-content .post:not(:last-child) {
-    margin-bottom: 140px; } }
+    margin-bottom: 140px; }
+  .main-content > footer {
+    margin-bottom: 290px; } }
 
 /*
  * --------------------
