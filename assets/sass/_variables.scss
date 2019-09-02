@@ -13,7 +13,12 @@ $body-color: #765c4f;
 
 $white: #e5e5e5;
 
-$theme-colors: ("white": $white);
+$theme-colors: (
+  "white": $white,
+  "brown": $brown,
+  "orange": $orange,
+  "blue": $blue,
+);
 
 $grid-breakpoints: (
   xs: 0,

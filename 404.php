@@ -25,7 +25,7 @@ get_header();
             <h6>It seems the content you're looking for doesn't exist.</h6>
 
             <footer>
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn-outline-white back-to-posts-btn">Back to home</a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn-outline-brown btn-lg back-to-posts-btn">Back to home</a>
             </footer><!-- /.d-flex -->
           </div>
 
