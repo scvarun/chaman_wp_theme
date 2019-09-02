@@ -61,8 +61,8 @@ ul, ol, dl
     @include padding(null 50px)
   .row
     @include margin(null -50px)
-  [class^="col-"]
-    @include padding(null 50px)
+    > [class^="col"]
+      @include padding(null 50px)
 
 @media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
   .container-fluid,
@@ -70,8 +70,8 @@ ul, ol, dl
     @include padding(null 100px)
   .row
     @include margin(null -100px)
-  [class^="col-"]
-    @include padding(null 100px)
+    > [class^="col"]
+      @include padding(null 100px)
 
 .row.no-gutters
   margin-left: 0 !important

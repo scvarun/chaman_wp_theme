@@ -7371,9 +7371,9 @@ ul, ol, dl {
   .row {
     margin-right: -50px;
     margin-left: -50px; }
-  [class^="col-"] {
-    padding-right: 50px;
-    padding-left: 50px; } }
+    .row > [class^="col"] {
+      padding-right: 50px;
+      padding-left: 50px; } }
 
 @media screen and (min-width: 1601px) {
   .container-fluid,
@@ -7383,9 +7383,9 @@ ul, ol, dl {
   .row {
     margin-right: -100px;
     margin-left: -100px; }
-  [class^="col-"] {
-    padding-right: 100px;
-    padding-left: 100px; } }
+    .row > [class^="col"] {
+      padding-right: 100px;
+      padding-left: 100px; } }
 
 .row.no-gutters {
   margin-left: 0 !important;
