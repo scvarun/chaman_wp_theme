@@ -44,7 +44,7 @@ get_header();
                   <?php
                   $alternate_title = get_post_meta( get_the_ID(), '__content_posts__alternate_title', true ); 
                   if( $alternate_title !== '' ) {
-                    echo '<h6>' . $alternate_title . '</h6>';
+                    echo '<h6 class="entry-subtitle">' . $alternate_title . '</h6>';
                   } else if( !in_category( 'Uncategorized' ) ) {
                     $categories_list = get_the_category_list();
                     if ( $categories_list ) {
