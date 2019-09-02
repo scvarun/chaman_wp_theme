@@ -15,22 +15,24 @@
 get_header();
 ?>
 
-  <div class="container-fluid">
-    <div class="row">
-      <main id="main" class="main-content">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <div class="col">
+        <main id="main" class="main-content">
 
-      <?php 
-      if ( have_posts() ) :
-        while ( have_posts() ) : the_post();
-          get_template_part( 'template-parts/content', get_post_format() );
-        endwhile;
-        unifato_paging_nav();
-      else :
-        get_template_part( 'template-parts/content', 'none' );
-      endif;
-      ?>
+        <?php 
+        if ( have_posts() ) :
+          while ( have_posts() ) : the_post();
+            get_template_part( 'template-parts/content', get_post_format() );
+          endwhile;
+          unifato_paging_nav();
+        else :
+          get_template_part( 'template-parts/content', 'none' );
+        endif;
+        ?>
 
-      </main><!-- /.main-content -->
+        </main><!-- /.main-content -->
+      </div><!-- /.col -->
     </div><!-- /.row -->
   </div><!-- /.container-fluid -->
 
