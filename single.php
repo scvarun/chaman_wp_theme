@@ -71,14 +71,25 @@ get_header();
               switch($category->slug) {
                 case 'news':
                 case 'career':
-                case 'stories':
                   ?>
                   <a href="<?php echo get_category_link( $category->cat_ID ); ?>" class="btn btn-outline-white back-to-posts-btn">
                     Back to <?php echo strtolower($category->slug); ?>
                   </a>
                   <?php
                   break;
+                case 'stories':
+                  ?>
+                  <a href="<?php echo get_category_link( $category->cat_ID ); ?>" class="btn btn-outline-white back-to-posts-btn">
+                    Take me back
+                  </a>
+                  <?php
+                  break;
                 default:
+                  ?>
+                  <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn btn-outline-white back-to-posts-btn">
+                    Take me back
+                  </a>
+                  <?php
               }
             }
           } ?>
