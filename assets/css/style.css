@@ -7983,6 +7983,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   .single .main-content .entry-thumbnail {
     margin-bottom: 40px; }
   .single .main-content .post main {
+    font-size: 1.125rem;
     padding-right: 0;
     padding-left: 0;
     background: none;
@@ -7994,7 +7995,8 @@ h6, .h6, .tabbed-form .form-tabs a {
     border-radius: 0;
     border-width: 3px;
     padding: 10px 30px;
-    font-size: 1.125rem; }
+    font-size: 1.125rem;
+    line-height: 1.16667em; }
 
 .single.category-news .content-wrapper {
   background: #755c4e; }
