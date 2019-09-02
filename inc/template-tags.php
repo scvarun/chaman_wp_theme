@@ -62,7 +62,7 @@ if ( ! function_exists( 'unifato_body_classes' ) ) {
 		if ( is_single() ) {
 			$categories = get_the_category();
 			foreach( $categories as $category ) {
-				$classes[] = 'category-' . $category->taxonomy;
+				$classes[] = 'category-' . $category->slug;
 			}
 		}
 
