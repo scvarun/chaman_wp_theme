@@ -74,7 +74,7 @@ get_header();
                 case 'stories':
                   ?>
                   <a href="<?php echo get_category_link( $category->cat_ID ); ?>" class="btn btn-outline-white back-to-posts-btn">
-                    Back to <?php strtolower($category->slug); ?>
+                    Back to <?php echo strtolower($category->slug); ?>
                   </a>
                   <?php
                   break;
