@@ -26,20 +26,14 @@ get_header();
         <?php else: ?>
           <div class="container-fluid">
             <div class="row">
-              <div class="col entry-thumbnail-side d-none d-sm-flex">
-                <figure class="entry-thumbnail">
-                  <?php
-                  the_post_thumbnail( 'unifato-archive' );
-                  ?>
-                </figure>
-              </div><!-- /.col -->
-
-              <main class="col-sm-6">
+              <main class="col">
+                <?php if( has_post_thumbnail() ): ?>
                 <figure class="entry-thumbnail d-block d-sm-none">
                   <?php
                   the_post_thumbnail( 'unifato-archive' );
                   ?>
                 </figure>
+                <?php endif; ?>
 
                 <h1 class="entry-title h3" itemprop="headline">
                   <?php the_title() ?>
@@ -49,7 +43,17 @@ get_header();
                   <?php the_content() ?>      
                 </div><!-- /.entry-content -->
 
-              </main><!-- /.col-sm-6 -->
+              </main><!-- /.col -->
+
+              <?php if( has_post_thumbnail() ): ?>
+              <div class="col entry-thumbnail-side d-none d-sm-flex">
+                <figure class="entry-thumbnail">
+                  <?php
+                  the_post_thumbnail( 'unifato-archive' );
+                  ?>
+                </figure>
+              </div><!-- /.col -->
+              <?php endif; ?>
             </div><!-- /.row -->
           </div><!-- /.container-fluid -->
         <?php endif; ?>
