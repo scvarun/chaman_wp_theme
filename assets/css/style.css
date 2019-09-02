@@ -7391,7 +7391,7 @@ ul, ol, dl {
 .row.no-gutters {
   margin-left: 0 !important;
   margin-right: 0 !important; }
-  .row.no-gutters [class^="col"] {
+  .row.no-gutters > [class^="col"] {
     padding: 0 !important; }
 
 /*
