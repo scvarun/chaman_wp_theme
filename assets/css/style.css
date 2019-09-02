@@ -8308,10 +8308,6 @@ h6, .h6, .tabbed-form .form-tabs a {
  * Single Post Styling
  * --------------------
  */
-.single > .container-fluid {
-  padding-left: 50px;
-  padding-right: 50px; }
-
 .single .content-wrapper {
   background: #ec633c; }
 
@@ -8319,6 +8315,9 @@ h6, .h6, .tabbed-form .form-tabs a {
   padding-top: 40px; }
   .single .main-content .entry-thumbnail {
     margin-bottom: 40px; }
+  .single .main-content .post > .container-fluid {
+    padding-left: 50px;
+    padding-right: 50px; }
   .single .main-content .post main {
     font-size: 1.125rem;
     line-height: 1.16667em;
