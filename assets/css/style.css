@@ -7851,6 +7851,8 @@ h6, .h6, .tabbed-form .form-tabs a {
         #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo ~ .default-logo {
           display: none;
           opacity: 0; }
+      #navbar.js-is-stuck:hover .main-navigation .menu-item > a, #navbar.js-is-sticky:hover .main-navigation .menu-item > a {
+        color: white; }
   body.navigation-overlay {
     overflow: hidden; } }
 
