@@ -8379,4 +8379,17 @@ h6, .h6, .tabbed-form .form-tabs a {
     font-size: 1.125rem;
     padding: 10px 30px; } }
 
+.error404 .main footer {
+  padding: 50px 0; }
+
+.error404 .back-to-posts-btn {
+  font-size: 1.125rem;
+  border-width: 3px;
+  padding: 10px 30px; }
+
+@media screen and (min-width: 1601px) {
+  .error404 .back-to-posts-btn {
+    font-size: 1.875rem;
+    padding: 20px 100px; } }
+
 /*# sourceMappingURL=style.css.map */
