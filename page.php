@@ -28,7 +28,7 @@ get_header();
             <div class="row">
               <main class="col">
                 <?php if( has_post_thumbnail() ): ?>
-                <figure class="entry-thumbnail d-block d-sm-none">
+                <figure class="entry-thumbnail d-block d-sm-none" itemprop="image">
                   <?php
                   the_post_thumbnail( 'unifato-archive' );
                   ?>
@@ -46,7 +46,7 @@ get_header();
               </main><!-- /.col -->
 
               <?php if( has_post_thumbnail() ): ?>
-              <div class="col entry-thumbnail-side d-none d-sm-flex">
+              <div class="col entry-thumbnail-side d-none d-sm-flex" itemprop="image">
                 <figure class="entry-thumbnail">
                   <?php
                   the_post_thumbnail( 'unifato-archive' );

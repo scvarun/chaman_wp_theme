@@ -27,7 +27,7 @@ get_header();
             <div class="container-fluid">
               <div class="row">
                 <div class="col entry-thumbnail-side d-none d-sm-flex">
-                  <figure class="entry-thumbnail">
+                  <figure class="entry-thumbnail" itemprop="image">
                     <?php
                       the_post_thumbnail( 'unifato-archive' );
                     ?>
@@ -35,7 +35,7 @@ get_header();
                 </div><!-- /.col -->
 
                 <main class="col-sm-6">
-                  <figure class="entry-thumbnail d-block d-sm-none">
+                  <figure class="entry-thumbnail d-block d-sm-none" itemprop="image">
                     <?php
                       the_post_thumbnail( 'unifato-archive' );
                     ?>

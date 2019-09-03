@@ -23,7 +23,8 @@
 #CHAMAN_LOGO_SVG {
   max-height: 80%;
   max-width: 75vw;
-  position: relative; }
+  position: relative;
+  margin: 0 auto; }
   #CHAMAN_LOGO_SVG .logo-heading {
     position: absolute;
     top: 50%;
