@@ -10,7 +10,7 @@ get_header('for-footer-single');
     <div style="height: 50vh"></div>
 
   </div><!-- /.content-wrapper -->
-  <?php the_content(); ?>
+  <?php the_content('none'); ?>
 </div><!-- /.wrapper -->
 
 <?php

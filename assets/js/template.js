@@ -47,10 +47,14 @@
      * ====================================
      */
     content: function() {
+      var self = this;
       this.enableSmoothScroll();
       this.enableSliderArrow();
       this.enableSliders();
       this.enableTabbedForm();
+      setTimeout(function() {
+        self.enableElementorSectionPopup();
+      }, 1000);
     },
 
     enableSmoothScroll: function() {
@@ -208,6 +212,51 @@
       });
     },
     
+    enableElementorSectionPopup: function() {
+      if( document.body.classList.contains('elementor-editor-active') )
+        return;
+      var sectionPopupToggles = document.getElementsByClassName('section-popup-toggle');
+      if(sectionPopupToggles.length === 0) return;
+      _.each(sectionPopupToggles, function(sectionPopupToggle) {
+        var toggleFunc = function(el) {
+          var hash = el.hash;
+          var hashElem = document.querySelector(hash);
+          if( hashElem.length === 0 ) {
+            console.error('Element not found for section popup.')
+            return;
+          }
+          var toggleClassFunc = function(e) {
+            document.body.classList.toggle('section-popup-active');
+            hashElem.classList.toggle('active');
+            e.stopPropagation();
+          };
+
+          el.addEventListener('click', toggleClassFunc);
+
+          var closeBtns = hashElem.querySelectorAll('.section-popup-close');
+          _.each(closeBtns, function(closeBtn) {
+            closeBtn.addEventListener('click', function(e) {
+              e.preventDefault();
+              hashElem.classList.remove('active');
+              document.body.classList.remove('section-popup-active');
+            });
+          });
+        };
+
+        if( sectionPopupToggle.tagName === 'A' ) {
+          toggleFunc(sectionPopupToggle);
+        } else {
+          var links = sectionPopupToggle.querySelectorAll('a');
+          if( links.length !== 0 ) {
+            _.each(links, function(link) {
+              toggleFunc(link);
+            });
+          }
+        }
+      });
+    },
+
+
     /*
      * ====================================
      * Plugins

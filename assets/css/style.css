@@ -8022,6 +8022,42 @@ h6, .h6, .tabbed-form .form-tabs a {
   .tabbed-form .form-group {
     margin-bottom: 20px; } }
 
+.section-popup {
+  display: none;
+  z-index: 1000; }
+  .section-popup:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 50px 0; }
+  .section-popup.active {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed !important;
+    display: flex;
+    flex-flow: row;
+    align-items: center; }
+    .section-popup.active:after {
+      display: block; }
+  .elementor-editor-active .section-popup {
+    display: block;
+    position: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto; }
+
+body.section-popup-active {
+  overflow: hidden; }
+
 /*
  * ================================
  * Layouts

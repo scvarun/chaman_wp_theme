@@ -1,0 +1,24 @@
+.section-popup
+  display: none
+  z-index: 1000
+  &:after
+    content: ''
+    @include position(fixed, 0)
+    display: none
+    z-index: -1
+    background: rgba(0,0,0,.8)
+    padding: 50px 0
+  &.active
+    @include position(null, 0)
+    position: fixed !important
+    display: flex
+    flex-flow: row
+    align-items: center
+    &:after
+      display: block
+  .elementor-editor-active &
+    display: block
+    @include position(auto, auto)
+
+body.section-popup-active
+  overflow: hidden
