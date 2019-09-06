@@ -221,7 +221,7 @@
         var toggleFunc = function(el) {
           var hash = el.hash;
           var hashElem = document.querySelector(hash);
-          if( hashElem.length === 0 ) {
+          if( hashElem === null || hashElem.length === 0 ) {
             console.error('Element not found for section popup.')
             return;
           }
