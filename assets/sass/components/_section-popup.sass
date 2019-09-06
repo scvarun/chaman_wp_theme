@@ -1,6 +1,5 @@
 .section-popup
   display: none
-  z-index: 1000
   &:after
     content: ''
     @include position(fixed, 0)
@@ -9,11 +8,13 @@
     background: rgba(0,0,0,.8)
     padding: 50px 0
   &.active
+    overflow: scroll
     @include position(null, 0)
     position: fixed !important
     display: flex
     flex-flow: row
     align-items: center
+    z-index: 1000
     &:after
       display: block
   .elementor-editor-active &

@@ -8023,8 +8023,7 @@ h6, .h6, .tabbed-form .form-tabs a {
     margin-bottom: 20px; } }
 
 .section-popup {
-  display: none;
-  z-index: 1000; }
+  display: none; }
   .section-popup:after {
     content: '';
     position: fixed;
@@ -8037,6 +8036,7 @@ h6, .h6, .tabbed-form .form-tabs a {
     background: rgba(0, 0, 0, 0.8);
     padding: 50px 0; }
   .section-popup.active {
+    overflow: scroll;
     top: 0;
     right: 0;
     bottom: 0;
@@ -8044,7 +8044,8 @@ h6, .h6, .tabbed-form .form-tabs a {
     position: fixed !important;
     display: flex;
     flex-flow: row;
-    align-items: center; }
+    align-items: center;
+    z-index: 1000; }
     .section-popup.active:after {
       display: block; }
   .elementor-editor-active .section-popup {
