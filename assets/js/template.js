@@ -217,7 +217,7 @@
         return;
       var sectionPopupToggles = document.getElementsByClassName('section-popup-toggle');
       if(sectionPopupToggles.length === 0) return;
-      _.each(sectionPopupToggles, function(sectionPopupToggle) {
+      lodash.each(sectionPopupToggles, function(sectionPopupToggle) {
         var toggleFunc = function(el) {
           var hash = el.hash;
           var hashElem = document.querySelector(hash);
@@ -234,7 +234,7 @@
           el.addEventListener('click', toggleClassFunc);
 
           var closeBtns = hashElem.querySelectorAll('.section-popup-close');
-          _.each(closeBtns, function(closeBtn) {
+          lodash.each(closeBtns, function(closeBtn) {
             closeBtn.addEventListener('click', function(e) {
               e.preventDefault();
               hashElem.classList.remove('active');
@@ -248,7 +248,7 @@
         } else {
           var links = sectionPopupToggle.querySelectorAll('a');
           if( links.length !== 0 ) {
-            _.each(links, function(link) {
+            lodash.each(links, function(link) {
               toggleFunc(link);
             });
           }
