@@ -8030,12 +8030,13 @@ h6, .h6, .tabbed-form .form-tabs a {
     right: 0 !important;
     left: 0 !important;
     bottom: 0 !important;
+    position: fixed !important;
     display: none;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 50px 0; }
+    background: rgba(0, 0, 0, 0.8); }
   .section-popup.active {
     overflow: scroll;
+    padding: 50px 0;
     top: 0 !important;
     right: 0 !important;
     left: 0 !important;
