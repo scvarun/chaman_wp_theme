@@ -8042,9 +8042,7 @@ h6, .h6, .tabbed-form .form-tabs a {
     left: 0 !important;
     bottom: 0 !important;
     position: fixed !important;
-    display: flex;
-    flex-flow: row;
-    align-items: center;
+    display: block;
     z-index: 1000; }
     .section-popup.active:after {
       display: block; }
