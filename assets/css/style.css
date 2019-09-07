@@ -8055,6 +8055,8 @@ h6, .h6, .tabbed-form .form-tabs a {
     right: auto;
     bottom: auto;
     left: auto; }
+  .section-popup.elementor-section.elementor-section-boxed > .elementor-container {
+    width: 100%; }
 
 body.section-popup-active {
   overflow: hidden; }
