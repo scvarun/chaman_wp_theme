@@ -8026,21 +8026,20 @@ h6, .h6, .tabbed-form .form-tabs a {
   display: none; }
   .section-popup:after {
     content: '';
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
     display: none;
     z-index: -1;
     background: rgba(0, 0, 0, 0.8);
     padding: 50px 0; }
   .section-popup.active {
     overflow: scroll;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
     position: fixed !important;
     display: flex;
     flex-flow: row;

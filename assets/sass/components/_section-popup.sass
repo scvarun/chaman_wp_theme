@@ -2,14 +2,20 @@
   display: none
   &:after
     content: ''
-    @include position(fixed, 0)
+    top: 0 !important
+    right: 0 !important
+    left: 0 !important
+    bottom: 0 !important
     display: none
     z-index: -1
     background: rgba(0,0,0,.8)
     padding: 50px 0
   &.active
     overflow: scroll
-    @include position(null, 0)
+    top: 0 !important
+    right: 0 !important
+    left: 0 !important
+    bottom: 0 !important
     position: fixed !important
     display: flex
     flex-flow: row
