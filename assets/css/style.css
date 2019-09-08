@@ -8075,16 +8075,6 @@ h6, .h6, .tabbed-form .form-tabs a {
 
 .section-popup {
   display: none; }
-  .section-popup:after {
-    content: '';
-    top: 0 !important;
-    right: 0 !important;
-    left: 0 !important;
-    bottom: 0 !important;
-    position: fixed !important;
-    display: none;
-    z-index: -1;
-    background: rgba(0, 0, 0, 0.8); }
   .section-popup.active {
     overflow-y: scroll;
     top: 0 !important;
@@ -8093,7 +8083,8 @@ h6, .h6, .tabbed-form .form-tabs a {
     bottom: 0 !important;
     position: fixed !important;
     display: block;
-    z-index: 1000; }
+    z-index: 1000;
+    min-width: 100vw; }
     .section-popup.active:after {
       display: block; }
   .section-popup > .elementor-container {
@@ -8108,8 +8099,21 @@ h6, .h6, .tabbed-form .form-tabs a {
   .section-popup.elementor-section.elementor-section-boxed > .elementor-container {
     width: 100%; }
 
+.section-popup-backdrop {
+  content: '';
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  position: fixed !important;
+  display: none;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.8); }
+
 body.section-popup-active {
   overflow: hidden; }
+  body.section-popup-active .section-popup-backdrop {
+    display: block; }
 
 /*
  * ================================

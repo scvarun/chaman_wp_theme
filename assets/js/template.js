@@ -217,6 +217,9 @@
         return;
       var sectionPopupToggles = document.getElementsByClassName('section-popup-toggle');
       if(sectionPopupToggles.length === 0) return;
+      var backdrop = document.createElement('div');
+      backdrop.id = 'section-popup-backdrop';
+      document.body.appendChild(backdrop);
       lodash.each(sectionPopupToggles, function(sectionPopupToggle) {
         var toggleFunc = function(el) {
           var hash = el.hash;
