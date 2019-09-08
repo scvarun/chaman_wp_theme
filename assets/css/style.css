@@ -7309,6 +7309,9 @@ invisible-lg {
 .fs-60 {
   font-size: 60px !important; }
 
+.text-indent-full {
+  text-indent: -9999px; }
+
 .pointer-events-none {
   pointer-events: none; }
 
