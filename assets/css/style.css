@@ -7722,10 +7722,11 @@ h6, .h6, .tabbed-form .form-tabs a {
     width: 100%; }
   .partners figure {
     margin-bottom: 30px !important; }
+    .partners figure a {
+      outline: none; }
   .partners .partners-single-title {
     margin-bottom: 30px; }
     .partners .partners-single-title a {
-      outline: none;
       text-decoration: none; }
   .partners .partners-single-subtitle {
     text-transform: uppercase;
@@ -7774,11 +7775,11 @@ h6, .h6, .tabbed-form .form-tabs a {
     padding-left: 5px; }
   .team-members figure {
     margin-bottom: 25px !important; }
+    .team-members figure a {
+      outline: none; }
   .team-members .team-member-name {
-    margin-bottom: 20px; }
-    .team-members .team-member-name a {
-      outline: none;
-      text-decoration: none; }
+    margin-bottom: 20px;
+      margin-bottom-text-decoration: none; }
   .team-members .team-member-title {
     text-transform: uppercase;
     margin-bottom: 0; }
