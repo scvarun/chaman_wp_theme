@@ -7724,6 +7724,8 @@ h6, .h6, .tabbed-form .form-tabs a {
     margin-bottom: 30px !important; }
   .partners .partners-single-title {
     margin-bottom: 30px; }
+    .partners .partners-single-title a {
+      text-decoration: none; }
   .partners .partners-single-subtitle {
     text-transform: uppercase;
     margin-bottom: 0; }
@@ -7776,6 +7778,8 @@ h6, .h6, .tabbed-form .form-tabs a {
   .team-members .team-member-title {
     text-transform: uppercase;
     margin-bottom: 0; }
+    .team-members .team-member-title a {
+      text-decoration: none; }
 
 @media screen and (min-width: 821px) {
   .team-members {
