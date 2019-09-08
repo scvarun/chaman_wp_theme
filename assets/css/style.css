@@ -7778,8 +7778,9 @@ h6, .h6, .tabbed-form .form-tabs a {
     .team-members figure a {
       outline: none; }
   .team-members .team-member-name {
-    margin-bottom: 20px;
-      margin-bottom-text-decoration: none; }
+    margin-bottom: 20px; }
+    .team-members .team-member-name a {
+      text-decoration: none; }
   .team-members .team-member-title {
     text-transform: uppercase;
     margin-bottom: 0; }
