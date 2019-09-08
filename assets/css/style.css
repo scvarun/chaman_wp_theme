@@ -8087,16 +8087,17 @@ h6, .h6, .tabbed-form .form-tabs a {
     background: rgba(0, 0, 0, 0.8); }
   .section-popup.active {
     overflow-y: scroll;
-    padding: 100px 0;
     top: 0 !important;
     right: 0 !important;
     left: 0 !important;
+    bottom: 0 !important;
     position: fixed !important;
     display: block;
-    z-index: 1000;
-    min-height: 100vh; }
+    z-index: 1000; }
     .section-popup.active:after {
       display: block; }
+  .section-popup > .elementor-container {
+    margin: 100px 0; }
   .elementor-editor-active .section-popup {
     display: block;
     position: auto;
