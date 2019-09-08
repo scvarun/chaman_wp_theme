@@ -8259,7 +8259,7 @@ body.section-popup-active {
   #navbar.navbar-dark .navbar-nav .nav-link {
     color: #fff; }
   #navbar.js-is-stuck, #navbar.js-is-sticky--change {
-    height: 240px; }
+    height: 210px; }
   #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
     max-height: 110px; }
     #navbar.js-is-stuck .navbar-brand img.sticky-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo {
