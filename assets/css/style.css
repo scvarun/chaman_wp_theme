@@ -8085,7 +8085,7 @@ h6, .h6, .tabbed-form .form-tabs a {
 .section-popup {
   display: none; }
   .section-popup.active {
-    overflow-y: scroll;
+    overflow-y: auto;
     top: 0 !important;
     right: 0 !important;
     left: 0 !important;
