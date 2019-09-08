@@ -3086,7 +3086,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 100px; }
+  padding: 50px 100px; }
   .navbar > .container,
   .navbar > .container-fluid {
     display: flex;
@@ -8189,7 +8189,7 @@ body.section-popup-active {
  * --------------------
  */
 .content-wrapper {
-  padding-top: 270px; }
+  padding-top: 210px; }
 
 .header-overlay .content-wrapper {
   padding-top: 0; }
@@ -8199,9 +8199,9 @@ body.section-popup-active {
   flex: 1; }
 
 #navbar {
-  height: 270px;
-  margin-bottom: -270px;
-  padding: 80px 100px;
+  height: 210px;
+  margin-bottom: -210px;
+  padding: 50px 100px;
   justify-content: space-between;
   align-items: flex-start;
   background: none;
@@ -8259,7 +8259,7 @@ body.section-popup-active {
   #navbar.navbar-dark .navbar-nav .nav-link {
     color: #fff; }
   #navbar.js-is-stuck, #navbar.js-is-sticky--change {
-    height: 270px; }
+    height: 240px; }
   #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
     max-height: 110px; }
     #navbar.js-is-stuck .navbar-brand img.sticky-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo {
