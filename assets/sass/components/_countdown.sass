@@ -1,0 +1,41 @@
+.countdown
+  .countdown-completed-content,
+  .countdown-content
+    display: none
+
+  &[data-status="active"]
+    .countdown-content
+      display: flex
+
+  &[data-status="elapsed"]
+    .countdown-content
+      display: flex
+
+  &[data-status="finished"]
+    .countdown-completed-content
+      display: flex
+
+.countdown-minimal
+  .countdown-content
+    width: 100%
+    span
+      display: inline-flex
+      flex-flow: column
+      align-items: center
+      justify-content: center
+      padding: 30px 10px
+      line-height: 1.1
+      font-weight: 400
+      text-transform: uppercase
+      letter-spacing: .1em
+      flex: 1
+
+
+@media screen and (max-width: map-get($grid-breakpoints, 'sm'))
+  .countdown-minimal
+    .countdown-content 
+      display: flex
+      flex-wrap: wrap
+      span
+        width: 100%
+        flex-basis: 100%

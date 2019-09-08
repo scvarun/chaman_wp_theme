@@ -265,6 +265,7 @@
     enablePlugins: function() {
       this.enableSticky();
       this.enableFilterPolyfill();
+      this.enableCountdown();
     },
 
     enableSticky: function() {
@@ -289,6 +290,37 @@
 
     enableFilterPolyfill: function() {
       var polyfilter_scriptpath = '/assets/vendors/filter-polyfill/';
+    },
+
+    enableCountdown: function() {
+      var $el = $('.countdown');
+      if( !$el.length ) return;
+      var defaults = {
+        contentFormat: '%-D day%!D %H:%M:%S',
+      };
+      $el.each(function() {
+        var $this = $(this);
+        var options = $this.data('plugin-options');
+        var $content = $this.find('.countdown-content');
+        if( $content.html().length )
+          options.contentFormat = $content.html();
+        $content.html('');
+        options = $.extend({}, defaults, options);
+        var instance = $this.countdown(options.finalDate, options);
+        instance.on('update.countdown', function(e) {
+          if(e.elapsed) $this[0].dataset.status = 'elapsed';
+          $content.html(e.strftime(options.contentFormat));
+        });
+        if( $this.find('.countdown-completed-content').length ) {
+          instance.on('finish.countdown', function(e) {
+            $this[0].dataset.status = 'finished';
+          });
+        }
+
+        $this[0].dataset.status = 'active';
+        if( this.template === undefined ) this.template = {};
+        this.template.countdown = instance;
+      });
     },
   };
 

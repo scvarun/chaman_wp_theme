@@ -6,13 +6,16 @@
 
 .blogpost-thumbs
   margin: 0
-  @include margin(null -30px)
+  @include margin(null -5px)
   display: flex
   flex-wrap: wrap
+  max-width: 100%
+  .slick-track
+    @include margin(null 0)
   .blogpost-thumbs-single
     flex-basis: 100%
     width: 100%
-    @include padding(null 30px)
+    @include padding(null 5px)
   article
     margin-bottom: 50px
     figure
@@ -38,9 +41,11 @@
 
 @media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px})
   .blogpost-thumbs
+    @include margin(null -30px)
     .blogpost-thumbs-single
       flex-basis: 1/3*100%
       width: 1/3*100%
+      @include padding(null 30px)
     article
       margin-bottom: 50px
       figure

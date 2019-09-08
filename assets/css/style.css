@@ -7530,15 +7530,19 @@ h6, .h6, .tabbed-form .form-tabs a {
  */
 .blogpost-thumbs {
   margin: 0;
-  margin-right: -30px;
-  margin-left: -30px;
+  margin-right: -5px;
+  margin-left: -5px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  max-width: 100%; }
+  .blogpost-thumbs .slick-track {
+    margin-right: 0;
+    margin-left: 0; }
   .blogpost-thumbs .blogpost-thumbs-single {
     flex-basis: 100%;
     width: 100%;
-    padding-right: 30px;
-    padding-left: 30px; }
+    padding-right: 5px;
+    padding-left: 5px; }
   .blogpost-thumbs article {
     margin-bottom: 50px; }
     .blogpost-thumbs article figure {
@@ -7564,13 +7568,18 @@ h6, .h6, .tabbed-form .form-tabs a {
     color: #e5e5e5; }
 
 @media screen and (min-width: 821px) {
-  .blogpost-thumbs .blogpost-thumbs-single {
-    flex-basis: 33.33333%;
-    width: 33.33333%; }
-  .blogpost-thumbs article {
-    margin-bottom: 50px; }
-    .blogpost-thumbs article figure {
-      position: relative; } }
+  .blogpost-thumbs {
+    margin-right: -30px;
+    margin-left: -30px; }
+    .blogpost-thumbs .blogpost-thumbs-single {
+      flex-basis: 33.33333%;
+      width: 33.33333%;
+      padding-right: 30px;
+      padding-left: 30px; }
+    .blogpost-thumbs article {
+      margin-bottom: 50px; }
+      .blogpost-thumbs article figure {
+        position: relative; } }
 
 @media screen and (min-width: 821px) and (max-width: 1600px) {
   .blogpost-thumbs article figure {
@@ -7748,13 +7757,17 @@ h6, .h6, .tabbed-form .form-tabs a {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-left: -30px; }
+  margin-right: -5px;
+  margin-left: -5px;
+  max-width: 100%; }
+  .team-members .slick-track {
+    margin-right: 0;
+    margin-left: 0; }
   .team-members .team-member-single {
     width: 100%;
     flex-basis: 100%;
-    padding-right: 30px;
-    padding-left: 30px; }
+    padding-right: 5px;
+    padding-left: 5px; }
   .team-members figure {
     margin-bottom: 25px !important; }
   .team-members .team-member-name {
@@ -7764,9 +7777,14 @@ h6, .h6, .tabbed-form .form-tabs a {
     margin-bottom: 0; }
 
 @media screen and (min-width: 821px) {
-  .team-members .team-member-single {
-    width: 33.33333%;
-    flex-basis: 33.33333%; } }
+  .team-members {
+    margin-right: -30px;
+    margin-left: -30px; }
+    .team-members .team-member-single {
+      width: 33.33333%;
+      flex-basis: 33.33333%;
+      padding-right: 30px;
+      padding-left: 30px; } }
 
 @media screen and (min-width: 821px) and (max-width: 1600px) {
   .team-members .team-member-name {
@@ -8021,6 +8039,41 @@ h6, .h6, .tabbed-form .form-tabs a {
     padding: 30px; }
   .tabbed-form .form-group {
     margin-bottom: 20px; } }
+
+.countdown .countdown-completed-content,
+.countdown .countdown-content {
+  display: none; }
+
+.countdown[data-status="active"] .countdown-content {
+  display: flex; }
+
+.countdown[data-status="elapsed"] .countdown-content {
+  display: flex; }
+
+.countdown[data-status="finished"] .countdown-completed-content {
+  display: flex; }
+
+.countdown-minimal .countdown-content {
+  width: 100%; }
+  .countdown-minimal .countdown-content span {
+    display: inline-flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    line-height: 1.1;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    flex: 1; }
+
+@media screen and (max-width: 820px) {
+  .countdown-minimal .countdown-content {
+    display: flex;
+    flex-wrap: wrap; }
+    .countdown-minimal .countdown-content span {
+      width: 100%;
+      flex-basis: 100%; } }
 
 .section-popup {
   display: none; }
