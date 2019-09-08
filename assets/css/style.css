@@ -8099,7 +8099,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   .section-popup.elementor-section.elementor-section-boxed > .elementor-container {
     width: 100%; }
 
-.section-popup-backdrop {
+#section-popup-backdrop {
   content: '';
   top: 0 !important;
   right: 0 !important;
