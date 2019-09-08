@@ -7775,11 +7775,11 @@ h6, .h6, .tabbed-form .form-tabs a {
     margin-bottom: 25px !important; }
   .team-members .team-member-name {
     margin-bottom: 20px; }
+    .team-members .team-member-name a {
+      text-decoration: none; }
   .team-members .team-member-title {
     text-transform: uppercase;
     margin-bottom: 0; }
-    .team-members .team-member-title a {
-      text-decoration: none; }
 
 @media screen and (min-width: 821px) {
   .team-members {
