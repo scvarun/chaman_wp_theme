@@ -7868,8 +7868,9 @@ h6, .h6, .tabbed-form .form-tabs a {
   height: 70px; }
 
 .wpcf7-form-control.wpcf7-submit {
+  width: auto;
   height: auto;
-  line-height: auto; }
+  line-height: 1; }
 
 .tabbed-form h5 {
   margin: 20px 0 80px; }
