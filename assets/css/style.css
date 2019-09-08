@@ -8112,7 +8112,7 @@ h6, .h6, .tabbed-form .form-tabs a {
 
 body.section-popup-active {
   overflow: hidden; }
-  body.section-popup-active .section-popup-backdrop {
+  body.section-popup-active #section-popup-backdrop {
     display: block; }
 
 /*
