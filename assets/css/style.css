@@ -7533,8 +7533,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   margin-right: -5px;
   margin-left: -5px;
   display: flex;
-  flex-wrap: wrap;
-  max-width: 100%; }
+  flex-wrap: wrap; }
   .blogpost-thumbs .slick-track {
     margin-right: 0;
     margin-left: 0; }
@@ -7758,8 +7757,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   flex-flow: row;
   flex-wrap: wrap;
   margin-right: -5px;
-  margin-left: -5px;
-  max-width: 100%; }
+  margin-left: -5px; }
   .team-members .slick-track {
     margin-right: 0;
     margin-left: 0; }
