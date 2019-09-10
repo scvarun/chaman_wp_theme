@@ -269,6 +269,7 @@
       this.enableSticky();
       this.enableFilterPolyfill();
       this.enableCountdown();
+      this.enableJarallax();
     },
 
     enableSticky: function() {
@@ -323,6 +324,27 @@
         $this[0].dataset.status = 'active';
         if( this.template === undefined ) this.template = {};
         this.template.countdown = instance;
+      });
+    },
+
+    enableJarallax: function() {
+      var $el = $('.background-parallax');
+      if( !$el.length ) return;
+      var defaults = {
+        speed: .2,
+        onInit: function() {
+          var $image = $(this.$item).find('[id^="jarallax-container"] > div');
+          $image[0].style.backgroundPosition = null;
+          $image[0].style.backgroundSize = null;
+          $image[0].style.backgroundRepeat = null;
+          $image[0].style.backgroundImage = null;
+        },
+      };
+      $el.each(function() {
+        var $this = $(this);
+        var options = $this.data('plugin-options');
+        options = $.extend({}, defaults, options);
+        $this.jarallax(options);
       });
     },
   };

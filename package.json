@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass assets/sass/ -o assets/css/ --source-map true --recursive false"
+    "sass": "node-sass assets/sass/ -o assets/css/ true --recursive false && postcss assets/css --dir assets/css"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/varun9509/chaman_html#readme"
+  "homepage": "https://bitbucket.org/varun9509/chaman_html#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1"
+  },
+   "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 9"
+  ]
 }

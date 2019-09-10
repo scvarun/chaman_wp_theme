@@ -8,6 +8,17 @@
 /* Fonts */
 /* Header */
 /* Forms */
+@-webkit-keyframes LOGO_GROUP_1_IN {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 @keyframes LOGO_GROUP_1_IN {
   0% {
     opacity: 1; }
@@ -30,7 +41,9 @@
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translateY(-50%) translateX(50%);
+    -webkit-transform: translateY(-50%) translateX(50%);
+        -ms-transform: translateY(-50%) translateX(50%);
+            transform: translateY(-50%) translateX(50%);
     width: 100%;
     text-align: center;
     color: #fff;
@@ -41,7 +54,9 @@
 @media screen and (max-width: 480px) {
   #CHAMAN_LOGO_SVG svg {
     height: 100%;
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
     max-width: 150% !important;
     width: 150% !important;
     margin-left: -25%; } }
@@ -77,5 +92,3 @@
     #admission-form .form-tabs-content .form-control {
       line-height: 70px;
       height: 70px; }
-
-/*# sourceMappingURL=custom.css.map */
