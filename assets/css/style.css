@@ -8930,7 +8930,8 @@ body.section-popup-active {
   z-index: 100;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  background: none; }
   #navbar .navbar-brand {
     max-width: 50vw;
     padding: 0; }
@@ -9121,25 +9122,26 @@ body.section-popup-active {
       #navbar:not(.js-is-stuck):not(.js-is-sticky) .navbar-brand .mobile-logo ~ .default-logo {
         display: none;
         opacity: 0; }
-    #navbar.js-is-stuck, #navbar.js-is-sticky {
-      background: white; }
-      #navbar.js-is-stuck .nav-toggle, #navbar.js-is-sticky .nav-toggle {
-        color: black; }
-      #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
-        -webkit-filter: invert(1);
-                filter: invert(1); }
-      #navbar.js-is-stuck .navbar-brand .sticky-mobile-logo, #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo {
-        display: block;
-        opacity: 1; }
-        #navbar.js-is-stuck .navbar-brand .sticky-mobile-logo ~ .sticky-logo,
-        #navbar.js-is-stuck .navbar-brand .sticky-mobile-logo ~ .mobile-logo,
-        #navbar.js-is-stuck .navbar-brand .sticky-mobile-logo ~ .default-logo, #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo ~ .sticky-logo,
-        #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo ~ .mobile-logo,
-        #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo ~ .default-logo {
-          display: none;
-          opacity: 0; }
+    #navbar.js-is-stuck .navbar-brand img, #navbar.js-is-sticky .navbar-brand img {
+      -webkit-filter: none;
+              filter: none; }
+    #navbar.js-is-stuck .navbar-brand .sticky-mobile-logo, #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo {
+      display: block;
+      opacity: 1; }
+      #navbar.js-is-stuck .navbar-brand .sticky-mobile-logo ~ .sticky-logo,
+      #navbar.js-is-stuck .navbar-brand .sticky-mobile-logo ~ .mobile-logo,
+      #navbar.js-is-stuck .navbar-brand .sticky-mobile-logo ~ .default-logo, #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo ~ .sticky-logo,
+      #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo ~ .mobile-logo,
+      #navbar.js-is-sticky .navbar-brand .sticky-mobile-logo ~ .default-logo {
+        display: none;
+        opacity: 0; }
+    #navbar.js-is-stuck:hover, #navbar.js-is-sticky:hover {
+      background: none; }
       #navbar.js-is-stuck:hover .main-navigation .menu-item > a, #navbar.js-is-sticky:hover .main-navigation .menu-item > a {
         color: white; }
+      #navbar.js-is-stuck:hover .navbar-brand img, #navbar.js-is-sticky:hover .navbar-brand img {
+        -webkit-filter: none;
+                filter: none; }
   body.navigation-overlay {
     overflow: hidden; } }
 
