@@ -30,13 +30,13 @@ if ( ! function_exists( 'unifato_theme_scripts' ) ) {
     wp_enqueue_style( 'unifato-custom', $dir_uri . "/css/custom.css", false, THEME_VERSION, 'all' );
 
     wp_enqueue_script( 'jquery' );
-    wp_enqueue_script( 'bootstrap', $dir_uri . '/vendors/bootstrap/js/bootstrap.min.js', array('jquery'), THEME_VERSION, true);
+    wp_enqueue_script( 'bootstrap', $dir_uri . '/vendors/bootstrap/bootstrap.min.js', array('jquery'), THEME_VERSION, true);
 		wp_register_script( 'bootstrap-popper', $dir_uri . '/vendors/bootstrap/popper.min.js', array('jquery'), THEME_VERSION, true);
     wp_enqueue_script( 'lodash', $dir_uri . '/vendors/lodash/lodash.min.js', array('jquery'), THEME_VERSION, true);
     wp_enqueue_script( 'stickybits', $dir_uri . '/vendors/stickybits/stickybits.min.js', array('jquery'), THEME_VERSION, true);
     wp_enqueue_script( 'animejs', $dir_uri . '/vendors/animejs/anime.min.js', array('jquery'), THEME_VERSION, true);
     wp_enqueue_script( 'css-parser', $dir_uri . '/vendors/filter-polyfill/cssParser.js', array('jquery'), THEME_VERSION, true);
-    wp_enqueue_script( 'css-filters-polyfill', $dir_uri . '/vendors/filter-polyfill/css-filter-polyfill.js', array('jquery'), THEME_VERSION, true);
+    wp_enqueue_script( 'css-filters-polyfill', $dir_uri . '/vendors/filter-polyfill/css-filters-polyfill.js', array('jquery'), THEME_VERSION, true);
 
     wp_enqueue_script( 'wpos-slick-jquery', $dir_uri . '/vendors/slick-slider/slick.min.js', array('jquery'), THEME_VERSION, true);
 		
