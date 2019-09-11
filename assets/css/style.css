@@ -8930,8 +8930,21 @@ body.section-popup-active {
   z-index: 100;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background: none; }
+  transition: all 0.2s ease-in-out; }
+  #navbar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background: white;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: -1; }
   #navbar .navbar-brand {
     max-width: 50vw;
     padding: 0; }
@@ -8994,13 +9007,13 @@ body.section-popup-active {
     #navbar.js-is-stuck .navbar-brand img.sticky-logo ~ .default-logo, #navbar.js-is-sticky .navbar-brand img.sticky-logo ~ .default-logo {
       display: none;
       opacity: 0; }
-  #navbar.js-is-sticky:hover, #navbar.js-is-stuck:hover {
-    background: white; }
-    #navbar.js-is-sticky:hover .navbar-brand img, #navbar.js-is-stuck:hover .navbar-brand img {
-      -webkit-filter: invert(1);
-              filter: invert(1); }
-    #navbar.js-is-sticky:hover .main-navigation .menu-item > a, #navbar.js-is-stuck:hover .main-navigation .menu-item > a {
-      color: black; }
+  #navbar.js-is-sticky:hover:after, #navbar.js-is-stuck:hover:after {
+    opacity: 1; }
+  #navbar.js-is-sticky:hover .navbar-brand img, #navbar.js-is-stuck:hover .navbar-brand img {
+    -webkit-filter: invert(1);
+            filter: invert(1); }
+  #navbar.js-is-sticky:hover .main-navigation .menu-item > a, #navbar.js-is-stuck:hover .main-navigation .menu-item > a {
+    color: black; }
   .elementor-editor-active #navbar {
     pointer-events: none; }
   .admin-bar #navbar.js-is-stuck, .admin-bar #navbar.js-is-sticky {
@@ -9064,6 +9077,8 @@ body.section-popup-active {
     padding: 25px 30px;
     -ms-flex-align: start;
         align-items: flex-start; }
+    #navbar:after {
+      display: none; }
     #navbar .mobile-nav {
       -webkit-animation-name: mobileMenuOut;
               animation-name: mobileMenuOut;

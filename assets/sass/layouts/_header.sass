@@ -23,7 +23,14 @@
   position: relative
   z-index: 100
   transition: $transition-base
-  background: none
+  &:after
+    content: ''
+    @include position(absolute, 0)
+    display: block
+    background: white
+    opacity: 0
+    transition: $transition-base
+    z-index: -1
   .navbar-brand
     max-width: 50vw
     padding: 0
@@ -92,7 +99,8 @@
   &.js-is-sticky,
   &.js-is-stuck
     &:hover
-      background: white
+      &:after
+        opacity: 1
       .navbar-brand img
         filter: invert(1)
       .main-navigation .menu-item > a
@@ -160,6 +168,8 @@
     height: auto
     padding: 25px 30px
     align-items: flex-start
+    &:after
+      display: none
     .mobile-nav
       animation-name: mobileMenuOut
       animation-duration: .3s
