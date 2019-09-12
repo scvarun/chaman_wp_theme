@@ -372,7 +372,7 @@
             targets: 'html, body',
             scrollTop: finScroll,
             duration: 500,
-            easing: 'easeOutExpo',
+            easing: 'easeInOutSine',
           });
         }
         if (event.preventDefault)
