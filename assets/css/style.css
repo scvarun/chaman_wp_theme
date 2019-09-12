@@ -8831,6 +8831,9 @@ h6, .h6, .tabbed-form .form-tabs a {
   z-index: 999;
   background: rgba(0, 0, 0, 0.8); }
 
+html[data-section-popup-active='true'] {
+  overflow: hidden; }
+
 body.section-popup-active {
   overflow: hidden; }
   body.section-popup-active #section-popup-backdrop {
