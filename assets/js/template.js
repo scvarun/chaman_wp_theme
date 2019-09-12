@@ -367,7 +367,7 @@
           delta = -event.detail / 3
         }
 
-        var isTouchPad = e.wheelDeltaY ? e.wheelDeltaY === -3 * e.deltaY : e.deltaMode === 0;
+        var isTouchPad = event.wheelDeltaY ? event.wheelDeltaY === -3 * event.deltaY : event.deltaMode === 0;
 
         console.log(event);
 
