@@ -371,12 +371,15 @@
           var scrollTop = $window.scrollTop()
           var finScroll = scrollTop - parseInt(delta * 100) * 3;
           // anime.remove('html, body');
-          anime({
-            targets: 'html, body',
+          $('html, body').stop().animate({
             scrollTop: finScroll,
-            duration: 500,
-            easing: 'easeOutQuad',
-          });
+          }, 500);
+          // anime({
+          //   targets: 'html, body',
+          //   scrollTop: finScroll,
+          //   duration: 500,
+          //   easing: 'easeOutQuad',
+          // });
         }
         if (event.preventDefault)
           event.preventDefault()
