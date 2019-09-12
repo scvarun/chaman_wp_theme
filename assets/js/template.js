@@ -345,6 +345,7 @@
     },
 
     enableMousewheelSmoothScroll: function() {
+      $(window).smoothWheel();
     },
   };
 
