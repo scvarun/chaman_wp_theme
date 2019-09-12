@@ -362,7 +362,7 @@
         if (event.wheelDelta) {
           delta = event.wheelDelta / 100
         } else if (event.deltaY) {
-          delta = -event.deltaY / 3
+          delta = -event.deltaY
         } else if (event.detail) {
           delta = -event.detail / 3
         }
