@@ -351,9 +351,6 @@
     },
 
     enableMousewheelSmoothScroll: function() {
-      $(document.body).impulse({
-        fluid: false,
-      });
     },
   };
 
