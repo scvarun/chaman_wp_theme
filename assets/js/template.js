@@ -366,7 +366,7 @@
         }
         if (delta) {
           var scrollTop = $window.scrollTop()
-          var finScroll = scrollTop - parseInt(delta * 150) * 3;
+          var finScroll = scrollTop - parseInt(delta * 100) * 3;
           anime.remove('html, body');
           anime({
             targets: 'html, body',
