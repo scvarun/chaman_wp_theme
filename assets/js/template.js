@@ -369,7 +369,7 @@
 
         var isTouchPad = event.wheelDeltaY ? event.wheelDeltaY === -3 * event.deltaY : event.deltaMode === 0;
 
-        console.log(event);
+        console.log(isTouchPad);
 
         if (delta) {
           var scrollTop = $window.scrollTop();
