@@ -340,6 +340,8 @@
           $image[0].style.backgroundSize = null;
           $image[0].style.backgroundRepeat = null;
           $image[0].style.backgroundImage = null;
+          $image[0].style.willChange = 'transform';
+          $image[0].style.transition = 'transform 100ms cubic-bezier(0.645, 0.045, 0.355, 1)';
         },
       };
       $el.each(function() {
@@ -351,7 +353,6 @@
     },
 
     enableMousewheelSmoothScroll: function() {
-      $('body').niceScroll();
     },
   };
 
