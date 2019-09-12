@@ -360,11 +360,11 @@
           event = window.event;
         }
         if (event.wheelDelta) {
-          delta = event.wheelDelta / 40
+          delta = event.wheelDelta / 60
         } else if (event.deltaY) {
-          delta = -event.deltaY
+          delta = -event.deltaY / 2
         } else if (event.detail) {
-          delta = -event.detail
+          delta = -event.detail / 2
         }
         if (delta) {
           var scrollTop = $window.scrollTop()
