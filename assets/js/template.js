@@ -345,7 +345,7 @@
     },
 
     enableMousewheelSmoothScroll: function() {
-      new SmoothScroll(document,120,12)
+      new SmoothScroll(document.body,120,12)
     },
   };
 
