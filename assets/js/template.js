@@ -366,14 +366,24 @@
         } else if (event.detail) {
           delta = -event.detail / 3
         }
+
+        var isTouchPad = e.wheelDeltaY ? e.wheelDeltaY === -3 * e.deltaY : e.deltaMode === 0;
+
         console.log(event);
+
         if (delta) {
-          var scrollTop = $window.scrollTop()
+          var scrollTop = $window.scrollTop();
           var finScroll = scrollTop - parseInt(delta * 100) * 3;
           // anime.remove('html, body');
-          $('html, body').stop().animate({
-            scrollTop: finScroll,
-          }, 500);
+          if( isTouchPad ) {
+            $('html, body').animate({
+              scrollTop: finScroll,
+            }, 500);
+          } else {
+            $('html, body').stop().animate({
+              scrollTop: finScroll,
+            }, 500);
+          }
           // anime({
           //   targets: 'html, body',
           //   scrollTop: finScroll,
