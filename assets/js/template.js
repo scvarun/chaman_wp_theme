@@ -366,6 +366,7 @@
         } else if (event.detail) {
           delta = -event.detail / 3
         }
+        console.log(event);
         if (delta) {
           var scrollTop = $window.scrollTop()
           var finScroll = scrollTop - parseInt(delta * 100) * 3;
