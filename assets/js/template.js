@@ -367,9 +367,13 @@
         if (delta) {
           var scrollTop = $window.scrollTop()
           var finScroll = scrollTop - parseInt(delta * 100) * 3;
-          $('html, body').stop().animate({
-            scrollTop: finScroll
-          }, 500);
+          anime.remove('html, body');
+          anime({
+            targets: 'html, body',
+            scrollTop: finScroll,
+            duration: 500,
+            easing: 'easeOutExpo',
+          });
         }
         if (event.preventDefault)
           event.preventDefault()
