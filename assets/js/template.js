@@ -362,9 +362,9 @@
         if (event.wheelDelta) {
           delta = event.wheelDelta / 120
         } else if (event.deltaY) {
-          delta = event.deltaY
+          delta = -event.deltaY
         } else if (event.detail) {
-          delta = -event.detail / 3
+          delta = -event.detail
         }
         if (delta) {
           var scrollTop = $window.scrollTop()
