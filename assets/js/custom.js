@@ -64,7 +64,7 @@
         targets: heading,
         opacity: 1,
         duration: 500,
-        delay: 4500,
+        delay: 5500,
         easing: 'easeInOutQuad',
       });
     },
