@@ -353,9 +353,8 @@
 
     enableMousewheelSmoothScroll: function() {
       var $window = $(window)
-      document.addEventListener('scroll', customScroll, {passive: false});
+      document.addEventListener('wheel', customScroll, {passive: false});
       function customScroll(event) {
-        console.log(event);
         var delta = 0
         if (!event) {
           event = window.event;
