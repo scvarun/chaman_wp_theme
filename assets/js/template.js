@@ -352,6 +352,29 @@
     },
 
     enableMousewheelSmoothScroll: function() {
+      var $window = $(window)
+      document.addEventListener('wheel', customScroll, {passive: false});
+      function customScroll(event) {
+        var delta = 0
+        if (!event) {
+          event = window.event;
+        }
+        if (event.wheelDelta) {
+          delta = event.wheelDelta / 120
+        } else if (event.detail) {
+          delta = -event.detail / 3
+        }
+        if (delta) {
+          var scrollTop = $window.scrollTop()
+          var finScroll = scrollTop - parseInt(delta * 100) * 3;
+          $('html, body').stop().animate({
+            scrollTop: finScroll
+          }, 200, 'linear');
+        }
+        if (event.preventDefault)
+          event.preventDefault()
+        event.returnValue = false
+      }
     },
   };
 
