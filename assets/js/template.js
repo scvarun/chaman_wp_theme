@@ -351,6 +351,7 @@
     },
 
     enableMousewheelSmoothScroll: function() {
+      $('body').niceScroll();
     },
   };
 
