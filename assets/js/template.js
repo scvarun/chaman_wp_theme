@@ -352,7 +352,7 @@
 
     enableMousewheelSmoothScroll: function() {
       $(document.body).impulse({
-        range: 300,
+        range: 150,
         tempo: 600,
         fluid: false,
       });
