@@ -369,7 +369,7 @@
           var finScroll = scrollTop - parseInt(delta * 100) * 3;
           $('html, body').stop().animate({
             scrollTop: finScroll
-          }, 200, 'linear');
+          }, 200, 'ease');
         }
         if (event.preventDefault)
           event.preventDefault()
