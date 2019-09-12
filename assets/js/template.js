@@ -360,7 +360,7 @@
           event = window.event;
         }
         if (event.wheelDelta) {
-          delta = event.wheelDelta / 120
+          delta = event.wheelDelta / 40
         } else if (event.deltaY) {
           delta = -event.deltaY
         } else if (event.detail) {
