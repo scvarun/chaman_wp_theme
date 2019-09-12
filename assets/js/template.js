@@ -275,8 +275,7 @@
       this.enableSticky();
       this.enableCountdown();
       this.enableJarallax();
-      // this.enableMousewheelSmoothScroll();
-      this.enableMousewheelSmoothScroll2();
+      this.enableMousewheelSmoothScroll();
     },
 
     enableSticky: function() {
@@ -352,11 +351,11 @@
     },
 
     enableMousewheelSmoothScroll: function() {
-      new SmoothScroll(document,120,12)
-    },
-
-    enableMousewheelSmoothScroll2: function() {
-      $(window).impulse();
+      $(document.body).impulse({
+        range: 200,
+        tempo: 700,
+        fluid: false,
+      });
     },
   };
 
