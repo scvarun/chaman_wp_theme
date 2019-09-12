@@ -366,13 +366,13 @@
         }
         if (delta) {
           var scrollTop = $window.scrollTop()
-          var finScroll = scrollTop - parseInt(delta * 200) * 3;
+          var finScroll = scrollTop - parseInt(delta * 150) * 3;
           anime.remove('html, body');
           anime({
             targets: 'html, body',
             scrollTop: finScroll,
             duration: 500,
-            easing: 'linear',
+            easing: 'easeOutQuad',
           });
         }
         if (event.preventDefault)
