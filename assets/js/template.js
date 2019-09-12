@@ -267,7 +267,6 @@
      */
     enablePlugins: function() {
       this.enableSticky();
-      this.enableFilterPolyfill();
       this.enableCountdown();
       this.enableJarallax();
       this.enableMousewheelSmoothScroll();
@@ -291,10 +290,6 @@
         window.scrollTo(posY, window.pageYOffset - 1);
         window.scrollTo(posY, window.pageYOffset);
       });
-    },
-
-    enableFilterPolyfill: function() {
-      var polyfilter_scriptpath = '/assets/vendors/filter-polyfill/';
     },
 
     enableCountdown: function() {
