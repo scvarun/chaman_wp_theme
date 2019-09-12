@@ -353,6 +353,32 @@
 
     enableMousewheelSmoothScroll: function() {
       var $window = $(window)
+      document.addEventListener('scroll', customScroll, {passive: false});
+      function customScroll(event) {
+        console.log(event);
+        var delta = 0;
+
+        if (delta) {
+          var scrollTop = $window.scrollTop();
+          var finScroll = scrollTop - parseInt(delta * 100) * 3;
+          if( isTouchPad ) {
+            $('html, body').animate({
+              scrollTop: finScroll,
+            }, 500);
+          } else {
+            $('html, body').stop().animate({
+              scrollTop: finScroll,
+            }, 500);
+          }
+        }
+        if (event.preventDefault)
+          event.preventDefault()
+        event.returnValue = false
+      }
+    },
+
+    enableMousewheelSmoothScroll2: function() {
+      var $window = $(window)
       document.addEventListener('mousewheel', customScroll, {passive: false});
       function customScroll(event) {
         var delta = 0
