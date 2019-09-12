@@ -341,6 +341,7 @@
           $image[0].style.backgroundRepeat = null;
           $image[0].style.backgroundImage = null;
           $image[0].style.willChange = 'transform';
+          $image[0].style.transition = 'transform 500ms ease';
         },
       };
       $el.each(function() {
@@ -352,6 +353,10 @@
     },
 
     enableMousewheelSmoothScroll: function() {
+      window.scroll({
+        left: 0, 
+        behavior: 'smooth'
+      });
     },
   };
 
