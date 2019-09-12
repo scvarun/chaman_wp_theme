@@ -229,6 +229,8 @@
             return;
           }
           var toggleClassFunc = function(e) {
+            if( document.dataset === undefined )
+              document.dataset = {};
             if( document.dataset.sectionPopupActive === undefined || document.dataset.sectionPopupActive === '' )
               document.dataset.sectionPopupActive = 'true';
             else
