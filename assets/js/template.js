@@ -371,7 +371,7 @@
           var scrollTop = $window.scrollTop()
           var finScroll = scrollTop - parseInt(delta * 100) * 3;
           // anime.remove('html, body');
-          $('html, body').stop().animate({
+          $('html, body').animate({
             scrollTop: finScroll,
           }, 500);
           // anime({
