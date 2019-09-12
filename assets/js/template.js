@@ -353,7 +353,7 @@
 
     enableMousewheelSmoothScroll: function() {
       var $window = $(window)
-      document.addEventListener('mousewheel', customScroll, {passive: false});
+      document.addEventListener('mousewheel wheel', customScroll, {passive: false});
       function customScroll(event) {
         var delta = 0
         if (!event) {
@@ -366,6 +366,8 @@
         } else if (event.detail) {
           delta = -event.detail / 3
         }
+
+        console.log(event);
 
         if (delta) {
           var scrollTop = $window.scrollTop();
