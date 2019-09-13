@@ -275,7 +275,6 @@
       this.enableSticky();
       this.enableCountdown();
       this.enableJarallax();
-      this.enableMousewheelSmoothScroll();
     },
 
     enableSticky: function() {
@@ -349,41 +348,6 @@
         options = $.extend({}, defaults, options);
         $this.jarallax(options);
       });
-    },
-
-    enableMousewheelSmoothScroll: function() {
-      var $window = $(window);
-      document.addEventListener('wheel', customScroll, {passive: false});
-      function customScroll(event) {
-        var delta = 0
-        if (!event) {
-          event = window.event;
-        }
-        if (event.wheelDelta) {
-          delta = event.wheelDelta / 100
-        } else if (event.deltaY) {
-          delta = -event.deltaY / 3
-        } else if (event.detail) {
-          delta = -event.detail / 3
-        }
-
-        console.log(event);
-
-        if (delta) {
-          var scrollTop = $window.scrollTop();
-          var finScroll = scrollTop - parseInt(delta * 100) * 3;
-          anime.remove('html, body');
-          anime({
-            targets: 'html, body',
-            scrollTop: finScroll,
-            duration: 300,
-            easing: 'linear',
-          });
-        }
-        if (event.preventDefault)
-          event.preventDefault()
-        event.returnValue = false
-      }
     },
   };
 
