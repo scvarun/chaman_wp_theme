@@ -361,14 +361,22 @@
           event = window.event;
         }
         if (event.wheelDelta) {
-          delta = event.wheelDelta / 120
+          delta = event.wheelDelta / 100
+        } else if (event.deltaY) {
+          delta = -event.deltaY
         } else if (event.detail) {
           delta = -event.detail / 3
         }
+
+        console.log(event);
+
         if (delta) {
-          var scrollTop = $window.scrollTop()
+          var scrollTop = $window.scrollTop();
           var finScroll = scrollTop - parseInt(delta * 100) * 3;
           anime.remove('html, body');
+          // $('html, body').stop().animate({
+          //   scrollTop: finScroll,
+          // }, 500);
           anime({
             targets: 'html, body',
             scrollTop: finScroll,
