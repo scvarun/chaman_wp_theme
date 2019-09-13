@@ -352,8 +352,9 @@
     },
 
     enableMousewheelSmoothScroll: function() {
-      var $window = $(window)
-      document.addEventListener('wheel', customScroll, {passive: false});
+      var $window = $(window);
+      var throttled = _.throttled(custom, 100);
+      document.addEventListener('wheel', throttled, {passive: false});
       function customScroll(event) {
         var delta = 0
         if (!event) {
