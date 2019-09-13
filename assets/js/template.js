@@ -353,7 +353,7 @@
 
     enableMousewheelSmoothScroll: function() {
       var $window = $(window);
-      var throttled = lodash.throttle(customScroll, 500, {trailing: true, leading: false});
+      var throttled = lodash.throttle(customScroll, 100, {trailing: true, leading: false});
       document.addEventListener('wheel', throttled, {passive: false});
       function customScroll(event) {
         var delta = 0
@@ -363,24 +363,23 @@
         if (event.wheelDelta) {
           delta = event.wheelDelta / 100
         } else if (event.deltaY) {
-          delta = -event.deltaY
+          delta = -event.deltaY / 3
         } else if (event.detail) {
           delta = -event.detail / 3
         }
 
+        console.log(event);
+
         if (delta) {
           var scrollTop = $window.scrollTop();
           var finScroll = scrollTop - parseInt(delta * 100) * 3;
-          // anime.remove('html, body');
-          // anime({
-          //   targets: 'html, body',
-          //   scrollTop: finScroll,
-          //   duration: 500,
-          //   easing: 'easeOutQuad',
-          // });
-          $('html, body').stop().animate({
+          anime.remove('html, body');
+          anime({
+            targets: 'html, body',
             scrollTop: finScroll,
-          }, 500);
+            duration: 100,
+            easing: 'easeOutQuad',
+          });
         }
         if (event.preventDefault)
           event.preventDefault()
