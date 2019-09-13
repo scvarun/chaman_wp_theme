@@ -353,7 +353,7 @@
 
     enableMousewheelSmoothScroll: function() {
       var $window = $(window);
-      var throttled = lodash.throttle(customScroll, 5000, {trailing: true, leading: false});
+      var throttled = lodash.throttle(customScroll, 5000, {trailing: false, leading: true});
       document.addEventListener('mousewheel', customScroll, {passive: false});
       function customScroll(event) {
         var delta = 0
