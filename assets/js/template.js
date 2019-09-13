@@ -353,7 +353,7 @@
 
     enableMousewheelSmoothScroll: function() {
       var $window = $(window);
-      var throttled = lodash.throttle(customScroll, 100, {trailing: true, leading: false});
+      var throttled = lodash.throttle(customScroll, 300, {trailing: true, leading: false});
       document.addEventListener('wheel', throttled, {passive: false});
       function customScroll(event) {
         var delta = 0
@@ -377,8 +377,8 @@
           anime({
             targets: 'html, body',
             scrollTop: finScroll,
-            duration: 100,
-            easing: 'easeOutQuad',
+            duration: 300,
+            easing: 'linear',
           });
         }
         if (event.preventDefault)
