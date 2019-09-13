@@ -372,16 +372,16 @@
         if (delta) {
           var scrollTop = $window.scrollTop();
           var finScroll = scrollTop - parseInt(delta * 100) * 3;
-          anime.remove('html, body');
-          // $('html, body').stop().animate({
+          // anime.remove('html, body');
+          // anime({
+          //   targets: 'html, body',
           //   scrollTop: finScroll,
-          // }, 500);
-          anime({
-            targets: 'html, body',
+          //   duration: 500,
+          //   easing: 'easeOutQuad',
+          // });
+          $('html, body').stop().animate({
             scrollTop: finScroll,
-            duration: 500,
-            easing: 'easeOutQuad',
-          });
+          }, 500);
         }
         if (event.preventDefault)
           event.preventDefault()
