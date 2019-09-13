@@ -8063,7 +8063,8 @@ ul, ol, dl {
   transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0, 1) 0s;
   -o-transition: transform 0.1s cubic-bezier(0, 0, 0, 1) 0s;
   transition: transform 0.1s cubic-bezier(0, 0, 0, 1) 0s;
-  transition: transform 0.1s cubic-bezier(0, 0, 0, 1) 0s, -webkit-transform 0.1s cubic-bezier(0, 0, 0, 1) 0s; }
+  transition: transform 0.1s cubic-bezier(0, 0, 0, 1) 0s, -webkit-transform 0.1s cubic-bezier(0, 0, 0, 1) 0s;
+  will-change: transform; }
 
 /*
  * --------------------
