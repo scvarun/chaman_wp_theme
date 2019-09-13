@@ -374,7 +374,7 @@
           anime({
             targets: 'html, body',
             scrollTop: finScroll,
-            duration: 100,
+            duration: 300,
             easing: 'linear',
           });
         }
