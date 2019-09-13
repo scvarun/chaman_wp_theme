@@ -368,17 +368,14 @@
           delta = -event.detail / 3
         }
 
-        console.log(event);
-
         if (delta) {
           var scrollTop = $window.scrollTop();
           var finScroll = scrollTop - parseInt(delta * 100) * 3;
-          // anime.remove('html, body');
           anime({
             targets: 'html, body',
             scrollTop: finScroll,
             duration: 300,
-            easing: 'linear',
+            easing: 'easeOutQuad',
           });
         }
         if (event.preventDefault)
