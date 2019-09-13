@@ -340,13 +340,18 @@
           $image[0].style.backgroundRepeat = null;
           $image[0].style.backgroundImage = null;
           $image[0].style.willChange = 'transform';
+          $image[0].style['-webkit-transition'] =  '-webkit-transform 0.4s cubic-bezier(0, 0, 0, 1) 0s';
+          $image[0].style['transition'] =  '-webkit-transform 0.4s cubic-bezier(0, 0, 0, 1) 0s';
+          $image[0].style['-o-transition'] =  'transform 0.4s cubic-bezier(0, 0, 0, 1) 0s';
+          $image[0].style['transition'] =  'transform 0.4s cubic-bezier(0, 0, 0, 1) 0s';
+          $image[0].style['transition'] =  'transform 0.4s cubic-bezier(0, 0, 0, 1) 0s, -webkit-transform 0.4s cubic-bezier(0, 0, 0, 1) 0s';
         },
       };
       $el.each(function() {
         var $this = $(this);
         var options = $this.data('plugin-options');
         options = $.extend({}, defaults, options);
-        $this.jarallax(options);
+        var $j = $this.jarallax(options);
       });
     },
   };
