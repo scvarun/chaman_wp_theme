@@ -343,11 +343,6 @@
           $image[0].style.position = 'absolute';
           $image[0].style.top = '-20%';
           $image[0].style.bottom = '-20%';
-          // $image[0].style.top = $image.parent().offset().top + 'px';
-        },
-        onResize: function() {
-          var $image = $(this.$item).find('[id^="jarallax-container"] > div');
-          $image[0].style.top = $image.parent().offset().top + 'px';
         },
       };
       $el.each(function() {
@@ -360,7 +355,6 @@
 
     enableMousewheelSmoothScroll: function() {
       $("#wrapper").inertiaScroll({
-        parentDelta: .3,
         parent: $("#scroll-wrapper")
       });
     },
