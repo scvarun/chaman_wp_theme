@@ -1,6 +1,5 @@
 .section-popup
   display: none
-  // 
   &.active
     overflow-y: auto
     top: 0 !important
@@ -30,7 +29,7 @@
   position: fixed !important
   display: none
   z-index: 999
-  background: rgba(0,0,0,.8)
+  background: rgba(0,0,0,.9)
 
 html[data-section-popup-active='true']
   overflow: hidden
@@ -39,3 +38,6 @@ body.section-popup-active
   overflow: hidden
   #section-popup-backdrop
     display: block
+  #scroll-wrapper
+    z-index: 100
+    transform: none !important

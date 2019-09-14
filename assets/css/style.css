@@ -8839,7 +8839,7 @@ h6, .h6, .tabbed-form .form-tabs a {
   position: fixed !important;
   display: none;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.8); }
+  background: rgba(0, 0, 0, 0.9); }
 
 html[data-section-popup-active='true'] {
   overflow: hidden; }
@@ -8848,6 +8848,11 @@ body.section-popup-active {
   overflow: hidden; }
   body.section-popup-active #section-popup-backdrop {
     display: block; }
+  body.section-popup-active #scroll-wrapper {
+    z-index: 100;
+    -webkit-transform: none !important;
+        -ms-transform: none !important;
+            transform: none !important; }
 
 .slider-arrow {
   text-indent: -9999px;

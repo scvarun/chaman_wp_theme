@@ -219,7 +219,7 @@
       if(sectionPopupToggles.length === 0) return;
       var backdrop = document.createElement('div');
       backdrop.id = 'section-popup-backdrop';
-      document.body.appendChild(backdrop);
+      document.getElementById('scroll-wrapper').appendChild(backdrop);
       lodash.each(sectionPopupToggles, function(sectionPopupToggle) {
         var toggleFunc = function(el) {
           var hash = el.hash;
@@ -229,12 +229,6 @@
             return;
           }
           var toggleClassFunc = function(e) {
-            if( document.dataset === undefined )
-              document.dataset = {};
-            if( document.dataset.sectionPopupActive === undefined || document.dataset.sectionPopupActive === '' )
-              document.dataset.sectionPopupActive = 'true';
-            else
-              document.dataset.sectionPopupActive = '';
             document.body.classList.toggle('section-popup-active');
             hashElem.classList.toggle('active');
             e.stopPropagation();
@@ -354,12 +348,9 @@
     },
 
     enableMousewheelSmoothScroll: function() {
-      // $(".content-wrapper").inertiaScroll({
-      //   parent: $("#scroll-wrapper")
-      // });
-
       luxy.init({
         wrapper: '#scroll-wrapper',
+        wrapperSpeed: 0.3
       });
     },
   };
