@@ -88,3 +88,9 @@ ul, ol, dl
 @media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px})
   [id^="jarallax"] > div
     height: auto !important
+
+@media screen and (max-width: #{map-get($grid-breakpoints, 'sm')})
+  [id^="jarallax"] > div
+    position: fixed
+    top: 0 !important
+    bottom: 0 !important
