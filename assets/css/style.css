@@ -8064,7 +8064,11 @@ ul, ol, dl {
   -o-transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
   transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
   transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s, -webkit-transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
-  will-change: transform; }
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-attachment: fixed;
+  height: auto !important; }
 
 /*
  * --------------------

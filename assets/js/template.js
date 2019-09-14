@@ -340,8 +340,13 @@
           $image[0].style.backgroundSize = null;
           $image[0].style.backgroundRepeat = null;
           $image[0].style.backgroundImage = null;
-          $image[0].style.width *= 1.5;
-          $image[0].style.height *= 1.5;
+          $image[0].style.position = 'absolute';
+          $image[0].style.top = '-20%';
+          $image[0].style.bottom = '-20%';
+          // $image[0].style.top = $image.parent().offset().top + 'px';
+        },
+        onResize: function() {
+          var $image = $(this.$item).find('[id^="jarallax-container"] > div');
           $image[0].style.top = $image.parent().offset().top + 'px';
         },
       };
@@ -355,6 +360,7 @@
 
     enableMousewheelSmoothScroll: function() {
       $("#wrapper").inertiaScroll({
+        parentDelta: .3,
         parent: $("#scroll-wrapper")
       });
     },
