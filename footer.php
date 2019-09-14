@@ -21,6 +21,7 @@
     do_action( 'unifato_main_footer' );
   ?>
 </div><!-- /.wrapper -->
+</div><!-- /#scroll-wrapper -->
 
 <?php wp_footer(); ?>
 </body>

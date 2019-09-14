@@ -20,6 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </head>
 
 <body <?php body_class(['header-overlay']); ?> <?php unifato_the_microdata( 'body' ); ?>>
+<div id="scroll-wrapper">
 <div id="wrapper" class="wrapper">
 
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-wrapper" <?php unifato_the_microdata( 'header' ); ?> role="banner">

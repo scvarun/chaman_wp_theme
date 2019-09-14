@@ -275,6 +275,7 @@
       this.enableSticky();
       this.enableCountdown();
       this.enableJarallax();
+      this.enableMousewheelSmoothScroll();
     },
 
     enableSticky: function() {
@@ -339,7 +340,9 @@
           $image[0].style.backgroundSize = null;
           $image[0].style.backgroundRepeat = null;
           $image[0].style.backgroundImage = null;
-          $image[0].style.willChange = 'transform';
+          $image[0].style.width *= 1.5;
+          $image[0].style.height *= 1.5;
+          $image[0].style.top = $image.parent().offset().top + 'px';
         },
       };
       $el.each(function() {
@@ -347,6 +350,12 @@
         var options = $this.data('plugin-options');
         options = $.extend({}, defaults, options);
         var $j = $this.jarallax(options);
+      });
+    },
+
+    enableMousewheelSmoothScroll: function() {
+      $("#wrapper").inertiaScroll({
+        parent: $("#scroll-wrapper")
       });
     },
   };

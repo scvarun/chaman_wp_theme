@@ -12,6 +12,7 @@ get_header('for-footer-single');
   </div><!-- /.content-wrapper -->
   <?php the_content('none'); ?>
 </div><!-- /.wrapper -->
+</div><!-- /#scroll-wrapper -->
 
 <?php
 get_footer('for-footer-single');
