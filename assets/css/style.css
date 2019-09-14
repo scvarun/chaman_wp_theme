@@ -8067,10 +8067,6 @@ ul, ol, dl {
   transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s, -webkit-transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
   will-change: transform; }
 
-@media screen and (min-width: 821px) {
-  [id^="jarallax"] > div {
-    height: auto !important; } }
-
 @media screen and (max-width: 820px) {
   [id^="jarallax"] > div {
     position: fixed;
