@@ -8071,6 +8071,12 @@ ul, ol, dl {
   [id^="jarallax"] > div {
     height: auto !important; } }
 
+@media screen and (max-width: 820px) {
+  [id^="jarallax"] > div {
+    position: fixed;
+    top: 0 !important;
+    bottom: 0 !important; } }
+
 /*
  * --------------------
  * Typography
