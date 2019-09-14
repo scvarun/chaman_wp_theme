@@ -8065,8 +8065,11 @@ ul, ol, dl {
   -o-transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
   transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
   transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s, -webkit-transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
-  will-change: transform;
-  height: auto !important; }
+  will-change: transform; }
+
+@media screen and (min-width: 821px) {
+  [id^="jarallax"] > div {
+    height: auto !important; } }
 
 /*
  * --------------------
