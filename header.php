@@ -20,7 +20,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 </head>
 
 <body <?php body_class(); ?> <?php unifato_the_microdata( 'body' ); ?>>
-<div id="scroll-wrapper">
 <div id="wrapper" class="wrapper">
 	<div id="top"></div>
 
@@ -91,5 +90,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		?>
 	</nav><!-- #navbar -->
 
-	<div class="content-wrapper"<?php echo unifato_content_wrapper_attr(); ?>>
+	<div id="scroll-wrapper">
+		<div class="content-wrapper"<?php echo unifato_content_wrapper_attr(); ?>>
 		

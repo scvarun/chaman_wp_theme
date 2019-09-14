@@ -354,8 +354,12 @@
     },
 
     enableMousewheelSmoothScroll: function() {
-      $("#wrapper").inertiaScroll({
-        parent: $("#scroll-wrapper")
+      // $(".content-wrapper").inertiaScroll({
+      //   parent: $("#scroll-wrapper")
+      // });
+
+      luxy.init({
+        wrapper: '#scroll-wrapper',
       });
     },
   };
