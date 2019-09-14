@@ -8587,6 +8587,7 @@ h6, .h6, .tabbed-form .form-tabs a {
       flex-wrap: wrap; }
   .tabbed-form .form-tabs a {
     color: #e5e5e5;
+    font-size: 1.125rem;
     text-transform: uppercase; }
     .tabbed-form .form-tabs a:not(:last-child) {
       padding-right: 60px; }
