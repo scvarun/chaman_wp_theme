@@ -338,10 +338,10 @@
 
           if(window.innerWidth < 820) {
             $image[0].style.position = 'fixed';
-            $image[0].style.top = 'calc(' + $image.parent().offset().top + 'px + 1%)';
-            $image[0].style.bottom = 'calc(' + ($image.parent().offset().top + $image.parent().outerHeight()) + 'px + 1%)';
-            $image[0].style.minHeight = 'calc(' + $image.parent().height() + 'px + 1%)';
-            $image[0].style.maxHeight = 'calc(' + $image.parent().height() + 'px + 1%)';
+            $image[0].style.top = 'calc(' + $image.parent().offset().top + 'px + 0%)';
+            $image[0].style.bottom = 'calc(' + ($image.parent().offset().top + $image.parent().outerHeight()) + 'px + 0%)';
+            $image[0].style.minHeight = 'calc(' + $image.parent().height() + 'px + 0%)';
+            $image[0].style.maxHeight = 'calc(' + $image.parent().height() + 'px + 0%)';
           } else {
             $image[0].style.position = 'fixed';
             $image[0].style.top = 'calc(' + $image.parent().offset().top + 'px - 4%)';
