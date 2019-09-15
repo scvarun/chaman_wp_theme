@@ -82,15 +82,13 @@ ul, ol, dl
     padding: 0 !important
 
 [id^="jarallax"] > div
-  transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s
+  transition: transform 0.2s cubic-bezier(0, 0, 0, 1) 0s
   will-change: transform
-  
-@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px})
-  [id^="jarallax"] > div
-    height: auto !important
+  height: auto !important
+  margin-top: 0 !important
 
-@media screen and (max-width: #{map-get($grid-breakpoints, 'sm')})
-  [id^="jarallax"] > div
-    position: fixed
-    top: 0 !important
-    bottom: 0 !important
+// @media screen and (max-width: #{map-get($grid-breakpoints, 'sm')})
+//   [id^="jarallax"] > div
+//     position: absolute !important
+//     bottom: 0
+//     transform: none !important
