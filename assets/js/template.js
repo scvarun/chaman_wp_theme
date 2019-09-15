@@ -337,9 +337,9 @@
           $image[0].parentNode.style.clip = 'rect(0, ' + $image.parent().width() + 'px, ' + $image.parent().height() + 'px, 0)';
 
           if(window.innerWidth < 820) {
-            $image[0].style.position = 'fixed';
-            $image[0].style.top = 'calc(' + $image.parent().offset().top + 'px + .5%)';
-            $image[0].style.bottom = 'calc(' + ($image.parent().offset().top + $image.parent().outerHeight()) + 'px + .5%)';
+            $image[0].style.position = 'absolute';
+            $image[0].style.top = '-1%';
+            $image[0].style.bottom = '-1%';
             $image[0].style.minHeight = 'calc(' + $image.parent().height() + 'px + 1%)';
             $image[0].style.maxHeight = 'calc(' + $image.parent().height() + 'px + 1%)';
           } else {
