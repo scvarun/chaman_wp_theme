@@ -338,10 +338,10 @@
 
           if(window.innerWidth < 820) {
             $image[0].style.position = 'absolute';
-            $image[0].style.top = '0%';
-            $image[0].style.bottom = '0%';
-            $image[0].style.minHeight = 'calc(' + $image.parent().height() + 'px + 0%)';
-            $image[0].style.maxHeight = 'calc(' + $image.parent().height() + 'px + 0%)';
+            $image[0].style.top = '40px';
+            $image[0].style.bottom = '-40px';
+            $image[0].style.minHeight = 'calc(' + $image.parent().height() + 'px + 40px)';
+            $image[0].style.maxHeight = 'calc(' + $image.parent().height() + 'px + 40px)';
           } else {
             $image[0].style.position = 'fixed';
             $image[0].style.top = 'calc(' + $image.parent().offset().top + 'px - 4%)';
