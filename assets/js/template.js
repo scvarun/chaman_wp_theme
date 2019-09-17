@@ -362,6 +362,7 @@
     },
 
     enableMousewheelSmoothScroll: function() {
+      var scrollWrapper = document.getElementById('scroll-wrapper');
       luxy.init({
         wrapper: '#scroll-wrapper',
         wrapperSpeed: 0.3
