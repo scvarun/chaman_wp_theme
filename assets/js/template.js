@@ -369,7 +369,7 @@
       });
       scrollWrapper.style.position = 'absolute';
       scrollWrapper.style.overflow = 'hidden';
-      document.body.style = '100vh';
+      document.body.style.maxHeight = '100vh';
     },
   };
 
