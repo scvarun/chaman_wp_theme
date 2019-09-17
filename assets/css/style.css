@@ -8069,6 +8069,9 @@ ul, ol, dl {
   height: auto !important;
   margin-top: 0 !important; }
 
+#scroll-wrapper {
+  -webkit-backface-visibility: hidden; }
+
 /*
  * --------------------
  * Typography
