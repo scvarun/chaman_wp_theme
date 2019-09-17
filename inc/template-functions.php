@@ -25,3 +25,24 @@ if ( ! function_exists( 'unifato_pingback_header' ) ) {
  * ==========================
  */
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+
+// ADDING BROWSER SPECIFIC CLASSES
+if (!function_exists('gst_browser_body_class')) {
+  function gst_browser_body_class($classes) {
+    global $is_lynx, $is_gecko, $is_IE, $is_opera, $is_NS4, $is_safari, $is_chrome, $is_iphone;
+    
+    if($is_lynx) $classes[] = 'lynx';
+    elseif($is_gecko) $classes[] = 'gecko';
+    elseif($is_opera) $classes[] = 'opera';
+    elseif($is_NS4) $classes[] = 'ns4';
+    elseif($is_safari) $classes[] = 'webkit safari';
+    elseif($is_chrome) $classes[] = 'webkit chrome';
+    elseif($is_IE) $classes[] = 'ie';
+    else $classes[] = 'unknown';
+    
+    if($is_iphone) $classes[] = 'iphone';
+    return $classes;
+  }
+}
+add_filter('body_class','gst_browser_body_class');
