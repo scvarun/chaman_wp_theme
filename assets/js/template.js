@@ -367,6 +367,9 @@
         wrapper: '#scroll-wrapper',
         wrapperSpeed: 0.3
       });
+      scrollWrapper.style.position = 'absolute';
+      scrollWrapper.style.overflow = 'hidden';
+      document.body.style = '100vh';
     },
   };
 
