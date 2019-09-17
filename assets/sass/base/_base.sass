@@ -90,8 +90,11 @@ ul, ol, dl
 #scroll-wrapper
   -webkit-perspective: 1
   -webkit-backface-visibility: hidden
-  overflow: hidden
 
+body
+  #scroll-wrapper
+    overflow: hidden
+  
 // @media screen and (max-width: #{map-get($grid-breakpoints, 'sm')})
 //   [id^="jarallax"] > div
 //     position: absolute !important
