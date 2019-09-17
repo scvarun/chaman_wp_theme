@@ -8073,7 +8073,7 @@ ul, ol, dl {
   -webkit-perspective: 1;
   -webkit-backface-visibility: hidden; }
 
-body #scroll-wrapper {
+body.webkit.safari #scroll-wrapper {
   overflow: hidden; }
 
 /*
