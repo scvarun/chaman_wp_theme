@@ -8861,7 +8861,8 @@ body.section-popup-active {
     z-index: 100;
     -webkit-transform: none !important;
         -ms-transform: none !important;
-            transform: none !important; }
+            transform: none !important;
+    max-height: 100vh; }
 
 .slider-arrow {
   text-indent: -9999px;

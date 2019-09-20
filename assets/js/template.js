@@ -52,6 +52,7 @@
       this.enableSliderArrow();
       this.enableSliders();
       this.enableTabbedForm();
+      this.enableScrollEvents();
       setTimeout(function() {
         self.enableElementorSectionPopup();
       }, 1000);
@@ -256,6 +257,12 @@
             });
           }
         }
+      });
+    },
+
+    enableScrollEvents: function() {
+      document.body.addEventListener('wheel', function(e) {
+        console.log(e)
       });
     },
 
