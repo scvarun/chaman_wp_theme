@@ -60,3 +60,8 @@
     max-width: 150% !important;
     width: 150% !important;
     margin-left: -25%; } }
+
+/* Fixing weird problem with revolution slider loader */
+rs-loader {
+  -webkit-animation: none !important;
+          animation: none !important; }
