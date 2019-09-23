@@ -66,7 +66,10 @@ if ( ! function_exists( 'unifato_body_classes' ) ) {
 			}
 		}
 
-		if(get_post_meta(get_the_id(), '__header__overlay_header', true) == 'yes') {
+		if(
+			get_post_meta(get_the_id(), '__header__overlay_header', true) == 'yes' ||
+			get_post_meta(get_the_id(), '__header__hide', true) == 'yes'
+		) {
 			$classes[] = 'header-overlay';
 		}
 
