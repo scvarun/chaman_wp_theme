@@ -9223,7 +9223,7 @@ body.section-popup-active {
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-position: center center; }
   .main-content .post .entry-thumbnail-side a, .main-content .post .entry-thumbnail-side a:hover, .main-content .post .entry-thumbnail-side a:active {
     outline: none; }
   .main-content .post .entry-thumbnail-side .entry-thumbnail {
