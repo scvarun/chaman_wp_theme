@@ -68,8 +68,12 @@ get_header();
           endif;?>
 
           <footer>
+            <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn btn-outline-white back-to-posts-btn">
+              Take me back
+            </a>
             <?php 
-            if( !in_category( 'Uncategorized' ) ) {
+            // Disabled this block
+            if( 0 && !in_category( 'Uncategorized' ) ) {
               $categories = get_the_category();
               foreach($categories as $category) {
                 switch($category->slug) {
