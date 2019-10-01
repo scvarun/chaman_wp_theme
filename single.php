@@ -69,7 +69,7 @@ get_header();
 
           <footer>
             <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn btn-outline-white back-to-posts-btn">
-              Take me back
+              Take me to blog
             </a>
             <?php 
             // Disabled this block
