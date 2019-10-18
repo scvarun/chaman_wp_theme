@@ -68,8 +68,8 @@ get_header();
           endif;?>
 
           <footer>
-            <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn btn-outline-white back-to-posts-btn">
-              Take me to blog
+            <a href="javascript:void(0)" onclick="window.history.back()" class="btn btn-outline-white back-to-posts-btn">
+              Take me back
             </a>
             <?php 
             // Disabled this block

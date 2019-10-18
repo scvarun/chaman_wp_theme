@@ -22,6 +22,9 @@ get_header();
       
       <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
         <?php if (\Elementor\Plugin::$instance->db->is_built_with_elementor(get_the_ID())): ?>
+          <h1 class="entry-title" itemprop="headline">
+            <?php the_title(); ?>
+          </h1>
           <?php the_content( "" ); ?>
         <?php else: ?>
           <div class="container-fluid">

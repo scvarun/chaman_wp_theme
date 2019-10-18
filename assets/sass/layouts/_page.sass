@@ -2,6 +2,14 @@
   .entry-title
     margin-bottom: 20px
 
+.page.elementor-page
+  h1.entry-title
+    @include position(fixed, 0 null null 0)
+    z-index: -10
+    visibility: hidden
+    text-indent: -9999px
+    pointer-events: none
+
 @media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
   .page:not(.elementor-page)
     .entry-title

@@ -9404,6 +9404,15 @@ body.section-popup-active {
 .page:not(.elementor-page) .entry-title {
   margin-bottom: 20px; }
 
+.page.elementor-page h1.entry-title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  visibility: hidden;
+  text-indent: -9999px;
+  pointer-events: none; }
+
 @media screen and (min-width: 821px) and (max-width: 1600px) {
   .page:not(.elementor-page) .entry-title {
     margin-bottom: 40px; } }
