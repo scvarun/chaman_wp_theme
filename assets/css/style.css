@@ -9039,8 +9039,8 @@ body.section-popup-active {
   #navbar.js-is-sticky:hover:after, #navbar.js-is-stuck:hover:after {
     opacity: 1; }
   #navbar.js-is-sticky:hover .navbar-brand img, #navbar.js-is-stuck:hover .navbar-brand img {
-    -webkit-filter: invert(1);
-            filter: invert(1); }
+    -webkit-filter: brightness(0%);
+            filter: brightness(0%); }
   #navbar.js-is-sticky:hover .main-navigation .menu-item > a, #navbar.js-is-stuck:hover .main-navigation .menu-item > a {
     color: black; }
   .elementor-editor-active #navbar {
