@@ -70,7 +70,7 @@
     },
   };
 
-  $(document).on('ready', function() {
+  window.addEventListener('load', function() {
     Custom.init();
   });
 

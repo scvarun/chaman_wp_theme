@@ -390,7 +390,7 @@
     );
   }
 
-  $(document).on('ready', function() {
+  window.addEventListener('load', function() {
     Unifato.init();
   });
 })(jQuery);
