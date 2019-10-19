@@ -70,7 +70,7 @@
     },
   };
 
-  document.addEventListener('DOMContentLoaded', function() {
+  $(document).on('ready', function() {
     Custom.init();
   });
 

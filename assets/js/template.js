@@ -397,7 +397,7 @@
     );
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  $(document).on('ready', function() {
     Unifato.init();
   });
 })(jQuery);
