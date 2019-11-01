@@ -20,6 +20,11 @@
   position: relative
   margin: 0 auto
   pointer-events: none
+  display: flex !important
+  align-items: center
+  justify-content: center
+  svg
+    max-height: 100%
   .logo-heading
     @include position(absolute, 50% 50% null null);
     transform: translateY(-50%) translateX(50%)
@@ -36,7 +41,6 @@
     transform: rotate(90deg)
     max-width: 150% !important
     width: 150% !important
-    margin-left: -25%
 
 /* Fixing weird problem with revolution slider loader */
 body.webkit rs-loader

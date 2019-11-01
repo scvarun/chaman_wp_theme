@@ -36,7 +36,15 @@
   max-width: 75vw;
   position: relative;
   margin: 0 auto;
-  pointer-events: none; }
+  pointer-events: none;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  #CHAMAN_LOGO_SVG svg {
+    max-height: 100%; }
   #CHAMAN_LOGO_SVG .logo-heading {
     position: absolute;
     top: 50%;
@@ -58,8 +66,7 @@
         -ms-transform: rotate(90deg);
             transform: rotate(90deg);
     max-width: 150% !important;
-    width: 150% !important;
-    margin-left: -25%; } }
+    width: 150% !important; } }
 
 /* Fixing weird problem with revolution slider loader */
 body.webkit rs-loader {

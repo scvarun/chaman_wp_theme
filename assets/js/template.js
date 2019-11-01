@@ -351,21 +351,24 @@
           }
         },
       };
-      $el.each(function() {
-        var $this = $(this);
-        var options = $this.data('plugin-options');
-        options = $.extend({}, defaults, options);
-        if(window.innerWidth < 820)
-          options.speed = options.mobileSpeed;
-        var $j = $this.jarallax(options);
-      });
+      window.addEventListener('load', function() {
+        $el.each(function() {
+          var $this = $(this);
+          var options = $this.data('plugin-options');
+          options = $.extend({}, defaults, options);
+          if(window.innerWidth < 820)
+            options.speed = options.mobileSpeed;
+          var $j = $this.jarallax(options);
+        });
+      });      
     },
 
     enableMousewheelSmoothScroll: function() {
-      var scrollWrapper = document.getElementById('scroll-wrapper');
-      luxy.init({
-        wrapper: '#scroll-wrapper',
-        wrapperSpeed: 0.3
+      window.addEventListener('load', function() {
+        luxy.init({
+          wrapper: '#scroll-wrapper',
+          wrapperSpeed: 0.3
+        });
       });
     },
   };
@@ -390,7 +393,7 @@
     );
   }
 
-  window.addEventListener('load', function() {
+  document.addEventListener('DOMContentLoaded', function() {
     Unifato.init();
   });
 })(jQuery);
