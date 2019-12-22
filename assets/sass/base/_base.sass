@@ -91,12 +91,33 @@ ul, ol, dl
   -webkit-perspective: 1
   -webkit-backface-visibility: hidden
 
+.page-title
+  display: flex
+  align-items: center
+  justify-content: center
+  height: auto
+  margin-bottom: rem(20)
+  margin-top: 0
+  transition: $transition-base
+  a
+    text-decoration: none
+@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
+  .page-title
+    height: $navbar-md-height
+    margin-top: -$navbar-md-height
+    h5
+      z-index: 101
+    body.navigation-overlay &
+      opacity: 0
+@media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
+  .page-title
+    height: $navbar-height
+    margin-top: -$navbar-height
+    h5
+      z-index: 101
+    body.navigation-overlay &
+      opacity: 0
+
 body.webkit.safari
   #scroll-wrapper
     overflow: hidden
-  
-// @media screen and (max-width: #{map-get($grid-breakpoints, 'sm')})
-//   [id^="jarallax"] > div
-//     position: absolute !important
-//     bottom: 0
-//     transform: none !important

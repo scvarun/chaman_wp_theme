@@ -42,7 +42,7 @@ $font-family-sans-serif: 'GTAmerica', Arial, sans-serif;
 
 $font-size-base:              .75rem; // 12px
 $line-height-base:            16/12;
-$font-weight-base:            bold;
+$font-weight-base:            500;
 $paragraph-margin-bottom:     40/22 * 1em;
 
 $h1-font-size:                #{rem(160)};
@@ -74,20 +74,20 @@ $navbar-padding-y:            50px;
 $navbar-md-padding-y:         50px;
 $navbar-sm-padding-y:         30px;
 
-$navbar-padding-x:            50px;
+$navbar-padding-x:            100px;
 $navbar-md-padding-x:         50px;
 $navbar-sm-padding-x:         30px;
 
-$navbar-logo-height:          110px;
-$navbar-md-logo-height:       80px;
+$navbar-logo-height:          75px;
+$navbar-md-logo-height:       75px;
 $navbar-sm-logo-height:       60px;
 
-$sticky-navbar-height:        210px;
-$sticky-md-navbar-height:     180px;
+$sticky-navbar-height:        175px;
+$sticky-md-navbar-height:     175px;
 $sticky-sm-navbar-height:     110px;
 
-$sticky-logo-height:          110px;
-$sticky-md-logo-height:       80px;
+$sticky-logo-height:          75px;
+$sticky-md-logo-height:       75px;
 $sticky-sm-logo-height:       60px;
 
 $navbar-height:               #{$navbar-padding-y * 2 + $navbar-logo-height};

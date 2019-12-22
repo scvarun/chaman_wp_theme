@@ -41,8 +41,7 @@ if ( ! function_exists( 'unifato_theme_setup' ) ) {
 
     // Register Navigatiion Menus
     register_nav_menus( array(
-      'primary' => esc_html__( 'Main Menu', 'unifato' ),
-      'mobile' => esc_html__( 'Mobile Menu', 'unifato' )
+      'primary' => esc_html__( 'Main Menu', 'unifato' )
     ) );
 
     // Switch default core markup for comment form, and comments to output valid HTML5.

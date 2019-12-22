@@ -31,23 +31,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php unifato_construct_logo() ?>
 
 			<?php
-			if (has_nav_menu( 'mobile' )): ?>
-			<a href="javascript:void(0);" class="nav-toggle d-block d-sm-none" data-target="#mobile-navigation">
-		    Menu
+			 if (has_nav_menu( 'primary' )): ?>
+			<a href="javascript:void(0);" class="nav-toggle" data-target="#main-navigation">
+				<span class="main-navigation-inactive">Menu</span>
+				<span class="main-navigation-active">Close</span>
 		  </a>
 
 		  <!-- Mobile Navigation -->
-			<div class="nav-container mobile-nav invisible" id="mobile-navigation">
-				<a href="javascript:void(0);" class="nav-toggle d-block d-sm-none mb-1" data-target="#mobile-navigation">
-		      <img src="<?php echo get_template_directory_uri() ?>/assets/img/mobile-nav-arrow.png" alt="" />
-		    </a>
-
+			<div class="nav-container main-nav invisible" id="main-navigation">
+				<div class="navbar-spacing"></div>
 				<?php
 				wp_nav_menu(array(
-					'theme_location'	=> 'mobile',
+					'theme_location'	=> 'primary',
 					'menu'				=> '',
 					'container'		=> false,
-					'menu_id'			=> 'navbar-menu-mobile',
+					'menu_id'			=> 'navbar-menu',
 					'menu_class'	=> 'navbar-nav main-navigation',
 					'depth'				=> 1
 				)); ?>
@@ -74,24 +72,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</div><!-- /.social-links -->
 				<?php endif; ?>
 			</div><!-- /.nav-container -->
+			<?php endif; ?>
 
-			<?php endif;
-
-			if (has_nav_menu('primary')): ?>
-			<!-- Main Navigation -->
-			<div class="nav-container d-none d-sm-block" <?php unifato_the_microdata( 'navigation' ); ?>>
-				<?php
-				wp_nav_menu(array(
-					'theme_location'	=> 'primary',
-					'menu'				=> '',
-					'container'		=> false,
-					'menu_id'			=> 'navbar-menu-main',
-					'menu_class'	=> 'navbar-nav main-navigation',
-					'depth'				=> 1
-				)); ?>
-			</div><!-- /.nav-container -->
-			<?php endif;
-			?>
 		</nav><!-- #navbar -->
 	<?php endif; ?>
 

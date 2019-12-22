@@ -43,18 +43,47 @@
       &:not(.default-logo)
         display: none
         opacity: 0
-  .main-navigation
-    .menu-item
-      padding: 0 2.5em
-      margin-bottom: 0
-      &:first-child
-        padding-left: 0
-      &:last-child
-        padding-right: 0
-    .seperator
-      display: none
-  .mobile-nav
-    display: none
+    body.navigation-overlay &
+      z-index: 101
+  .main-nav
+    animation-name: mobileMenuOut
+    animation-duration: .6s
+    animation-timing-function: ease-in-out
+    transition: visibility .1s ease-in-out .3s
+    padding: 20px
+    z-index: 100
+    overflow: auto
+    opacity: 0
+    width: 50%
+    @include position(fixed, 0 0 0 null)
+    background: $secondary
+    pointer-events: none
+    &.active
+      pointer-events: auto
+      opacity: 1
+      visibility: visible !important
+      animation-name: mobileMenuIn
+      transition: visibility .1s ease-in-out 0s
+    .main-navigation
+      margin-top: $navbar-logo-height
+      display: flex
+      align-items: stretch
+      text-align: center
+      flex-flow: column
+      li
+        font-weight: bold
+        margin-bottom: 0
+        font-size: rem(50)
+        line-height: rem(130)
+        text-transform: uppercase
+        &.highlight
+          font-size: rem(100)
+          letter-spacing: -.025em
+          line-height: rem(120)
+      a
+        color: #fff
+        &:hover
+          text-decoration: none
     .social-links
       margin-top: 110px
       h6
@@ -68,17 +97,27 @@
           margin-right: 10px
         a
           color: inherit
-  .nav-toggle,
-  .main-navigation .menu-item > a
+  .nav-toggle
     text-transform: uppercase
     font-weight: 700
-    font-size: rem(30)
+    font-size: rem(24)
     text-decoration: none
     color: #fff
+    z-index: 101
     &:active,
     &:hover
       opacity: .9
       color: #fff
+    .main-navigation-active
+      display: none
+    .main-navigation-inactive
+      display: block
+    body.navigation-overlay &
+      color: #fff !important
+      .main-navigation-active
+        display: block
+      .main-navigation-inactive
+        display: none
   &.navbar-dark
     .nav-toggle,
     .navbar-nav .nav-link
@@ -97,18 +136,20 @@
         &.sticky-logo ~ .default-logo
           display: none
           opacity: 0
-  &.js-is-sticky,
-  &.js-is-stuck
+  body:not(.navigation-overlay) &.js-is-sticky,
+  body:not(.navigation-overlay) &.js-is-stuck
     &:hover
       &:after
         opacity: 1
       .navbar-brand img
         filter: brightness(0%)
-      .main-navigation .menu-item > a
+      .nav-toggle
         color: black
   .elementor-editor-active &
     pointer-events: none
   .admin-bar &
+    .main-nav
+      top: 32px !important
     &.js-is-stuck,
     &.js-is-sticky
       top: 32px !important
@@ -116,14 +157,18 @@
 @keyframes mobileMenuIn
   0%
     opacity: 0
+    transform: translateX(100%)
   100%
     opacity: 1
+    transform: translateX(0)
 
 @keyframes mobileMenuOut
   0%
     opacity: 1
+    transform: translateX(0)
   100%
     opacity: 0
+    transform: translateX(100%)
 
 @include media-breakpoint-down('md')
   .content-wrapper
@@ -134,9 +179,14 @@
     @include padding( $navbar-md-padding-y $navbar-md-padding-x )
     .navbar-brand img
       max-height: $navbar-md-logo-height
-    .main-navigation
-      .menu-item > a
-        font-size: rem(18)
+    .main-nav
+      .main-navigation
+        li
+          font-size: rem(24)
+          line-height: rem(60)
+          &.highlight
+            font-size: rem(40)
+            line-height: rem(56)
     &.js-is-stuck,
     &.js-is-sticky--change
       height: $sticky-md-navbar-height
@@ -149,7 +199,6 @@
 @include media-breakpoint-down('xs')
   .content-wrapper
     padding-top: $navbar-sm-height
-
   #navbar
     margin-bottom: -$navbar-sm-height
     height: $navbar-sm-height
@@ -164,46 +213,16 @@
       .navbar-brand
         img
           max-height: $sticky-sm-logo-height
-
   #navbar
     height: auto
     padding: 25px 30px
     align-items: flex-start
     &:after
       display: none
-    .mobile-nav
-      animation-name: mobileMenuOut
-      animation-duration: .3s
-      animation-timing-function: ease-in-out
-      transition: visibility .1s ease-in-out .3s
-      flex-flow: column
-      align-items: flex-start
-      padding: 20px
-      z-index: 100
-      overflow: auto
-      opacity: 0
-      @include position(fixed, 0)
-      background: $secondary
-      display: flex
-      &.active
-        opacity: 1
-        display: flex !important
-        visibility: visible !important
-        animation-name: mobileMenuIn
-        transition: visibility .1s ease-in-out 0s
+    .main-nav
+      width: 100%
     .nav-toggle
       font-size: rem(18)
-    .main-navigation
-      .seperator
-        display: block
-        padding-top: 2em
-      .menu-item
-        @include padding(.5em 0);
-        > a
-          font-size: rem(30)
-          line-height: 1.5
-        &:nth-child(3n):not(:last-child)
-          margin-bottom: 45px
     .navbar-brand
       margin-right: 0
       img

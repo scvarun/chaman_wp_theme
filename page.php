@@ -14,6 +14,11 @@
 
 get_header();
 ?>
+  <?php if (\Elementor\Plugin::$instance->db->is_built_with_elementor(get_the_ID())): ?>
+  <div class="page-title">
+    <h5><?php the_title(); ?></h5>
+  </div>
+  <?php endif; ?>
 
   <?php
     /* Start the Loop */

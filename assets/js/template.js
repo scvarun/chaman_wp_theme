@@ -269,7 +269,6 @@
       this.enableSticky();
       this.enableCountdown();
       this.enableJarallax();
-      this.enableMousewheelSmoothScroll();
     },
 
     enableSticky: function() {
@@ -361,15 +360,6 @@
           var $j = $this.jarallax(options);
         });
       });      
-    },
-
-    enableMousewheelSmoothScroll: function() {
-      window.addEventListener('load', function() {
-        luxy.init({
-          wrapper: '#scroll-wrapper',
-          wrapperSpeed: 0.3
-        });
-      });
     },
   };
 

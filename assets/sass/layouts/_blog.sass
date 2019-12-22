@@ -6,13 +6,9 @@
 
 .main-content
   .post
-    > .container-fluid
-      padding-left: 30px
-      padding-right: 30px
     p:last-child
       margin-bottom: 0
     main
-      @include margin(null 30px)
       .post-content
         background: $orange
         padding: 25px 30px 25px
@@ -28,10 +24,11 @@
           &:hover
             text-decoration: none
     .entry-thumbnail-side
-      padding: 0
-      background-size: cover
-      background-repeat: no-repeat
-      background-position: center center
+      figure
+        height: 100%
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
       a, a:hover, a:active
         outline: none
       .entry-thumbnail
@@ -80,11 +77,7 @@
 @media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
   .main-content
     .post
-      > .container-fluid
-        padding-left: 50px
-        padding-right: 50px
       main
-        @include margin(null 50px)
         .post-content
           padding: 50px 50px 60px
         .entry-title
@@ -94,27 +87,23 @@
       &:not(:last-child)
         margin-bottom: 100px
     > footer
-      margin-bottom: 200px
+      margin-bottom: 160px
 
 
 @media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
   .main-content
     .post
-      > .container-fluid
-        padding-left: 50px
-        padding-right: 50px
       main
-        @include margin(null 100px)
         .post-content
           padding: 70px 80px 80px
         .entry-title
           margin-bottom: 40px
         .entry-footer
-          margin-top: 65px
+          margin-top: 30px
       &:not(:last-child)
         margin-bottom: 140px
     > footer
-      margin-bottom: 290px
+      margin-bottom: 160px
 
 /*
  * --------------------
@@ -122,26 +111,29 @@
  * --------------------
  */
 .single
+  .page-title
+    a
+      color: #fff
   .content-wrapper
     background: $orange
   .main-content
-    padding-top: 40px
     .entry-thumbnail
       margin-bottom: 40px
     .post
-      main
+      .entry-content
         font-size: rem(18)
         line-height: em(21, 18)
         font-weight: 500
-        @include padding(null 0)
         background: none
       .entry-title
         margin-bottom: 30px
+      .entry-thumbnail-side
+        margin-top: -11%
     > footer
       .back-to-posts-btn
         font-weight: 500
         border-radius: 0
-        border-width: 3px
+        border-width: 2px
         padding: 10px 30px
         font-size: rem(18)
   &.category-news .content-wrapper
@@ -152,22 +144,26 @@
 @media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
   .single .main-content
     .post
-      main
+      .entry-content
         .entry-title
           margin-bottom: 50px
+      .entry-content
+        margin-top: 100px
 
 @media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
   .single .main-content
     .post
-      main
+      .entry-content
         font-size: rem(30)
         line-height: rem(40)
         .entry-title
           margin-bottom: 50px
+      .entry-content
+        margin-top: 100px
     > footer
       .back-to-posts-btn
-        font-size: rem(30)
-        padding: 20px 100px
+        font-size: rem(24)
+        padding: 25px 100px
 
 /*
  * --------------------
