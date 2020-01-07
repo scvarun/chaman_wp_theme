@@ -1,8 +1,113 @@
-.wpcf7-form-control
-  line-height: 70px
-  height: 70px
+.form-theme-styled
+  .wpcf7-form-control
+    font-size: rem(24)
+    &.wpcf7-text,
+    &.wpcf7-number,
+    &.wpcf7-select
+      height: 70px
 
-.wpcf7-form-control.wpcf7-submit
-  width: auto
-  height: auto
-  line-height: 1
+  .wpcf7-form-control.wpcf7-submit
+    width: auto
+    height: auto
+    line-height: 1
+
+  .form-content
+    background: #fff
+    padding: rem(40) rem(30)
+
+  @media screen and (min-width: #{map-get($grid-breakpoints, 'lg') + 1px})
+    .form-content
+      background: #fff
+      padding: rem(70) rem(70)
+
+  .styled.wpcf7-submit
+    background: none
+    border-size: 3px
+    border-style: solid
+    color: $white
+    line-height: 1
+    font-weight: 500
+    letter-spacing: 0
+    height: auto
+    font-size: 14
+    border-width: 3px
+    padding: 10px 30px
+    border-radius: 0
+    &.dark
+      color: $primary
+      border-color: $primary
+      &:hover
+        background: $primary
+        color: $white
+    &.light
+      color: $white
+      border-color: $white
+      &:hover
+        background: $white
+        color: $tertiary
+
+  .form-group-dropdown
+    .wpcf7-form-control-wrap
+      display: block
+      &::before
+        content: '\f0d7'
+        font-family: FontAwesome
+        font-size: rem(40)
+        @include position(absolute, 50% rem(30) null null)
+        transform: translateY(-50%)
+    select
+      padding-right: rem(70)
+      -webkit-appearance: none
+      -moz-appearance: none
+      text-indent: 1px
+      text-overflow: ''
+
+  .wpcf7-checkbox,
+  .wpcf7-radio
+    display: block
+    .wpcf7-list-item.first
+      margin-left: 0
+    .wpcf7-list-item-label
+      display: inline-flex
+      align-items: center
+      flex-flow: row
+      font-size: rem(14)
+      line-height: 1
+      font-weight: 600
+      &:before
+        content: ''
+        flex-shrink: 0
+        @include size(30px)
+        display: inline-block
+        background: $white
+        border-radius: 100%
+        box-shadow: inset 0 0 0 5px $white
+        margin-right: 15px
+    input[type="radio"],
+    input[type="checkbox"]
+      display: none
+      &:checked ~ .wpcf7-list-item-label:before
+        background: $primary
+
+  @media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px})
+    .wpcf7-checkbox,
+    .wpcf7-radio
+      .wpcf7-list-item-label
+        font-size: rem(18)
+    .styled.wpcf7-submit
+      font-size: rem(18)
+      padding: 15px 40px
+
+  @media screen and (min-width: #{map-get($grid-breakpoints, 'lg') + 1px})
+    .form-group
+      margin-bottom: rem(40)
+    .wpcf7-checkbox,
+    .wpcf7-radio
+      .wpcf7-list-item-label
+        font-size: rem(24)
+        &:before
+          @include size(50px)
+          box-shadow: inset 0 0 0 10px $white
+    .styled.wpcf7-submit
+      font-size: rem(30)
+      padding: 30px 100px

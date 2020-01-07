@@ -59,8 +59,8 @@
 
     enableSmoothScroll: function() {
       $('a:not(.slider-arrow-next):not(.slider-arrow-prev):not(.no-scroll)').on('click', function(e) {
+        console.log(this.hash);
         if( this.hash !== '' ) {
-          e.preventDefault();
           var hash = this.hash;
           var $hash = $(hash);
           if(!$hash.length) return;
@@ -69,6 +69,7 @@
           }, 800, function() {
             window.location.hash = hash;
           });
+          e.preventDefault();
         }
       });
     },

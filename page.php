@@ -14,22 +14,26 @@
 
 get_header();
 ?>
-  <?php if (\Elementor\Plugin::$instance->db->is_built_with_elementor(get_the_ID())): ?>
-  <div class="page-title">
-    <h5><?php the_title(); ?></h5>
-  </div>
-  <?php endif; ?>
-
   <?php
     /* Start the Loop */
     while ( have_posts() ) : the_post();
     ?>
       
       <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <?php if (\Elementor\Plugin::$instance->db->is_built_with_elementor(get_the_ID())): ?>
-          <h1 class="entry-title" itemprop="headline">
-            <?php the_title(); ?>
-          </h1>
+        <?php if(\Elementor\Plugin::$instance->db->is_built_with_elementor(get_the_ID())): ?>
+
+          <?php
+            // Show page title 
+            if(get_post_meta(get_the_ID(), '__content__page-title-hidden', 1) !== 'yes'): 
+          ?>
+            <?php $color = get_post_meta(get_the_ID(), '__content__page-title-color', 1); ?>
+            <div 
+              class="page-title" 
+              itemprop="headline" 
+              <?php if($color) echo 'style="color: '. $color .';"'; ?> >
+              <h1 class="h5 entry-title"><?php the_title(); ?></h1>
+            </div>
+          <?php endif; ?>
           <?php the_content( "" ); ?>
         <?php else: ?>
           <div class="container-fluid">

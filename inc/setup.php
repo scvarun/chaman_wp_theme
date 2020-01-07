@@ -39,6 +39,8 @@ if ( ! function_exists( 'unifato_theme_setup' ) ) {
     add_image_size ( 'unifato-archive-slider', 626, 101, true );
     add_image_size ( 'unifato-thumbnail', 300, 300, true );
 
+    add_image_size( 'latest_post_image', 520, 350, true );
+
     // Register Navigatiion Menus
     register_nav_menus( array(
       'primary' => esc_html__( 'Main Menu', 'unifato' )

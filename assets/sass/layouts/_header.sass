@@ -49,23 +49,24 @@
     animation-name: mobileMenuOut
     animation-duration: .6s
     animation-timing-function: ease-in-out
-    transition: visibility .1s ease-in-out .3s
+    transition: visibility .1s ease-in-out .5s
     padding: 20px
+    padding-top: 0
     z-index: 100
     overflow: auto
-    opacity: 0
+    // opacity: 0
     width: 50%
     @include position(fixed, 0 0 0 null)
     background: $secondary
     pointer-events: none
     &.active
       pointer-events: auto
-      opacity: 1
+      // opacity: 1
       visibility: visible !important
       animation-name: mobileMenuIn
       transition: visibility .1s ease-in-out 0s
     .main-navigation
-      margin-top: $navbar-logo-height
+      margin-top: #{$navbar-logo-height + $navbar-padding-y}
       display: flex
       align-items: stretch
       text-align: center
@@ -79,7 +80,8 @@
         &.highlight
           font-size: rem(100)
           letter-spacing: -.025em
-          line-height: rem(120)
+          line-height: .9em
+          margin-bottom: rem(30)
       a
         color: #fff
         &:hover
@@ -136,15 +138,15 @@
         &.sticky-logo ~ .default-logo
           display: none
           opacity: 0
-  body:not(.navigation-overlay) &.js-is-sticky,
-  body:not(.navigation-overlay) &.js-is-stuck
-    &:hover
-      &:after
-        opacity: 1
-      .navbar-brand img
-        filter: brightness(0%)
-      .nav-toggle
-        color: black
+  // body:not(.navigation-overlay) &.js-is-sticky,
+  // body:not(.navigation-overlay) &.js-is-stuck
+  //   &:hover
+  //     &:after
+  //       opacity: 1
+  //     .navbar-brand img
+  //       filter: brightness(0%)
+  //     .nav-toggle
+  //       color: black
   .elementor-editor-active &
     pointer-events: none
   .admin-bar &
@@ -156,18 +158,18 @@
 
 @keyframes mobileMenuIn
   0%
-    opacity: 0
+    // opacity: 0
     transform: translateX(100%)
   100%
-    opacity: 1
+    // opacity: 1
     transform: translateX(0)
 
 @keyframes mobileMenuOut
   0%
-    opacity: 1
+    // opacity: 1
     transform: translateX(0)
   100%
-    opacity: 0
+    // opacity: 0
     transform: translateX(100%)
 
 @include media-breakpoint-down('md')
@@ -186,7 +188,6 @@
           line-height: rem(60)
           &.highlight
             font-size: rem(40)
-            line-height: rem(56)
     &.js-is-stuck,
     &.js-is-sticky--change
       height: $sticky-md-navbar-height

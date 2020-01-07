@@ -1,0 +1,35 @@
+.text-box
+  [class^="col"]
+    display: flex
+    align-items: stretch
+  figure
+    overflow: hidden
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: top center
+  .text-box-title
+    margin-bottom: rem(10)
+  .text-box-content
+    background: $primary
+    padding: rem(25) rem(25)
+
+@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px})
+  .text-box
+    figure
+      img
+        opacity: 0
+    .text-box-title
+      margin-bottom: rem(10)
+    .text-box-content
+      padding: rem(30) rem(40)
+    &.text-box-right
+      .row
+        flex-flow: row-reverse
+
+@media screen and (min-width: #{map-get($grid-breakpoints, 'lg') + 1px})
+  .text-box
+    .text-box-title
+      margin-bottom: rem(40)
+    .text-box-content
+      background: $primary
+      padding: rem(70) rem(75)

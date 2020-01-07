@@ -3,8 +3,6 @@
  * Base Styling
  * --------------------
  */
-$wrapper-bg: #e5e5e5
-
 .wrapper
   position: relative
   background: $wrapper-bg
@@ -27,6 +25,8 @@ a
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
 p
+  &:last-child
+    margin-bottom: 0
   a
     color: inherit
     text-decoration: underline
@@ -56,24 +56,31 @@ ul, ol, dl
   *
     word-wrap: break-word
 
+.container-fluid,
+.container
+  @include padding(null 75px)
+.row
+  @include margin(null -50px)
+  > [class^="col"]
+    @include padding(null 50px)
 
-@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
+@include media-breakpoint-down('md')
   .container-fluid,
   .container
     @include padding(null 50px)
   .row
-    @include margin(null -50px)
+    @include margin(null -25px)
     > [class^="col"]
-      @include padding(null 50px)
+      @include padding(null 25px)
 
-@media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
+@include media-breakpoint-down('xs')
   .container-fluid,
   .container
-    @include padding(null 100px)
+    @include padding(null 30px)
   .row
-    @include margin(null -50px)
+    @include margin(null -15px)
     > [class^="col"]
-      @include padding(null 50px)
+      @include padding(null 15px)
 
 .row.no-gutters
   margin-left: 0 !important
@@ -93,30 +100,37 @@ ul, ol, dl
 
 .page-title
   display: flex
-  align-items: center
+  align-items: flex-start
   justify-content: center
   height: auto
-  margin-bottom: rem(20)
   margin-top: 0
   transition: $transition-base
+  height: rem(70)
+  padding: $navbar-sm-padding-y $navbar-sm-padding-x
   a
     text-decoration: none
 @media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
   .page-title
     height: $navbar-md-height
     margin-top: -$navbar-md-height
-    h5
+    padding: $navbar-md-padding-y $navbar-md-padding-x
+    .h5
       z-index: 101
     body.navigation-overlay &
       opacity: 0
+    body.header-overlay &
+      margin-bottom: -$navbar-md-height
 @media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
   .page-title
     height: $navbar-height
     margin-top: -$navbar-height
-    h5
+    padding: $navbar-padding-y $navbar-padding-x
+    .h5
       z-index: 101
     body.navigation-overlay &
       opacity: 0
+    body.header-overlay &
+      margin-bottom: -$navbar-height
 
 body.webkit.safari
   #scroll-wrapper

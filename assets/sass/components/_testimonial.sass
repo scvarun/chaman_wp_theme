@@ -5,46 +5,46 @@
  */
 
 .testimonial
+  display: flex
+  flex-flow: column
+  align-items: stretch
+  justify-content: stretch
+  .testimonial-figure-wrapper
+    order: 0
+  .testimonial-title-wrapper
+    order: 1
+    margin-bottom: rem(40)
+  .testimonial-content-wrapper
+    order: 2
   figure
-      margin-top: 40px !important
+      margin-top: 0 !important
+      margin-bottom: 20px !important
   .testimonial-title
-    font-weight: 900
-    font-style: italic
-    margin-bottom: 65px
-  .testimonial-user-info, p
-    font-size: rem(18)
-    line-height: rem(21)
-    margin-bottom: 10px
+    font-weight: 400
   .testimonial-user-info
     font-weight: bold
     text-transform: uppercase
     margin-bottom: 25px
-  p
-    font-weight: 500
-    &:last-child
-      margin-bottom: 0
 
 @media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px})
   .testimonial
+    display: block
     figure
-      margin-top: 0 !important
+      margin-top: -200px !important
+      margin-bottom: 40px !important
     p:not(:last-child)
       margin-bottom: 2em
+    .testimonial-figure-wrapper,
+    .testimonial-title-wrapper,
+    .testimonial-content-wrapper
+      order: auto
     &.testimonial-right
-      .row
+      .row.testimonial-title-wrapper,
+      .row.testimonial-figure-wrapper
         flex-flow: row-reverse
 
-@media screen and (min-width: #{map-get($grid-breakpoints, 'sm') + 1px}) and (max-width: #{map-get($grid-breakpoints, 'lg')})
+@media screen and (min-width: #{map-get($grid-breakpoints, 'lg') + 1px})
   .testimonial
-    .testimonial-title
-      font-weight: 700
-      margin-bottom: 35px
-    .testimonial-user-info, p
-      font-size: rem(18)
-      line-height: rem(21)
-
-@media screen and (min-width: #{map-get($grid-breakpoints,  'lg') + 1px})
-  .testimonial
-    .testimonial-user-info, p
-      font-size: rem(30)
-      line-height: rem(40)
+    figure
+      margin-top: -300px !important
+      margin-bottom: 80px !important

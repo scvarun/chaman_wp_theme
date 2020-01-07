@@ -21,7 +21,7 @@ get_header();
         <main id="main" class="main-content">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <div class="page-title">
-            <h5>
+            <h5 class="h5">
               <?php
                 $alternate_title = get_post_meta( get_the_ID(), '__content_posts__alternate_title', true ); 
                 if( $alternate_title !== '' ) {

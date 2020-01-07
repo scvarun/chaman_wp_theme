@@ -1,4 +1,7 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class('post'); ?> <?php unifato_the_microdata( 'article' ); ?>>
+<article 
+  id="post-<?php the_ID(); ?>" 
+  <?php post_class('post' . (' post-' . get_post_meta(get_the_ID(), '__content_posts__alignment', 1)) ); ?> 
+  <?php unifato_the_microdata( 'article' ); ?> >
   <div class="container-fluid">
     <div class="row">
       <div class="col">
