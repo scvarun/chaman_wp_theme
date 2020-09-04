@@ -20,7 +20,7 @@
   "homepage": "https://bitbucket.org/varun9509/chaman_html#readme",
   "devDependencies": {
     "autoprefixer": "^9.6.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "postcss": "^7.0.25",
     "postcss-cli": "^6.1.3"
   },
